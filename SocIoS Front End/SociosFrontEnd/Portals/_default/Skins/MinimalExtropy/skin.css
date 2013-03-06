@@ -1,0 +1,155 @@
+@import url("css/menu.css");
+
+/* CSS Document */
+#Body {background:#FFF url(images/body_bg.png) repeat-x top left; height:100%; margin:0; padding:0; }
+
+/* ControlPanel style */
+.ControlPanel{background:transparent url(images/cpanel_center.png) repeat-x bottom left; border:none;padding-bottom:10px;}
+.cpanel_left {background: url(images/cpanel_left.png) no-repeat bottom left;padding-left:21px;}
+.cpanel_right {background: url(images/cpanel_right.png) no-repeat bottom right;padding-right:33px;}
+
+/*-------- Default Style --------*/
+body,th,td,table,h1,h2,h3,h4,h5,h6,.Normal,.NormalDisabled,.Head,.SubHead,.SubSubHead, a:link, a:visited, a:hover, input, .CommandButton{color:#2E3D47; font-family:Verdana, Arial, Helvetica, sans-serif;}
+body,th,td,table,.Normal,.NormalDisabled,.Head,.SubHead,.SubSubHead, a:link, a:visited, a:hover{font-size:12px;}
+h1, h2, h3, h4, h5, h6, h2 input{color:#375162;font-weight:bold;margin:1ex 0;}
+h1{font-size:18px;margin:10px 0;}
+h2, h2 input{font-size:14px;}
+h3{font-size:13px;}
+h4{font-size:12px;}
+h5{font-size:11px;}
+h6{font-size:10px;}
+
+a,a:link,a:visited,a:active{color:#3E81B5; text-decoration:none; font-weight:normal; }
+a:hover{color:#D00; text-decoration:underline;}
+.Head, .SubHead, .SubSubHead, .Normal, .NormalDisabled, .NormalDisabled, .NormalBold, .NormalRed, .NormalTextBox
+{font-family:Verdana, Arial, Helvetica, sans-serif;}
+.Head{color:#2E3D47;font-weight:bold;}
+.SubHead {color:#4C6171;}
+.SubSubHead{color:#6E8AA0;}
+.NormalRed {color:#F00;}
+
+/*Datagrids */
+.DataGrid_Container {margin-top:15px;}
+.DataGrid_Header{font-weight:bold;}
+.DataGrid_Header td, .NormalBold td{font-weight:bold;}
+
+/*-------- design style --------*/
+#s_wrap_main{display:table;width:970px; margin:0 auto;}
+#s_wrap_sub{display:table-row}
+.template_style{display:table-cell}
+
+.top_space{height:34px;}
+.lang_pad{padding:7px 0 0 25px;float:left;}
+
+.logo_top_left{padding:0; margin:0; background:url(images/logo_top_left.png) no-repeat top left; height:23px;}
+.logo_top_right{padding:0; margin:0; background:url(images/logo_top_right.png) no-repeat top right;}
+.logo_top_bg{padding:0; margin:0 39px 0 27px; background:#FFF url(images/logo_top_bg.png) repeat-x top;height:23px;}
+.logo_left{padding:0; background:url(images/logo_left.png) repeat-y top left;}
+.logo_right{padding:0; background:url(images/logo_right.png) repeat-y top right;}
+.logo_pad{background:#FFF; margin: 0 19px 0 7px; padding:0 0 10px 10px;height:100%;}
+
+.s_logo{float:left;}
+.s_banner{background:#aaa;width:50%;float:right;}
+
+.menu_bg{padding:0 0 0 6px;  margin: 0 21px 0 9px; background:url(images/menu_bg.png) top left;}
+.menu_left{padding:0; margin:0; background:url(images/menu_left.png) repeat-y  top left;}
+.menu_right{margin:0; background:url(images/menu_right.png) repeat-y top right; }
+
+.search_style{float:right; height:40px;}
+.search_bg{padding:8px 2px 0 0;}
+
+.bread_bg{padding:0; margin: 0 19px 0 7px; background:url(images/bread_bg.png) repeat-x top left; height:34px;}
+.bread_left{padding:0; margin:0; background:url(images/bread_left.png) no-repeat top left; height:34px;}
+.bread_right{padding:0;  background:url(images/bread_right.png) no-repeat top right; height:34px;}
+
+#login_style{ float:right; line-height:34px; padding-right:18px;}
+#bread_style{ float:left; line-height:34px; padding-left:18px;color:#000000;}
+
+.center_bg{padding:0; margin:0;clear:both;}
+.left_bg{padding:0; margin:0; background:url(images/left_bg.png) repeat-y top left;}
+.right_bg{padding:0; margin:0; background:url(images/right_bg.png) repeat-y top right;}
+.content_pad{padding:10px 22px 0 22px; margin: 0 19px 0 7px; background:#FFF url(images/center_bg.png) repeat-x bottom left;}
+.lm_content_pad{padding:0px 22px 0 0px; margin: 0 19px 0 7px; background:#FFF url(images/center_bg.png) repeat-x bottom left;}
+.content_width{padding-top:15px; min-height:350px;}
+.lm_content_width{padding-top:0px; min-height:350px;}
+
+.bot_left{padding:0; margin:0; background:url(images/bot_left.png) no-repeat top left;}
+.bot_right{padding:0; margin:0; background:url(images/bot_right.png) no-repeat top right; padding:0 39px 0 27px;}
+.bot_bg{padding:0; margin:0; background:url(images/bot_bg.png) repeat-x top left; height:41px;}
+
+.bot_pad{margin-bottom:20px;padding:0 30px 0 20px;}
+#terms_style{float:left;}
+#copy_style{float:right;}
+
+.clear_float{clear:both; line-height:0; font-size:0; height:0;}
+
+/* ------- FileManager -------*/
+div.FileManager{height:auto;border:none;}
+table.FileManager{width:99%}
+
+
+a.CommandButton:link, a.CommandButton:visited{color:#CB2027; font-weight:bold; text-decoration:none;}
+a.CommandButton:hover{color:#3E81B5; text-decoration:underline;}
+
+/*-------ControlPanel changes ---------------*/
+.ControlPanel a.CommandButton:link, .ControlPanel a.CommandButton:visited{color:#3E81B5;}
+.ControlPanel a.CommandButton:hover{color:#CB2027; text-decoration:underline;}
+.ControlPanel a.CommandButton:link, .ControlPanel a.CommandButton:hover, .ControlPanel a.CommandButton:visited, .ControlPanel .SubHead{
+font-size:11px;}
+.ControlPanel a[disabled="disabled"]{color:#888 !important;text-decoration:none !important;}
+
+/*--------- pane style ----------*/
+.BannerPane {display:inline-block;float:right;padding-right:17px;width:auto;}
+.ContentPane, .TopPane, .BottomPane{ padding:0; margin:0;}
+.LeftPane{ padding:0 20px 0 0; width:20%; margin:0;}
+.RightPane{ padding:0 0 0 20px; width:20%; margin:0;}
+
+
+
+/*------------ Breadcrumb Style --------------*/
+.Breadcrumb,a.Breadcrumb:link,a.Breadcrumb:active,a.Breadcrumb:visited{color:#3E81B5;}
+a.Breadcrumb:hover{color:#C00;}
+
+/*-------------- Link Style --------------*/
+.linkscontainer{padding-top:20px;text-align:center;}
+.links,a.links:link,a.links:active,a.links:visited{ font-weight:bold; color:#3E81B5; text-transform:uppercase;}
+a.links:hover{color:#C00;}
+
+/*-------------- User Style --------------*/
+.user,a.user:link,a.user:active,a.user:visited { color:#3E81B5;}
+a.user:hover{color:#C00;}
+
+/*-------------- Footer Style --------------*/
+.footer,a.footer:link,a.footer:active,a.footer:visited { color:#3E81B5;}
+a.footer:hover{color:#C00;}
+
+/*-------------- Empty panes Style --------------*/
+.DNNEmptyPane{width:0;padding:0;margin:0;}
+
+/*-------------- Search SkinObject Styles --------------*/
+div.SearchContainer{position:relative; white-space: nowrap;}
+div.SearchBorder{width: 180px; height: 20px; border: solid 1px #e0e0e0; float:left; background-color: White; white-space: nowrap; margin-top: 2px;}
+div.SearchContainer a{padding: 0; display: block; float:left; }
+div.SearchContainer a img{padding-left:5px;}
+div.SearchIcon{float: left; width: 31px; height: 20px; cursor: pointer; z-index: 11; background: no-repeat 2px 2px; text-align:right;}
+div.SearchIcon img{margin-top: 3px;}
+
+input.SearchTextBox{float: left; z-index: 10; border: 0; width:130px; height:18px; margin-left:3px; color: #43494D;}
+
+#SearchChoices{clear: both; display: none; border: solid 1px #C3D4DF; z-index: 2000; cursor: pointer; margin: 0; padding: 0; text-align:left; background-color: #F3F7FA; position:absolute; top: 22px; left: 0;}
+#SearchChoices li{cursor: pointer; margin: 0; padding: 2px 2px 0 2px; padding-left: 25px; height: 18px; text-align:left; background-color: #F3F7FA; background-repeat: no-repeat; background-position: 2px center; list-style: none; list-style-image: none; border: none; display:block;}
+#SearchChoices li.searchHilite{background-color: #CE0D0D;	color:#ffffff; border: none;}
+#SearchChoices li.searchDefault{background-color: #F8FAFF; border: none;}
+
+
+/* Minimal Entropy Example Styles */
+.linkscontainer_left{padding:0; background:url(images/left_bg.png) repeat-y bottom left;}
+.linkscontainer_right{padding:0; background:url(images/right_bg.png) repeat-y bottom right;}
+.linkscontainer_pad{background:url(images/center_bg.png) repeat-x bottom left; margin: 0 19px 0 7px; padding:0 0 10px 10px;height:100%;}
+
+.tag_bg{padding:0; margin: 0 19px 0 7px; background:url(images/bread_bg.png) repeat top left; min-height:68px;}
+.tag_left{padding:0; margin:0; background:url(images/bread_left.png) repeat-y top left; min-height:68px;}
+.tag_right{padding:0;  background:url(images/bread_right.png) repeat-y top right; min-height:68px;}
+
+#tag_style{display:table; margin:0 auto; padding:0; white-space:nowrap;}
+#tag_style ul.categories, #tag_style ul.tags{min-height:34px;max-height:34px;height:34px;}

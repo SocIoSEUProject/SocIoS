@@ -1,0 +1,7 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_MediaSearch.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_MediaSearch.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_MediaSearch.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_MediaSearch\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_MediaSearch\obj\Debug\Socios_MediaSearch.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_MediaSearch\obj\Debug\Socios_MediaSearch.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_MediaSearch.dll.config

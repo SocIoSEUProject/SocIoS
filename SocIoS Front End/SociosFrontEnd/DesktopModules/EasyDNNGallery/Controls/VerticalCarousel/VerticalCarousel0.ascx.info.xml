@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TemplateInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InfoText1>One image vertical scroling. No support for CSS.</InfoText1>
+  <InfoText2>None</InfoText2>
+  <ControlsToDisable>tbVerticalCarouselNumberOfImagesSlide,tbVerticalCarouselNumberOfImages,</ControlsToDisable>
+</TemplateInfo>

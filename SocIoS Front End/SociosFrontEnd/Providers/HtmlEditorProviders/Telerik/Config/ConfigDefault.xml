@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ==============================================================================================
+	Config File valid structure:
+	<configuration>
+    <property>...</property>
+    ...
+		<property>
+			<item>...</item>
+			<item>...</item>
+			...
+		</property>
+		...
+	</configuration>
+=============================================================================================== -->
+
+<configuration>
+	<property name="Skin">Vista</property>
+	<property name="EnableResize">true</property>
+	<property name="AutoResizeHeight">false</property>
+	<property name="StripFormattingOnPaste">MSWordRemoveAll</property>
+	<property name="ContentFilters">DefaultFilters</property>
+	<!-- EditModes.Design=1 + EditModes.Html=2-->
+	<property name="EditModes">3</property>
+	<!-- set to false will insert a <p> tag for carriage returns -->
+	<property name="NewLineBr">true</property>
+	<!-- WordIgnoreOptions.WordsWithNumbers=8 WordIgnoreOptions.UPPERCASE=1 -->
+	<property name="SpellCheckSettings.WordIgnoreOptions">9</property>
+	<property name="DialogOpener.Window.ReloadOnShow">true</property>
+	<property name="ImageManager.SearchPatterns">*.gif,*.xbm,*.xpm,*.png,*.ief,*.jpg,*.jpe,*.jpeg,*.tiff,*.tif,*.rgb,*.g3f,*.xwd,*.pict,*.ppm,*.pgm,*.pbm,*.pnm,*.bmp,*.ras,*.pcd,*.cgm,*.mil,*.cal,*.fif,*.dsf,*.cmx,*.wi,*.dwg,*.dxf,*.svf</property>
+	<property name="ImageManager.EnableImageEditor">true</property>
+	<!-- 4194304 bytes = 4096 kb = 4 mb -->
+	<property name="ImageManager.MaxUploadFileSize">4194304</property>
+	<property name="DocumentManager.SearchPatterns">*.doc,*.txt,*.docx,*.xls,*.xlsx,*.pdf,*.ppt,*.pptx,*.xml,*.zip</property>
+	<property name="DocumentManager.MaxUploadFileSize">4194304</property>
+	<property name="FlashManager.SearchPatterns">*.swf</property>
+	<property name="FlashManager.MaxUploadFileSize">4194304</property>
+	<property name="MediaManager.SearchPatterns">*.wma,*.wmv,*.avi,*.wav,*.mpeg,*.mpg,*.mpe,*.mp3,*.m3u,*.mid,*.midi,*.snd,*.mkv</property>
+	<property name="MediaManager.MaxUploadFileSize">4194304</property>
+	<property name="SilverlightManager.SearchPatterns">*.xap</property>
+	<property name="SilverlightManager.MaxUploadFileSize">4194304</property>
+	<property name="TemplateManager.SearchPatterns">*.htmtemplate,*.htm,*,html</property>
+	<property name="TemplateManager.MaxUploadFileSize">4194304</property>
+    <!-- ContentAreaMode defaults to Iframe.  Set to Div to make the editor part of the current page.
+    Div mode is useful for advanced styling issues and inheriting the DOCTYPE of the current page.
+    If content depends on an HTML5 doctype use Div mode -->
+    <!-- <property name="ContentAreaMode">Div</property>    -->
+</configuration>

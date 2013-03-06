@@ -1,0 +1,1175 @@
+﻿/*
+EasyDNNGallery CSS file
+
+Instructions: To properly create theme the first ID selector (# EDG_6_ss2_gray_bg) must equal the name of the css file
+(example: this file is called EDG_6_ss2_gray_bg.css and the first ID selector must called EDG_6_ss2_gray_bg).
+ Names may be in its sole discretion,
+ only important thing is  that the first ID selector is the same as css filename so the theme is correct.
+ To quickly change the name of the first ID selector use the find / replace function in your editor.
+*/
+
+
+/* Lightbox Gallery */
+#EDG_6_ss2_gray_bg .EDGmain {
+		margin-top: 7px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	margin-left: 7px;
+	float: left;
+	position: relative;
+	
+}
+
+
+
+/*Lighbox gallery - Image*/
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a {
+	text-decoration: none;
+
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a:hover {
+	cursor: pointer;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a img {
+
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7 !important;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a:hover img {
+
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #FFFFFF !important;
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a input {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7 !important;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a:hover input {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #FFFFFF !important;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7;
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a .flag 
+{
+	
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a:hover .flag {
+	
+	/*
+	position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_image.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left:5px;
+	padding-right:5px;
+	white-space: normal;
+	margin-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
+	line-height:normal;
+}
+
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a .title {
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage a:hover .title 
+{
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGimage .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+/*Lighbox gallery - Video*/
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a {
+	text-decoration: none;
+	float: left;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a:hover {
+	cursor: pointer;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7 !important;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #FFFFFF !important;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7;
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a .flag 
+{
+	
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a:hover .flag {
+	
+	/*
+	position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_image.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left:5px;
+	padding-right:5px;
+	white-space: normal;
+	margin-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
+	line-height:normal;
+}
+
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a .title {
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo a:hover .title 
+{
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGvideo .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+/*Lighbox gallery - Audio*/
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a {
+	text-decoration: none;
+	float: left;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a:hover {
+	cursor: pointer;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7 !important;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #FFFFFF !important;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7;
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a .flag 
+{
+	
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a:hover .flag {
+	
+	/*
+	position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_image.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left:5px;
+	padding-right:5px;
+	white-space: normal;
+	margin-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
+	line-height:normal;
+}
+
+
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a .title {
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio a:hover .title 
+{
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+
+#EDG_6_ss2_gray_bg .EDGmain .EDGaudio .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+
+/*END Lighbox gallery */
+
+
+
+/*Gallery background  - if you want gallery without a background delete the settings, but leave empty class */
+#EDG_6_ss2_gray_bg .EDGbackground
+{
+	
+	margin-right: auto;
+	margin-left: auto;
+	float:left;
+}
+
+#EDG_6_ss2_gray_bg .EDGbackground .EDGcontent {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	float:left;
+}
+
+#EDG_6_ss2_gray_bg .EDGbackground .EDGcontentbgrd
+{
+	background-color: #333333;
+	background-image: url(/DesktopModules/EasyDNNGallery/Themes/images/bgrd_gray.jpg);
+	background-repeat: repeat;
+	padding-bottom: 10px;
+	float:left;
+}
+#EDG_6_ss2_gray_bg .EDGbackground .EDGcornerbotleft {
+
+} 
+#EDG_6_ss2_gray_bg .EDGbackground .EDGcornerbotright {
+
+} 
+#EDG_6_ss2_gray_bg .EDGbackground .EDGcornertopleft {
+	
+} 
+#EDG_6_ss2_gray_bg .EDGbackground .EDGcornertopright {
+
+} 
+#EDG_6_ss2_gray_bg .EDGbackground .EDGclear {font-size: 1px; height: 1px}
+
+
+/*paging*/
+#EDG_6_ss2_gray_bg .buttonPrev
+{
+	display:none;
+	/*border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_left.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;*/
+}
+
+#EDG_6_ss2_gray_bg .buttonPrev:hover
+{
+	display:none;
+	/*
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_left_hover.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;*/
+}
+
+
+#EDG_6_ss2_gray_bg .buttonNext
+{
+	display:none;
+	/*
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_right.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;*/
+	}
+	
+#EDG_6_ss2_gray_bg .buttonNext:hover
+{
+	display:none;
+	/*border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_right_hover.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;*/
+	}
+
+
+#EDG_6_ss2_gray_bg .EDGpager span
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: underline;
+	padding: 4px;
+	border: 1px solid #CCCCCC;
+	background-color: #666666;
+}
+
+#EDG_6_ss2_gray_bg .EDGpager a
+{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	padding: 4px;
+	border: 1px solid #CCCCCC;
+}
+
+#EDG_6_ss2_gray_bg .EDGpager a:hover
+{
+	/*width: 19px;
+	height: 19px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: underline;
+	padding: 4px;
+	border: 1px solid #CCCCCC;
+	background-color: #666666;
+}
+
+#EDG_6_ss2_gray_bg .pagerbox
+{
+	margin-top:10px;
+	margin-bottom:15px;
+	text-align:center;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #4c4c4c;
+	border-bottom-color: #2d2d2d;
+	background-image: url(/DesktopModules/EasyDNNGallery/Themes/images/bgrd_gray2.jpg);
+	background-repeat: repeat;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+
+}
+
+
+
+/*Video gallery*/
+
+#EDG_6_ss2_gray_bg .VideoBodyEmbed
+{
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7 !important;
+} 
+
+#EDG_6_ss2_gray_bg .VideoBodySwf
+{
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7 !important;
+} 
+
+#EDG_6_ss2_gray_bg .VideoBodyPlayer
+{
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7 !important;
+} 
+
+
+#EDG_6_ss2_gray_bg .VideoTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_6_ss2_gray_bg .VideoDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+#EDG_6_ss2_gray_bg .VideoDescription a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:underline;
+} 
+
+#EDG_6_ss2_gray_bg .VideoDescription a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:none;
+} 
+
+
+
+/*Audio gallery*/
+
+#EDG_6_ss2_gray_bg .AudioTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_6_ss2_gray_bg .AudioDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+#EDG_6_ss2_gray_bg .AudioDescription a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:underline;
+} 
+
+#EDG_6_ss2_gray_bg .AudioDescription a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:none;
+} 
+
+
+
+
+
+/*MAIN Gallery Title*/
+
+#EDG_6_ss2_gray_bg .GalleryDescription
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	color: #fff;
+	font-style: italic;
+	line-height:normal;
+} 
+
+
+#EDG_6_ss2_gray_bg .EDGTitle
+{
+	margin-top:10px;
+	margin-bottom:15px;
+	text-align:center;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #4c4c4c;
+	border-bottom-color: #2d2d2d;
+	background-image: url(/DesktopModules/EasyDNNGallery/Themes/images/bgrd_gray2.jpg);
+	background-repeat: repeat;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height:normal;
+}
+
+#EDG_6_ss2_gray_bg .EDGTitle .EDGTitleText
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	line-height:normal;
+}
+
+
+/*SlideShow*/
+
+#EDG_6_ss2_gray_bg .SlideshowDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	margin-top: 5px;
+	color: #FFFFFF;
+	display:block;
+	line-height:normal;
+
+
+} 
+
+#EDG_6_ss2_gray_bg .SlideshowTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_6_ss2_gray_bg .slideshowtitledescbox
+{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+
+#EDG_6_ss2_gray_bg .slideshow {
+text-align: center;	
+}
+#EDG_6_ss2_gray_bg .slideshowimg {
+border: 2px solid #FFFFFF;	
+}
+
+
+#EDG_6_ss2_gray_bg .EDGSlide {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	float: left;
+	position: relative;
+	
+}
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a {
+	text-decoration: none;
+	float: left;
+}
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a:hover {
+	cursor: pointer;
+}
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #24313a;
+	border: 2px solid #b7b7b7 !important;
+}
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #FFFFFF !important;
+}
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 2px solid #b7b7b7;
+}
+
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a .flag 
+{
+	
+}
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a:hover .flag {
+	
+	/*
+	position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_image.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left:5px;
+	padding-right:5px;
+	white-space: normal;
+	margin-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
+	line-height:normal;
+}
+
+
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a .title {
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage a:hover .title 
+{
+	color: #000;
+	filter:alpha(opacity=50);
+	opacity:.50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+	background-color: #FFFFFF;
+}
+
+#EDG_6_ss2_gray_bg .EDGSlide .EDGimage .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+#EDG_6_ss2_gray_bg .btnGalleryBack
+{
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/backblack.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+	display:block;	
+	margin-left:50px;	
+}
+
+#EDG_6_ss2_gray_bg .nestedBreadCrumb
+{
+	margin-left:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+
+	}
+	
+	#EDG_6_ss2_gray_bg .nestedBreadCrumb a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+	#EDG_6_ss2_gray_bg .nestedBreadCrumb a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}	
+
+
+/***Version 2.2.*****************/
+
+
+#EDG_6_ss2_gray_bg .TitleCarousel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	clear: both;
+	float:left;
+	font-weight: bold;
+	text-align: left;
+	padding-left:10px;
+}
+
+#EDG_6_ss2_gray_bg .DescriptionCarousel{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	clear: both;
+	float:left;
+	white-space:normal;
+	bottom:0px;
+	text-align: left;
+	font-weight:normal;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+
+#EDG_6_ss2_gray_bg .DescriptionCarousel a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration:underline;
+	
+	}
+	
+#EDG_6_ss2_gray_bg .DescriptionCarousel a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration:none;
+	
+	}	
+	
+/***Version 2.3.*****************/
+/*** Lightbox1.ascx **/	
+
+#EDG_6_ss2_gray_bg a:link
+{
+	text-decoration:none!important;
+	color:#fff;
+	
+	}
+
+
+#EDG_6_ss2_gray_bg .titleimage .title
+{
+	clear: both;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+	visibility: visible;
+	line-height: normal;
+	white-space: normal;
+	display: block;
+	color: #F0F0F0;
+	text-decoration: none;
+}
+
+#EDG_6_ss2_gray_bg .titleimage .title a
+{
+	clear: both;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+	visibility: visible;
+	line-height: normal;
+	white-space: normal;
+	display: block;
+	color: #F0F0F0;
+	text-decoration:none!important;
+}
+
+
+
+#EDG_6_ss2_gray_bg .DescriptionImage
+{
+	font-size: 11px;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height: normal;
+
+}
+
+#EDG_6_ss2_gray_bg .DescriptionImage a
+{
+	font-size: 11px;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height: normal;
+
+}
+
+#EDG_6_ss2_gray_bg .NestedInfo
+{
+	font-size: 10px;
+	font-style: normal;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height: normal;
+
+}
+
+
+#EDG_6_ss2_gray_bg .ViewDetailsLink
+{
+	clear:both;
+	display:block;
+	text-align:left;
+	padding-top:5px;
+	
+	}
+	
+
+#EDG_6_ss2_gray_bg .ViewDetailsLink a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	border: 1px solid #C0C0C0;
+	background-color: #ACACAC;
+	
+
+}
+
+#EDG_6_ss2_gray_bg .ViewDetailsLink a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	border: 1px solid #C0C0C0;
+	background-color: #D2D2D2;
+}
+
+/*****************Version 2.4**************/
+
+#EDG_6_ss2_gray_bg .Slideshow2Description
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	margin-top: 5px;
+	color: #FFFFFF;
+	display:block;
+	line-height:normal;
+
+
+} 
+
+#EDG_6_ss2_gray_bg .Slideshow2Title
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+}
+
+#EDG_6_ss2_gray_bg div.controls a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+}
+	
+#EDG_6_ss2_gray_bg div.controls a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+} 
+
+#EDG_6_ss2_gray_bg #thumbs
+{
+	padding: 15px;
+} 
+
+#EDG_6_ss2_gray_bg .EDGTitleText
+{
+	font-family: Times new roman, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	line-height:normal;
+	display:block;
+}				

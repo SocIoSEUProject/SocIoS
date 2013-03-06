@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<project name="socios-server" default="build" basedir=".">
+	<include file="${basedir}/cxf-build.xml" />
+	<property name="core.wsdl" location="${basedir}/wsdl/socios-core-api.wsdl" />
+	<property name="gen.src" location="${basedir}/gen-src/" />
+	<property name="gen.stamp" location="${gen.src}/.stamp" />
+	<property name="lib.dir" location="${basedir}/lib/" />
+	<property name="build.dir" location="${basedir}" />
+	<property name="build.classes.dir" location="${build.dir}/ant-bin" />
+	<property file="${basedir}/cxf/etc/deploy.properties" />
+
+	<uptodate property="gen.src.uptodate" srcfile="${core.wsdl}" targetfile="${gen.stamp}" />
+
+	<path id="all.classpath">
+		<path refid="lib.classpath" />
+		<path refid="run.classpath" />
+	</path>
+
+	<path id="lib.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="glassfish.classpath">
+		<fileset dir="${glassfish.dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="code-gen" unless="gen.src.uptodate">
+		<wsdl2java wsdl="${core.wsdl}" wsdl-loc="./wsdl/socios-core-api.wsdl" dir="${gen.src}" />
+		<touch file="${gen.stamp}" />
+	</target>
+
+	<target name="compile" depends="code-gen">
+		<mkdir dir="${build.classes.dir}" />
+		<javac destdir="${build.classes.dir}" debug="true" fork="true" includeantruntime="false">
+			<src path="${gen.src}/" />
+			<src path="${basedir}/src" />
+			<src path="${basedir}/test-src" />
+			<compilerarg line="-J${cxf.endorsed.flag}" />
+			<classpath refid="cxf.classpath" />
+			<classpath refid="lib.classpath" />
+		</javac>
+		<copy todir="${build.classes.dir}">
+			<fileset dir="${basedir}/cxf/etc/" includes="log4j.properties" />
+		</copy>
+
+	</target>
+
+	<target name="demo-server" depends="compile">
+		<run classname="eu.sociosproject.sociosapi.SociosApiTestServer" param1="./wsdl/socios-core-api.wsdl" />
+	</target>
+
+	<target name="demo-client" depends="compile">
+		<run classname="eu.sociosproject.sociosapi.SociosApiTestClient" param1="./wsdl/socios-core-api.wsdl" />
+	</target>
+
+	<target name="clean" description="clean, delete war files">
+		<delete dir="${gen.src}" />
+		<delete dir="${build.classes.dir}" />
+	</target>
+
+
+	<target name="build" depends="compile">
+		<war webxml="${basedir}/cxf/etc/web.xml" destfile="CoreServices.war">
+			<webinf dir="${basedir}/cxf/etc/">
+				<include name="sun-web.xml" />
+			</webinf>
+			<classes dir="${build.classes.dir}">
+			</classes>
+			<lib dir="${lib.dir}">
+				<exclude name="javax.*.jar" />
+				<exclude name="javaee.jar" />
+			</lib>
+			<!-- <lib dir="${cxf-lib}"/> -->
+			<zipfileset dir='${basedir}/wsdl' includes='*.wsdl,*.xsd' prefix='wsdl' />
+			<!--<zipfileset dir='${basedir}/cxf/etc' includes='sun-web.xml' prefix='WEB-INF'/>-->
+		</war>
+	</target>
+
+
+	<target name="socios-deploy" depends="-deploy-ant-init" description="deploy socios on server">
+		<sun-appserv-deploy user="${glassfish.user}" host="${glassfish.host}" port="${glassfish.port}" installDir="${glassfish.installdir}">
+			<component file="${app.arch.file}" name="${app.arch.name}" />
+		</sun-appserv-deploy>
+	</target>
+
+	<target name="socios-undeploy" depends="-deploy-ant-init" description="undeploy socios from server">
+		<sun-appserv-undeploy user="${glassfish.user}" host="${glassfish.host}" port="${glassfish.port}" installDir="${glassfish.installdir}">
+			<component file="${app.arch.file}" name="${app.arch.name}" />
+		</sun-appserv-undeploy>
+	</target>
+
+	<target name="socios-redeploy" depends="-deploy-ant-init" description="redeploy socios on server">
+		<sun-appserv-redeploy user="${glassfish.user}" host="${glassfish.host}" port="${glassfish.port}" installDir="${glassfish.installdir}">
+			<component file="${app.arch.file}" name="${app.arch.name}" />
+		</sun-appserv-redeploy>
+	</target>
+	<target name="test-all-adaptors" description="test all adaptors" depends="compile">
+		<junit>
+			<classpath refid="all.classpath" />
+			<formatter type="brief" usefile="false" />
+			<test name="eu.sociosproject.sociosapi.junit.FlickrAdaptorTest" />
+			<test name="eu.sociosproject.sociosapi.junit.YoutubeAdaptorTest" />
+			<test name="eu.sociosproject.sociosapi.junit.DailyMotionAdaptorTest" />
+			<test name="eu.sociosproject.sociosapi.junit.MyspaceAdaptorTest" />
+			<test name="eu.sociosproject.sociosapi.junit.GooglepAdaptorTest" />
+			<test name="eu.sociosproject.sociosapi.junit.InstagramAdaptorTest" />
+
+		</junit>
+	</target>
+	<target name="test-googlep-adaptor" description="test google plus adaptor" depends="compile">
+		<junit>
+			<classpath refid="all.classpath" />
+			<formatter type="brief" usefile="false" />
+			<test name="eu.sociosproject.sociosapi.junit.GooglepAdaptorTest" />
+		</junit>
+	</target>
+	<target name="test-flickr-adaptor" description="test flickr adaptor" depends="compile">
+		<junit>
+			<classpath refid="all.classpath" />
+			<formatter type="brief" usefile="false" />
+			<test name="eu.sociosproject.sociosapi.junit.FlickrAdaptorTest" />
+		</junit>
+	</target>
+	<target name="test-youtube-adaptor" description="test youtube adaptor" depends="compile">
+		<junit>
+			<classpath refid="all.classpath" />
+			<formatter type="brief" usefile="false" />
+			<test name="eu.sociosproject.sociosapi.junit.YoutubeAdaptorTest" />
+		</junit>
+	</target>
+	<target name="test-dailymotion-adaptor" description="test dailymotion adaptor" depends="compile">
+		<junit>
+			<classpath refid="all.classpath" />
+			<formatter type="brief" usefile="false" />
+			<test name="eu.sociosproject.sociosapi.junit.DailyMotionAdaptorTest" />
+		</junit>
+
+	</target>
+	<target name="test-myspace-adaptor" description="test myspace adaptor" depends="compile">
+		<junit>
+			<classpath refid="all.classpath" />
+			<formatter type="brief" usefile="false" />
+			<test name="eu.sociosproject.sociosapi.junit.MyspaceAdaptorTest" />
+		</junit>
+	</target>
+	<target name="test-instagram-adaptor" description="test myspace adaptor" depends="compile">
+		<junit>
+			<classpath refid="all.classpath" />
+			<formatter type="brief" usefile="false" />
+			<test name="eu.sociosproject.sociosapi.junit.InstagramAdaptorTest" />
+		</junit>
+	</target>
+
+	<target name="build-som-jar" depends="compile">
+		<jar destfile="SOM.jar">
+			<zipfileset prefix="eu/sociosproject/sociosvoc" dir="${basedir}/ant-bin/eu/sociosproject/sociosvoc">
+			</zipfileset>
+			<zipfileset prefix="eu/sociosproject/sociosapi/server/update/events" dir="${basedir}/ant-bin/eu/sociosproject/sociosapi/server/update/events">
+			</zipfileset>
+		</jar>
+	</target>
+
+	<target name="-deploy-ant-init">
+		<taskdef name="sun-appserv-deploy" classname="org.glassfish.ant.tasks.DeployTask" classpath="${lib.dir}/ant-tasks.jar" />
+		<taskdef name="sun-appserv-undeploy" classname="org.glassfish.ant.tasks.UndeployTask" classpath="${lib.dir}/ant-tasks.jar" />
+		<taskdef name="sun-appserv-component" classname="org.glassfish.ant.tasks.ComponentTask" classpath="${lib.dir}/ant-tasks.jar" />
+		<taskdef name="sun-appserv-admin" classname="org.glassfish.ant.tasks.AdminTask" classpath="${lib.dir}/ant-tasks.jar" />
+		<taskdef name="sun-appserv-redeploy" classname="org.glassfish.ant.tasks.RedeployTask" classpath="${lib.dir}/ant-tasks.jar" />
+		<taskdef name="sun-appserv-start-server" classname="org.glassfish.ant.tasks.StartServerTask" classpath="${lib.dir}/ant-tasks.jar" />
+		<taskdef name="sun-appserv-stop-server" classname="org.glassfish.ant.tasks.StopServerTask" classpath="${lib.dir}/ant-tasks.jar" />
+	</target>
+
+	<path id="run.classpath">
+		<pathelement location="${build.classes.dir}" />
+		<pathelement location="${cxf-manifest.jar.file}" />
+		<fileset dir="${cxf.endorsed.dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="cxf.classpath">
+		<pathelement location="${cxf-manifest.jar.file}" />
+	</path>
+
+	<macrodef name="run">
+		<attribute name="classname" />
+		<attribute name="param1" default="" />
+		<attribute name="param2" default="" />
+		<attribute name="param3" default="" />
+		<attribute name="param4" default="" />
+		<attribute name="param5" default="" />
+		<attribute name="jvmarg1" default="-D" />
+		<attribute name="jvmarg2" default="-D" />
+		<attribute name="jvmarg3" default="-D" />
+		<attribute name="jvmarg4" default="-D" />
+		<attribute name="jvmarg5" default="-D" />
+		<sequential>
+			<java classname="@{classname}" fork="yes">
+				<classpath>
+					<path refid="run.classpath" />
+					<path refid="lib.classpath" />
+				</classpath>
+				<arg value="@{param1}" />
+				<arg value="@{param2}" />
+				<arg value="@{param3}" />
+				<arg value="@{param4}" />
+				<arg value="@{param5}" />
+				<jvmarg value="${cxf.endorsed.flag}" />
+				<jvmarg value="@{jvmarg1}" />
+				<jvmarg value="@{jvmarg2}" />
+				<jvmarg value="@{jvmarg3}" />
+				<jvmarg value="@{jvmarg4}" />
+				<jvmarg value="@{jvmarg5}" />
+				<assertions>
+					<enable package="org.apache.cxf" />
+				</assertions>
+			</java>
+		</sequential>
+	</macrodef>
+
+</project>

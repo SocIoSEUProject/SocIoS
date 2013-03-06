@@ -1,0 +1,266 @@
+/****** Object:  Table [dbo].[EasyGalleryModuleCategory]    Script Date: 09/05/2012 16:59:27 ******/
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyGalleryModuleCategory](
+	[ModuleID] [int] NOT NULL,
+	[CategoryID] [int] NOT NULL,
+ CONSTRAINT [PK_EasyGalleryModuleCategory] PRIMARY KEY CLUSTERED ([ModuleID] ASC, [CategoryID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+/****** Object:  Table [dbo].[EasyGalleryCreatedThumbs]    Script Date: 09/05/2012 16:59:27 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyGalleryCreatedThumbs](
+	[ModuleID] [int] NOT NULL,
+	[PictureID] [int] NOT NULL,
+	[ThumbCreated] [bit] NOT NULL,
+ CONSTRAINT [PK_EasyGalleryCreatedThumbs] PRIMARY KEY CLUSTERED([ModuleID] ASC,	[PictureID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+/****** Object:  ForeignKey [FK_EasyGalleryCreatedThumbs_EasyGalleryPictures]    Script Date: 09/05/2012 16:59:27 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryCreatedThumbs_EasyGalleryPictures]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]'))
+ALTER TABLE [dbo].[EasyGalleryCreatedThumbs]  WITH CHECK ADD  CONSTRAINT [FK_EasyGalleryCreatedThumbs_EasyGalleryPictures] FOREIGN KEY([PictureID])
+REFERENCES [dbo].[EasyGalleryPictures] ([PictureID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryCreatedThumbs_EasyGalleryPictures]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]'))
+ALTER TABLE [dbo].[EasyGalleryCreatedThumbs] CHECK CONSTRAINT [FK_EasyGalleryCreatedThumbs_EasyGalleryPictures]
+GO
+/****** Object:  ForeignKey [FK_EasyGalleryCreatedThumbs_Modules]    Script Date: 09/05/2012 16:59:27 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryCreatedThumbs_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]'))
+ALTER TABLE [dbo].[EasyGalleryCreatedThumbs]  WITH CHECK ADD  CONSTRAINT [FK_EasyGalleryCreatedThumbs_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryCreatedThumbs_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]'))
+ALTER TABLE [dbo].[EasyGalleryCreatedThumbs] CHECK CONSTRAINT [FK_EasyGalleryCreatedThumbs_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyGalleryModuleCategory_EasyGalleryCategory]    Script Date: 09/05/2012 16:59:27 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleCategory_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]'))
+ALTER TABLE [dbo].[EasyGalleryModuleCategory]  WITH CHECK ADD  CONSTRAINT [FK_EasyGalleryModuleCategory_EasyGalleryCategory] FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[EasyGalleryCategory] ([CategoryID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleCategory_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]'))
+ALTER TABLE [dbo].[EasyGalleryModuleCategory] CHECK CONSTRAINT [FK_EasyGalleryModuleCategory_EasyGalleryCategory]
+GO
+/****** Object:  ForeignKey [FK_EasyGalleryModuleCategory_Modules]    Script Date: 09/05/2012 16:59:27 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleCategory_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]'))
+ALTER TABLE [dbo].[EasyGalleryModuleCategory]  WITH CHECK ADD  CONSTRAINT [FK_EasyGalleryModuleCategory_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleCategory_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]'))
+ALTER TABLE [dbo].[EasyGalleryModuleCategory] CHECK CONSTRAINT [FK_EasyGalleryModuleCategory_Modules]
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleSettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyGalleryModuleSettings](
+	[ModuleID] [int] NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[EnableCommunityMode] [bit] NOT NULL,
+	[EnableAutoResize] [bit] NOT NULL,
+	[ResizeWidth] [int] NOT NULL,
+	[ResizeHeight] [int] NOT NULL,
+	[EnablePostingToJournal] [bit] NOT NULL,
+	[AutoJournalPost] [bit] NOT NULL,
+	[ModuleToOpenDetails] [int] NOT NULL,
+	[TabToOpenDetails] [int] NOT NULL,
+ CONSTRAINT [PK_EasyGalleryModuleSettings] PRIMARY KEY CLUSTERED ([ModuleID] ASC,[PortalID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF))
+END
+GO
+/****** Object:  ForeignKey [FK_EasyGalleryModuleSettings_Modules]    Script Date: 09/11/2012 16:57:15 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleSettings]'))
+ALTER TABLE [dbo].[EasyGalleryModuleSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyGalleryModuleSettings_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleSettings]'))
+ALTER TABLE [dbo].[EasyGalleryModuleSettings] CHECK CONSTRAINT [FK_EasyGalleryModuleSettings_Modules]
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallerySecurity]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyGallerySecurity](
+	[GalleryID] [int] NOT NULL,
+	[SecurityKey] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_EasyGallerySecurity] PRIMARY KEY CLUSTERED 
+(
+	[GalleryID] ASC,
+	[SecurityKey] ASC
+)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+/****** Object:  Default [DF_EasyGallerySecurity_SecurityKey]    Script Date: 09/19/2012 13:57:01 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyGallerySecurity_SecurityKey]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySecurity]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyGallerySecurity_SecurityKey]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyGallerySecurity] ADD  CONSTRAINT [DF_EasyGallerySecurity_SecurityKey]  DEFAULT (N'E') FOR [SecurityKey]
+END
+
+
+End
+GO
+/****** Object:  ForeignKey [FK_EasyGallerySecurity_EasyGallery]    Script Date: 09/19/2012 13:57:01 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySecurity_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySecurity]'))
+ALTER TABLE [dbo].[EasyGallerySecurity]  WITH CHECK ADD  CONSTRAINT [FK_EasyGallerySecurity_EasyGallery] FOREIGN KEY([GalleryID])
+REFERENCES [dbo].[EasyGallery] ([GalleryID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySecurity_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySecurity]'))
+ALTER TABLE [dbo].[EasyGallerySecurity] CHECK CONSTRAINT [FK_EasyGallerySecurity_EasyGallery]
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyGalleryPictures' and column_name = 'JournalId')
+BEGIN
+ALTER TABLE [dbo].[EasyGalleryPictures] ADD JournalId int NULL
+END
+GO
+
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}Journal') AND type in (N'U'))
+BEGIN
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryPictures_{objectQualifier}Journal]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryPictures]'))
+ALTER TABLE [dbo].[EasyGalleryPictures]  WITH CHECK ADD  CONSTRAINT [FK_EasyGalleryPictures_{objectQualifier}Journal] FOREIGN KEY([JournalId])
+REFERENCES {databaseOwner}{objectQualifier}Journal ([JournalId]) ON DELETE SET NULL
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryPictures_{objectQualifier}Journal]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryPictures]'))
+ALTER TABLE [dbo].[EasyGalleryPictures] CHECK CONSTRAINT [FK_EasyGalleryPictures_{objectQualifier}Journal]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNGalleryJournalBridge](
+	[PortalID] [int] NOT NULL,
+	[JournalCategoryID] [int] NOT NULL,
+	[Enabled] [bit] NOT NULL,
+	[LastCheck] [datetime] NULL,
+	[UserGalleriesCategoryID] [int] NOT NULL,
+	CONSTRAINT [PK_EasyDNNGalleryJournalBridge] PRIMARY KEY CLUSTERED ([PortalID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+/****** Object:  ForeignKey [FK_EasyDNNGalleryJournalBridge_{objectQualifier}Portals]    Script Date: 09/07/2012 14:10:16 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNGalleryJournalBridge_{objectQualifier}Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]'))
+ALTER TABLE [dbo].[EasyDNNGalleryJournalBridge]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNGalleryJournalBridge_{objectQualifier}Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNGalleryJournalBridge_{objectQualifier}Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]'))
+ALTER TABLE [dbo].[EasyDNNGalleryJournalBridge] CHECK CONSTRAINT [FK_EasyDNNGalleryJournalBridge_{objectQualifier}Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNGalleryJournalBridge_EasyGalleryCategory]    Script Date: 09/07/2012 14:10:16 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNGalleryJournalBridge_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]'))
+ALTER TABLE [dbo].[EasyDNNGalleryJournalBridge]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNGalleryJournalBridge_EasyGalleryCategory] FOREIGN KEY([JournalCategoryID])
+REFERENCES [dbo].[EasyGalleryCategory] ([CategoryID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNGalleryJournalBridge_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]'))
+ALTER TABLE [dbo].[EasyDNNGalleryJournalBridge] CHECK CONSTRAINT [FK_EasyDNNGalleryJournalBridge_EasyGalleryCategory]
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryListByCurrentUser]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNGalleryListByCurrentUser]
+END
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNGalleryListByCurrentUser]
+	@PortalID int,
+	@ModuleID int,
+	@GalleryID int,
+	@UserID int,
+	@CurrentUserID int,
+	@GroupId int = 1,
+	@ItemsFrom int = 1,
+	@ItemsTo int = 500,
+	@OrderBy nvarchar(20) = ''Position ASC''
+AS
+SET NOCOUNT ON;
+WITH tempEGP AS (
+	SELECT Distinct egp.[PictureID],egp.[PortalID],egp.[UserID],egp.[GalleryID],egp.[Title],egp.[Description],egp.[FileName],egp.[ThumbUrl],egp.[Position],egp.[MediaType],egp.[ShortEmbedUrl]
+	  ,egp.[ViewerThumb],egp.[Info],egp.[FileExtension],egp.[ImageUrl],egp.[DateUploaded],egp.[StartupImage],egp.[HiResVersion],egp.[JournalId]
+	FROM EasyGalleryPictures AS egp INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID 
+	INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+	INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+	LEFT OUTER JOIN EasyGallerySecurity AS egs on egs.GalleryID = eg.GalleryID
+	INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = egs.SecurityKey OR egs.SecurityKey IS NULL 
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+	UNION ALL
+	SELECT Distinct egp.[PictureID],egp.[PortalID],egp.[UserID],egp.[GalleryID],egp.[Title],egp.[Description],egp.[FileName],egp.[ThumbUrl],egp.[Position],egp.[MediaType],egp.[ShortEmbedUrl]
+	  ,egp.[ViewerThumb],egp.[Info],egp.[FileExtension],egp.[ImageUrl],egp.[DateUploaded],egp.[StartupImage],egp.[HiResVersion],egp.[JournalId]
+	FROM EasyGalleryPictures AS egp INNER JOIN {databaseOwner}{objectQualifier}Journal_Security as js ON js.JournalId = egp.JournalId
+	INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID 
+	INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+	INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+	INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = js.SecurityKey
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NOT NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+),
+tempct AS (SELECT gct.PictureID, gct.ThumbCreated From EasyGalleryCreatedThumbs gct Where gct.ModuleID = @ModuleID)
+SELECT * FROM (SELECT Distinct tempEGP.*,tempct.ThumbCreated, ROW_NUMBER() OVER (ORDER BY 
+	 CASE WHEN @OrderBy =''Position ASC'' THEN Position END,
+	 CASE WHEN @OrderBy =''Position DESC'' THEN Position END DESC,
+	 CASE WHEN @OrderBy =''DateUploaded ASC'' THEN DateUploaded END,
+	 CASE WHEN @OrderBy =''DateUploaded DESC'' THEN DateUploaded END DESC,
+	 CASE WHEN @OrderBy =''FileName ASC'' THEN FileName END,
+	 CASE WHEN @OrderBy =''FileName DESC'' THEN FileName END DESC,
+	 CASE WHEN @OrderBy =''Title ASC'' THEN Title END,
+	 CASE WHEN @OrderBy =''Title DESC'' THEN Title END DESC) as Kulike
+ FROM tempEGP left join tempct on tempEGP.PictureID = tempct.PictureID) AS Result
+ WHERE Kulike BETWEEN @ItemsFrom AND @ItemsTo ORDER BY 
+	 CASE WHEN @OrderBy =''Position ASC'' THEN Position END,
+	 CASE WHEN @OrderBy =''Position DESC'' THEN Position END DESC,
+	 CASE WHEN @OrderBy =''DateUploaded ASC'' THEN DateUploaded END,
+	 CASE WHEN @OrderBy =''DateUploaded DESC'' THEN DateUploaded END DESC,
+	 CASE WHEN @OrderBy =''FileName ASC'' THEN FileName END,
+	 CASE WHEN @OrderBy =''FileName DESC'' THEN FileName END DESC,
+	 CASE WHEN @OrderBy =''Title ASC'' THEN Title END,
+	 CASE WHEN @OrderBy =''Title DESC'' THEN Title END DESC
+' 
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryCountListByCurrentUser]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNGalleryCountListByCurrentUser]
+END
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNGalleryCountListByCurrentUser]
+	@PortalID int,
+	@ModuleID int,
+	@GalleryID int,
+	@UserID int,
+	@CurrentUserID int,
+	@GroupId int = 1
+AS
+SET NOCOUNT ON;
+WITH tempEGP AS (
+	SELECT Distinct egp.[PictureID] FROM EasyGalleryPictures AS egp
+		INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID
+		INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+		INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+		LEFT OUTER JOIN EasyGallerySecurity AS egs on egs.GalleryID = eg.GalleryID
+		INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = egs.SecurityKey OR egs.SecurityKey IS NULL 
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+	UNION ALL
+	SELECT Distinct egp.[PictureID] FROM EasyGalleryPictures AS egp
+		INNER JOIN {databaseOwner}{objectQualifier}Journal_Security as js ON js.JournalId = egp.JournalId
+		INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID
+		INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = js.SecurityKey
+	WHERE egp.JournalID IS NOT NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+)
+SELECT COUNT([PictureID]) FROM tempEGP
+' 

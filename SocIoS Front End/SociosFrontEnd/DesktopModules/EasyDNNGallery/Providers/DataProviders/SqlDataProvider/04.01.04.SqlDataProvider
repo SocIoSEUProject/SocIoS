@@ -1,0 +1,9 @@
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNThumbs' and column_name = 'CategoryID')
+BEGIN
+	ALTER TABLE EasyDNNThumbs ADD CategoryID int NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNThumbs' and column_name = 'AllNested')
+BEGIN
+	ALTER TABLE EasyDNNThumbs ADD AllNested bit NULL
+END

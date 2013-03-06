@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://socios/" xmlns:ns1="http://www.sociosproject.eu/sociosVoc/" targetNamespace="http://socios/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://epart.atc.gr:8080/SociosTranslateObject/TranslateService?xsd=1" namespace="http://www.sociosproject.eu/sociosVoc/" />
+  <xs:element name="detect" type="tns:detect" />
+  <xs:element name="detectResponse" type="tns:detectResponse" />
+  <xs:element name="getLanguagesForTranslate" type="tns:getLanguagesForTranslate" />
+  <xs:element name="getLanguagesForTranslateResponse" type="tns:getLanguagesForTranslateResponse" />
+  <xs:element name="translate" type="tns:translate" />
+  <xs:element name="translateMediaItem" type="tns:translateMediaItem" />
+  <xs:element name="translateMediaItemResponse" type="tns:translateMediaItemResponse" />
+  <xs:element name="translateResponse" type="tns:translateResponse" />
+  <xs:complexType name="translateMediaItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bingAppId" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="ns1:MediaItem" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+      <xs:element minOccurs="0" name="target" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="translateMediaItemResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:MediaItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="translate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bingAppId" type="xs:string" />
+      <xs:element minOccurs="0" name="text" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+      <xs:element minOccurs="0" name="target" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="translateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLanguagesForTranslate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bingAppId" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLanguagesForTranslateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detect">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bingAppId" type="xs:string" />
+      <xs:element minOccurs="0" name="text" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detectResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

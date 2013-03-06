@@ -1,0 +1,6 @@
+﻿.RadEditor ul li, .reDropDownBody ul li
+{list-style: none !important;}
+.RadEditor a, .reDropDownBody a
+{text-decoration: none !important;}
+div.RadWindow table.rwTitlebarControls ul.rwControlButtons li
+{list-style-type: none;}

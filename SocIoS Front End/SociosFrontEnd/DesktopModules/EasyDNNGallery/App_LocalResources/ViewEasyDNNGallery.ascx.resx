@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddContent.Action" xml:space="preserve">
+    <value>Add Content</value>
+  </data>
+  <data name="lblMainMessageResource1.Text" xml:space="preserve">
+    <value>Please add some images then setup gallery.</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;P&gt;A EasyDNNGallery module</value>
+  </data>
+  <data name="Images.Text" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="Audio.Text" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="EmbedVideo.Text" xml:space="preserve">
+    <value>Embeded video</value>
+  </data>
+  <data name="Videos.Text" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="GallerySettings.Text" xml:space="preserve">
+    <value>Gallery Settings</value>
+  </data>
+  <data name="ManageContent.Text" xml:space="preserve">
+    <value>Manage Content</value>
+  </data>
+  <data name="OpenLink.Text" xml:space="preserve">
+    <value>Open link</value>
+  </data>
+  <data name="PlaySlideShow.Text" xml:space="preserve">
+    <value>Play slideshow</value>
+  </data>
+  <data name="PauseSlideShow.Text" xml:space="preserve">
+    <value>Pause slideshow</value>
+  </data>
+  <data name="Fullscreen.Text" xml:space="preserve">
+    <value>Fullscreen</value>
+  </data>
+  <data name="OpenMedia.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="FileUploaded.Text" xml:space="preserve">
+    <value>File uploaded</value>
+  </data>
+  <data name="hlApproveMediaResource1.Text" xml:space="preserve">
+    <value>Media approval</value>
+  </data>
+  <data name="hlUploadQuerstrResource1.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="GeneralSettings.Text" xml:space="preserve">
+    <value>General module settings</value>
+  </data>
+  <data name="Activate.Text" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="All.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="DownloadImage.Text" xml:space="preserve">
+    <value>Download image</value>
+  </data>
+  <data name="DownloadAudio.Text" xml:space="preserve">
+    <value>Download audio</value>
+  </data>
+  <data name="ShowFullscreen.Text" xml:space="preserve">
+    <value>Show fullscreen</value>
+  </data>
+  <data name="EmailLink.Text" xml:space="preserve">
+    <value>Email the link</value>
+  </data>
+  <data name="EmailLinkSubject.Text" xml:space="preserve">
+    <value>Take a look at this image</value>
+  </data>
+  <data name="PrintImage.Text" xml:space="preserve">
+    <value>Print image</value>
+  </data>
+  <data name="Link.Text" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Share.Text" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="nextLinkText.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="nextPageLinkText.Text" xml:space="preserve">
+    <value>Next &amp;rsaquo;</value>
+  </data>
+  <data name="pauseLinkText.Text" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="playLinkText.Text" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="prevLinkText.Text" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="prevPageLinkText.Text" xml:space="preserve">
+    <value>&amp;lsaquo; Prev</value>
+  </data>
+  <data name="CrossPortalSharing.Text" xml:space="preserve">
+    <value>Cross portal sharing</value>
+  </data>
+  <data name="UserGalleries.Text" xml:space="preserve">
+    <value>My galleries</value>
+  </data>
+  <data name="CommunityModeSettings.Text" xml:space="preserve">
+    <value>Community mode settings</value>
+  </data>
+</root>

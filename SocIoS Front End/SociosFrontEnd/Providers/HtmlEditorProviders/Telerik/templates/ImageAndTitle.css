@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document with styles necessary for default HtmlEditor HTML "snippet" templates */
+
+/* Styles for ALL Default Templates */
+div.template
+{
+	text-align: left;
+	width: 100%;
+	overflow: auto;
+}
+
+div.template div.container
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	position: relative;
+}
+
+div.template div.region
+{
+	padding: 5px;
+	margin: 0;
+}
+
+/* Styles for "Image And Title" template */
+div.template.imageandtitle h3
+{
+	margin-top: 0;
+}
+
+div.template.imageandtitle img
+{
+	float: left;
+	margin: 0;
+	margin-right: 10px;
+}
+
+

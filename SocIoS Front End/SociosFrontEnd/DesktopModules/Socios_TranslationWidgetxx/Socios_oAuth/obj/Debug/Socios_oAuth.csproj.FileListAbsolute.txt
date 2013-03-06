@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_oAuth.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_oAuth.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_oAuth.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_oAuth\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_oAuth\obj\Debug\Socios_oAuth.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_oAuth\obj\Debug\Socios_oAuth.pdb

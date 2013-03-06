@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.sociosproject.eu/sociosVoc/" elementFormDefault="qualified" targetNamespace="http://www.sociosproject.eu/sociosVoc/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="MediaItem">
+    <xs:all>
+      <xs:element minOccurs="0" name="id" type="tns:ObjectId" />
+      <xs:element minOccurs="0" name="title" type="xs:string" />
+      <xs:element minOccurs="0" name="created" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="thumbnailUrl" type="xs:string" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="duration" type="xs:integer" />
+      <xs:element minOccurs="0" name="location" type="tns:Address" />
+      <xs:element minOccurs="0" name="language" type="xs:string" />
+      <xs:element minOccurs="0" name="albumId" type="tns:ObjectId" />
+      <xs:element minOccurs="0" name="fileSize" type="xs:long" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="rating" type="xs:integer" />
+      <xs:element minOccurs="0" name="numVotes" type="xs:integer" />
+      <xs:element minOccurs="0" name="numComments" type="xs:integer" />
+      <xs:element minOccurs="0" name="numViews" type="xs:integer" />
+      <xs:element minOccurs="0" name="tags" type="xs:string" />
+      <xs:element minOccurs="0" name="taggedPeople" type="xs:string" />
+      <xs:element minOccurs="0" name="mimeType" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="tns:MediaItemType" />
+      <xs:element minOccurs="0" name="url" type="xs:string" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="ObjectId">
+    <xs:all>
+      <xs:element name="id" type="xs:string" />
+      <xs:element name="source" type="tns:Source" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="Source">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="knownSns" type="tns:KnownSns" />
+      <xs:element minOccurs="0" name="openSocialSnsId" type="tns:OpenSocialSns" />
+      <xs:element minOccurs="0" name="otherId" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OpenSocialSns">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="baseUri" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Address">
+    <xs:all>
+      <xs:element minOccurs="0" name="country" type="xs:string" />
+      <xs:element minOccurs="0" name="extendedAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="locality" type="xs:string" />
+      <xs:element minOccurs="0" name="longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="poBox" type="xs:string" />
+      <xs:element minOccurs="0" name="postalCode" type="xs:string" />
+      <xs:element minOccurs="0" name="primary" type="xs:boolean" />
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+      <xs:element minOccurs="0" name="streetAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="formatted" type="xs:string" />
+    </xs:all>
+  </xs:complexType>
+  <xs:simpleType name="KnownSns">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FACEBOOK" />
+      <xs:enumeration value="YOUTUBE" />
+      <xs:enumeration value="TWITTER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MediaItemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AUDIO" />
+      <xs:enumeration value="IMAGE" />
+      <xs:enumeration value="VIDEO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

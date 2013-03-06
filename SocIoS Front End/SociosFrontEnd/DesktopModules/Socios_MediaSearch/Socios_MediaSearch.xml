@@ -1,0 +1,791 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Socios_MediaSearch</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The ViewSocios_MediaSearch class displays the content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.lstvw_MediaItemDetails">
+            <summary>
+            lstvw_MediaItemDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Ltrl_SearchResultsPageInfo">
+            <summary>
+            Ltrl_SearchResultsPageInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.lstvw_MediaItems">
+            <summary>
+            lstvw_MediaItems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Btn_PreviousPage">
+            <summary>
+            Btn_PreviousPage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Btn_NextPage">
+            <summary>
+            Btn_NextPage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_SearchQuery">
+            <summary>
+            Txt_SearchQuery control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.RqFldVld_Query">
+            <summary>
+            RqFldVld_Query control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_SearchOwner">
+            <summary>
+            Txt_SearchOwner control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_SearchLicense">
+            <summary>
+            Txt_SearchLicense control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_SearchLatitude">
+            <summary>
+            Txt_SearchLatitude control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_SearchLongitude">
+            <summary>
+            Txt_SearchLongitude control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Ltrl_SearchResultsInfo1">
+            <summary>
+            Ltrl_SearchResultsInfo1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Chkbx_Deserialize">
+            <summary>
+            Chkbx_Deserialize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Chkbx_UseProxy">
+            <summary>
+            Chkbx_UseProxy control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Chkbx_UseLocal">
+            <summary>
+            Chkbx_UseLocal control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Btn_SearchMedia">
+            <summary>
+            Btn_SearchMedia control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Ltrl_ServiceURL">
+            <summary>
+            Ltrl_ServiceURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.RdbtnLst_FilterSNS">
+            <summary>
+            RdbtnLst_FilterSNS control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Query_ID">
+            <summary>
+            Txt_Query_ID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Title">
+            <summary>
+            Txt_Title control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Owner_name">
+            <summary>
+            Txt_Owner_name control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Date_uploaded">
+            <summary>
+            Txt_Date_uploaded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Date_created">
+            <summary>
+            Txt_Date_created control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Lat">
+            <summary>
+            Txt_Lat control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Lon">
+            <summary>
+            Txt_Lon control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Item_id">
+            <summary>
+            Txt_Item_id control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Description">
+            <summary>
+            Txt_Description control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_License">
+            <summary>
+            Txt_License control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Category">
+            <summary>
+            Txt_Category control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Url">
+            <summary>
+            Txt_Url control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Type">
+            <summary>
+            Txt_Type control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Owner_id">
+            <summary>
+            Txt_Owner_id control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Tags">
+            <summary>
+            Txt_Tags control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Views">
+            <summary>
+            Txt_Views control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Height">
+            <summary>
+            Txt_Height control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Width">
+            <summary>
+            Txt_Width control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Rating">
+            <summary>
+            Txt_Rating control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Txt_Thumbnail_url">
+            <summary>
+            Txt_Thumbnail_url control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.View.Btn_FilterMedia">
+            <summary>
+            Btn_FilterMedia control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.Edit">
+            <summary>
+            EditSocios_MediaSearch class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSocios_MediaSearch class is used to manage content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for Socios_MediaSearch
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.Components.FeatureController.ExportModule(System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ExportModule implements the IPortable ExportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be exported</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.Components.FeatureController.ImportModule(System.Int32,System.String,System.String,System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ImportModule implements the IPortable ImportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be imported</param>
+            <param name="Content">The content to be imported</param>
+            <param name="Version">The version of the module to be imported</param>
+            <param name="UserId">The Id of the user performing the import</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.Components.FeatureController.GetSearchItems(DotNetNuke.Entities.Modules.ModuleInfo)">
+            -----------------------------------------------------------------------------
+            <summary>
+            GetSearchItems implements the ISearchable Interface
+            </summary>
+            <param name="ModInfo">The ModuleInfo for the module to be Indexed</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.Components.FeatureController.UpgradeModule(System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpgradeModule implements the IUpgradeable Interface
+            </summary>
+            <param name="Version">The current version of the module</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translate(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translateAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translateAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.getLanguagesForTranslate(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.getLanguagesForTranslateAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.getLanguagesForTranslateAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.detect(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.detectAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.detectAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translateMediaItem(System.String,DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translateMediaItemAsync(System.String,DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translateMediaItemAsync(System.String,DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.getLanguagesForTranslateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.detectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.TranslateService.translateMediaItemCompleted">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.id">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.title">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.created">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.createdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.thumbnailUrl">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.description">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.duration">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.location">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.language">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.albumId">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.fileSize">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.fileSizeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.startTime">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.startTimeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.rating">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.numVotes">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.numComments">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.numViews">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.tags">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.taggedPeople">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.mimeType">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.type">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.typeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItem.url">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.ObjectId">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.ObjectId.id">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.ObjectId.source">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Source">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Source.knownSns">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Source.knownSnsSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Source.openSocialSnsId">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Source.otherId">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.KnownSns">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.KnownSns.FACEBOOK">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.KnownSns.YOUTUBE">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.KnownSns.TWITTER">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.OpenSocialSns">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.OpenSocialSns.baseUri">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.country">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.extendedAddress">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.latitude">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.latitudeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.locality">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.longitude">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.longitudeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.poBox">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.postalCode">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.primary">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.primarySpecified">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.region">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.streetAddress">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.type">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.Address.formatted">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItemType">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItemType.AUDIO">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItemType.IMAGE">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.MediaItemType.VIDEO">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.translateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.translateCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.translateCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.getLanguagesForTranslateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.getLanguagesForTranslateCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.getLanguagesForTranslateCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.detectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.detectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.detectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.translateMediaItemCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.translateMediaItemCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_MediaSearch.SociosTranslationService.translateMediaItemCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.KnownSns.FACEBOOK">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.KnownSns.YOUTUBE">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.KnownSns.TWITTER">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.NetworkPresence.AWAY">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.NetworkPresence.CHAT">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.NetworkPresence.DND">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.NetworkPresence.OFFLINE">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.NetworkPresence.ONLINE">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.NetworkPresence.XA">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.MediaItemType.AUDIO">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.MediaItemType.IMAGE">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.MediaItemType.VIDEO">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.MessageStatus.NEW">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.MessageStatus.READ">
+            <remarks/>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_MediaSearch.MessageStatus.DELETED">
+            <remarks/>
+        </member>
+    </members>
+</doc>

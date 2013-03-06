@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions 
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:tns="http://www.somepartner.com/trendingItemsApi/" 
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="sociosApi" 
+  targetNamespace="http://www.somepartner.com/trendingItemsApi/"
+  xmlns:voc="http://www.sociosproject.eu/sociosVoc/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.somepartner.com/trendingItemsApi/"
+        xmlns:voc="http://www.sociosproject.eu/sociosVoc/">
+       <xsd:import namespace="http://www.sociosproject.eu/sociosVoc/"
+              schemaLocation="./socios-vocabulary.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PersonsGroup">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:personIdList" name="personIdList"/>
+  </wsdl:message>
+  <wsdl:message name="FollowedPersonsGroup">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:groupId" name="groupId"/>
+  </wsdl:message>
+  <wsdl:message name="ActivitiesResponse">
+    <wsdl:part element="voc:activityList" name="activityList"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemsResponse">
+    <wsdl:part element="voc:mediaItemList" name="mediaItemList"/>
+  </wsdl:message>
+  
+  <wsdl:portType name="trendingItemsApi">
+    <wsdl:operation name="FollowPeople">
+      <wsdl:input message="tns:PersonsGroup"/>
+      <wsdl:output message="tns:FollowedPersonsGroup"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrendingActivities">
+      <wsdl:input message="tns:FollowedPersonsGroup"/>
+      <wsdl:output message="tns:ActivitiesResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrendingMediaItems">
+      <wsdl:input message="tns:FollowedPersonsGroup"/>
+      <wsdl:output message="tns:MediaItemsResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="trendingItemsApiSOAP" type="tns:trendingItemsApi">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="FollowPeople">
+      <soap:operation soapAction="http://www.somepartner.com/trendingItemsApi/FollowPeople"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>    
+    <wsdl:operation name="GetTrendingActivities">
+      <soap:operation soapAction="http://www.somepartner.com/trendingItemsApi/GetTrendingActivities"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>  
+    <wsdl:operation name="GetTrendingMediaItems">
+      <soap:operation soapAction="http://www.somepartner.com/trendingItemsApi/GetTrendingMediaItems"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>    
+  </wsdl:binding>
+  <wsdl:service name="trendingItemsApi">
+    <wsdl:port binding="tns:trendingItemsApiSOAP" name="trendingItemsApiSOAP">
+      <soap:address location="http://www.somepartner.com/trendingItemsApi/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

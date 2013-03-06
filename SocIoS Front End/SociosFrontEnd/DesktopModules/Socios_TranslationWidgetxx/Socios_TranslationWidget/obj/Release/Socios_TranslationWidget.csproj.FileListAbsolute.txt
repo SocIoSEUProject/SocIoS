@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_TranslationWidget.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_TranslationWidget.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_TranslationWidget.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_TranslationWidget\obj\Release\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_TranslationWidget\obj\Release\Socios_TranslationWidget.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_TranslationWidget\obj\Release\Socios_TranslationWidget.pdb

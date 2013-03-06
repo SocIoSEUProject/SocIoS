@@ -1,0 +1,229 @@
+.RadPanelBar_MinimalExtropy
+{
+	background: #fff;
+}
+
+.RadPanelBar_MinimalExtropy .rpRootGroup
+{
+	border-color: #ebedf0;
+}
+
+.RadPanelBar_MinimalExtropy .rpLink,
+.RadPanelBar_MinimalExtropy .rpTemplate
+{
+	padding-left:7px;
+	color: #2e3d47;
+	font: normal 12px/24px "Segoe UI", Arial, sans-serif;
+}
+
+.RadPanelBar_MinimalExtropy .rpLink
+{
+	background-color: #f5f9fb;
+	border-color: #ebedf0;
+}
+.RadPanelBar_MinimalExtropy .rpImage
+{
+	margin-left:5px;
+}
+/* compensate for borders */
+
+.RadPanelBar_MinimalExtropy .rpOut
+{
+	border-color: #ebedf0;
+}
+
+.RadPanelBar_MinimalExtropy .rpExpanded
+{
+	border-color: #ebedf0;
+}
+
+.RadPanelBar_MinimalExtropy .rpLink:hover,
+.RadPanelBar_MinimalExtropy .rpFocused,
+.RadPanelBar_MinimalExtropy .rpSelected
+{
+	color: #2e3d47;
+}
+
+.RadPanelBar_MinimalExtropy .rpLink:hover,
+.RadPanelBar_MinimalExtropy .rpFocused
+{
+	background-color: #ebedf0;
+	border-color: #ebedf0;
+}
+
+.RadPanelBar_MinimalExtropy .rpSelected,
+.RadPanelBar_MinimalExtropy .rpSelected:hover
+{
+	background-color: #ebedf0;
+	border-color: #ebedf0;
+}
+
+div.RadPanelBar_MinimalExtropy .rpLink .rpOut,
+div.RadPanelBar_MinimalExtropy .rpFocused .rpOut, 
+div.RadPanelBar_MinimalExtropy .rpLink:hover .rpOut, 
+div.RadPanelBar_MinimalExtropy .rpSelected .rpOut, 
+div.RadPanelBar_MinimalExtropy .rpSelected:hover .rpOut
+{
+	padding-bottom: 1px;
+	border: 0;
+}
+
+/* <disabled items> */
+.RadPanelBar_MinimalExtropy .rpDisabled,
+.RadPanelBar_MinimalExtropy .rpDisabled:hover
+{
+	color: #ccc;
+	background-color: #f5f9fb;
+	border-color: #ebedf0;
+	cursor: default;
+}
+
+.RadPanelBar_MinimalExtropy .rpDisabled:hover .rpOut
+{
+	border-color: #ebedf0;
+}
+/* </disabled items> */
+
+/* <expand arrows> */
+.RadPanelBar_MinimalExtropy .rpExpandable .rpText,
+.RadPanelBar_MinimalExtropy .rpExpanded .rpText
+{
+	background-color: transparent;
+	background-image: url('PanelBar/Expandable.png');
+	background-repeat: no-repeat;
+}
+/* </expand arrows> */
+
+/* <subitems> */
+.RadPanelBar_MinimalExtropy .rpGroup
+{
+	background-color: #fff;
+}
+
+div.RadPanelBar_MinimalExtropy .rpGroup .rpLink,
+div.RadPanelBar_MinimalExtropy .rpGroup .rpTemplate
+{
+	color: #2e3d47;
+	background-color: transparent;
+	background-image: none;
+	border: 0;
+	margin: 0 2px;
+	padding: 1px 1px 1px 8px;
+}
+
+div.RadPanelBar_MinimalExtropy .rpGroup .rpLink:hover,
+div.RadPanelBar_MinimalExtropy .rpGroup .rpFocused,
+div.RadPanelBar_MinimalExtropy .rpGroup .rpSelected,
+div.RadPanelBar_MinimalExtropy .rpGroup .rpSelected:hover
+{
+	color: #2e3d47;
+	border: 1px solid #ebedf0;
+	background-color: #ebedf0;
+	padding: 0px 0px 0px 7px;
+}
+
+div.RadPanelBar_MinimalExtropy .rpGroup .rpSelected
+{
+	background-color: #ebedf0;
+	border-color: #ebedf0;
+}
+
+/* <subitems (disabled)> */
+div.RadPanelBar_MinimalExtropy .rpGroup .rpDisabled,
+div.RadPanelBar_MinimalExtropy .rpGroup .rpDisabled:hover
+{
+	color: #ccc;
+	text-decoration: none;
+	background-color: #fff;
+	border: 0;
+	padding: 0px 0px 0px 7px;
+}
+/* </subitems (disabled)> */
+
+/* <subitems> */
+
+/* <background positioning> */
+.RadPanelBar_MinimalExtropy .rpLink,
+.RadPanelBar_MinimalExtropy .rpExpanded
+{
+	background-position: 0 0;
+}
+
+.RadPanelBar_MinimalExtropy .rpFocused,
+.RadPanelBar_MinimalExtropy .rpLink:hover,
+.RadPanelBar_MinimalExtropy .rpExpanded:hover
+{
+	background-position: 0 -200px;
+}
+
+.RadPanelBar_MinimalExtropy .rpSelected,
+.RadPanelBar_MinimalExtropy .rpSelected:hover
+{
+	background-position: 0 -400px;
+}
+
+.RadPanelBar_MinimalExtropy .rpFirst .rpLink,
+.RadPanelBar_MinimalExtropy .rpFirst .rpExpanded
+{
+	background-position: 0 -1px;
+}
+
+.RadPanelBar_MinimalExtropy .rpFirst .rpFocused,
+.RadPanelBar_MinimalExtropy .rpFirst .rpLink:hover
+{
+	background-position: 0 -201px;
+}
+
+.RadPanelBar_MinimalExtropy .rpFirst .rpSelected,
+.RadPanelBar_MinimalExtropy .rpFirst .rpSelected:hover
+{
+	background-position: 0 -401px;
+}
+
+/*      <expand arrows> */
+.RadPanelBar_MinimalExtropy .rpExpandable .rpText,
+.RadPanelBar_MinimalExtropy .rpExpanded .rpText
+{
+	padding-right: 20px;
+	background-repeat: no-repeat;
+}
+
+.RadPanelBar_MinimalExtropy_rtl .rpExpandable .rpText,
+.RadPanelBar_MinimalExtropy_rtl .rpExpanded .rpText
+{
+	padding-left: 20px;
+}
+
+.RadPanelBar_MinimalExtropy_rtl .rpGroup .rpText
+{
+	padding: 0 10px;
+}
+
+.RadPanelBar_MinimalExtropy .rpExpandable .rpText { background-position: 100% 0; }
+.RadPanelBar_MinimalExtropy .rpExpanded .rpText { background-position: 100% -176px; }
+.RadPanelBar_MinimalExtropy_rtl .rpExpandable .rpText { background-position: 0 0; }
+.RadPanelBar_MinimalExtropy_rtl .rpExpanded .rpText { background-position: 0 -176px; }
+
+.RadPanelBar_MinimalExtropy .rpGroup .rpExpandable .rpText { background-position: 100% -338px; }
+.RadPanelBar_MinimalExtropy .rpGroup .rpExpanded .rpText { background-position: 100% -477px; }
+.RadPanelBar_MinimalExtropy_rtl .rpGroup .rpExpandable .rpText { background-position: 0 -338px; }
+.RadPanelBar_MinimalExtropy_rtl .rpGroup .rpExpanded .rpText { background-position: 0 -477px; }
+
+/*      </expand arrows> */
+
+.RadPanelBar_MinimalExtropy .rpGroup .rpLink,
+.RadPanelBar_MinimalExtropy .rpGroup .rpLink .rpOut { background-position: 0 200px; }
+
+.RadPanelBar_MinimalExtropy .rpGroup .rpLink:hover,
+.RadPanelBar_MinimalExtropy .rpGroup .rpFocused { background-position: 100% -22px; }
+.RadPanelBar_MinimalExtropy .rpGroup .rpLink:hover .rpOut,
+.RadPanelBar_MinimalExtropy .rpGroup .rpFocused .rpOut { background-position: 0 0; }
+
+/*      <subitems (selected)> */
+.RadPanelBar_MinimalExtropy .rpGroup .rpSelected,
+.RadPanelBar_MinimalExtropy .rpGroup .rpSelected:hover { background-position: 100% -222px; background-color: transparent; }
+.RadPanelBar_MinimalExtropy .rpGroup .rpSelected .rpOut,
+.RadPanelBar_MinimalExtropy .rpGroup .rpSelected:hover .rpOut { background-position: 0 -200px; }
+/*      </subitems (selected)> */
+
+/* </background positioning> */

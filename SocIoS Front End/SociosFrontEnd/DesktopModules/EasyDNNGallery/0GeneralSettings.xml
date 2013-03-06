@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GallerySettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserCategoriesGalleries>cats</UserCategoriesGalleries>
+  <jQuery>False</jQuery>
+  <jQueryNoConflict>False</jQueryNoConflict>
+  <ManageContentRoles>;Administrators;</ManageContentRoles>
+  <GallerySettingsRoles>;Administrators;</GallerySettingsRoles>
+</GallerySettings>

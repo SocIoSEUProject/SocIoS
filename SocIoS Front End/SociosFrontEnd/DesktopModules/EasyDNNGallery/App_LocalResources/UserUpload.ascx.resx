@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddEmbedVideoResource1.Text" xml:space="preserve">
+    <value>Add video</value>
+  </data>
+  <data name="btnCloseUpload2Resource1.Text" xml:space="preserve">
+    <value>Close Upload</value>
+  </data>
+  <data name="btnCloseUploadResource1.Text" xml:space="preserve">
+    <value>Close Upload</value>
+  </data>
+  <data name="btnSaveMultiAudioUploadResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveMultiImageUploadResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSingleImageUploadResource1.Text" xml:space="preserve">
+    <value>Upload image</value>
+  </data>
+  <data name="btnUploadAudioResource1.Text" xml:space="preserve">
+    <value>Upload audio</value>
+  </data>
+  <data name="cbAudioUploadFilenameAsTitleResource1.Text" xml:space="preserve">
+    <value>Use filename as title</value>
+  </data>
+  <data name="cbAudioUploadRemoveExtenzionResource1.Text" xml:space="preserve">
+    <value>Remove extension</value>
+  </data>
+  <data name="cbAudioUploadTitleReplaceMinusResource1.Text" xml:space="preserve">
+    <value>Set this to replace "-" with blank space in title</value>
+  </data>
+  <data name="cbAudioUploadTitleReplaceUnderscoreResource1.Text" xml:space="preserve">
+    <value>Set this to replace "_" with blank space in title</value>
+  </data>
+  <data name="cbMultiAudioUploadFilenameAsTitleResource1.Text" xml:space="preserve">
+    <value>Use filename as title</value>
+  </data>
+  <data name="cbMultiAudioUploadRemoveExtenzionResource1.Text" xml:space="preserve">
+    <value>Remove extension</value>
+  </data>
+  <data name="cbMultiAudioUploadTitleReplaceMinusResource1.Text" xml:space="preserve">
+    <value>Set this to replace "-" with blank space in title</value>
+  </data>
+  <data name="cbMultiAudioUploadTitleReplaceUnderscoreResource1.Text" xml:space="preserve">
+    <value>Set this to replace "_" with blank space in title</value>
+  </data>
+  <data name="cbMultiImageUploadFilenameAsTitleResource1.Text" xml:space="preserve">
+    <value>Use filename as title</value>
+  </data>
+  <data name="cbMultiImageUploadRemoveExtenzionResource1.Text" xml:space="preserve">
+    <value>Remove extension</value>
+  </data>
+  <data name="cbMultiImageUploadseExifMetadataDescriptionResource1.Text" xml:space="preserve">
+    <value>Use Exif metadata as description</value>
+  </data>
+  <data name="cbMultiImageUploadTitleReplaceMinusResource1.Text" xml:space="preserve">
+    <value>Set this to replace "-" with blank space in title</value>
+  </data>
+  <data name="cbMultiImageUploadTitleReplaceUnderscoreResource1.Text" xml:space="preserve">
+    <value>Set this to replace "_" with blank space in title</value>
+  </data>
+  <data name="cbMultiImageUploadTitleUseMetadataResource1.Text" xml:space="preserve">
+    <value>Use Exif metadata as title</value>
+  </data>
+  <data name="cbSinbleImageUploadTitleReplaceMinusResource1.Text" xml:space="preserve">
+    <value>Set this to replace "-" with blank space in title</value>
+  </data>
+  <data name="cbSingleImageUploadFilenameAsTitleResource1.Text" xml:space="preserve">
+    <value>Use filename as title</value>
+  </data>
+  <data name="cbSingleImageUploadRemoveExtenzionResource1.Text" xml:space="preserve">
+    <value>Remove extension</value>
+  </data>
+  <data name="cbSingleImageUploadseExifMetadataDescriptionResource1.Text" xml:space="preserve">
+    <value>Use Exif metadata as description</value>
+  </data>
+  <data name="cbSingleImageUploadTitleReplaceUnderscoreResource1.Text" xml:space="preserve">
+    <value>Set this to replace "_" with blank space in title</value>
+  </data>
+  <data name="cbSingleImageUploadTitleUseMetadataResource1.Text" xml:space="preserve">
+    <value>Use Exif metadata as title</value>
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>UserUpload</value>
+  </data>
+  <data name="lbAudioUploadResource1.Text" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="lbImageUploadResource1.Text" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="lblAudioUploadFileResource1.Text" xml:space="preserve">
+    <value>Upload audio file</value>
+  </data>
+  <data name="lblMultiAudioUploadFileResource1.Text" xml:space="preserve">
+    <value>Upload audio file</value>
+  </data>
+  <data name="lblSingleImageUploadResource1.Text" xml:space="preserve">
+    <value>Single image upload</value>
+  </data>
+  <data name="lbMultiAudioUploadResource1.Text" xml:space="preserve">
+    <value>Multi audio upload</value>
+  </data>
+  <data name="lbMultiImageUploadResource1.Text" xml:space="preserve">
+    <value>Multi image upload</value>
+  </data>
+  <data name="lbSingleAudioUploadResource1.Text" xml:space="preserve">
+    <value>Single audio upload</value>
+  </data>
+  <data name="lbSingleImageUploadResource1.Text" xml:space="preserve">
+    <value>Single Image</value>
+  </data>
+  <data name="lbVideoUploadResource1.Text" xml:space="preserve">
+    <value>Embed video</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Set this to change title to uppercase</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>Subject location</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>Image description</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>Subject location</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>Set this to change title to uppercase</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>Set this to change title to lowercase</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>Set this to change first letter of every 
+                                        word in title to uppercase</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Set this to change title to lowercase</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>Set this to change first letter of title to 
+                                        uppercase</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>Image description</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>Subject location</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>Image description</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Set this to change first letter of every 
+                                        word in title to uppercase</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>Subject location</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>YouTube</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>Vimeo</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>Dailymotion</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>Metacafe</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>Auto create thumbnail</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value>Upload thumbnail</value>
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>Use standard image</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Set this to change first letter of title to 
+                                        uppercase</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>Set this to change title to uppercase</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>Set this to change title to lowercase</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>Set this to change first letter of every 
+                                        word in title to uppercase</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>Set this to change first letter of title to 
+                                        uppercase</value>
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>Use standard image</value>
+  </data>
+  <data name="ListItemResource45.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="ListItemResource46.Text" xml:space="preserve">
+    <value>Set this to change title to uppercase</value>
+  </data>
+  <data name="ListItemResource47.Text" xml:space="preserve">
+    <value>Set this to change title to lowercase</value>
+  </data>
+  <data name="ListItemResource48.Text" xml:space="preserve">
+    <value>Set this to change first letter of every 
+                                        word in title to uppercase</value>
+  </data>
+  <data name="ListItemResource49.Text" xml:space="preserve">
+    <value>Set this to change first letter of title to 
+                                        uppercase</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="ListItemResource50.Text" xml:space="preserve">
+    <value>Use standard image</value>
+  </data>
+  <data name="ListItemResource51.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>Image description</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="rfvEmbedVideoCodeResource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvEmbedVideoSourceSelectResource1.ErrorMessage" xml:space="preserve">
+    <value>Please select.</value>
+  </data>
+  <data name="rfvEmbedVideoTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvEmbedVideoURLResource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="ClearQueue.Text" xml:space="preserve">
+    <value>Clear queue</value>
+  </data>
+  <data name="StartUpload.Text" xml:space="preserve">
+    <value>Start upload</value>
+  </data>
+  <data name="SelectFiles.Text" xml:space="preserve">
+    <value>Select files</value>
+  </data>
+  <data name="lblSingleImageUploadDescription.HelpText" xml:space="preserve">
+    <value>Enter the image description.</value>
+  </data>
+  <data name="lblSingleImageUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblSingleImageUploadTitle.HelpText" xml:space="preserve">
+    <value>Enter the image title:</value>
+  </data>
+  <data name="lblSingleImageUploadTitle.Text" xml:space="preserve">
+    <value>Image title:</value>
+  </data>
+  <data name="lblMultiImageUploadDescription.HelpText" xml:space="preserve">
+    <value>Enter the image description:</value>
+  </data>
+  <data name="lblMultiImageUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblSingleImageUploadSelectFile.HelpText" xml:space="preserve">
+    <value>Select image file to upload:</value>
+  </data>
+  <data name="lblSingleImageUploadSelectFile.Text" xml:space="preserve">
+    <value>Image file to upload:</value>
+  </data>
+  <data name="lblSingleUmageUploadUrl.HelpText" xml:space="preserve">
+    <value>Enter url for media link:</value>
+  </data>
+  <data name="lblSingleUmageUploadUrl.Text" xml:space="preserve">
+    <value>Enter url:</value>
+  </data>
+  <data name="lblUmageUploadUrl.HelpText" xml:space="preserve">
+    <value>Enter url for media link:</value>
+  </data>
+  <data name="lblUmageUploadUrl.Text" xml:space="preserve">
+    <value>Enter url:</value>
+  </data>
+  <data name="lblAudioUploadDescription.HelpText" xml:space="preserve">
+    <value>Enter the audio file description:</value>
+  </data>
+  <data name="lblAudioUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblAudioUploadEnterTitle.HelpText" xml:space="preserve">
+    <value>Enter the audio file title:</value>
+  </data>
+  <data name="lblAudioUploadEnterTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblAudioUploadSelectFile.HelpText" xml:space="preserve">
+    <value>Select audio file to upload:</value>
+  </data>
+  <data name="lblAudioUploadSelectFile.Text" xml:space="preserve">
+    <value>Select file:</value>
+  </data>
+  <data name="lblAudioUploadThumbnailSelect.HelpText" xml:space="preserve">
+    <value>Upload the thumbnail for video file or use standard image:</value>
+  </data>
+  <data name="lblAudioUploadThumbnailSelect.Text" xml:space="preserve">
+    <value>Thumbnail:</value>
+  </data>
+  <data name="lblEembedVideoUrl.HelpText" xml:space="preserve">
+    <value>Embed video url:</value>
+  </data>
+  <data name="lblEembedVideoUrl.Text" xml:space="preserve">
+    <value>Video url:</value>
+  </data>
+  <data name="lblEmbedVideoCode.HelpText" xml:space="preserve">
+    <value>Enter video embed code:</value>
+  </data>
+  <data name="lblEmbedVideoCode.Text" xml:space="preserve">
+    <value>Embed code:</value>
+  </data>
+  <data name="lblEmbedVideoDescription.HelpText" xml:space="preserve">
+    <value>Enter video description:</value>
+  </data>
+  <data name="lblEmbedVideoDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblEmbedVideoEnterTitle.HelpText" xml:space="preserve">
+    <value>Enter video title:</value>
+  </data>
+  <data name="lblEmbedVideoEnterTitle.Text" xml:space="preserve">
+    <value>Video title:</value>
+  </data>
+  <data name="lblEmbedVideoTitle.HelpText" xml:space="preserve">
+    <value>Embed video from various video sites.</value>
+  </data>
+  <data name="lblEmbedVideoTitle.Text" xml:space="preserve">
+    <value>Embed Video</value>
+  </data>
+  <data name="lblMultiAudioUploadDescription.HelpText" xml:space="preserve">
+    <value>Enter the audio file description:</value>
+  </data>
+  <data name="lblMultiAudioUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblMultiAudioUploadEnterTitle.HelpText" xml:space="preserve">
+    <value>Enter the audio file title:</value>
+  </data>
+  <data name="lblMultiAudioUploadEnterTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lblMultiAudioUploadFile.Text" xml:space="preserve">
+    <value>Upload multiple audio file</value>
+  </data>
+  <data name="lblMultiAudioUploadThumbnailSelect.HelpText" xml:space="preserve">
+    <value>Upload the thumbnail for video file or use standard image:</value>
+  </data>
+  <data name="lblMultiAudioUploadThumbnailSelect.Text" xml:space="preserve">
+    <value>Thumbnail:</value>
+  </data>
+  <data name="rfvEmbedVideoCode.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvEmbedVideoSourceSelect.ErrorMessage" xml:space="preserve">
+    <value>Please select.</value>
+  </data>
+  <data name="rfvEmbedVideoTitle.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvEmbedVideoURL.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="FileUploaded.Text" xml:space="preserve">
+    <value>File uploaded.</value>
+  </data>
+  <data name="FileSaved.Text" xml:space="preserve">
+    <value>File saved.</value>
+  </data>
+  <data name="AmazonListItemResource79.Text" xml:space="preserve">
+    <value>Set this to change title to uppercase</value>
+  </data>
+  <data name="AmazonListItemResource80.Text" xml:space="preserve">
+    <value>Set this to change title to lowercase</value>
+  </data>
+  <data name="AmazonListItemResource81.Text" xml:space="preserve">
+    <value>Set this to change first letter of every  word in title to uppercase</value>
+  </data>
+  <data name="AmazonListItemResource82.Text" xml:space="preserve">
+    <value>Set this to change first letter of title to uppercase</value>
+  </data>
+  <data name="AmazonListItemResource83.Text" xml:space="preserve">
+    <value>Use standard image</value>
+  </data>
+  <data name="AmazonListItemResource84.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="btnAmazonVideoUpload.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnVideoUploadResource1.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="cbAmazonVideoUploadFilenameAsTitleResource1.Text" xml:space="preserve">
+    <value>Use filename as title</value>
+  </data>
+  <data name="cbAmazonVideoUploadTitleRemoveExtenzionResource1.Text" xml:space="preserve">
+    <value>Remove extension</value>
+  </data>
+  <data name="cbAmazonVideoUploadTitleReplaceMinusResource1.Text" xml:space="preserve">
+    <value>Set this to replace &amp;quot;-&amp;quot; with blank space in title</value>
+  </data>
+  <data name="cbAmazonVideoUploadTitleReplaceUnderscoreResource1.Text" xml:space="preserve">
+    <value>Set this to replace &amp;quot;_&amp;quot; with blank space in title</value>
+  </data>
+  <data name="cbVideoUploadFilenameAsTitleResource1.Text" xml:space="preserve">
+    <value>Use filename as title</value>
+  </data>
+  <data name="cbVideoUploadTitleRemoveExtenzionResource1.Text" xml:space="preserve">
+    <value>Remove extension</value>
+  </data>
+  <data name="cbVideoUploadTitleReplaceMinusResource1.Text" xml:space="preserve">
+    <value>Set this to replace &amp;quot;-&amp;quot; with blank space in title</value>
+  </data>
+  <data name="cbVideoUploadTitleReplaceUnderscoreResource1.Text" xml:space="preserve">
+    <value>Set this to replace &amp;quot;_&amp;quot; with blank space in title</value>
+  </data>
+  <data name="cvVideoUploadheightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVideoUploadWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="lblAmazonS3Title.Text" xml:space="preserve">
+    <value>Amazon S3</value>
+  </data>
+  <data name="lblAmazonUploadVideoTitle.HelpText" xml:space="preserve">
+    <value>Enter the title of video file:</value>
+  </data>
+  <data name="lblAmazonUploadVideoTitle.Text" xml:space="preserve">
+    <value>Video title:</value>
+  </data>
+  <data name="lblAmazonUploadVideoURL.HelpText" xml:space="preserve">
+    <value>Aamazon S3 video URL link:</value>
+  </data>
+  <data name="lblAmazonUploadVideoURL.Text" xml:space="preserve">
+    <value>Aamazon S3 video URL link:</value>
+  </data>
+  <data name="lblAmazonVideoUploadDescription.HelpText" xml:space="preserve">
+    <value>Enter the video description:</value>
+  </data>
+  <data name="lblAmazonVideoUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblAmazonVideoUploadHeight.HelpText" xml:space="preserve">
+    <value>Enter the video height to be used when displaying video:</value>
+  </data>
+  <data name="lblAmazonVideoUploadHeight.Text" xml:space="preserve">
+    <value>Video height:</value>
+  </data>
+  <data name="lblAmazonVideoUploadSelectThumbnailToUploadResource1.Text" xml:space="preserve">
+    <value>Select thumbnail to upload:</value>
+  </data>
+  <data name="lblAmazonVideoUploadWidth.HelpText" xml:space="preserve">
+    <value>Enter the video width to be used displaying video:</value>
+  </data>
+  <data name="lblAmazonVideoUploadWidth.Text" xml:space="preserve">
+    <value>Video width:</value>
+  </data>
+  <data name="lblMultiVideoUploadTitle.Text" xml:space="preserve">
+    <value>Multi video upload</value>
+  </data>
+  <data name="lblSingleVideoUploadTitle.Text" xml:space="preserve">
+    <value>Single video upload</value>
+  </data>
+  <data name="lblVideoUploadDescription.HelpText" xml:space="preserve">
+    <value>Enter the video description:</value>
+  </data>
+  <data name="lblVideoUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblVideoUploadFileSelect.HelpText" xml:space="preserve">
+    <value>Please select the file to upload:</value>
+  </data>
+  <data name="lblVideoUploadFileSelect.Text" xml:space="preserve">
+    <value>Please select the file to upload:</value>
+  </data>
+  <data name="lblVideoUploadHeight.HelpText" xml:space="preserve">
+    <value>Enter the video height to be used when displaying video:</value>
+  </data>
+  <data name="lblVideoUploadHeight.Text" xml:space="preserve">
+    <value>Video height:</value>
+  </data>
+  <data name="lblVideoUploadSelectStandardThumbnailResource1.Text" xml:space="preserve">
+    <value>Select standard thumbnail:</value>
+  </data>
+  <data name="lblVideoUploadSelectThumbnailToUploadResource1.Text" xml:space="preserve">
+    <value>Select thumbnail to upload:</value>
+  </data>
+  <data name="lblVideoUploadThumbnail.HelpText" xml:space="preserve">
+    <value>Upload the thumbnail for video file or use standard image:</value>
+  </data>
+  <data name="lblVideoUploadThumbnail.Text" xml:space="preserve">
+    <value>Thumbnail:</value>
+  </data>
+  <data name="lblVideoUploadVideoTitle.HelpText" xml:space="preserve">
+    <value>Enter the title of video file:</value>
+  </data>
+  <data name="lblVideoUploadVideoTitle.Text" xml:space="preserve">
+    <value>Video title:</value>
+  </data>
+  <data name="lblVideoUploadWidth.HelpText" xml:space="preserve">
+    <value>Enter the video width to be used displaying video:</value>
+  </data>
+  <data name="lblVideoUploadWidth.Text" xml:space="preserve">
+    <value>Video width:</value>
+  </data>
+  <data name="ListItemResource79.Text" xml:space="preserve">
+    <value>Set this to change title to uppercase</value>
+  </data>
+  <data name="ListItemResource80.Text" xml:space="preserve">
+    <value>Set this to change title to lowercase</value>
+  </data>
+  <data name="ListItemResource81.Text" xml:space="preserve">
+    <value>Set this to change first letter of every  word in title to uppercase</value>
+  </data>
+  <data name="ListItemResource82.Text" xml:space="preserve">
+    <value>Set this to change first letter of title to uppercase</value>
+  </data>
+  <data name="ListItemResource83.Text" xml:space="preserve">
+    <value>Use standard image</value>
+  </data>
+  <data name="ListItemResource84.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="SelectVideos.Text" xml:space="preserve">
+    <value>Select files</value>
+  </data>
+  <data name="lblAmazonAudioUploadDescription.HelpText" xml:space="preserve">
+    <value>Enter the audio description:</value>
+  </data>
+  <data name="lblAmazonAudioUploadDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblAmazonAudioUploadThumbnail.HelpText" xml:space="preserve">
+    <value>Upload the thumbnail for audio file or use standard image:</value>
+  </data>
+  <data name="lblAmazonAudioUploadThumbnail.Text" xml:space="preserve">
+    <value>Thumbnail:</value>
+  </data>
+  <data name="lblAmazonUploadAudioTitle.HelpText" xml:space="preserve">
+    <value>Enter the title of audio file:</value>
+  </data>
+  <data name="lblAmazonUploadAudioTitle.Text" xml:space="preserve">
+    <value>Audio title:</value>
+  </data>
+  <data name="lblAmazonUploadAudioURL.HelpText" xml:space="preserve">
+    <value>Aamazon S3 audio URL link:</value>
+  </data>
+  <data name="lblAmazonUploadAudioURL.Text" xml:space="preserve">
+    <value>Aamazon S3 audio URL link:</value>
+  </data>
+  <data name="EmbededVideoAdded.Text" xml:space="preserve">
+    <value>Embed video added</value>
+  </data>
+  <data name="EmbededVideoAddedAdminApprove.Text" xml:space="preserve">
+    <value>Embed video added. It will be visible when it is approved.</value>
+  </data>
+  <data name="FileUploadedAdminApprove.Text" xml:space="preserve">
+    <value>File uploaded. It will be visible when it is approved.</value>
+  </data>
+  <data name="MultipleFilesUploaded.Text" xml:space="preserve">
+    <value>Files uploaded.</value>
+  </data>
+  <data name="MultipleFilesUploadedAdminApprove.Text" xml:space="preserve">
+    <value>Files uploaded. They will be visible when approved.</value>
+  </data>
+  <data name="lblMultiImageUploadResource1.Text" xml:space="preserve">
+    <value>Multi image upload</value>
+  </data>
+  <data name="lbUserUploadAmazonS3.Text" xml:space="preserve">
+    <value>Amazon S3</value>
+  </data>
+  <data name="lbUserUploadMultiVideoUpload.Text" xml:space="preserve">
+    <value>Multi video upload</value>
+  </data>
+  <data name="lbUserUploadSingleVideoUpload.Text" xml:space="preserve">
+    <value>Single video upload</value>
+  </data>
+  <data name="lbUserUploadVideo.Text" xml:space="preserve">
+    <value>Video files</value>
+  </data>
+</root>

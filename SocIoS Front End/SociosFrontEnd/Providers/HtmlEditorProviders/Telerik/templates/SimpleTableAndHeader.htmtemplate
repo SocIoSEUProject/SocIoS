@@ -1,0 +1,43 @@
+<div class="template simpletableandheader">
+  <div class="container region content">
+    <h3>Title Goes Here</h3>
+    <table cellspacing="0" cellpadding="0">
+      <caption>
+        Table Caption
+      </caption>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Col&nbsp;A</th>
+          <th><p>Col&nbsp;B</p></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Row&nbsp;1</th>
+          <td>Cell&nbsp;A1</td>
+          <td>Cell&nbsp;B1</td>
+        </tr>
+        <tr>
+          <th>Row&nbsp;2</th>
+          <td>Cell&nbsp;A2</td>
+          <td>Cell&nbsp;B2</td>
+        </tr>
+        <tr>
+          <th>Row&nbsp;3</th>
+          <td>Cell&nbsp;A3</td>
+          <td>Cell&nbsp;B3</td>
+        </tr>
+        <tr>
+          <th>Row&nbsp;4</th>
+          <td>Cell&nbsp;A4</td>
+          <td>Cell&nbsp;B4</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Type the text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+        ornare, nisl ac vehicula volutpat, tellus sem congue sem, et varius ipsum neque 
+        in tortor. Curabitur massa nunc, ultricies ac mollis id, varius ac sapien. Duis 
+        nec dolor ac velit semper malesuada eget non dolor. </p>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="UploadImages.ashx.cs" Class="EasyDNN.Modules.EasyDNNGallery.UploadImages" %>

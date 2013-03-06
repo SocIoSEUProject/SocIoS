@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TemplateInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InfoText1>AJAX enabled video gallery with thumbnails. You can put only one gallery on the same page.</InfoText1>
+  <InfoText2>None</InfoText2>
+  <ControlsToDisable>cbVideoGallery2ShowSocialSharing,cbVG2SSOpenOnButton</ControlsToDisable>
+</TemplateInfo>

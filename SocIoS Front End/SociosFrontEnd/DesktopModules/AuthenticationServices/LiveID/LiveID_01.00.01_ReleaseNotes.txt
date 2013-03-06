@@ -1,0 +1,6 @@
+This is a minor bug-fix upgrade of the First Release of the LiveID Authentication Provider.
+
+Bugs Fixed
+==========
+
+ACD-7256 Fixed Config class to work with DNN 5.0

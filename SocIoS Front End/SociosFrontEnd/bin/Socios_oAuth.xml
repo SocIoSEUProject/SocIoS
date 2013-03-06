@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Socios_oAuth</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.Socios_oAuth.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for Socios_oAuth
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.Components.FeatureController.ExportModule(System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ExportModule implements the IPortable ExportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be exported</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.Components.FeatureController.ImportModule(System.Int32,System.String,System.String,System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ImportModule implements the IPortable ImportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be imported</param>
+            <param name="Content">The content to be imported</param>
+            <param name="Version">The version of the module to be imported</param>
+            <param name="UserId">The Id of the user performing the import</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.Components.FeatureController.GetSearchItems(DotNetNuke.Entities.Modules.ModuleInfo)">
+            -----------------------------------------------------------------------------
+            <summary>
+            GetSearchItems implements the ISearchable Interface
+            </summary>
+            <param name="ModInfo">The ModuleInfo for the module to be Indexed</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.Components.FeatureController.UpgradeModule(System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpgradeModule implements the IUpgradeable Interface
+            </summary>
+            <param name="Version">The current version of the module</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_oAuth.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The ViewSocios_oAuth class displays the content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lblOAuthInfoJournalists">
+            <summary>
+            lblOAuthInfoJournalists control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lblOAuthInfoCandidates">
+            <summary>
+            lblOAuthInfoCandidates control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_youtube_wrapper">
+            <summary>
+            div_youtube_wrapper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_RefreshTokens">
+            <summary>
+            lnkbtn_RefreshTokens control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowYoutube">
+            <summary>
+            rowYoutube control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_youtube_status">
+            <summary>
+            div_youtube_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_YouTube">
+            <summary>
+            lnkbtn_YouTube control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_YouTubeDeauthorize">
+            <summary>
+            lnkbtn_YouTubeDeauthorize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_YouTubeSuccess">
+            <summary>
+            pnl_YouTubeSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lbl_YouTubeAccessToken">
+            <summary>
+            lbl_YouTubeAccessToken control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowTwitter">
+            <summary>
+            rowTwitter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_twitter_status">
+            <summary>
+            div_twitter_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_Twitter">
+            <summary>
+            lnkbtn_Twitter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_TwitterDeauthorize">
+            <summary>
+            lnkbtn_TwitterDeauthorize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_TwitterSuccess">
+            <summary>
+            pnl_TwitterSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lblTwitterUsername">
+            <summary>
+            lblTwitterUsername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowFacebook">
+            <summary>
+            rowFacebook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_facebook_status">
+            <summary>
+            div_facebook_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_Facebook">
+            <summary>
+            lnkbtn_Facebook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_FacebookDeauthorize">
+            <summary>
+            lnkbtn_FacebookDeauthorize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_FacebookSuccess">
+            <summary>
+            pnl_FacebookSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lbl_FacebookAccessToken">
+            <summary>
+            lbl_FacebookAccessToken control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowDailymotion">
+            <summary>
+            rowDailymotion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_dailymotion_status">
+            <summary>
+            div_dailymotion_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_Dailymotion">
+            <summary>
+            lnkbtn_Dailymotion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_DailymotionDeauthorize">
+            <summary>
+            lnkbtn_DailymotionDeauthorize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_DailymotionSuccess">
+            <summary>
+            pnl_DailymotionSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lbl_DailymotionAccessToken">
+            <summary>
+            lbl_DailymotionAccessToken control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowFlickr">
+            <summary>
+            rowFlickr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_flickr_status">
+            <summary>
+            div_flickr_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_Flickr">
+            <summary>
+            lnkbtn_Flickr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_FlickrDeauthorize">
+            <summary>
+            lnkbtn_FlickrDeauthorize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_FlickrSuccess">
+            <summary>
+            pnl_FlickrSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lbl_FlickrAccessToken">
+            <summary>
+            lbl_FlickrAccessToken control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowMySpace">
+            <summary>
+            rowMySpace control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_myspace_status">
+            <summary>
+            div_myspace_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_Myspace">
+            <summary>
+            lnkbtn_Myspace control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_MyspaceDeauthorize">
+            <summary>
+            lnkbtn_MyspaceDeauthorize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_MySpaceSuccess">
+            <summary>
+            pnl_MySpaceSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lbl_MyspaceAccessToken">
+            <summary>
+            lbl_MyspaceAccessToken control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowInstagram">
+            <summary>
+            rowInstagram control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_instagram_status">
+            <summary>
+            div_instagram_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_Instagram">
+            <summary>
+            lnkbtn_Instagram control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_InstagramDeauthorize">
+            <summary>
+            lnkbtn_InstagramDeauthorize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_InstagramSuccess">
+            <summary>
+            pnl_InstagramSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lbl_InstagramUsername">
+            <summary>
+            lbl_InstagramUsername control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.rowGoogleP">
+            <summary>
+            rowGoogleP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.div_googlep_status">
+            <summary>
+            div_googlep_status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lnkbtn_GooglePlusContacts">
+            <summary>
+            lnkbtn_GooglePlusContacts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.LinkButton1">
+            <summary>
+            LinkButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnl_GooglePlusContactsSuccess">
+            <summary>
+            pnl_GooglePlusContactsSuccess control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.lbl_GooglePlusContactsAccessToken">
+            <summary>
+            lbl_GooglePlusContactsAccessToken control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_oAuth.View.pnlCandidateGoToMediaSearch">
+            <summary>
+            pnlCandidateGoToMediaSearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_oAuth.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_oAuth.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_oAuth.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSocios_oAuth class is used to manage content
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditSocios_oAuth class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.ConsumerKey">
+            <summary>
+            insert offsite consumer key here
+            </summary>
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.ConsumerSecret">
+            <summary>
+            Insert offsite consumer secret here
+            </summary>
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.OnSiteConsumerKey">
+            <summary>
+            insert onsite consumer key here
+            </summary>
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.OnSiteConsumerSecret">
+            <summary>
+            Insert onsite consumer secret here
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_oAuth.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_oAuth.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

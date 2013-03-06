@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Item.Columns">
+		<value>6</value>
+	</data>
+	<data name="FolderDn.Image">
+		<value>folder.jpg</value>
+	</data>
+	<data name="FolderUp.Image">
+		<value>up.jpg</value>
+	</data>
+	<data name="Item.Width">
+		<value>100</value>
+	</data>
+	<data name="Item.Height">
+		<value>100</value>
+	</data>
+	<data name="Item.CompactNameChars">
+		<value>15</value>
+	</data>
+	<data name="Window.Width">
+		<value>700</value>
+	</data>
+	<data name="Window.Height">
+		<value>600</value>
+	</data>
+	<data name="ListControl.CssClass">
+		<value>FCKImageGalleryListStyle</value>
+	</data>
+	<data name="ListControl.ItemCssClass">
+		<value>FCKImageGalleryItemContainer</value>
+	</data>
+	<data name="ListControl.AlternatingItemCssClass">
+		<value>FCKImageGalleryItemContainer</value>
+	</data>
+	<data name="UploadCommandButton.CssClass">
+		<value>CommandButton</value>
+	</data>
+	<data name="UploadCommandLink.CssClass">
+		<value>CommandButton</value>
+	</data>
+	<data name="ErrorMessage.CssClass">
+		<value>FCKImageGalleryErrorLabel</value>
+	</data>
+</root>

@@ -1,0 +1,131 @@
+#media-results-pane
+{
+	width:600px;
+	float:left;
+	border: 1px solid;
+	border-top-color: #aaa;
+	border-right-color: #ddd;
+	border-bottom-color: #ccc;
+	border-left-color: #bbb;
+	padding:20px;
+	padding-top:14px;
+	background-color:#fff;
+}
+
+.media-item-hidden
+{
+	float:left;
+	width:190px;
+	display:none;
+}
+
+.media-item
+{
+	float:left;
+	width:600px;
+}
+
+#search-button-wrapper
+{
+	margin-top:10px;
+}
+
+.media-item-summary
+{
+	float:left;
+}
+
+.media-item-wrapper
+{
+	float:left;
+	width:200px;
+}
+
+.media-details-wrapper
+{
+	margin-left:20px;
+	line-height:16px;
+}
+
+.media-details-trigger
+{
+	cursor: pointer;
+}
+
+#media-item-details-wrapper
+{
+	width:600px;
+	float:left;
+	border: 1px solid;
+	border-top-color: #aaa;
+	border-right-color: #ddd;
+	border-bottom-color: #ccc;
+	border-left-color: #bbb;
+	padding:20px;
+	padding-top:10px;
+	background-color:#fff;
+	margin-right:10px;
+	margin-bottom:20px;
+}
+
+.media-item-group-separator
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	height:10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#search-form
+{
+	width:210px;
+}
+
+.media-item-Flickr
+{
+	float:left;
+	background-image: url('Images/flickr.png');
+	width:32px;
+	height:32px;
+	margin-bottom:5px;
+}
+
+.media-item-youtube
+{
+	float:left;
+	background-image: url('Images/youtube.png');
+	width:32px;
+	height:32px;
+	margin-bottom:5px;
+}
+
+.media-item-dailymotion
+{
+	float:left;
+	background-image: url('Images/dailymotion.png');
+	width:32px;
+	height:32px;
+	margin-bottom:5px;
+}
+
+.media-item-title
+{
+	width:70%;
+	float:left;
+	margin-left:5px;
+	margin-bottom:5px;
+}
+
+.success
+{
+	background-color: #e5fdd0;
+	border: 1px solid #76A477;
+	padding:8px;
+	margin-top:10px;
+	
+}
+
+.media-item-details-left
+{
+	width:210px;
+}

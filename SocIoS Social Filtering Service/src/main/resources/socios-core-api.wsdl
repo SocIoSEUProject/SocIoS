@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions 
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:tns="http://www.sociosproject.eu/sociosApi/" 
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="sociosApi" 
+  targetNamespace="http://www.sociosproject.eu/sociosApi/"
+  xmlns:voc="http://www.sociosproject.eu/sociosVoc/">
+  <wsdl:types>
+		<xsd:schema targetNamespace="http://www.sociosproject.eu/sociosApi/"
+			xmlns:voc="http://www.sociosproject.eu/sociosVoc/">
+			<xsd:import namespace="http://www.sociosproject.eu/sociosVoc/"
+				schemaLocation="./socios-vocabulary.xsd" />
+			<xsd:element name="InteractWithUser">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />						<xsd:element type="voc:ObjectId" name="personId" />
+						<xsd:element type="voc:ObjectId" name="mediaItemId" />
+						<xsd:element type="xsd:string" name="messageText" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ConnectedPersons">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:ObjectId" name="personId" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="FindPersons">
+				<xsd:complexType>
+					<xsd:sequence>
+					  <xsd:element type="xsd:string" name="sociosApiUserKey" />
+            <xsd:element name="personFilter" type="voc:PersonFilter"/>
+            <xsd:element name="mediaItemIdList" type="voc:MediaItemIdList"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetPersons">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:PersonIdList" name="personIdList" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="FindMediaItems">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+            <xsd:element name="filterMediaItem" type="voc:MediaItemFilter"/>
+            <xsd:element name="filterPerson" type="voc:PersonFilter"/>
+            <xsd:element name="personIdList" type="voc:PersonIdList"/>
+         </xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="FindMyMediaItems">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:ObjectId" name="personId" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetMediaItems">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:MediaItemIdList" name="mediaItemIdList" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetMediaItemsDisplay">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:ObjectId" name="mediaItemId" />
+					</xsd:sequence>
+				</xsd:complexType>
+				
+				
+			</xsd:element>
+			<xsd:element name="FindActivities">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+	          <xsd:element name="activityFilter" type="voc:ActivityFilter"/>
+            <xsd:element name="personFilter" type="voc:PersonFilter"/>
+            <xsd:element name="mediaItemIdList" type="voc:MediaItemIdList"/>
+            <xsd:element name="personIdList" type="voc:PersonIdList"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetActivities">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:ActivityIdList" name="activityIds" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="FindConnectedActivities">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:ActivityIdList" name="activityIds" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<!--
+			<xsd:element name="GetSociosId">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="snsId"
+							type="voc:ObjectId">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetSociosIdResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="sociosApiUserKey" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetAllSociosIds">
+				<xsd:complexType>
+					<xsd:sequence>
+
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetAllSociosIdsResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="sociosApiUserKey" type="xsd:string" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			-->
+			<xsd:element name="MyConnectedPersons">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element type="xsd:string" name="sociosApiUserKey" />
+						<xsd:element type="voc:ObjectId" name="personId" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			
+			<xsd:element name="fault" type="voc:SociosException" />
+			<xsd:element name="RegisterListener">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="sociosEventListener" type="voc:SociosEventListener"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+				
+			</xsd:element>
+
+			<xsd:element name="RegisterListenerResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			
+			<xsd:element name="UnregisterListener">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="initiatorType" type="voc:InitiatorType"></xsd:element>
+						<xsd:element name="subscriptionId" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UnregisterListenerResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:boolean"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetMediaItemsDisplayResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="mediaItemDisplayList" type="voc:MediaItemDisplayList"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import
+				namespace="http://www.sociosproject.eu/sociosVoc/"
+				schemaLocation="socios-vocabulary.xsd">
+			</xsd:import></xsd:schema></wsdl:types>
+  
+<!-- MESSAGES (REQUESTS) -->
+  <wsdl:message name="InteractWithUserRequest">
+    <wsdl:part element="tns:InteractWithUser" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ConnectedPersonsRequest">
+    <wsdl:part element="tns:ConnectedPersons" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="FindPersonsRequest">
+    <wsdl:part element="tns:FindPersons" name="parameters"/>
+  </wsdl:message>  
+  <wsdl:message name="GetPersonsRequest">
+    <wsdl:part element="tns:GetPersons" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="FindMediaItemsRequest">
+    <wsdl:part element="tns:FindMediaItems" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetMediaItemsRequest">
+    <wsdl:part element="tns:GetMediaItems" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="FindMyMediaItemsRequest">
+    <wsdl:part element="tns:FindMyMediaItems" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetMediaItemsDisplayRequest">
+  	<wsdl:part name="parameters" element="tns:GetMediaItemsDisplay"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FindActivitiesRequest">
+    <wsdl:part element="tns:FindActivities" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetActivitiesRequest">
+    <wsdl:part element="tns:GetActivities" name="parameters"/>
+  </wsdl:message>
+   <wsdl:message name="FindConnectedActivitiesRequest">
+    <wsdl:part element="tns:FindConnectedActivities" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="MyConnectedPersonsRequest">
+  	<wsdl:part element="tns:MyConnectedPersons" name="parameters" ></wsdl:part>
+  </wsdl:message>
+  <!--
+  <wsdl:message name="GetSociosIdRequest">
+  	<wsdl:part name="parameters" element="tns:GetSociosId" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSociosIdsRequest">
+  	<wsdl:part name="parameters" element="tns:GetAllSociosIds"></wsdl:part>
+  </wsdl:message> 
+  -->
+   <wsdl:message name="RegisterListenerRequest">
+  	<wsdl:part name="parameters" element="tns:RegisterListener"></wsdl:part>
+  </wsdl:message>
+    <wsdl:message name="UnregisterListenerRequest">
+  	<wsdl:part name="parameters" element="tns:UnregisterListener"></wsdl:part>
+  </wsdl:message>
+  
+<!-- MESSAGES (RESPONSES) -->
+  <wsdl:message name="PersonsResponse">
+    <wsdl:part element="voc:personReturnObject" name="personReturnObject"/>
+  </wsdl:message>   
+  <wsdl:message name="PersonIdResponse">
+    <wsdl:part element="voc:personId" name="personId"/>
+  </wsdl:message>
+  <wsdl:message name="PersonIdListResponse">
+    <wsdl:part element="voc:personIdList" name="personIdList"/>
+  </wsdl:message>
+  <wsdl:message name="ActivitiesResponse">
+    <wsdl:part element="voc:activityReturnObject" name="activityReturnObject"/>
+  </wsdl:message>
+  <wsdl:message name="ActivityIdListResponse">
+    <wsdl:part element="voc:activityIdList" name="activityIdList"/>
+  </wsdl:message>
+  <wsdl:message name="ActivityIdResponse">
+    <wsdl:part element="voc:activityId" name="activityId"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemIdResponse">
+    <wsdl:part element="voc:mediaItemId" name="mediaItemId"/>
+  </wsdl:message>  
+  <wsdl:message name="MediaItemIdListResponse">
+    <wsdl:part element="voc:mediaItemIdList" name="mediaItemIdList"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemsResponse">
+    <wsdl:part element="voc:mediaItemReturnObject" name="mediaItemReturnObject"/>
+  </wsdl:message>
+  <!--
+  <wsdl:message name="GetSociosIdResponse">
+  	<wsdl:part name="parameters" element="tns:GetSociosIdResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetAllSociosIdsResponse">
+  	<wsdl:part name="parameters" element="tns:GetAllSociosIdsResponse"></wsdl:part>
+  </wsdl:message>
+  -->
+  <wsdl:message name="RegisterListenerResponse">
+  	<wsdl:part name="parameters" element="tns:RegisterListenerResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UnregisterListenerResponse">
+  	<wsdl:part name="parameters" element="tns:UnregisterListenerResponse"></wsdl:part>
+  </wsdl:message>
+  
+  <wsdl:message name="GetMediaItemsDisplayResponse">
+  	<wsdl:part name="parameters" element="tns:GetMediaItemsDisplayResponse"></wsdl:part>
+  </wsdl:message>
+
+<!-- ERRORS (FAULTS) -->
+  <wsdl:message name="SociosException">
+     <wsdl:part name="fault" element="tns:fault"/>  
+  </wsdl:message>
+
+
+
+
+  <wsdl:portType name="sociosApi">
+    <wsdl:operation name="InteractWithUser">
+      <wsdl:input message="tns:InteractWithUserRequest"/>  
+    </wsdl:operation>   
+    <wsdl:operation name="ConnectedPersons">
+      <wsdl:input message="tns:ConnectedPersonsRequest"/>
+      <wsdl:output message="tns:PersonsResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+    <wsdl:operation name="FindPersons">
+      <wsdl:input message="tns:FindPersonsRequest"/>
+      <wsdl:output message="tns:PersonsResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersons">
+      <wsdl:input message="tns:GetPersonsRequest"/>
+      <wsdl:output message="tns:PersonsResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+    <wsdl:operation name="FindMediaItems">
+      <wsdl:input message="tns:FindMediaItemsRequest"/>
+      <wsdl:output message="tns:MediaItemsResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaItems">
+      <wsdl:input message="tns:GetMediaItemsRequest"/>
+      <wsdl:output message="tns:MediaItemsResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+    <wsdl:operation name="FindMyMediaItems">
+      <wsdl:input message="tns:FindMyMediaItemsRequest"/>
+      <wsdl:output message="tns:MediaItemsResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaItemsDisplay">
+		<wsdl:input message="tns:GetMediaItemsDisplayRequest"/>
+		<wsdl:output message="tns:GetMediaItemsDisplayResponse"/>
+		<wsdl:fault name="fault" message="tns:SociosException"/>
+	</wsdl:operation>
+    <wsdl:operation name="FindActivities">
+      <wsdl:input message="tns:FindActivitiesRequest"/>
+      <wsdl:output message="tns:ActivitiesResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivities">
+      <wsdl:input message="tns:GetActivitiesRequest"/>
+      <wsdl:output message="tns:ActivitiesResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>   
+    <wsdl:operation name="FindConnectedActivities">
+      <wsdl:input message="tns:FindConnectedActivitiesRequest"/>
+      <wsdl:output message="tns:ActivitiesResponse"/>
+      <wsdl:fault name="fault" message="tns:SociosException"/>
+    </wsdl:operation>
+	<!--
+    <wsdl:operation name="GetSociosId">
+    	<wsdl:input message="tns:GetSociosIdRequest"></wsdl:input>
+    	<wsdl:output message="tns:GetSociosIdResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSociosIds">
+    	<wsdl:input message="tns:GetAllSociosIdsRequest"></wsdl:input>
+    	<wsdl:output message="tns:GetAllSociosIdsResponse"></wsdl:output>
+    </wsdl:operation>
+	-->
+	<wsdl:operation name="MyConnectedPersons">
+		<wsdl:input message="tns:MyConnectedPersonsRequest"></wsdl:input>
+		<wsdl:output message="tns:PersonsResponse"></wsdl:output>
+		<wsdl:fault name="fault" message="tns:SociosException"/>
+	</wsdl:operation>
+	<wsdl:operation name="RegisterListener">
+		<wsdl:input message="tns:RegisterListenerRequest"></wsdl:input>
+		<wsdl:output message="tns:RegisterListenerResponse"></wsdl:output>
+		<wsdl:fault name="fault" message="tns:SociosException"/>
+	</wsdl:operation>
+	<wsdl:operation name="UnregisterListener">
+		<wsdl:input message="tns:UnregisterListenerRequest"></wsdl:input>
+		<wsdl:output message="tns:UnregisterListenerResponse"></wsdl:output>
+		<wsdl:fault name="fault" message="tns:SociosException"/>
+	</wsdl:operation>
+  </wsdl:portType>
+
+	<wsdl:binding name="sociosApiSOAP" type="tns:sociosApi">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="InteractWithUser">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/InteractWithUser" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+		</wsdl:operation>
+		<wsdl:operation name="ConnectedPersons">
+			<soap:operation
+				soapAction="http://www.sociosproject.eu/sociosApi/ConnectedPersons" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="FindPersons">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/FindPersons" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetPersons">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/GetPersons" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="FindMediaItems">
+			<soap:operation
+				soapAction="http://www.sociosproject.eu/sociosApi/FindMediaItems" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetMediaItems">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/GetMediaItems" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="FindMyMediaItems">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/FindMyMediaItems" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetMediaItemsDisplay">
+			<soap:operation
+				soapAction="http://www.sociosproject.eu/sociosApi/GetMediaItemsDisplay" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="FindActivities">
+			<soap:operation
+				soapAction="http://www.sociosproject.eu/sociosApi/FindActivities" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetActivities">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/GetActivities" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="FindConnectedActivities">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/FindConnectedActivities" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<!--
+		<wsdl:operation name="GetSociosId">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/GetSociosId" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>			
+		<wsdl:operation name="GetAllSociosIds">
+			<soap:operation soapAction="http://www.sociosproject.eu/sociosApi/GetAllSociosIds" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>		
+       -->		
+       <wsdl:operation name="MyConnectedPersons">
+			<soap:operation
+				soapAction="http://www.sociosproject.eu/sociosApi/MyConnectedPersons" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	    <wsdl:operation name="RegisterListener">
+			<soap:operation
+				soapAction="http://www.sociosproject.eu/sociosApi/RegisterListener" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="UnregisterListener">
+			<soap:operation
+				soapAction="http://www.sociosproject.eu/sociosApi/UnregisterListener" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	
+  <wsdl:service name="sociosApi">
+    <wsdl:port binding="tns:sociosApiSOAP" name="sociosApiSOAP">
+      <soap:address location="http://www.sociosproject.eu/sociosApi/"/>
+    </wsdl:port>
+  </wsdl:service>
+  
+</wsdl:definitions>

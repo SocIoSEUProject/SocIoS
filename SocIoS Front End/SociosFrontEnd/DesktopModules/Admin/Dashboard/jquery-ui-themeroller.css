@@ -1,0 +1,106 @@
+/*dialog*/
+.ui-dialog {
+	/*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.0; text-decoration: none; font-size: 100%; list-style: none;
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;	font-size: 1.0em; background: #fafafa url(images/textures_01_flat_0.png) 0 0 repeat-x;
+	color: #362b36;	border: 4px solid #dddddd;	position: relative; }
+
+.ui-resizable-handle { position: absolute;	font-size: 0.1px; z-index: 99999; }
+.ui-resizable .ui-resizable-handle { display: block; }
+body .ui-resizable-disabled .ui-resizable-handle { display: none; } /* use 'body' to make it more specific (css order) */
+body .ui-resizable-autohide .ui-resizable-handle { display: none; } /* use 'body' to make it more specific (css order) */
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0px; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0px; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0px; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 13px; height: 13px; right: 0px; bottom: 0px; background: url(images/icon_resize_se.gif) no-repeat 0 0; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: 0px; bottom: 0px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: 0px; top: 0px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: 0px; top: 0px; }
+
+.ui-dialog-titlebar { /*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.0; text-decoration: none; font-size: 100%; list-style: none;
+	padding: .25em 1em .25em 1em; color: #444444; background: #e1f1fe url(images/textures_02_glass_80.png) 0 50% repeat-x;
+	border-bottom: 1px solid #cccccc; font-size: 1em; font-weight: normal;	position: relative; }
+.ui-dialog-title {}
+.ui-dialog-titlebar-close {	/*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.0; text-decoration: none; font-size: 100%; list-style: none;
+	background: url(images/icon_close.gif) 0 0 no-repeat; position: absolute; right: 8px; top: .25em; width: 16px; height: 16px; z-index: 100; }
+.ui-dialog-titlebar-close-hover, .ui-dialog-titlebar-close:hover { background: url(images/icon_close_hover.gif) 0 0 no-repeat; }
+.ui-dialog-titlebar-close:active { background: url(images/icon_close.gif) 0 0 no-repeat; }
+.ui-dialog-titlebar-close span { display: none; }
+
+.ui-dialog-content { /*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+	color: #362b36;	padding: 1.5em 1.7em; }
+
+.ui-dialog-buttonpane {	position: absolute;	bottom: 0; width: 100%;	text-align: left; border-top: 1px solid #dddddd; background: #fafafa; }
+.ui-dialog-buttonpane button { margin: .5em 0 .5em 8px;	color: #444444;	background: #e1f1fe url(images/textures_02_glass_80.png) 0 50% repeat-x;
+	font-size: 1em;	border: 1px solid #cccccc; cursor: pointer;	padding: .2em .6em .3em .6em; line-height: 1.4em; }
+.ui-dialog-buttonpane button:hover { color: #111111; background: #d8d8d8 url(images/textures_02_glass_90.png) 0 50% repeat-x; border: 1px solid #888888; }
+.ui-dialog-buttonpane button:active { color: #000000; background: #b5dafa url(images/textures_02_glass_50.png) 0 50% repeat-x; border: 1px solid #2694e8; }
+/* This file skins dialog */
+.ui-dialog.ui-draggable .ui-dialog-titlebar,
+.ui-dialog.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+/*UI ProgressBar */
+.ui-progressbar {
+	/*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1.2em; background: #fafafa url(images/textures_01_flat_0.png) 0 0 repeat-x;
+	border: 1px solid #dddddd;	position: relative; }
+.ui-progressbar-bar { background: #e1f1fe url(images/textures_02_glass_80.png) 0 50% repeat-x; overflow: visible; position: relative;
+	border: 1px solid #cccccc;	margin-top: -1px; margin-left: -1px; margin-bottom: -1px; }
+.ui-progressbar-text { color: #444444; padding: .2em .5em; font-weight: normal; }
+.ui-progressbar-text-back {	display: none;
+/*	position: absolute;
+	top: 1px;
+	left: 0px;
+	font-weight: normal;
+	color:#000;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 1px;
+*/
+}
+.ui-progressbar-disabled { opacity:.5; filter:Alpha(Opacity=50); }
+
+/*component global class*/
+.ui-component {	/*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;	font-size: 1.2em; }
+	
+/*component content styles*/
+.ui-component-content {	border: 1px solid #dddddd; background: #fafafa url(images/textures_01_flat_0.png) 0 0 repeat-x;	color: #362b36;}
+.ui-component-content a { color: #362b36; text-decoration: underline;}
+
+/*component states*/
+.ui-default-state {	border: 1px solid #cccccc; background: #e1f1fe url(images/textures_02_glass_80.png) 0 50% repeat-x;
+	font-weight: normal; color: #444444 !important; }
+.ui-default-state a { color: #444444;}
+.ui-default-state:hover, .ui-hover-state { border: 1px solid #888888; background: #d8d8d8 url(images/textures_02_glass_90.png) 0 50% repeat-x;
+	font-weight: normal; color: #111111 !important;}
+.ui-hover-state a {	color: #111111; }
+.ui-default-state:active, .ui-active-state { border: 1px solid #2694e8;	background: #b5dafa url(images/textures_02_glass_50.png) 0 50% repeat-x;
+	font-weight: normal; color: #000000 !important;	outline: none; }
+.ui-active-state a { color: #000000; outline: none; }
+
+/*icons*/
+.ui-close-default {background: url(images/icon_close.gif) no-repeat 50% 50%;}
+.ui-close-default:hover, .ui-close-hover {background: url(images/icon_close_hover.gif) no-repeat 50% 50%;}
+.ui-close-default:active, .ui-close-active {background: url(images/icon_close.gif) no-repeat 50% 50%;}
+.ui-close-content {background: url(images/icon_close.gif) no-repeat 50% 50%;}
+
+/*hidden elements*/
+.ui-hidden {
+	display: none;/* for accessible hiding: position: absolute; left: -99999999px*/;
+}
+.ui-accessible-hidden {
+	 position: absolute; left: -99999999px;
+}
+
+/*reset styles*/
+.ui-reset {	/*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+
+/*clearfix class*/
+.ui-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .ui-clearfix {height: 1%;}
+.ui-clearfix {display: block;}
+/* End hide from IE-mac */

@@ -1,0 +1,61 @@
+.h5video, .support-message { overflow: hidden; position: relative; font-family: calibri, "Lucida Sans", sans-serif; color: #fff; font-size: 16px; position: absolute; z-index: 1000; }
+.h5video video { height: 100%; width: 100%; }
+.h5video .control-panel { height: 45px; width:100%; line-height: 45px; bottom: 0px; left: 0px; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEdJREFUeNpiYGBg2Mzg6+v7iunu3bt/mIBcBqb///8jE//+/cPOJZaFkwDbxggEIOI/iGCAE4wQFhAw4GIxYZWFcSEGAAQYAB5zRmw2StEiAAAAAElFTkSuQmCC") repeat-x scroll 0 0 transparent; position: absolute;  }
+
+.h5video .poster { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; }
+.fullscreen { position: fixed; top: 0px; left: 0px; height: 100%; width: 100%;}
+
+.h5video .control-panel .size,
+.h5video .control-panel .mute,
+.h5video .control-panel .un-mute,
+.h5video .control-panel .full
+.h5video .control-panel .shrink,
+.h5video .control-panel .pause,
+.h5video .control-panel .play { display: inline-block; background-position: center center; background-repeat: no-repeat; height: 45px; width: 40px; text-indent: 1000px; text-decoration: none; outline-style: none; cursor: pointer; }
+
+.h5video .control-panel .pause { background-image: url(images/pause.png); } 
+.h5video .control-panel .pause:hover { background-image: url(images/over_pause.png); }
+
+.h5video .control-panel .play { background-image: url(images/play.png); }
+.h5video .control-panel .play:hover { background-image: url(images/over_play.png); }
+
+.h5video .control-panel .mute,
+.h5video .control-panel .un-mute,
+.h5video .control-panel .full,
+.h5video .control-panel .interval,
+.h5video .control-panel .shrink { float: right; }
+
+
+.h5video .control-panel .mute { background-image: url(images/mute.png); }
+.h5video .control-panel .mute:hover { background-image: url(images/over_mute.png); }
+
+.h5video .control-panel .un-mute { background-image: url(images/unmute.png); }
+.h5video .control-panel .un-mute:hover { background-image: url(images/over_unmute.png); }
+
+.h5video .control-panel .full { background-image: url(images/expand.png); }
+.h5video .control-panel .full:hover { background-image: url(images/over_expand.png); }
+
+.h5video .control-panel .shrink { background-image: url(images/shrink.png); }
+.h5video .control-panel .shrink:hover { background-image: url(images/over_shrink.png); }
+
+.h5video .control-panel .interval { display: inline-block; vertical-align: middle; width: auto; padding: 0px 5px; color: #fff; }
+
+.h5video .control-panel .seek-bar { position: absolute; top: 20px; left: 45px; width: 520px; height: 7px;  cursor: pointer; display: inline-block; background: #888; }
+.h5video .control-panel .seek-bar-guage { height: 7px; background: url("data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAICAAAAAAdccqdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABdJREFUCB1j+M/0g+kr02emj0D4mekrAD41B7hJ9Jz5AAAAAElFTkSuQmCC") repeat-x scroll 0 0 transparent/* #C9DD1A */; width: 0%; left: 0px; z-index: 2; position: absolute; z-index: 0; }
+.h5video .control-panel .seek-bar-buffer { height: 7px; width: 0px; top:0px; left: 0px; position: absolute; z-index: 0; background: url(data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAICAIAAAC3eAIWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiyMrKYvrz5w/Tr1+/wPjnz59w/Pv3b4AAAwBFtxXP00sbFwAAAABJRU5ErkJggg==); }
+
+.support-message { background: #000; padding: 50px; color: #fff; position: inherit; }
+.support-message p { margin: 0 0 25px 0; color: #fff; }
+.support-message p a { text-decoration: none; color: #fff; margin-right: 15px; }
+.support-message p a:hover { color: #C9DD1A; }
+.support-message p img { vertical-align: middle; margin-right: 10px; border: none; height: 40px; width: 40px; }
+
+
+.h5video .buffering { height: 60px; width: 60px; display: block; position: absolute; background: #000 url(images/clock.png) no-repeat center center; right: 25px; top: 25px; }
+
+.h5video .full-control-panel { position: fixed; bottom: 35px; z-index: 10; }
+
+
+.rounded { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.shadowed { -moz-box-shadow: 0px 0px 8px #777; -webkit-box-shadow: 0px 0px 8px #777; box-shadow: 0px 0px 8px #777; }
+.shadowed-white { -moz-box-shadow: 0px 0px 4px #FFF; -webkit-box-shadow: 0px 0px 4px #FFF; box-shadow: 0px 0px 4px #FFF; }

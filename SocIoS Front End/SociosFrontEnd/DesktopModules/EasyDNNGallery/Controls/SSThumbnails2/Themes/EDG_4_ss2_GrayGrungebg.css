@@ -1,0 +1,1152 @@
+﻿/*
+EasyDNNGallery CSS file
+
+Instructions: To properly create theme the first ID selector (# EDG_4_ss2_GrayGrungebg) must equal the name of the css file
+(example: this file is called EDG_1_Darkgraybg.css and the first ID selector must called EDG_4_ss2_GrayGrungebg).
+ Names may be in its sole discretion,
+ only important thing is  that the first ID selector is the same as css filename so the theme is correct.
+ To quickly change the name of the first ID selector use the find / replace function in your editor.
+*/
+
+
+/* Lightbox Gallery */
+#EDG_4_ss2_GrayGrungebg .EDGmain {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	float: left;
+	position: relative;
+	
+}
+
+/*Lighbox gallery - Image*/
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a {
+	text-decoration: none;
+
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a:hover {
+	cursor: pointer;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a img {
+	
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a:hover img {
+	
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a input {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a:hover input {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a .flag 
+{
+	
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a:hover .flag {
+	/*position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_image.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+	line-height:normal;
+}
+
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage a:hover .title 
+{
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGimage .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+/*Lighbox gallery - Video*/
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a {
+	text-decoration: none;
+	float: left;
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a:hover {
+	cursor: pointer;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a .flag {
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a:hover .flag {
+	/*position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_video.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+	line-height:normal;
+}
+
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo a:hover .title 
+{
+		border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGvideo .Description
+{
+	font-size: 9px;
+	font-style: italic;
+	line-height:normal;
+}
+
+
+/*Lighbox gallery - Audio*/
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio {
+	text-decoration: none;
+	float: left;
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a:hover {
+	cursor: pointer;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a .flag 
+{
+	
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a:hover .flag
+{
+	/*position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_audio.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+	line-height:normal;
+}
+
+
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio a:hover .title 
+{
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGmain .EDGaudio .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+/*END Lighbox gallery */
+
+
+/*Gallery background  - if you want gallery without a background delete the settings, but leave empty class */
+
+#EDG_4_ss2_GrayGrungebg .EDGbackground
+{
+	
+	margin-right: auto;
+	margin-left: auto;
+	float:left;
+	display:block;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGbackground .EDGcontent
+{
+	padding: 20px 6px 35px 6px;
+	float: left;
+	display: block;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGbackground .EDGcontentbgrd
+{
+	background-image: url(images/bgrd_techno.png);
+	background-repeat: repeat;
+	background-position: left top;
+	background-color: #5d5e5d;
+	float:left;
+	display:block;
+}
+#EDG_4_ss2_GrayGrungebg .EDGbackground .EDGcornerbotleft {
+	background-image: url(images/techno_round_botleft.png);
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	float:left;
+	display:block;
+} 
+#EDG_4_ss2_GrayGrungebg .EDGbackground .EDGcornerbotright {
+	background-image: url(images/techno_round_botright.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	float:left;
+	display:block;
+} 
+#EDG_4_ss2_GrayGrungebg .EDGbackground .EDGcornertopleft {
+	background-image: url(images/techno_round_topleft.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	float:left;
+	display:block;
+} 
+#EDG_4_ss2_GrayGrungebg .EDGbackground .EDGcornertopright {
+	padding:10px;
+	background-image: url(images/techno_round_topright.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	float:left;
+	display:block;
+} 
+#EDG_4_ss2_GrayGrungebg .EDGbackground .EDGclear {font-size: 1px; height: 1px}
+
+
+/*paging*/
+#EDG_4_ss2_GrayGrungebg .buttonPrev
+{
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_left.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+}
+
+#EDG_4_ss2_GrayGrungebg .buttonPrev:hover
+{
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_left_hover.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+}
+
+
+#EDG_4_ss2_GrayGrungebg .buttonNext
+{
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_right.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+	}
+	
+#EDG_4_ss2_GrayGrungebg .buttonNext:hover
+{
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/btn1_right_hover.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+	}
+
+
+#EDG_4_ss2_GrayGrungebg .EDGpager span
+{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: underline;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGpager a
+{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGpager a:hover
+{
+	/*width: 19px;
+	height: 19px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: underline;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+
+
+/*Video gallery*/
+
+#EDG_4_ss2_GrayGrungebg .VideoBodyEmbed
+{
+	/*border: 1px solid #FFFFFF;*/
+} 
+
+
+#EDG_4_ss2_GrayGrungebg .VideoTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_4_ss2_GrayGrungebg .VideoDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+#EDG_4_ss2_GrayGrungebg .VideoDescription a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:underline;
+} 
+
+#EDG_4_ss2_GrayGrungebg .VideoDescription a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:none;
+} 
+
+
+
+/*Audio gallery*/
+
+#EDG_4_ss2_GrayGrungebg .AudioTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_4_ss2_GrayGrungebg .AudioDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+#EDG_4_ss2_GrayGrungebg .AudioDescription a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:underline;
+} 
+
+#EDG_4_ss2_GrayGrungebg .AudioDescription a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:none;
+} 
+
+
+
+
+
+/*MAIN Gallery Title*/
+
+#EDG_4_ss2_GrayGrungebg .GalleryDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+
+#EDG_4_ss2_GrayGrungebg .EDGTitle
+{
+margin-top:10px;
+margin-bottom:15px;
+text-align:center;
+
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGTitle .EDGTitleText
+{
+	font-family: Times new roman, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	letter-spacing: 1.1em;
+	line-height:normal;
+}
+
+
+/*SlideShow*/
+
+#EDG_4_ss2_GrayGrungebg .SlideshowDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	margin-top: 5px;
+	color: #FFFFFF;
+	display:block;
+	line-height:normal;
+
+
+} 
+
+#EDG_4_ss2_GrayGrungebg .SlideshowTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_4_ss2_GrayGrungebg .slideshowtitledescbox
+{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+
+#EDG_4_ss2_GrayGrungebg .slideshow {
+text-align: center;	
+}
+#EDG_4_ss2_GrayGrungebg .EDGSlide {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	float: left;
+	position: relative;
+	text-align:center;
+	
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage a {
+	text-decoration: none;
+	float: left;
+}
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage a:hover {
+	cursor: pointer;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+}
+
+
+
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage a:hover .title 
+{
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_4_ss2_GrayGrungebg .EDGSlide .EDGimage .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+#EDG_4_ss2_GrayGrungebg .btnGalleryBack
+{
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/backblack.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+	display:block;	
+	margin-left:50px;	
+}
+
+#EDG_4_ss2_GrayGrungebg .nestedBreadCrumb
+{
+	margin-left:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+
+	}
+	
+	#EDG_4_ss2_GrayGrungebg .nestedBreadCrumb a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+	#EDG_4_ss2_GrayGrungebg .nestedBreadCrumb a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}	
+
+
+/***Version 2.2.*****************/
+
+
+#EDG_4_ss2_GrayGrungebg .TitleCarousel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	clear: both;
+	float:left;
+	font-weight: bold;
+	text-align: left;
+	padding-left:10px;
+}
+
+#EDG_4_ss2_GrayGrungebg .DescriptionCarousel{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	clear: both;
+	float:left;
+	white-space:normal;
+	bottom:0px;
+	text-align: left;
+	font-weight:normal;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+
+#EDG_4_ss2_GrayGrungebg .DescriptionCarousel a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration:underline;
+	
+	}
+	
+#EDG_4_ss2_GrayGrungebg .DescriptionCarousel a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration:none;
+	
+	}	
+	
+	
+/***Version 2.3.*****************/
+/*** Lightbox1.ascx **/	
+
+#EDG_4_ss2_GrayGrungebg a:link
+{
+	text-decoration:none!important;
+	color:#fff;
+	
+	}
+
+
+#EDG_4_ss2_GrayGrungebg .titleimage .title
+{
+	clear: both;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+	visibility: visible;
+	line-height: normal;
+	white-space: normal;
+	display: block;
+	color: #F0F0F0;
+	text-decoration: none;
+}
+
+#EDG_4_ss2_GrayGrungebg .titleimage .title a
+{
+	clear: both;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+	visibility: visible;
+	line-height: normal;
+	white-space: normal;
+	display: block;
+	color: #F0F0F0;
+	text-decoration:none!important;
+}
+
+
+
+#EDG_4_ss2_GrayGrungebg .DescriptionImage
+{
+	font-size: 11px;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height: normal;
+	
+
+}
+
+#EDG_4_ss2_GrayGrungebg .DescriptionImage a
+{
+	font-size: 11px;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height: normal;
+
+}
+
+
+#EDG_4_ss2_GrayGrungebg .NestedInfo
+{
+	font-size: 10px;
+	font-style: normal;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height: normal;
+}	
+
+#EDG_4_ss2_GrayGrungebg .ViewDetailsLink
+{
+	clear:both;
+	display:block;
+	text-align:left;
+	padding-top:5px;
+	
+	}
+	
+
+#EDG_4_ss2_GrayGrungebg .ViewDetailsLink a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	border: 1px solid #C0C0C0;
+	background-color: #ACACAC;
+	
+
+}
+
+#EDG_4_ss2_GrayGrungebg .ViewDetailsLink a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	border: 1px solid #C0C0C0;
+	background-color: #D2D2D2;
+}	
+				
+/*****************Version 2.4**************/
+
+#EDG_4_ss2_GrayGrungebg .Slideshow2Description
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	margin-top: 5px;
+	color: #FFFFFF;
+	display:block;
+	line-height:normal;
+
+
+} 
+
+#EDG_4_ss2_GrayGrungebg .Slideshow2Title
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+}
+
+#EDG_4_ss2_GrayGrungebg div.controls a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+}
+	
+#EDG_4_ss2_GrayGrungebg div.controls a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+} 
+
+#EDG_4_ss2_GrayGrungebg #thumbs
+{
+	padding: 15px;
+} 			
+
+
+#EDG_4_ss2_GrayGrungebg .EDGTitleText
+{
+	font-family: Times new roman, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	line-height:normal;
+	display:block;
+}			

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ==============================================================================================
+	Config File valid structure:
+	<configuration>
+    <property>...</property>
+    ...
+		<property>
+			<item>...</item>
+			<item>...</item>
+			...
+		</property>
+		...
+	</configuration>
+=============================================================================================== -->
+
+<configuration>
+	<property name="Skin">Vista</property>
+	<property name="EnableResize">true</property>
+	<property name="AutoResizeHeight">false</property>
+	<property name="StripFormattingOnPaste">MSWordRemoveAll</property>
+	<property name="ContentFilters">DefaultFilters</property>
+	<!-- EditModes.Design=1 + EditModes.Html=2-->
+	<property name="EditModes">3</property>
+	<!-- set to false will insert a <p> tag for carriage returns -->
+	<property name="NewLineBr">true</property>
+	<!-- WordIgnoreOptions.WordsWithNumbers=8 WordIgnoreOptions.UPPERCASE=1 -->
+	<property name="SpellCheckSettings.WordIgnoreOptions">9</property>
+	<property name="DialogOpener.Window.ReloadOnShow">true</property>
+	<property name="ImageManager.SearchPatterns">*.gif,*.xbm,*.xpm,*.png,*.ief,*.jpg,*.jpe,*.jpeg,*.tiff,*.tif,*.rgb,*.g3f,*.xwd,*.pict,*.ppm,*.pgm,*.pbm,*.pnm,*.bmp,*.ras,*.pcd,*.cgm,*.mil,*.cal,*.fif,*.dsf,*.cmx,*.wi,*.dwg,*.dxf,*.svf</property>
+	<property name="ImageManager.EnableImageEditor">true</property>
+	<!-- 4194304 bytes = 4096 kb = 4 mb -->
+	<property name="ImageManager.MaxUploadFileSize">4194304</property>
+	<property name="DocumentManager.SearchPatterns">*.doc,*.txt,*.docx,*.xls,*.xlsx,*.pdf,*.ppt,*.pptx,*.xml,*.zip</property>
+	<property name="DocumentManager.MaxUploadFileSize">4194304</property>
+	<property name="FlashManager.SearchPatterns">*.swf</property>
+	<property name="FlashManager.MaxUploadFileSize">4194304</property>
+	<property name="MediaManager.SearchPatterns">*.wma,*.wmv,*.avi,*.wav,*.mpeg,*.mpg,*.mpe,*.mp3,*.m3u,*.mid,*.midi,*.snd,*.mkv</property>
+	<property name="MediaManager.MaxUploadFileSize">4194304</property>
+	<property name="SilverlightManager.SearchPatterns">*.xap</property>
+	<property name="SilverlightManager.MaxUploadFileSize">4194304</property>
+	<property name="TemplateManager.SearchPatterns">*.htmtemplate,*.htm,*,html</property>
+	<property name="TemplateManager.MaxUploadFileSize">4194304</property>
+    <!-- ContentAreaMode defaults to Iframe.  Set to Div to make the editor part of the current page.
+    Div mode is useful for advanced styling issues and inheriting the DOCTYPE of the current page.
+    If content depends on an HTML5 doctype use Div mode -->
+    <!-- <property name="ContentAreaMode">Div</property>    -->
+</configuration>
+
+<!--  ==============================================================================================
+	Documentation:
+	
+	File property values supported path formats:
+	<property name="TableLayoutCssFile">[PortalRoot]/directory/filename.css</property>
+	or <property name="TableLayoutCssFile">[ProviderPath]/directory/filename.css</property>
+	or <property name="TableLayoutCssFile">~/directory/filename.css</property>
+	
+	Enumerations property single value can use name of integer
+	Example WordIgnoreOptions.WordsWithNumbers = 8:
+	<property name="SpellCheckSettings.WordIgnoreOptions">8</property>
+	or 	<property name="SpellCheckSettings.WordIgnoreOptions">WordsWithNumbers</property>
+
+	Enumerations property multiple value must use integer:
+	WordIgnoreOptions.WordsWithNumbers = 8 + WordIgnoreOptions.UPPERCASE = 1
+	<property name="SpellCheckSettings.WordIgnoreOptions">9</property>
+
+	String array list values must be separated by a comma:
+	<property name="Colors">Blue,Red,Yellow,Green</property>
+
+	==============================================================================================
+	Properties:
+
+	<property name="CssFiles"></property>
+	Type: Comma deliminated string list
+
+	<property name="Colors"></property>
+	Type: Comma deliminated string list
+
+	<property name="Symbols"></property>
+	Type: Comma deliminated string list
+
+	<property name="FontSizes"></property>
+	Type: Comma deliminated string list
+
+	<property name="FontNames"></property>
+	Type: Comma deliminated string list
+
+	<property name="Paragraphs"></property>
+	Type: Comma deliminated string list of css class names
+
+	<property name="RealFontSizes"></property>
+	Type: Comma deliminated string list 
+
+	<property name="CssClasses"></property>
+	Type: Comma deliminated string list of css class names
+
+	<property name="ContentAreaCssFile"></property>
+	Type: String
+
+	<property name="TableLayoutCssFile"></property>
+	Type: String
+
+	<property name="AutoResizeHeight"></property>
+	Type: Boolean (true or false)
+
+	<property name="EnableResize"></property>
+	Type: Boolean (true or false)
+
+	<property name="NewLineBr"></property>
+	Type: Boolean (true or false)
+
+	<property name="MaxTextLength"></property>
+	Type: Integer
+
+	<property name="MaxHtmlLength"></property>
+	Type: Integer
+
+	<property name="Skin"></property>
+	Type: String
+
+	<property name="EditModes"></property>
+	Type: Telerik.Web.UI.EditModes
+	Design = 1
+	Html = 2
+	Preview = 4
+
+	<property name="StripFormattingOnPaste"></property>
+	Type: Telerik.Web.UI.EditorStripFormattingOptions
+	None = 0
+	NoneSupressCleanMessage = 1
+	MSWord = 2
+	MSWordNoFonts = 4
+	MSWordRemoveAll = 8
+	Css = 16
+	Font = 32
+	Span = 64
+	AllExceptNewLines = 128
+	ConvertWordLists = 256
+
+	<property name="StripFormattingOptions"></property>
+	Type: Telerik.Web.UI.EditorStripFormattingOptions
+	None = 0
+	NoneSupressCleanMessage = 1
+	MSWord = 2
+	MSWordNoFonts = 4
+	MSWordRemoveAll = 8
+	Css = 16
+	Font = 32
+	Span = 64
+	AllExceptNewLines = 128
+	ConvertWordLists = 256
+
+	<property name="ContentFilters"></property>
+	Type: Telerik.Web.UI.EditorFilters
+	None = 0
+	RemoveScripts = 1
+	MakeUrlsAbsolute = 2
+	FixUlBoldItalic = 4
+	FixEnclosingP = 8
+	IECleanAnchors = 16
+	MozEmStrong = 32
+	ConvertFontToSpan = 64
+	ConvertToXhtml = 128
+	IndentHTMLContent = 256
+	EncodeScripts = 512
+	OptimizeSpans = 1024
+
+
+	<property name="DialogOpener.Window.ReloadOnShow"></property>
+	Type: Boolean (true or false)
+
+
+	<property name="ImageManager.EnableImageEditor"></property>
+	Type: Boolean (true or false)
+
+	<property name="ImageManager.ViewPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="ImageManager.UploadPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="ImageManager.DeletePaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="ImageManager.MaxUploadFileSize"></property>
+	Type: Integer
+
+	<property name="ImageManager.SearchPatterns"></property>
+	Type: Comma deliminated string list
+
+
+	<property name="DocumentManager.ViewPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="DocumentManager.UploadPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="DocumentManager.DeletePaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="DocumentManager.MaxUploadFileSize"></property>
+	Type: Integer
+
+	<property name="DocumentManager.SearchPatterns"></property>
+	Type: Comma deliminated string list
+
+
+	<property name="FlashManager.ViewPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="FlashManager.UploadPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="FlashManager.DeletePaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="FlashManager.MaxUploadFileSize"></property>
+	Type: Integer
+
+	<property name="FlashManager.SearchPatterns"></property>
+	Type: Comma deliminated string list
+
+
+	<property name="SilverlightManager.ViewPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="SilverlightManager.UploadPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="SilverlightManager.DeletePaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="SilverlightManager.MaxUploadFileSize"></property>
+	Type: Integer
+
+	<property name="SilverlightManager.SearchPatterns"></property>
+	Type: Comma deliminated string list
+
+
+	<property name="MediaManager.ViewPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="MediaManager.UploadPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="MediaManager.DeletePaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="MediaManager.MaxUploadFileSize"></property>
+	Type: Integer
+
+	<property name="MediaManager.SearchPatterns"></property>
+	Type: Comma deliminated string list
+
+
+	<property name="TemplateManager.ViewPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="TemplateManager.UploadPaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="TemplateManager.DeletePaths"></property>
+	Type: Comma deliminated string list
+
+	<property name="TemplateManager.MaxUploadFileSize"></property>
+	Type: Integer
+
+	<property name="TemplateManager.SearchPatterns"></property>
+	Type: Comma deliminated string list
+
+
+	<property name="SpellCheckSettings.FragmentIgnoreOptions"></property>
+	Type: Telerik.Web.UI.FragmentIgnoreOptions
+	All = 7
+	EmailAddresses = 4
+	FileNames = 1
+	None = 0
+	Urls = 2
+
+    <property name="ContentAreaMode">Div</property>
+    Type: String
+    Iframe - default, content are is rendered as a seperate document in an Iframe
+    Div - content area is rendered as another element in the current page
+
+============================================================================================== -->

@@ -1,0 +1,2 @@
+/****** Object:  Table [dbo].[EasyGallerySettings]    Script Date: 11/30/2011 21:25:12 ******/
+INSERT [dbo].[EasyGallerySettings] ([ModuleId], [ViewerControl]) VALUES (6, N'tZu7345grddiuopec')

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://epart.atc.gr:8080/socialfilteringservice/services/SocialFilteringServicePort?wsdl" uri="wsdl/epart.atc.gr_8080/socialfilteringservice/services/SocialFilteringServicePort.wsdl"/>
+    <system systemId="http://epart.atc.gr:8080/SocialFilteringService/SocialFilteringService?wsdl" uri="wsdl/epart.atc.gr_8080/SocialFilteringService/SocialFilteringService.wsdl"/>
+    <system systemId="http://epart.atc.gr:8080/SocialFilteringService/SocialFilteringService?xsd=1" uri="wsdl/epart.atc.gr_8080/SocialFilteringService/SocialFilteringService.xsd_1.xsd"/>
+</catalog>

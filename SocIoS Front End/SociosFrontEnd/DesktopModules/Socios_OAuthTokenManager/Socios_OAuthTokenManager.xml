@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Socios_OAuthTokenManager</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSocios_OAuthTokenManager class is used to manage content
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditSocios_OAuthTokenManager class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The ViewSocios_OAuthTokenManager class displays the content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.Socios_OAuthTokenManager.View.lbl_output">
+            <summary>
+            lbl_output control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.ConsumerKey">
+            <summary>
+            insert offsite consumer key here
+            </summary>
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.ConsumerSecret">
+            <summary>
+            Insert offsite consumer secret here
+            </summary>
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.OnSiteConsumerKey">
+            <summary>
+            insert onsite consumer key here
+            </summary>
+        </member>
+        <member name="F:MySpaceID_OAuth.Core.Constants.OnSiteConsumerSecret">
+            <summary>
+            Insert onsite consumer secret here
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.ComputeHash(System.Security.Cryptography.HashAlgorithm,System.String)">
+            <summary>
+            Helper function to compute a hash value
+            </summary>
+            <param name="hashAlgorithm">The hashing algoirhtm used. If that algorithm needs some initialization, like HMAC and its derivatives, they should be initialized prior to passing it to this function</param>
+            <param name="data">The data to hash</param>
+            <returns>a Base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.GetQueryParameters(System.String)">
+            <summary>
+            Internal function to cut out all non oauth query string parameters (all parameters not begining with "oauth_")
+            </summary>
+            <param name="parameters">The query string part of the Url</param>
+            <returns>A list of QueryParameter each containing the parameter name and value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.UrlEncode(System.String)">
+            <summary>
+            This is a different Url Encode implementation since the default .NET one outputs the percent encoding in lower case.
+            While this is not a problem with the percent encoding spec, it is used in upper case throughout OAuth
+            </summary>
+            <param name="value">The value to Url encode</param>
+            <returns>Returns a Url encoded string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.NormalizeRequestParameters(System.Collections.Generic.IList{DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.QueryParameter})">
+            <summary>
+            Normalizes the request parameters according to the spec
+            </summary>
+            <param name="parameters">The list of parameters already sorted</param>
+            <returns>a string representing the normalized parameters</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.GenerateSignatureBase(System.Uri,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            Generate the signature base that is used to produce the signature
+            </summary>
+            <param name="url">The full url that needs to be signed including its non OAuth url parameters</param>
+            <param name="consumerKey">The consumer key</param>        
+            <param name="token">The token, if available. If not available pass null or an empty string</param>
+            <param name="tokenSecret">The token secret, if available. If not available pass null or an empty string</param>
+            <param name="httpMethod">The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)</param>
+            <param name="signatureType">The signature type. To use the default values use <see cref="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.SignatureTypes">OAuthBase.SignatureTypes</see>.</param>
+            <returns>The signature base</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.GenerateSignatureUsingHash(System.String,System.Security.Cryptography.HashAlgorithm)">
+            <summary>
+            Generate the signature value based on the given signature base and hash algorithm
+            </summary>
+            <param name="signatureBase">The signature based as produced by the GenerateSignatureBase method or by any other means</param>
+            <param name="hash">The hash algorithm used to perform the hashing. If the hashing algorithm requires initialization or a key it should be set prior to calling this method</param>
+            <returns>A base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.GenerateSignature(System.Uri,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            Generates a signature using the HMAC-SHA1 algorithm
+            </summary>		
+            <param name="url">The full url that needs to be signed including its non OAuth url parameters</param>
+            <param name="consumerKey">The consumer key</param>
+            <param name="consumerSecret">The consumer seceret</param>
+            <param name="token">The token, if available. If not available pass null or an empty string</param>
+            <param name="tokenSecret">The token secret, if available. If not available pass null or an empty string</param>
+            <param name="httpMethod">The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)</param>
+            <returns>A base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.GenerateSignature(System.Uri,System.String,System.String,System.String,System.String,System.String,System.String,System.String,DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.SignatureTypes,System.String@,System.String@)">
+            <summary>
+            Generates a signature using the specified signatureType 
+            </summary>		
+            <param name="url">The full url that needs to be signed including its non OAuth url parameters</param>
+            <param name="consumerKey">The consumer key</param>
+            <param name="consumerSecret">The consumer seceret</param>
+            <param name="token">The token, if available. If not available pass null or an empty string</param>
+            <param name="tokenSecret">The token secret, if available. If not available pass null or an empty string</param>
+            <param name="httpMethod">The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)</param>
+            <param name="signatureType">The type of signature to use</param>
+            <returns>A base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.GenerateTimeStamp">
+            <summary>
+            Generate the timestamp for the signature        
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.GenerateNonce">
+            <summary>
+            Generate a nonce
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.SignatureTypes">
+            <summary>
+            Provides a predefined set of algorithms that are supported officially by the protocol
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.QueryParameter">
+            <summary>
+            Provides an internal structure to sort the query parameter
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.QueryParameterComparer">
+            <summary>
+            Comparer class used to perform the sorting of the query parameters
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager">
+            <summary>
+            A token manager that only retains tokens in memory. 
+            Meant for SHORT TERM USE TOKENS ONLY.
+            </summary>
+            <remarks>
+            A likely application of this class is for "Sign In With Twitter",
+            where the user only signs in without providing any authorization to access
+            Twitter APIs except to authenticate, since that access token is only useful once.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager"/> class.
+            </summary>
+            <param name="consumerKey">The consumer key.</param>
+            <param name="consumerSecret">The consumer secret.</param>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.GetTokenSecret(System.String)">
+            <summary>
+            Gets the Token Secret given a request or access token.
+            </summary>
+            <param name="token">The request or access token.</param>
+            <returns>
+            The secret associated with the given token.
+            </returns>
+            <exception cref="T:System.ArgumentException">Thrown if the secret cannot be found for the given token.</exception>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.StoreNewRequestToken(DotNetOpenAuth.OAuth.Messages.UnauthorizedTokenRequest,DotNetOpenAuth.OAuth.Messages.ITokenSecretContainingMessage)">
+            <summary>
+            Stores a newly generated unauthorized request token, secret, and optional
+            application-specific parameters for later recall.
+            </summary>
+            <param name="request">The request message that resulted in the generation of a new unauthorized request token.</param>
+            <param name="response">The response message that includes the unauthorized request token.</param>
+            <exception cref="T:System.ArgumentException">Thrown if the consumer key is not registered, or a required parameter was not found in the parameters collection.</exception>
+            <remarks>
+            Request tokens stored by this method SHOULD NOT associate any user account with this token.
+            It usually opens up security holes in your application to do so.  Instead, you associate a user
+            account with access tokens (not request tokens) in the <see cref="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.ExpireRequestTokenAndStoreNewAccessToken(System.String,System.String,System.String,System.String)"/>
+            method.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.ExpireRequestTokenAndStoreNewAccessToken(System.String,System.String,System.String,System.String)">
+            <summary>
+            Deletes a request token and its associated secret and stores a new access token and secret.
+            </summary>
+            <param name="consumerKey">The Consumer that is exchanging its request token for an access token.</param>
+            <param name="requestToken">The Consumer's request token that should be deleted/expired.</param>
+            <param name="accessToken">The new access token that is being issued to the Consumer.</param>
+            <param name="accessTokenSecret">The secret associated with the newly issued access token.</param>
+            <remarks>
+            	<para>
+            Any scope of granted privileges associated with the request token from the
+            original call to <see cref="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.StoreNewRequestToken(DotNetOpenAuth.OAuth.Messages.UnauthorizedTokenRequest,DotNetOpenAuth.OAuth.Messages.ITokenSecretContainingMessage)"/> should be carried over
+            to the new Access Token.
+            </para>
+            	<para>
+            To associate a user account with the new access token,
+            <see cref="P:System.Web.HttpContext.User">HttpContext.Current.User</see> may be
+            useful in an ASP.NET web application within the implementation of this method.
+            Alternatively you may store the access token here without associating with a user account,
+            and wait until <see cref="!:WebConsumer.ProcessUserAuthorization()"/> or
+            <see cref="!:DesktopConsumer.ProcessUserAuthorization(string, string)"/> return the access
+            token to associate the access token with a user account at that point.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.GetTokenType(System.String)">
+            <summary>
+            Classifies a token as a request token or an access token.
+            </summary>
+            <param name="token">The token to classify.</param>
+            <returns>Request or Access token, or invalid if the token is not recognized.</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.StoreOpenIdAuthorizedRequestToken(System.String,DotNetOpenAuth.OpenId.Extensions.OAuth.AuthorizationApprovedResponse)">
+            <summary>
+            Stores a new request token obtained over an OpenID request.
+            </summary>
+            <param name="consumerKey">The consumer key.</param>
+            <param name="authorization">The authorization message carrying the request token and authorized access scope.</param>
+            <remarks>
+            	<para>The token secret is the empty string.</para>
+            	<para>Tokens stored by this method should be short-lived to mitigate
+            possible security threats.  Their lifetime should be sufficient for the
+            relying party to receive the positive authentication assertion and immediately
+            send a follow-up request for the access token.</para>
+            </remarks>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.ConsumerKey">
+            <summary>
+            Gets the consumer key.
+            </summary>
+            <value>The consumer key.</value>
+        </member>
+        <member name="P:DotNetNuke.Modules.Socios_OAuthTokenManager.InMemoryTokenManager.ConsumerSecret">
+            <summary>
+            Gets the consumer secret.
+            </summary>
+            <value>The consumer secret.</value>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.ComputeHash(System.Security.Cryptography.HashAlgorithm,System.String)">
+            <summary>
+            Helper function to compute a hash value
+            </summary>
+            <param name="hashAlgorithm">The hashing algoirhtm used. If that algorithm needs some initialization, like HMAC and its derivatives, they should be initialized prior to passing it to this function</param>
+            <param name="data">The data to hash</param>
+            <returns>a Base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.GetQueryParameters(System.String)">
+            <summary>
+            Internal function to cut out all non oauth query string parameters (all parameters not begining with "oauth_")
+            </summary>
+            <param name="parameters">The query string part of the Url</param>
+            <returns>A list of QueryParameter each containing the parameter name and value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.UrlEncode(System.String)">
+            <summary>
+            This is a different Url Encode implementation since the default .NET one outputs the percent encoding in lower case.
+            While this is not a problem with the percent encoding spec, it is used in upper case throughout OAuth
+            </summary>
+            <param name="value">The value to Url encode</param>
+            <returns>Returns a Url encoded string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.NormalizeRequestParameters(System.Collections.Generic.IList{DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.QueryParameter})">
+            <summary>
+            Normalizes the request parameters according to the spec
+            </summary>
+            <param name="parameters">The list of parameters already sorted</param>
+            <returns>a string representing the normalized parameters</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.GenerateSignatureBase(System.Uri,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            Generate the signature base that is used to produce the signature
+            </summary>
+            <param name="url">The full url that needs to be signed including its non OAuth url parameters</param>
+            <param name="callback">The callback URL, if available.</param>        
+            <param name="consumerKey">The consumer key</param>        
+            <param name="token">The token, if available. If not available pass null or an empty string</param>
+            <param name="tokenSecret">The token secret, if available. If not available pass null or an empty string</param>
+            <param name="httpMethod">The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)</param>
+            <param name="signatureType">The signature type. To use the default values use <see cref="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase.SignatureTypes">OAuthBase.SignatureTypes</see>.</param>
+            <returns>The signature base</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.GenerateSignatureUsingHash(System.String,System.Security.Cryptography.HashAlgorithm)">
+            <summary>
+            Generate the signature value based on the given signature base and hash algorithm
+            </summary>
+            <param name="signatureBase">The signature based as produced by the GenerateSignatureBase method or by any other means</param>
+            <param name="hash">The hash algorithm used to perform the hashing. If the hashing algorithm requires initialization or a key it should be set prior to calling this method</param>
+            <returns>A base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.GenerateSignature(System.Uri,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            Generates a signature using the HMAC-SHA1 algorithm
+            </summary>		
+            <param name="url">The full url that needs to be signed including its non OAuth url parameters</param>
+            <param name="consumerKey">The consumer key</param>
+            <param name="consumerSecret">The consumer seceret</param>
+            <param name="token">The token, if available. If not available pass null or an empty string</param>
+            <param name="tokenSecret">The token secret, if available. If not available pass null or an empty string</param>
+            <param name="httpMethod">The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)</param>
+            <returns>A base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.GenerateSignature(System.Uri,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.SignatureTypes,System.String@,System.String@)">
+            <summary>
+            Generates a signature using the specified signatureType 
+            </summary>		
+            <param name="url">The full url that needs to be signed including its non OAuth url parameters</param>
+            <param name="consumerKey">The consumer key</param>
+            <param name="consumerSecret">The consumer seceret</param>
+            <param name="token">The token, if available. If not available pass null or an empty string</param>
+            <param name="tokenSecret">The token secret, if available. If not available pass null or an empty string</param>
+            <param name="httpMethod">The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)</param>
+            <param name="signatureType">The type of signature to use</param>
+            <returns>A base64 string of the hash value</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.GenerateTimeStamp">
+            <summary>
+            Generate the timestamp for the signature        
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.GenerateNonce">
+            <summary>
+            Generate a nonce
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.SignatureTypes">
+            <summary>
+            Provides a predefined set of algorithms that are supported officially by the protocol
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.QueryParameter">
+            <summary>
+            Provides an internal structure to sort the query parameter
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.OAuthBase2.QueryParameterComparer">
+            <summary>
+            Comparer class used to perform the sorting of the query parameters
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.Socios_OAuthTokenManager.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for Socios_OAuthTokenManager
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.Components.FeatureController.ExportModule(System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ExportModule implements the IPortable ExportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be exported</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.Components.FeatureController.ImportModule(System.Int32,System.String,System.String,System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ImportModule implements the IPortable ImportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be imported</param>
+            <param name="Content">The content to be imported</param>
+            <param name="Version">The version of the module to be imported</param>
+            <param name="UserId">The Id of the user performing the import</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.Components.FeatureController.GetSearchItems(DotNetNuke.Entities.Modules.ModuleInfo)">
+            -----------------------------------------------------------------------------
+            <summary>
+            GetSearchItems implements the ISearchable Interface
+            </summary>
+            <param name="ModInfo">The ModuleInfo for the module to be Indexed</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.Socios_OAuthTokenManager.Components.FeatureController.UpgradeModule(System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpgradeModule implements the IUpgradeable Interface
+            </summary>
+            <param name="Version">The current version of the module</param>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entityschemma name="FCKeditorSettings" defaultLevel="Portal">
+  <settingarea name="General">
+    <setting name="CustomConfigurationsPath" resourcekey="CustomConfigurationsPath" visiblerole="host,admin" editrole="host,admin">
+      <editors default="textBox" >
+        <editor type="textbox" />
+        <editor type="file" uploadrole="host,admin" />
+      </editors>
+      <defaulvalue>[ProviderPath]/Custom/fckconfig.js</defaulvalue>
+    </setting>
+    <setting name="EditorAreaCSS" resourcekey="EditorAreaCSS">
+      <editor Type="TextBox" />
+      <defaulvalue></defaulvalue>
+    </setting>
+    
+  </settingarea>
+  
+</entityschemma>

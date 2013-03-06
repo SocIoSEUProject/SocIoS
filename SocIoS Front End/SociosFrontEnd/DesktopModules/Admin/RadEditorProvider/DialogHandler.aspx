@@ -1,0 +1,1 @@
+<%@ Page Language="C#" Inherits="Telerik.Web.UI.DialogHandler, Telerik.Web.UI" %>

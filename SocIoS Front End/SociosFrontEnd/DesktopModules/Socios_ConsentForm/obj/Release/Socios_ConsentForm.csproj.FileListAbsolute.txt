@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_ConsentForm.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_ConsentForm.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_ConsentForm.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_ConsentForm\obj\Release\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_ConsentForm\obj\Release\Socios_ConsentForm.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_ConsentForm\obj\Release\Socios_ConsentForm.pdb

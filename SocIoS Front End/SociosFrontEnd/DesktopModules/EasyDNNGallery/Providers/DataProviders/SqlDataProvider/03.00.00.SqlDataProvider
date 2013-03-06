@@ -1,0 +1,18 @@
+﻿/* Add EasyGalleryUpload Table */
+/*******************************/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[EasyGalleryUpload](
+	[ModuleID] [int] NOT NULL,
+	[UserRole] [nvarchar](250) NOT NULL,
+	[TypeToUpload] [nvarchar](20) NOT NULL,
+	CONSTRAINT [PK_EasyGalleryUpload] PRIMARY KEY CLUSTERED ([ModuleID] ASC,[UserRole] ASC,[TypeToUpload] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNews]') AND type in (N'U'))
+BEGIN
+	ALTER TABLE EasyGalleryPictures ADD MediaApproved nvarchar(5), DateUploaded datetime NULL
+END

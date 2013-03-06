@@ -1,0 +1,96 @@
+.FCKImageGalleryContainer
+{
+	width:100%;
+}
+
+.FCKImageGalleryHeaderContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryPathContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryDetailsContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryItemContainer
+{
+	vertical-align:top;
+}
+
+.FCKImageGalleryErrorContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryErrorLabel
+{
+	color: red;
+}
+
+.FCKImageGalleryListStyle
+{
+	
+	width:100%;
+}
+
+.FCKImageGalleryStyle
+{
+	border:none;
+	
+}
+
+.FCKImageGalleryImageDetailsTable
+{
+	border:none;
+}
+
+.FCKImageGalleryItemContainer
+{
+	vertical-align:top;
+}
+
+.FCKImageGalleryStyle
+{
+	border:none;
+	
+}
+
+.FCKImageGalleryImageDetailsTable
+{
+	border:none;
+}
+
+.FCKImageGalleryImageNameTD
+{
+	text-align:left;
+	font-size: 8pt;
+}
+
+.FCKImageGalleryImageName
+{
+}
+
+.FCKImageGalleryImageSizeTD
+{
+	font-size: 8pt;
+	text-align:left;
+}
+
+.ImageListContainer{
+	border: #000000 1px solid;
+	padding: 5px;
+	overflow: auto;
+	width: 100%;
+	height: 480;
+	background-color: #ffffff;
+}

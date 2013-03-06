@@ -1,0 +1,102 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNews]') AND type in (N'U'))
+BEGIN
+	CREATE TABLE [dbo].[EasyGalleryCategory](
+		[CategoryID] [int] IDENTITY(1,1) NOT NULL,
+		[PortalID] [int] NOT NULL,
+		[CategoryName] [varchar](50) NULL,
+		[CategoryDescription] [varchar](250) NULL,
+		[Position] [int] NULL,
+		CONSTRAINT [PK_EasyGalleryCategory] PRIMARY KEY CLUSTERED ([CategoryID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	CREATE TABLE [dbo].[EasyGallery](
+		[GalleryID] [int] IDENTITY(1,1) NOT NULL,
+		[CategoryID] [int] NOT NULL,
+		[PortalID] [int] NOT NULL,
+		[GalleryName] [varchar](50) NULL,
+		[GalleryDescription] [varchar](500) NULL,
+		[Position] [int] NULL,
+		[DateCreated] [datetime] NULL,
+		[DateLastModified] [datetime] NULL,
+		CONSTRAINT [PK_EasyGallery] PRIMARY KEY CLUSTERED ([GalleryID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+
+	ALTER TABLE [dbo].[EasyGallery]  WITH CHECK ADD  CONSTRAINT [FK_EasyGallery_EasyGalleryCategory] FOREIGN KEY([CategoryID])
+	REFERENCES [dbo].[EasyGalleryCategory] ([CategoryID]) ON DELETE CASCADE
+	
+	ALTER TABLE [dbo].[EasyGallery] CHECK CONSTRAINT [FK_EasyGallery_EasyGalleryCategory]
+
+	CREATE TABLE [dbo].[EasyDNNThumbs](
+		[ModuleID] [int] NOT NULL,
+		[GalleryID] [int] NOT NULL,
+		[ViewType] [varchar](50) NULL,
+		[Width] [int] NOT NULL,
+		[Height] [int] NOT NULL,
+		[PictureW] [int] NULL,
+		[PictureH] [int] NULL,
+		[ViewerMode] [varchar](50) NULL,
+		[CropVertical] [bit] NULL,
+		[SmartCrop] [bit] NULL,
+		CONSTRAINT [PK_EasyDNNThumbs] PRIMARY KEY CLUSTERED ([ModuleID] ASC,[GalleryID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	
+	ALTER TABLE [dbo].[EasyDNNThumbs]  WITH CHECK ADD CONSTRAINT [FK_EasyDNNThumbs_EasyGallery] FOREIGN KEY([GalleryID])
+	REFERENCES [dbo].[EasyGallery] ([GalleryID]) ON DELETE CASCADE
+	
+	ALTER TABLE [dbo].[EasyDNNThumbs] CHECK CONSTRAINT [FK_EasyDNNThumbs_EasyGallery]
+	
+	ALTER TABLE [dbo].[EasyDNNThumbs]  WITH CHECK ADD CONSTRAINT [FK_EasyDNNThumbs_{objectQualifier}Modules] FOREIGN KEY([ModuleID])
+	REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+	
+	ALTER TABLE [dbo].[EasyDNNThumbs] CHECK CONSTRAINT [FK_EasyDNNThumbs_{objectQualifier}Modules]
+
+	CREATE TABLE [dbo].[EasyGalleryPictures](
+		[PictureID] [int] IDENTITY(1,1) NOT NULL,
+		[PortalID] [int] NULL,
+		[ModuleID] [int] NOT NULL,
+		[UserID] [int] NULL,
+		[GalleryID] [int] NULL,
+		[CategoryID] [int] NULL,
+		[Title] [varchar](250) NULL,
+		[Description] [varchar](4000) NULL,
+		[FileName] [varchar](2500) NULL,
+		[ThumbUrl] [varchar](250) NULL,
+		[Position] [int] NULL,
+		[MediaType] [varchar](30) NULL,
+		[ShortEmbedUrl] [varchar](250) NULL,
+		[ViewerThumb] [varchar](250) NULL,
+		[Info] [varchar](250) NULL,
+		[FileExtension] [varchar](5) NULL,
+		CONSTRAINT [PK_EasyGalleryPictures] PRIMARY KEY CLUSTERED ([PictureID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+
+	ALTER TABLE [dbo].[EasyGalleryPictures] WITH CHECK ADD CONSTRAINT [FK_EasyGalleryPictures_EasyGallery] FOREIGN KEY([GalleryID])
+	REFERENCES [dbo].[EasyGallery] ([GalleryID]) ON DELETE CASCADE 
+
+	ALTER TABLE [dbo].[EasyGalleryPictures] CHECK CONSTRAINT [FK_EasyGalleryPictures_EasyGallery]
+
+END
+GO
+/****** Object:  Table [dbo].[EasyGalleryIntegration]    Script Date: 06/05/2010 09:19:31 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[EasyGalleryIntegration](
+	[EntryID] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NULL,
+	[ModuleID] [int] NULL,
+	[ArticleID] [int] NULL,
+	[GalleryID] [int] NULL,
+	[GalleryName] [varchar](250) NULL,
+	CONSTRAINT [PK_EasyGalleryIntegration] PRIMARY KEY CLUSTERED ([EntryID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+GO
+
+ALTER TABLE [dbo].[EasyGalleryIntegration]  WITH CHECK ADD  CONSTRAINT [FK_EasyGalleryIntegration_EasyGallery] FOREIGN KEY([GalleryID])
+REFERENCES [dbo].[EasyGallery] ([GalleryID]) ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[EasyGalleryIntegration] CHECK CONSTRAINT [FK_EasyGalleryIntegration_EasyGallery]

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions 
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:tns="http://www.sociosproject.eu/sociosApi/" 
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="sociosApi" 
+  targetNamespace="http://www.sociosproject.eu/sociosApi/"
+  xmlns:voc="http://www.sociosproject.eu/sociosVoc/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.sociosproject.eu/sociosApi/"
+        xmlns:voc="http://www.sociosproject.eu/sociosVoc/">
+       <xsd:import namespace="http://www.sociosproject.eu/sociosVoc/"
+              schemaLocation="./socios-vocabulary.xsd"/>
+       <xsd:complexType name="ActivitiesFindRequest">
+         <xsd:choice>
+            <xsd:element name="filterActivity" type="voc:ActivityFilter"/>
+            <xsd:element name="filterPerson" type="voc:PersonFilter"/>
+            <xsd:element name="mediaItemIdList" type="voc:ObjectId"/>
+            <xsd:element name="personIdList" type="voc:ObjectId"/>
+         </xsd:choice>
+       </xsd:complexType>
+       <xsd:complexType name="MediaItemFindRequest">
+         <xsd:choice>
+            <xsd:element name="filterMediaItem" type="voc:MediaItemFilter"/>
+            <xsd:element name="filterPerson" type="voc:PersonFilter"/>
+            <xsd:element name="personIdList" type="voc:ObjectId"/>
+         </xsd:choice>
+       </xsd:complexType>
+       <xsd:complexType name="PersonFindRequest">
+         <xsd:choice>
+            <xsd:element name="filterPerson" type="voc:PersonFilter"/>
+            <xsd:element name="mediaItemIdList" type="voc:ObjectId"/>
+         </xsd:choice>
+       </xsd:complexType>
+       <xsd:element name="activitiesFindRequest" type="tns:ActivitiesFindRequest"/>
+       <xsd:element name="mediaItemFindRequest" type="tns:MediaItemFindRequest"/>
+       <xsd:element name="personFindRequest" type="tns:PersonFindRequest"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MessageRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:personId" name="personId"/>
+    <wsdl:part element="voc:message" name="message"/>
+  </wsdl:message>
+  <wsdl:message name="PersonRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:person" name="personRequest"/>
+  </wsdl:message>
+  <wsdl:message name="PersonsRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:personList" name="personListRequest"/>
+  </wsdl:message>  
+   <wsdl:message name="PersonsResponse">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:personList" name="personListRequest"/>
+  </wsdl:message>   
+  <wsdl:message name="ActivityIdRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:activity" name="activityRequest"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:mediaItem" name="mediaItemRequest"/>
+  </wsdl:message>
+  <wsdl:message name="PersonListRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:personList" name="personListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ActivityListRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:activityList" name="activityListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemListRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:mediaItemList" name="mediaItemListRequest"/>
+  </wsdl:message>  
+  <wsdl:message name="PersonIdListResponse">
+    <wsdl:part element="voc:personIdList" name="personIdListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ActivityIdListResponse">
+    <wsdl:part element="voc:activityIdList" name="activityIdListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemIdListResponse">
+    <wsdl:part element="voc:mediaItemIdList" name="mediaItemIdListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="PersonIdResponse">
+    <wsdl:part element="voc:personId" name="personIdResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemIdResponse">
+    <wsdl:part element="voc:mediaItemId" name="mediaItemIdResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ActivityIdResponse">
+    <wsdl:part element="voc:activityId" name="activityIdResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FindPersonsRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="tns:personFindRequest" name="personFindRequest"/>
+  </wsdl:message>
+  <wsdl:message name="PersonsIdRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:personIdList" name="personIdList"/>
+  </wsdl:message>
+  <wsdl:message name="FindMediaItemsRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="tns:mediaItemFindRequest" name="mediaItemFindRequest"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemsRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:mediaItemIdList" name="mediaItemIdList"/>
+  </wsdl:message>
+  <wsdl:message name="MediaItemsResponse">
+    <wsdl:part element="voc:mediaItemList" name="mediaItemList"/>
+  </wsdl:message>
+  <wsdl:message name="FindActivitiesRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="tns:activitiesFindRequest" name="activitiesFindRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ActivitiesRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:activityIdList" name="activityIds"/>
+  </wsdl:message>
+  <wsdl:message name="ActivityRequest">
+    <wsdl:part element="voc:sociosApiUserKey" name="sociosApiUserKey"/>
+    <wsdl:part element="voc:activity" name="activityRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ActivitiesResponse">
+    <wsdl:part element="voc:activityList" name="activityList"/>
+  </wsdl:message>
+  <wsdl:portType name="sociosApi">
+    <wsdl:operation name="ConvertPerson">
+      <wsdl:input message="tns:PersonRequest"/>
+      <wsdl:output message="tns:PersonIdResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertActivity">
+      <wsdl:input message="tns:ActivityRequest"/>
+      <wsdl:output message="tns:ActivityIdResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertMediaItem">
+      <wsdl:input message="tns:MediaItemRequest"/>
+      <wsdl:output message="tns:MediaItemIdResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPersonList">
+      <wsdl:input message="tns:PersonListRequest"/>
+      <wsdl:output message="tns:PersonIdListResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertActivityList">
+      <wsdl:input message="tns:ActivityListRequest"/>
+      <wsdl:output message="tns:ActivityIdListResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertMediaItemList">
+      <wsdl:input message="tns:MediaItemListRequest"/>
+      <wsdl:output message="tns:MediaItemIdListResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sociosApiSOAP" type="tns:sociosApi">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SendMessage">
+      <soap:operation soapAction="http://www.sociosproject.eu/sociosApi/GetPersons"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>     
+    </wsdl:operation>  
+    <wsdl:operation name="ConvertPerson">
+      <soap:operation soapAction="http://www.sociosproject.eu/sociosApi/ConvertPerson"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertActivity">
+      <soap:operation soapAction="http://www.sociosproject.eu/sociosApi/ConvertActivity"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertMediaItem">
+      <soap:operation soapAction="http://www.sociosproject.eu/sociosApi/ConvertMediaItem"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPersonList">
+      <soap:operation soapAction="http://www.sociosproject.eu/sociosApi/ConvertPersonList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertActivityList">
+      <soap:operation soapAction="http://www.sociosproject.eu/sociosApi/ConvertActivityList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertMediaItemList">
+      <soap:operation soapAction="http://www.sociosproject.eu/sociosApi/ConvertMediaItemList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sociosApi">
+    <wsdl:port binding="tns:sociosApiSOAP" name="sociosApiSOAP">
+      <soap:address location="http://www.sociosproject.eu/sociosApi/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

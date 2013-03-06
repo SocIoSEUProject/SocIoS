@@ -1,0 +1,14 @@
+/* Widget style for IE6-------*/
+#TextSizeWidget_smalltext{background-image:url(img/gif/textsmall.gif);}
+#TextSizeWidget_smalltext:hover, #TextSizeWidget_smalltext.SelectedWidget {background-image:url(img/gif/textsmallhover.gif);}
+#TextSizeWidget_mediumtext{background-image:url(img/gif/textmedium.gif);}
+#TextSizeWidget_mediumtext:hover, #TextSizeWidget_mediumtext.SelectedWidget {background-image:url(img/gif/textmediumhover.gif);}
+#TextSizeWidget_largetext{background-image:url(img/gif/textlarge.gif);}
+#TextSizeWidget_largetext:hover, #TextSizeWidget_largetext.SelectedWidget {background-image:url(img/gif/textlargehover.gif);}
+#SizeWidget_width1024 {background-image:url(img/gif/width1024.gif);}
+#SizeWidget_width1024:hover, #SizeWidget_width1024.SelectedWidget {background-image:url(img/gif/width1024hover.gif);}
+#SizeWidget_width1280 {background-image:url(img/gif/width1280.gif);}
+#SizeWidget_width1280:hover, #SizeWidget_width1280.SelectedWidget {background-image:url(img/gif/width1280hover.gif);}
+#SizeWidget_widthfull {background-image:url(img/gif/widthfull.gif);}
+#SizeWidget_widthfull:hover , #SizeWidget_widthfull.SelectedWidget {background-image:url(img/gif/widthfullhover.gif);}
+

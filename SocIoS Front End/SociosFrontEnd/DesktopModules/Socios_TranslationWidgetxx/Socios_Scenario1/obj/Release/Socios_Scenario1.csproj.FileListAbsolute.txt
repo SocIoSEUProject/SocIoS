@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Scenario1.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Scenario1.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Scenario1.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Scenario1\obj\Release\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Scenario1\obj\Release\Socios_Scenario1.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Scenario1\obj\Release\Socios_Scenario1.pdb

@@ -1,0 +1,15 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryPortalSharing]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyGalleryPortalSharing](
+		[PortalIDFrom] [int] NOT NULL,
+		[PortalIDTo] [int] NOT NULL,
+		CONSTRAINT [PK_EasyGalleryPortalSharing] PRIMARY KEY CLUSTERED ([PortalIDFrom] ASC,[PortalIDTo] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryPortalSharing_Portals1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryPortalSharing]'))
+	ALTER TABLE [dbo].[EasyGalleryPortalSharing]  WITH CHECK ADD CONSTRAINT [FK_EasyGalleryPortalSharing_Portals1] FOREIGN KEY([PortalIDFrom]) REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+
+	IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryPortalSharing_Portals1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryPortalSharing]'))
+	ALTER TABLE [dbo].[EasyGalleryPortalSharing] CHECK CONSTRAINT [FK_EasyGalleryPortalSharing_Portals1]
+END

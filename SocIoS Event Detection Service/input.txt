@@ -1,0 +1,20 @@
+Computer science or computing science (abbreviated CS or CompSci) is the scientific and practical approach to computation and its applications. 
+A computer scientist specializes in the theory of computation and the design of computational systems.
+Its subfields can be divided into a variety of theoretical and practical disciplines. Some fields, such as computational complexity theory (which explores the fundamental properties of computational problems), are highly abstract, whilst fields such as computer graphics emphasise real-world applications. 
+Still other fields focus on the challenges in implementing computation. For example, programming language theory considers various approaches to the description of computation, whilst the study of computer programming itself investigates various aspects of the use of programming language and complex systems.
+Human-computer interaction considers the challenges in making computers and computations useful, usable, and universally accessible to humans.
+Human–computer Interaction (HCI) involves the study, planning, and design of the interaction between people (users) and computers. 
+It is often regarded as the intersection of computer science, behavioral sciences, design and several other fields of study. 
+The term was popularized by Card, Moran, and Newell in their seminal 1983 book, "The Psychology of Human-Computer Interaction", although the authors first used the term in 1980 , and the first known use was in 1975[2]. 
+The term connotes that, unlike other tools with only limited uses (such as a hammer, useful for driving nails, but not much else), a computer has many affordances for use and this takes place in an open-ended dialog between the user and the computer.
+Because human–computer interaction studies a human and a machine in conjunction, it draws from supporting knowledge on both the machine and the human side. 
+On the machine side, techniques in computer graphics, operating systems, programming languages, and development environments are relevant. 
+On the human side, communication theory, graphic and industrial design disciplines, linguistics, social sciences, cognitive psychology, and human factors such as computer user satisfaction are relevant. Engineering and design methods are also relevant. Due to the multidisciplinary nature of HCI, people with different backgrounds contribute to its success. 
+HCI is also sometimes referred to as man–machine interaction (MMI) or computer–human interaction (CHI).
+Attention to human-machine interaction is important, because poorly designed human-machine interfaces can lead to many unexpected problems.
+A classic example of this is the Three Mile Island accident where investigations concluded that the design of the human–machine interface was at least partially responsible for the disaster.
+Similarly, accidents in aviation have resulted from manufacturers' decisions to use non-standard flight instrument and/or throttle quadrant layouts: even though the new designs were proposed to be superior in regards to basic human–machine interaction, pilots had already ingrained the "standard" layout and thus the conceptually good idea actually had undesirable results.
+Stefani Joanne Angelina Germanotta (born March 28, 1986), known by her stage name Lady Gaga, is an American singer and songwriter. 
+Born and raised in New York City, she primarily studied at the Convent of the Sacred Heart and briefly attended New York University's Tisch School of the Arts before withdrawing to focus on her musical career. She began performing in the rock music scene of Manhattan's Lower East Side, and was signed with Streamline Records by the end of 2007. 
+During her employment as a songwriter for the record company, her vocal abilities captured the attention of recording artist Akon, who signed her to his label Kon Live Distribution.
+Gaga withdrew from CAP21 at 19, in the second semester of her sophomore year, deciding to focus on her musical career.

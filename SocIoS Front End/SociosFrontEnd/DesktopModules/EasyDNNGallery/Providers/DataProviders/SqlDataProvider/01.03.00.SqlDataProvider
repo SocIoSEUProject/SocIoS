@@ -1,0 +1,4 @@
+﻿IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNews]') AND type in (N'U'))
+BEGIN
+	ALTER TABLE EasyGalleryPictures ADD ImageUrl varchar(1500)
+END

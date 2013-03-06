@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="EventDetection">
+      <implementation-class>eu.sociosproject.services.EventDetection</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="SocialFilteringService">
+      <wsdl-url>http://epart.atc.gr:8080/SocialFilteringService/SocialFilteringService?wsdl</wsdl-url>
+      <local-wsdl-file>epart.atc.gr_8080/SocialFilteringService/SocialFilteringService.wsdl</local-wsdl-file>
+      <package-name>eu.sociosproject</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://epart.atc.gr:8080/SocialFilteringService/SocialFilteringService?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+</jax-ws>

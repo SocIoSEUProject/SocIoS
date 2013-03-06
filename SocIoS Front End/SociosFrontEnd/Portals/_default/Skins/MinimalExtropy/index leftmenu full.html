@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="skin.css" />
+    <title></title>
+</head>
+<body>
+    <div id="s_wrap_main">
+		<div id="s_wrap_sub">
+	        <div class="template_style">
+	        <div class="cpanel_left">
+	            <div class="cpanel_right">
+	                <object id="ControlPanel" codetype="dotnetnuke/server" codebase="CONTENTPANE"></object>
+	            </div>
+	        </div>
+	            <div class="top_space">
+	                <div class="lang_pad">
+	                    <object id="dnnLANGUAGE" codetype="dotnetnuke/server" codebase="LANGUAGE">
+	                        <param name="showMenu" value="False" />
+	                        <param name="showLinks" value="True" />
+	                    </object>
+	                </div>
+	            </div>
+	            <div class="logo_top">
+	                <div class="logo_top_left">
+	                    <div class="logo_top_right">
+	                        <div class="logo_top_bg">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="logo_left">
+	                    <div class="logo_right">
+	                        <div class="logo_pad">
+	                            <object id="dnnLOGO" codetype="dotnetnuke/server" codebase="LOGO">
+	                            </object>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="menu_left">
+	                <div class="menu_right">
+	                    <div class="menu_bg">
+	                        <div class="search_style">
+	                            <div class="search_bg">
+	                                <object id="dnnSEARCH" codetype="dotnetnuke/server" codebase="SEARCH">
+	                                    <param name="CssClass" value="ServerSkinWidget" />
+	                                    <param name="UseDropDownList" value="true" />
+	                                    <param name="Submit" value="<img src=&quot;images/search.gif&quot; border=&quot;0&quot; alt=&quot;Search&quot; /&gt;" />
+	                                </object>
+	                            </div>
+	                        </div>
+	                        <div class="menu_style">
+	                            <object id="dnnNAV" codetype="dotnetnuke/server" codebase="NAV">
+	                                <param name="ProviderName" value="DNNMenuNavigationProvider" />
+	                                <param name="IndicateChildren" value="false" />
+	                                <param name="ControlOrientation" value="Horizontal" />
+									<param name="CSSControl" value="mainMenu" />
+	                            </object>
+	                        </div>
+	                        <div class="clear_float">
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="bread_left">
+	                <div class="bread_right">
+	                    <div class="bread_bg">
+	                        <div id="bread_style">
+	                            <object id="dnnTEXT" codetype="dotnetnuke/server" codebase="TEXT">
+	                                <param name="CssClass" value="breadcrumb_text" />
+	                                <param name="Text" value="You are here >" />
+	                                <param name="ResourceKey" value="Breadcrumb" />
+	                            </object>&nbsp;<span>
+								<object id="dnnBREADCRUMB" codetype="dotnetnuke/server" codebase="BREADCRUMB">
+	                                <param name="CssClass" value="Breadcrumb" />
+	                                <param name="RootLevel" value="0" />
+	                                <param name="Separator" value="&nbsp;>&nbsp;" />
+	                            </object>
+	                            </span>
+	                        </div>
+	                        <div id="login_style" class="user">
+	                            <object id="dnnUSER" codetype="dotnetnuke/server" codebase="USER">
+	                                <param name="CssClass" value="user" />
+	                            </object>
+	                            &nbsp;&nbsp;|&nbsp;&nbsp;<object id="dnnLOGIN" codetype="dotnetnuke/server" codebase="LOGIN">
+	                                <param name="CssClass" value="user" />
+	                            </object>
+	                        </div>
+	                        <div class="clear_float">
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="center_bg">
+	                <div class="left_bg">
+	                    <div class="right_bg">
+	                        <div class="lm_content_pad">
+	                            <div class="lm_content_width">
+	                                <object id="TopPane" codetype="dotnetnuke/server" codebase="CONTENTPANE">
+	                                    <param name="class" value="TopPane" />
+	                                </object>
+	                                <table width="99%" border="0" cellspacing="0" cellpadding="0">
+	                                    <tr>
+	                                        <td valign="top" class="LeftPane">
+	                                        <object id="dnnLEFTMENU" codetype="dotnetnuke/server" codebase="LEFTMENU">
+												<param name="Width" value="165px" />
+												<param name="ShowOnlyCurrent" value="RootItem" />
+												<param name="MaxLevel" value="2" />
+												<param name="EnableEmbeddedSkins" value="false" />
+												<param name="Skin" value="MinimalExtropy" />
+											</object>
+											<div id="LeftPane" runat="server"></div>
+	                                        </td>
+	                                        <td valign="top" id="ContentPane" class="ContentPane" runat="server">
+	                                        </td>
+	                                        <td valign="top" id="RightPane" class="RightPane" runat="server">
+	                                        </td>
+	                                    </tr>
+	                                </table>
+	                                <object id="BottomPane" codetype="dotnetnuke/server" codebase="CONTENTPANE">
+	                                    <param name="class" value="BottomPane" />
+	                                </object>
+	                            </div>
+								<div class="linkscontainer">
+									<object id="dnnLINKS" codetype="dotnetnuke/server" codebase="LINKS">
+										<param name="CssClass" value="links" />
+										<param name="Level" value="Root" />
+										<param name="Separator" value="&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;" />
+									</object>
+								</div>							
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="bot_left">
+	                <div class="bot_right">
+	                    <div class="bot_bg">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="bot_pad">
+	                <div id="terms_style" class="footer">
+	                    <object id="dnnPRIVACY" codetype="dotnetnuke/server" codebase="PRIVACY">
+	                        <param name="CssClass" value="footer" />
+	                    </object>
+	                    &nbsp;&nbsp;|&nbsp;&nbsp;<object id="dnnTERMS" codetype="dotnetnuke/server" codebase="TERMS">
+	                        <param name="CssClass" value="footer" />
+	                    </object>
+	                </div>
+	                <div id="copy_style" class="footer">
+	                    <object id="dnnCOPYRIGHT" codetype="dotnetnuke/server" codebase="COPYRIGHT">
+	                        <param name="CssClass" value="footer" />
+	                    </object>
+	                </div>
+	                <div class="clear_float">
+	                </div>
+	            </div>
+	        </div>
+		</div>
+    </div>
+    <object id="StylesIE6" codetype="dotnetnuke/server" codebase="STYLES">
+        <param name="Name" value="IE6Minus" />
+        <param name="StyleSheet" value="css/ie6skin.css" />
+        <param name="Condition" value="LT IE 7" />
+        <param name="UseSkinPath" value="true" />
+    </object>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<div class="template imageandtitle">
+  <div class="container region content">
+    <img width="100"; height="100" alt="image placeholder" title="replace with your own image" />
+    <h3>Type the title here</h3>
+    <p>Type the text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, nisl ac vehicula volutpat, tellus sem congue sem, et varius ipsum neque in tortor. Curabitur massa nunc, ultricies ac mollis id, varius ac sapien. Duis nec dolor ac velit semper malesuada eget non dolor. Vestibulum mollis ligula vel ipsum lobortis a adipiscing mauris imperdiet.</p>
+	</div>
+</div>
+

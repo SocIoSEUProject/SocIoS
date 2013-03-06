@@ -1,0 +1,3498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions.CancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Actions.DeleteText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Actions.EditText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Actions.HeaderText" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Actions.InsertText" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="Actions.NewText" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Actions.SelectText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Actions.UpdateText" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="ArticleID.HeaderText" xml:space="preserve">
+    <value>ArticleID</value>
+  </data>
+  <data name="btnAddListResource1.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnAudioGallerySaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnAudioGallerySaveResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnDFFGSaveSettingsResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnFG2CloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnFlashTabSaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnFlashTabSaveSettingsResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnImageCaouselSaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnImageCarouselSaveSettingsResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnImageSliderSaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnImageSliderSaveSettingsResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnLightBoxGallerySaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnLightBoxGallerySaveResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnLoadSettingsFromFileResource1.Text" xml:space="preserve">
+    <value>Load settings</value>
+  </data>
+  <data name="btnSaveSettingsToFileResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnSliderCLoseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnSliderSaveSettingsResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnSlideShowSaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnSlideShowSaveSettingsResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnSlideShowThumbnailsSaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnSlideShowThumbnailsSaveResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="btnVideoGallerySaveCloseResource1.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnVideoGallerySaveSettingsResource1.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="cbIntegrateGalleryWithBlogResource1.Text" xml:space="preserve">
+    <value>Integrate this gallery display with news or blog module</value>
+  </data>
+  <data name="cbLightboxGalleryNestedProportionalyResizeResource1.Text" xml:space="preserve">
+    <value>Proportionally resize gallery thumbnails</value>
+  </data>
+  <data name="cbLightboxGalleryNestedResizeCropResource1.Text" xml:space="preserve">
+    <value>Resize and crop gallery thumbnails</value>
+  </data>
+  <data name="cbLightboxGalleryNestedShowAllGalleriesResource1.Text" xml:space="preserve">
+    <value>Show all galleries</value>
+  </data>
+  <data name="cbLightboxGalleryNestedShowBreadcrumbsResource1.Text" xml:space="preserve">
+    <value>Show breadcrumbs</value>
+  </data>
+  <data name="cbLightboxGalleryNestedShowGalleryDescriptionResource1.Text" xml:space="preserve">
+    <value>Show gallery description</value>
+  </data>
+  <data name="cbLightboxGalleryNestedShowGalleryInfoResource1.Text" xml:space="preserve">
+    <value>Show gallery info</value>
+  </data>
+  <data name="cbLightboxGalleryNestedShowGalleryNameResource1.Text" xml:space="preserve">
+    <value>Show gallery name</value>
+  </data>
+  <data name="cbSaveLoadSettingsToFileResource1.Text" xml:space="preserve">
+    <value>Save or load settings to another file or module</value>
+  </data>
+  <data name="cvAudioGalleryColumnsResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvAudioGalleryItemsPerPageResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvAudioGalleryPlayerWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvFlash2Settings0Resource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvFlash2SettingsResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvFlashTabGalleryHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvFlashTabGalleryWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImageCarouselAutoSlidePauseResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImageCarouselImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImageCarouselImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImageCarouselNumberOfImagesResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImageCarouselNumberOfImagesToSlideResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImageSliderImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImageSliderImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvLightBoxGalleryImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvLightBoxGalleryImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvLightboxGalleryNestedImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvLightboxGalleryNestedImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvLightboxGalleryNestedNumberOfColumnsResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvLightBoxGalleryNumberOfColumnsResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvLightBoxGalleryNumberOfItemsResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSliderSettings0Resource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSliderSettings1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSliderSettingsResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsFilmStripSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsOverlaySizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsThumbHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsThumbWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsTransitionSpeedResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvSlideShowThumbnailsTransitionTimeResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVGSettings0Resource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVGSettings1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVGSettings2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVGSettingsResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="GalleryID.HeaderText" xml:space="preserve">
+    <value>GalleryID</value>
+  </data>
+  <data name="Galleryname.HeaderText" xml:space="preserve">
+    <value>Gallery name</value>
+  </data>
+  <data name="lblAudioGalleryDisplaySettinsResource1.Text" xml:space="preserve">
+    <value>Audio gallery display settings</value>
+  </data>
+  <data name="lblCategorySelectResource1.Text" xml:space="preserve">
+    <value>Select category:</value>
+  </data>
+  <data name="lblDisplayTypeSelectResource1.Text" xml:space="preserve">
+    <value>Select type of display:</value>
+  </data>
+  <data name="lblEditIntegrationResource1.Text" xml:space="preserve">
+    <value>Edit Integration</value>
+  </data>
+  <data name="lblFlash2TitleResource1.Text" xml:space="preserve">
+    <value>Flash dfgallery display settings</value>
+  </data>
+  <data name="lblFlashTabGallerySettingsResource1.Text" xml:space="preserve">
+    <value>Flash Tab Gallery display settings</value>
+  </data>
+  <data name="lblGallerySelectResource1.Text" xml:space="preserve">
+    <value>Select gallery: </value>
+  </data>
+  <data name="lblImageCarouselDisplaySettingsResource1.Text" xml:space="preserve">
+    <value>Image carousel display settings</value>
+  </data>
+  <data name="lblImageSliderDisplaySettingsResource1.Text" xml:space="preserve">
+    <value>Image slider display settings</value>
+  </data>
+  <data name="lblLightBoxGalleryAudioPlayerSettingsResource1.Text" xml:space="preserve">
+    <value>Audio player in lightbox settings:</value>
+  </data>
+  <data name="lblLightboxGalleryDisplaySettingsResource1.Text" xml:space="preserve">
+    <value>Lightbox gallery display settings</value>
+  </data>
+  <data name="lblLightboxGalleryImageHeightResource1.Text" xml:space="preserve">
+    <value>Nested gallery thumbnail height.</value>
+  </data>
+  <data name="lblLightboxGalleryNestedGallerySelectionResource1.Text" xml:space="preserve">
+    <value>Gallery selection:</value>
+  </data>
+  <data name="lblLightboxGalleryNestedGallerySettingsResource1.Text" xml:space="preserve">
+    <value>Nested galleries settings</value>
+  </data>
+  <data name="lblLightboxGalleryNestedImageWidthResource1.Text" xml:space="preserve">
+    <value>Nested gallery thumbnail width.</value>
+  </data>
+  <data name="lblLightboxGalleryNestedNumberOfColumnsResource1.Text" xml:space="preserve">
+    <value>Number of columns.</value>
+  </data>
+  <data name="lblLightboxGalleryNoNestedGalleryErrorResource1.Text" xml:space="preserve">
+    <value>Please add an select some galleries.</value>
+  </data>
+  <data name="lblLightBoxGalleryViseoPlayerSettingsResource1.Text" xml:space="preserve">
+    <value>Video player in lightbox settings:</value>
+  </data>
+  <data name="lblSettingsFilenameErrorResource1.Text" xml:space="preserve">
+    <value>Please enter filename.</value>
+  </data>
+  <data name="lblSliderResource1.Text" xml:space="preserve">
+    <value>Slider display settings</value>
+  </data>
+  <data name="lblSlideShowDisplaySettingsResource1.Text" xml:space="preserve">
+    <value>Slide show display settings</value>
+  </data>
+  <data name="lblSlideShowThumbnailsDisplaySettingsResource1.Text" xml:space="preserve">
+    <value>Slideshow with thumbnails display settings</value>
+  </data>
+  <data name="lblVideoGalleryDisplaySettingsResource1.Text" xml:space="preserve">
+    <value>Video gallery display settings</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Select gallery</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>Image Carousel (Images, Video, Audio)</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>Light rounded</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value> Light square</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>Dark rounded</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>Dark square</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>Black and white rounded</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>Slice down</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>Slice down left</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>Slice up</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>Slice up left</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>Slice up down</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>Slice up down left</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>Fold</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>Fast</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>Slow</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Lightbox Gallery (Images, Video, Audio) &lt;span style="font-weight: bold; font-size: 10px; color: #ff0000;"&gt;responsive&lt;/span&gt;</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Slide Show (Images)</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Slideshow with thumbnails (Images)</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Flash Tab Gallery (Images, FLV video)</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>Video Gallery (Video)</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>Audio Gallery (Audio)</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>Image Slider 1 (Images)</value>
+  </data>
+  <data name="revSlideShowThumbnailsBorderColorResource1.ErrorMessage" xml:space="preserve">
+    <value>Please eneter hexadecimal color value.</value>
+  </data>
+  <data name="revSlideShowThumbnailsOverlayColorResource1.ErrorMessage" xml:space="preserve">
+    <value>Please eneter hexadecimal color value.</value>
+  </data>
+  <data name="revSlideShowThumbnailsOverlayTextColorResource1.ErrorMessage" xml:space="preserve">
+    <value>Please eneter hexadecimal color value.</value>
+  </data>
+  <data name="rfvAGSNumberOfItems0Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvAGSNumberOfItems1Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvAGSPlayerVolume0Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvAGSPlayerVolume1Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvAudioGalleryColumnsResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvAudioGalleryItemsPerPageResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvAudioGalleryPlayerVolumeResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvAudioGalleryPlayerWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvFlashGalleryWidth0Resource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvFlashGalleryWidth1Resource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvFlashGalleryWidth2Resource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvFlashTabGalleryHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvFlashTabGalleryWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvGallerySelectResource1.ErrorMessage" xml:space="preserve">
+    <value>Please select gallery.</value>
+  </data>
+  <data name="rfvImageCarouselAutoSlidePauseResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvImageCarouselImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvImageCarouselImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvImageCarouselNumberOfImagesResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvImageCarouselNumberOfImagesToSlideResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvImageSliderImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvImageSliderImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvImageSliderTransitionSpeedResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvIntegrationArticleIDResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvIntegrationQueryStringResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvLightBoxGalleryImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvLightBoxGalleryImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvLightboxGalleryNestedImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvLightboxGalleryNestedImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvLightboxGalleryNestedNumberOfColumnsResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvLightBoxGalleryNumberOfColumnsResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvLightBoxGalleryNumberOfItemsResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowImageHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowImageWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsBorderColorResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsFilmStripSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsOverlayColorResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsOverlayOpacityResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsOverlaySizeResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsOverlayTextColorResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsThumbWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsThumnHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsTransitionSpeedResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSlideShowThumbnailsTransitionTimeResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSSTNHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSSTNOverOpacity0Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSSTNWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvSSWidth1Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVGHeight0Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVGHeight1Resource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVGHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVGWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rvAGVolume0Resource1.ErrorMessage" xml:space="preserve">
+    <value>Enter value between 0-100.</value>
+  </data>
+  <data name="rvAGVolume1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Enter value between 20-300.</value>
+  </data>
+  <data name="rvAudioGalleryPlayerWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>Minimum player width is 90px.</value>
+  </data>
+  <data name="rvAudioGalleryVolumeResource1.ErrorMessage" xml:space="preserve">
+    <value>Enter value between 0-100.</value>
+  </data>
+  <data name="rvSlideShowThumbnailsOverlayOpacityResource1.ErrorMessage" xml:space="preserve">
+    <value>Enter value between 0-100.</value>
+  </data>
+  <data name="rvVGTBInitialVolumeResource1.ErrorMessage" xml:space="preserve">
+    <value>Enter value between 0-300.</value>
+  </data>
+  <data name="tbAGSNumberOfColumnsResource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbAudioGalleryPlayerVolumeResource1.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="tbImageCarouselAutoSlidePauseResource1.Text" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="tbImageCarouselMaxImageWidthResource1.Text" xml:space="preserve">
+    <value>150</value>
+  </data>
+  <data name="tbImageCarouselNumberOfImagesResource1.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tbImageCarouselNumberOfImagesSlideResource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbImageCaruselMaxImageHeightResource1.Text" xml:space="preserve">
+    <value>150</value>
+  </data>
+  <data name="tbImageSliderAutoSlidePauseResource1.Text" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="tbImageSliderAutoSlideTransitionResource1.Text" xml:space="preserve">
+    <value>500</value>
+  </data>
+  <data name="tbImageSliderMaxImageHeightResource1.Text" xml:space="preserve">
+    <value>400</value>
+  </data>
+  <data name="tbImageSliderMaxImageWidthResource1.Text" xml:space="preserve">
+    <value>600</value>
+  </data>
+  <data name="tbLightboxOpacityResource1.Text" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="tbLightboxPaddingResource1.Text" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="tbLightboxSSDurationResource1.Text" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="tbSliderSpeedResource1.Text" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="tbSSTBBorderColorResource1.Text" xml:space="preserve">
+    <value> 222222</value>
+  </data>
+  <data name="tbSSTBOverlayColorResource1.Text" xml:space="preserve">
+    <value>eeeeee</value>
+  </data>
+  <data name="tbSSTBTransitionSpeedResource1.Text" xml:space="preserve">
+    <value>800</value>
+  </data>
+  <data name="tbSSTNFilmStripSizeResource1.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbTGNGColumnsResource1.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tbTGNGImageHeightResource1.Text" xml:space="preserve">
+    <value>200</value>
+  </data>
+  <data name="tbTGNGImageWidthResource1.Text" xml:space="preserve">
+    <value>200</value>
+  </data>
+  <data name="tbVGInitialVolumeResource1.Text" xml:space="preserve">
+    <value>250</value>
+  </data>
+  <data name="tbVGNumberOfColsResource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SettingsSaved.Text" xml:space="preserve">
+    <value>Settings saved.</value>
+  </data>
+  <data name="lblArticleID.HelpText" xml:space="preserve">
+    <value>Enter the ID of blog article:</value>
+  </data>
+  <data name="lblArticleID.Text" xml:space="preserve">
+    <value>Enter ArticleID:</value>
+  </data>
+  <data name="lblImageCarouselAutoSlideImages.HelpText" xml:space="preserve">
+    <value>Auto slide images:</value>
+  </data>
+  <data name="lblImageCarouselAutoSlideImages.Text" xml:space="preserve">
+    <value>Auto slide images:</value>
+  </data>
+  <data name="lblImageCarouselAutoSlidePause.HelpText" xml:space="preserve">
+    <value>Set the pause between images when in auto slide mode:</value>
+  </data>
+  <data name="lblImageCarouselAutoSlidePause.Text" xml:space="preserve">
+    <value>Auto slide pause between imags (ms):</value>
+  </data>
+  <data name="lblImageCarouselMaxImageHeight.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblImageCarouselMaxImageHeight.Text" xml:space="preserve">
+    <value>Maximum image height:</value>
+  </data>
+  <data name="lblImageCarouselMaxImageWidth.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblImageCarouselMaxImageWidth.Text" xml:space="preserve">
+    <value>Maximum image width:</value>
+  </data>
+  <data name="lblImageCarouselNumberOfImages.HelpText" xml:space="preserve">
+    <value>Number of images to show:</value>
+  </data>
+  <data name="lblImageCarouselNumberOfImages.Text" xml:space="preserve">
+    <value>Number of images to show:</value>
+  </data>
+  <data name="lblImageCarouselNumberOfImagesToSlide.HelpText" xml:space="preserve">
+    <value>Number of images to slide:</value>
+  </data>
+  <data name="lblImageCarouselNumberOfImagesToSlide.Text" xml:space="preserve">
+    <value>Number of images to slide:</value>
+  </data>
+  <data name="lblImageCarouselOpenMediaUrl.HelpText" xml:space="preserve">
+    <value>On image click dont open image in lightbox, but open Media Url link.</value>
+  </data>
+  <data name="lblImageCarouselOpenMediaUrl.Text" xml:space="preserve">
+    <value>On click go to Media Url:</value>
+  </data>
+  <data name="lblImageCarouselOpenMediaUrlNewWindow.HelpText" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblImageCarouselOpenMediaUrlNewWindow.Text" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblImageCarouselShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblImageCarouselShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblImageCarouselShowLightBoxDescription.HelpText" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblImageCarouselShowLightBoxDescription.Text" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblImageCarouselShowLightboxTitle.HelpText" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblImageCarouselShowLightboxTitle.Text" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblImageCarouselShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblImageCarouselShowMediaDescription.Text" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblImageCarouselShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblImageCarouselShowMediaTitle.Text" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblImageCarouselShowNavigation.HelpText" xml:space="preserve">
+    <value>Show navigation:</value>
+  </data>
+  <data name="lblImageCarouselShowNavigation.Text" xml:space="preserve">
+    <value>Show navigation:</value>
+  </data>
+  <data name="lblImageCarouselShowPaging.HelpText" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblImageCarouselShowPaging.Text" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblImageCarouselShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblImageCarouselShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblImageCarouselThemeSelect.HelpText" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblImageCarouselThemeSelect.Text" xml:space="preserve">
+    <value>Select CSS:</value>
+  </data>
+  <data name="lblImageSliderAutoSlidePause.HelpText" xml:space="preserve">
+    <value>Set the pause between images when in auto slide mode:</value>
+  </data>
+  <data name="lblImageSliderAutoSlidePause.Text" xml:space="preserve">
+    <value>Auto slide pause between imags (ms):</value>
+  </data>
+  <data name="lblImageSliderMaxImageHeight.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblImageSliderMaxImageHeight.Text" xml:space="preserve">
+    <value>Maximum image height:</value>
+  </data>
+  <data name="lblImageSliderMaxImageWidth.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblImageSliderMaxImageWidth.Text" xml:space="preserve">
+    <value>Maximum image width:</value>
+  </data>
+  <data name="lblImageSliderOpenMediaUrl.HelpText" xml:space="preserve">
+    <value>On image click dont open image in lightbox, but open Media Url link.</value>
+  </data>
+  <data name="lblImageSliderOpenMediaUrl.Text" xml:space="preserve">
+    <value>On click go to Media Url:</value>
+  </data>
+  <data name="lblImageSliderOpenMediaUrlNewWindow.HelpText" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblImageSliderOpenMediaUrlNewWindow.Text" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblImageSliderSelectTheme.HelpText" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblImageSliderSelectTheme.Text" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblImageSliderShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblImageSliderShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblImageSliderShowLightboxDescription.HelpText" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblImageSliderShowLightboxDescription.Text" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblImageSliderShowLightboxTitle.Text" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblImageSliderShowLightboxTitle.HelpText" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblImageSliderShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblImageSliderShowMediaDescription.Text" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblImageSliderShowMeidaTitle.HelpText" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblImageSliderShowMeidaTitle.Text" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblImageSliderShowPaging.HelpText" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblImageSliderShowPaging.Text" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblImageSliderShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblImageSliderShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblImageSliderStartRandom.HelpText" xml:space="preserve">
+    <value>Set this if you want the auto slide mode to start with random image:</value>
+  </data>
+  <data name="lblImageSliderStartRandom.Text" xml:space="preserve">
+    <value>Start slide show with random image:</value>
+  </data>
+  <data name="lblImageSliderTransitionEffect.HelpText" xml:space="preserve">
+    <value>Select transition effect:</value>
+  </data>
+  <data name="lblImageSliderTransitionEffect.Text" xml:space="preserve">
+    <value>Select transition effect:</value>
+  </data>
+  <data name="lblImageSliderTransitionSpeed.HelpText" xml:space="preserve">
+    <value>Slide transition speed (ms):</value>
+  </data>
+  <data name="lblImageSliderTransitionSpeed.Text" xml:space="preserve">
+    <value>Slide transition speed (ms):</value>
+  </data>
+  <data name="lblIntegratedGalllerySelection.HelpText" xml:space="preserve">
+    <value>Select the gallery to integrate with blog:</value>
+  </data>
+  <data name="lblIntegratedGalllerySelection.Text" xml:space="preserve">
+    <value>Select gallery to display:</value>
+  </data>
+  <data name="lblLightBoxGalleryAnimationSpeed.HelpText" xml:space="preserve">
+    <value>Lightbox animation speed:</value>
+  </data>
+  <data name="lblLightBoxGalleryAnimationSpeed.Text" xml:space="preserve">
+    <value>Lightbox animation speed:</value>
+  </data>
+  <data name="lblLightboxGalleryDispplayNestedGalleries.HelpText" xml:space="preserve">
+    <value>Display nested galleries:</value>
+  </data>
+  <data name="lblLightboxGalleryDispplayNestedGalleries.Text" xml:space="preserve">
+    <value>Display nested galleries:</value>
+  </data>
+  <data name="lblLightboxGalleryLightboxDescription.HelpText" xml:space="preserve">
+    <value>Show media description in lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryLightboxDescription.Text" xml:space="preserve">
+    <value>Show media description in lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryLightboxSlideShow.HelpText" xml:space="preserve">
+    <value>Slide show inside lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryLightboxSlideShow.Text" xml:space="preserve">
+    <value>Slide show inside lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryLightboxThumbnails.HelpText" xml:space="preserve">
+    <value>Show thumbnails inside lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryLightboxThumbnails.Text" xml:space="preserve">
+    <value>Show thumbnails inside lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblLightboxGalleryShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblLightboxGalleryShowLightboxTitle.HelpText" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryShowLightboxTitle.Text" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblLightboxGalleryShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblLightboxGalleryShowMediaDescription.Text" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblLightboxGalleryShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblLightboxGalleryShowMediaTitle.Text" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblLightboxGalleryShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblLightboxGalleryShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblLightBoxGallerySlideShowAutoPlay.HelpText" xml:space="preserve">
+    <value>Slide show inside lightbox autoplay:</value>
+  </data>
+  <data name="lblLightBoxGallerySlideShowAutoPlay.Text" xml:space="preserve">
+    <value>Slide show inside lightbox autoplay:</value>
+  </data>
+  <data name="lblLightBoxGallerySlideShowPause.HelpText" xml:space="preserve">
+    <value>Slide show inside lightbox interval in miliseconds:</value>
+  </data>
+  <data name="lblLightBoxGallerySlideShowPause.Text" xml:space="preserve">
+    <value>Slide show inside lightbox (ms):</value>
+  </data>
+  <data name="lblLightBoxThemeSelect.HelpText" xml:space="preserve">
+    <value>Select the theme for lightbox:</value>
+  </data>
+  <data name="lblLightBoxThemeSelect.Text" xml:space="preserve">
+    <value>Select lightbox theme:</value>
+  </data>
+  <data name="lblQueryString.HelpText" xml:space="preserve">
+    <value>Enter the query string of blog module:</value>
+  </data>
+  <data name="lblQueryString.Text" xml:space="preserve">
+    <value>Enter query string:</value>
+  </data>
+  <data name="lblSelectDisplayType.HelpText" xml:space="preserve">
+    <value>Select the type of display to display gallery media:</value>
+  </data>
+  <data name="lblSelectDisplayType.Text" xml:space="preserve">
+    <value>Select type of display:</value>
+  </data>
+  <data name="lblSlideShowAutoSlide.HelpText" xml:space="preserve">
+    <value>Enable auto slide:</value>
+  </data>
+  <data name="lblSlideShowAutoSlide.Text" xml:space="preserve">
+    <value>Enable auto slide:</value>
+  </data>
+  <data name="lblSlideShowAutoSlidePause.HelpText" xml:space="preserve">
+    <value>Set the pause between images when in auto slide mode:</value>
+  </data>
+  <data name="lblSlideShowAutoSlidePause.Text" xml:space="preserve">
+    <value>Auto slide pause between imags (ms):</value>
+  </data>
+  <data name="lblSlideShowMaxImageHeight.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblSlideShowMaxImageHeight.Text" xml:space="preserve">
+    <value>Maximum image height:</value>
+  </data>
+  <data name="lblSlideShowMaxImageWidth.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblSlideShowMaxImageWidth.Text" xml:space="preserve">
+    <value>Maximum image width:</value>
+  </data>
+  <data name="lblSlideShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblSlideShowMediaTitle.Text" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblSlideShowOpenMediaUrl.HelpText" xml:space="preserve">
+    <value>On image click dont open image in lightbox, but open Media Url link.</value>
+  </data>
+  <data name="lblSlideShowOpenMediaUrl.Text" xml:space="preserve">
+    <value>On click go to Media Url:</value>
+  </data>
+  <data name="lblSlideShowOpenMediaUrlNewWindow.HelpText" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblSlideShowOpenMediaUrlNewWindow.Text" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblSlideShowPagingVisible.HelpText" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblSlideShowPagingVisible.Text" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblSlideShowShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblSlideShowShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblSlideShowShowLightboxDescription.HelpText" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblSlideShowShowLightboxDescription.Text" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblSlideShowShowLightboxTitle.HelpText" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblSlideShowShowLightboxTitle.Text" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblSlideShowShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblSlideShowShowMediaDescription.Text" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblSlideShowShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblSlideShowShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblSlideShowSlideRandom.HelpText" xml:space="preserve">
+    <value>Auto slide random images.</value>
+  </data>
+  <data name="lblSlideShowSlideRandom.Text" xml:space="preserve">
+    <value>Random:</value>
+  </data>
+  <data name="lblSlideShowSmartCrop.HelpText" xml:space="preserve">
+    <value>Use this if you want all images to have same width and height. Otherwise images will be resized proportionaly.</value>
+  </data>
+  <data name="lblSlideShowSmartCrop.Text" xml:space="preserve">
+    <value>Smart resize and crop images:</value>
+  </data>
+  <data name="lblSlideShowStartRandom.HelpText" xml:space="preserve">
+    <value>Set this if you want the auto slide mode to start with random image:</value>
+  </data>
+  <data name="lblSlideShowStartRandom.Text" xml:space="preserve">
+    <value>Start slide show with random image:</value>
+  </data>
+  <data name="lblSlideShowThemeSelect.HelpText" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblSlideShowThemeSelect.Text" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblAudioGalleryColumns.HelpText" xml:space="preserve">
+    <value>Set the number of columns:</value>
+  </data>
+  <data name="lblAudioGalleryColumns.Text" xml:space="preserve">
+    <value>Number of columns:</value>
+  </data>
+  <data name="lblAudioGalleryItemsPrePage.HelpText" xml:space="preserve">
+    <value>Set the number of items per page:</value>
+  </data>
+  <data name="lblAudioGalleryItemsPrePage.Text" xml:space="preserve">
+    <value>Number of items per page:</value>
+  </data>
+  <data name="lblAudioGalleryPlayerWidth.HelpText" xml:space="preserve">
+    <value>Set the width of audio player in pixels. Minimum value is 300.</value>
+  </data>
+  <data name="lblAudioGalleryPlayerWidth.Text" xml:space="preserve">
+    <value>Player width (px):</value>
+  </data>
+  <data name="lblAudioGalleryPlayOnLoad.HelpText" xml:space="preserve">
+    <value>Start playing audio file on page load:</value>
+  </data>
+  <data name="lblAudioGalleryPlayOnLoad.Text" xml:space="preserve">
+    <value>Play on load:</value>
+  </data>
+  <data name="lblAudioGalleryShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblAudioGalleryShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblAudioGalleryShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblAudioGalleryShowMediaDescription.Text" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblAudioGalleryShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblAudioGalleryShowMediaTitle.Text" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblAudioGalleryShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblAudioGalleryShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblAudioGalleryThemeSelect.HelpText" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblAudioGalleryThemeSelect.Text" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblAudioGalleryVolume.HelpText" xml:space="preserve">
+    <value>Audio volume:</value>
+  </data>
+  <data name="lblAudioGalleryVolume.Text" xml:space="preserve">
+    <value>Audio volume:</value>
+  </data>
+  <data name="lblFlashTabDontShow.HelpText" xml:space="preserve">
+    <value>This will not show main gallery. Use this if you have link embeded in html:</value>
+  </data>
+  <data name="lblFlashTabDontShow.Text" xml:space="preserve">
+    <value>Do not show main gallery:</value>
+  </data>
+  <data name="lblFlashTabEmbedFlash.HelpText" xml:space="preserve">
+    <value>Set this if you want the flash gallery to be embeded in page:</value>
+  </data>
+  <data name="lblFlashTabEmbedFlash.Text" xml:space="preserve">
+    <value>Embed flash:</value>
+  </data>
+  <data name="lblFlashTabGalleryHeight.HelpText" xml:space="preserve">
+    <value>Set the height of flash gallery:</value>
+  </data>
+  <data name="lblFlashTabGalleryHeight.Text" xml:space="preserve">
+    <value>Gallery height:</value>
+  </data>
+  <data name="lblFlashTabGalleryTheme.HelpText" xml:space="preserve">
+    <value>Select Flash Tab Gallery theme:</value>
+  </data>
+  <data name="lblFlashTabGalleryTheme.Text" xml:space="preserve">
+    <value>Select theme:</value>
+  </data>
+  <data name="lblFlashTabGalleryWidth.HelpText" xml:space="preserve">
+    <value>Set the width of flash gallery. Recommended width is 800 px:</value>
+  </data>
+  <data name="lblFlashTabGalleryWidth.Text" xml:space="preserve">
+    <value>Gallery width:</value>
+  </data>
+  <data name="lblFlashTabGeteranteLink.HelpText" xml:space="preserve">
+    <value>Set this if you want link generated to be embeded in html:</value>
+  </data>
+  <data name="lblFlashTabGeteranteLink.Text" xml:space="preserve">
+    <value>Generate link code:</value>
+  </data>
+  <data name="lblFlashTabLinkText.HelpText" xml:space="preserve">
+    <value>Set the text for link to open flash gallery:</value>
+  </data>
+  <data name="lblFlashTabLinkText.Text" xml:space="preserve">
+    <value>Flash link text:</value>
+  </data>
+  <data name="lblFlashTabSelectCategory.HelpText" xml:space="preserve">
+    <value>Select to display category or to display just one gallery:</value>
+  </data>
+  <data name="lblFlashTabSelectCategory.Text" xml:space="preserve">
+    <value>Display category:</value>
+  </data>
+  <data name="lblLightBoxGalleryAudioPlayerPlayOnLoad.HelpText" xml:space="preserve">
+    <value>Start to play audio on page load:</value>
+  </data>
+  <data name="lblLightBoxGalleryAudioPlayerPlayOnLoad.Text" xml:space="preserve">
+    <value>Play on load:</value>
+  </data>
+  <data name="lblLightBoxGalleryCropImages.HelpText" xml:space="preserve">
+    <value>Set this to crop vertical images:</value>
+  </data>
+  <data name="lblLightBoxGalleryCropImages.Text" xml:space="preserve">
+    <value>Resize and crop vertical images:</value>
+  </data>
+  <data name="lblLightBoxGalleryImageWidth.HelpText" xml:space="preserve">
+    <value>Set the maximum image width for resizing:</value>
+  </data>
+  <data name="lblLightBoxGalleryImageWidth.Text" xml:space="preserve">
+    <value>Maximum image width:</value>
+  </data>
+  <data name="lblLightBoxGalleryNumberOfColumns.HelpText" xml:space="preserve">
+    <value>Set the number of columns:</value>
+  </data>
+  <data name="lblLightBoxGalleryNumberOfColumns.Text" xml:space="preserve">
+    <value>Number of columns:</value>
+  </data>
+  <data name="lblLightBoxGalleryNumberOfItems.HelpText" xml:space="preserve">
+    <value>Set the maximum number of items on one page:</value>
+  </data>
+  <data name="lblLightBoxGalleryNumberOfItems.Text" xml:space="preserve">
+    <value>Number of items per page:</value>
+  </data>
+  <data name="lblLightBoxGalleryOpenMediaUrl.HelpText" xml:space="preserve">
+    <value>On image click dont open image in lightbox, but open Media Url link.</value>
+  </data>
+  <data name="lblLightBoxGalleryOpenMediaUrl.Text" xml:space="preserve">
+    <value>On click go to Media Url:</value>
+  </data>
+  <data name="lblLightBoxGalleryOpenMediaUrlNewWindow.HelpText" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblLightBoxGalleryOpenMediaUrlNewWindow.Text" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblLightBoxGalleryResizeCrop.HelpText" xml:space="preserve">
+    <value>Set this this to resize all images to same width and height:</value>
+  </data>
+  <data name="lblLightBoxGalleryResizeCrop.Text" xml:space="preserve">
+    <value>Resize and crop all images:</value>
+  </data>
+  <data name="lblLightBoxGallerySetImageHeight.HelpText" xml:space="preserve">
+    <value>Set the maximum image height for resizing:</value>
+  </data>
+  <data name="lblLightBoxGallerySetImageHeight.Text" xml:space="preserve">
+    <value>Maximum image height:</value>
+  </data>
+  <data name="lblLightBoxGalleryThemeSelect.HelpText" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblLightBoxGalleryThemeSelect.Text" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblLightBoxGalleryVideoPlayerPlayOnLoad.HelpText" xml:space="preserve">
+    <value>Start to play video on page load:</value>
+  </data>
+  <data name="lblLightBoxGalleryVideoPlayerPlayOnLoad.Text" xml:space="preserve">
+    <value>Play on load:</value>
+  </data>
+  <data name="lblLightBoxGalleryVideoPlayerPlayQTInFlash.HelpText" xml:space="preserve">
+    <value>Play QuickTime videos in flash player:</value>
+  </data>
+  <data name="lblLightBoxGalleryVideoPlayerPlayQTInFlash.Text" xml:space="preserve">
+    <value>Play QuickTime videos in flash player:</value>
+  </data>
+  <data name="lblLightBoxGalleryVideoPlayerSelectSkin.HelpText" xml:space="preserve">
+    <value>Select video player skin:</value>
+  </data>
+  <data name="lblLightBoxGalleryVideoPlayerSelectSkin.Text" xml:space="preserve">
+    <value>Select video player skin:</value>
+  </data>
+  <data name="lblLightBoxGalleryViseoPlayerPlayOnLoad.HelpText" xml:space="preserve">
+    <value>Show description inside video player:</value>
+  </data>
+  <data name="lblLightBoxGalleryViseoPlayerPlayOnLoad.Text" xml:space="preserve">
+    <value>Show description:</value>
+  </data>
+  <data name="lblLoadSettingsFromFile.HelpText" xml:space="preserve">
+    <value>Select module number or settings file to load settings from:</value>
+  </data>
+  <data name="lblLoadSettingsFromFile.Text" xml:space="preserve">
+    <value>Select settings:</value>
+  </data>
+  <data name="lblSaveSettingstoFile.HelpText" xml:space="preserve">
+    <value>Enter filename to save settings to:</value>
+  </data>
+  <data name="lblSaveSettingstoFile.Text" xml:space="preserve">
+    <value>Filename:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsBorderColor.HelpText" xml:space="preserve">
+    <value>Set the border color in rgb format with hex values:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsBorderColor.Text" xml:space="preserve">
+    <value>Border color (hex value RRGGBB):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsDisplayBorder.HelpText" xml:space="preserve">
+    <value>Display border:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsDisplayBorder.Text" xml:space="preserve">
+    <value>Display border:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsFilmstrip.HelpText" xml:space="preserve">
+    <value>Set to show or hide filmstrip:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsFilmstrip.Text" xml:space="preserve">
+    <value>Show filmstrip:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsFilmStripSize.HelpText" xml:space="preserve">
+    <value>Set the number of images in filmstrip:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsFilmStripSize.Text" xml:space="preserve">
+    <value>Number of images in filmstrip:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsImageHeight.HelpText" xml:space="preserve">
+    <value>Set the height of main image panel:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsImageHeight.Text" xml:space="preserve">
+    <value>Image height:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsImageWidth.HelpText" xml:space="preserve">
+    <value>Set the width of main image panel:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsImageWidth.Text" xml:space="preserve">
+    <value>Image width:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOpenMediaUrl.HelpText" xml:space="preserve">
+    <value>On image click dont open image in lightbox, but open Media Url link.</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOpenMediaUrl.Text" xml:space="preserve">
+    <value>On click go to Media Url:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOpenMediaUrlNewWindow.HelpText" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOpenMediaUrlNewWindow.Text" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlayColor.HelpText" xml:space="preserve">
+    <value>Set the color of overlay in rgb format with hex values:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlayColor.Text" xml:space="preserve">
+    <value>Overlay color (hex value RRGGBB):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlayOpacity.HelpText" xml:space="preserve">
+    <value>Set the percentage of overlay opacity. Values between 0 and 100.</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlayOpacity.Text" xml:space="preserve">
+    <value>Overlay opacity (0-100):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlaySize.HelpText" xml:space="preserve">
+    <value>Set the size of overlay in pixels:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlaySize.Text" xml:space="preserve">
+    <value>Overlay size (px):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlayTextColor.HelpText" xml:space="preserve">
+    <value>Set the color of ovarlay text in rgb format with hex values:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOverlayTextColor.Text" xml:space="preserve">
+    <value>Overlay text color (hex value RRGGBB):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOvlerlayPosition.HelpText" xml:space="preserve">
+    <value>Set the position of overlay for title and description:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsOvlerlayPosition.Text" xml:space="preserve">
+    <value>Overlay position:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsProportionalImages.HelpText" xml:space="preserve">
+    <value>Proportionally resize images:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsProportionalImages.Text" xml:space="preserve">
+    <value>Proportionally resize images:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowLightboxDescription.HelpText" xml:space="preserve">
+    <value>Show media description in lightbox:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowLightboxDescription.Text" xml:space="preserve">
+    <value>Show media description in lightbox:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowMediaDescription.Text" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowMediaTitle.Text" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowPanel.HelpText" xml:space="preserve">
+    <value>Set to show or hide main image panel:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowPanel.Text" xml:space="preserve">
+    <value>Show main panel:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsThumbHeight.HelpText" xml:space="preserve">
+    <value>Set the height of thumbnail image in filmstrip:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsThumbHeight.Text" xml:space="preserve">
+    <value>Thumbnail height:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsThumbPosition.HelpText" xml:space="preserve">
+    <value>Set the position of filmstrip with thumbnails:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsThumbPosition.Text" xml:space="preserve">
+    <value>Thumbnail position:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsThumbWidth.HelpText" xml:space="preserve">
+    <value>Set the width of thumbnail image in filmstrip:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsThumbWidth.Text" xml:space="preserve">
+    <value>Thumbnail width:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsTransitionSpeed.HelpText" xml:space="preserve">
+    <value>Set the transition time in miliseconds:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsTransitionSpeed.Text" xml:space="preserve">
+    <value>Transition speed (ms):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsTransitionTime.HelpText" xml:space="preserve">
+    <value>Set the pause time between image transition in miliseconds:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsTransitionTime.Text" xml:space="preserve">
+    <value>Transition interval (ms):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsTransparentThumbnails.HelpText" xml:space="preserve">
+    <value>Transparent thumbnail navigation:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsTransparentThumbnails.Text" xml:space="preserve">
+    <value>Transparent thumbnail navigation:</value>
+  </data>
+  <data name="lblTGVPAllowFullscreen.HelpText" xml:space="preserve">
+    <value>Allow video to be played in fullscreen:</value>
+  </data>
+  <data name="lblTGVPAllowFullscreen.Text" xml:space="preserve">
+    <value>Allow fullscreen:</value>
+  </data>
+  <data name="lblVideoGalleryAllowFullscreen.HelpText" xml:space="preserve">
+    <value>Allow video to be played fullscreen:</value>
+  </data>
+  <data name="lblVideoGalleryAllowFullscreen.Text" xml:space="preserve">
+    <value>Allow fullscreen:</value>
+  </data>
+  <data name="lblVideoGalleryColomunPerPage.HelpText" xml:space="preserve">
+    <value>Set the number of columns:</value>
+  </data>
+  <data name="lblVideoGalleryColomunPerPage.Text" xml:space="preserve">
+    <value>Number of columns:</value>
+  </data>
+  <data name="lblVideoGalleryHeight.HelpText" xml:space="preserve">
+    <value>Set the video height. Does not apply to embeded video.</value>
+  </data>
+  <data name="lblVideoGalleryHeight.Text" xml:space="preserve">
+    <value>Video height:</value>
+  </data>
+  <data name="lblVideoGalleryInitialVolume.HelpText" xml:space="preserve">
+    <value>Initial video volume:</value>
+  </data>
+  <data name="lblVideoGalleryInitialVolume.Text" xml:space="preserve">
+    <value>Initial video volume:</value>
+  </data>
+  <data name="lblVideoGalleryItemsPerPage.HelpText" xml:space="preserve">
+    <value>Set the number if items on one page:</value>
+  </data>
+  <data name="lblVideoGalleryItemsPerPage.Text" xml:space="preserve">
+    <value>Items per page:</value>
+  </data>
+  <data name="lblVideoGalleryPlayOnLoad.HelpText" xml:space="preserve">
+    <value>Start to play video on page load:</value>
+  </data>
+  <data name="lblVideoGalleryPlayOnLoad.Text" xml:space="preserve">
+    <value>Play on load:</value>
+  </data>
+  <data name="lblVideoGallerySelectCSS.HelpText" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblVideoGallerySelectCSS.Text" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblVideoGallerySelectSkin.HelpText" xml:space="preserve">
+    <value>Select video player skin:</value>
+  </data>
+  <data name="lblVideoGallerySelectSkin.Text" xml:space="preserve">
+    <value>Select video player skin:</value>
+  </data>
+  <data name="lblVideoGalleryShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblVideoGalleryShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblVideoGalleryShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show video description:</value>
+  </data>
+  <data name="lblVideoGalleryShowMediaDescription.Text" xml:space="preserve">
+    <value>Show video description:</value>
+  </data>
+  <data name="lblVideoGalleryShowMediaDescriptionInVideo.HelpText" xml:space="preserve">
+    <value>Show description inside video:</value>
+  </data>
+  <data name="lblVideoGalleryShowMediaDescriptionInVideo.Text" xml:space="preserve">
+    <value>Show description inside video:</value>
+  </data>
+  <data name="lblVideoGalleryShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show video title:</value>
+  </data>
+  <data name="lblVideoGalleryShowMediaTitle.Text" xml:space="preserve">
+    <value>Show video title:</value>
+  </data>
+  <data name="lblVideoGalleryUseThumbnailAsStartPhoto.HelpText" xml:space="preserve">
+    <value>Use thumbnail as start image:</value>
+  </data>
+  <data name="lblVideoGalleryUseThumbnailAsStartPhoto.Text" xml:space="preserve">
+    <value>Use thumbnail as start image:</value>
+  </data>
+  <data name="lblVideoGalleryWidth.HelpText" xml:space="preserve">
+    <value>Set the video width. Does not apply to embeded video.</value>
+  </data>
+  <data name="lblVideoGalleryWidth.Text" xml:space="preserve">
+    <value>Video width:</value>
+  </data>
+  <data name="lblgvIntegrateCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="lblGVIntegrateDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="lblGVIntegrateEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="lblgvIntegrateUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="lblVideoGalleryShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblVideoGalleryShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblGallerySettingsTitle.Text" xml:space="preserve">
+    <value>&lt;b&gt;Gallery&lt;/b&gt; Settings</value>
+  </data>
+  <data name="lblGallerySettingsTitleAdjust.Text" xml:space="preserve">
+    <value>Adjust your gallery for perfect view</value>
+  </data>
+  <data name="lblSelectLastModifiedGallery.Text" xml:space="preserve">
+    <value>Select last modified gallery:</value>
+  </data>
+  <data name="btnCloseDown.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btncloseResource1.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="lblImageCarouselTemplateSelect.HelpText" xml:space="preserve">
+    <value>Select the control viewer template:</value>
+  </data>
+  <data name="lblImageCarouselTemplateSelect.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="lblImageSliderTemplateSelect.HelpText" xml:space="preserve">
+    <value>Select the control viewer template:</value>
+  </data>
+  <data name="lblImageSliderTemplateSelect.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="lblLightBoxAjaxPreloader.HelpText" xml:space="preserve">
+    <value>Select Ajax preloader type:</value>
+  </data>
+  <data name="lblLightBoxAjaxPreloader.Text" xml:space="preserve">
+    <value>Select Ajax preloader type:</value>
+  </data>
+  <data name="LighboxPreloaderBellowImages.Text" xml:space="preserve">
+    <value>Bellow images</value>
+  </data>
+  <data name="LighboxPreloaderFullscreen.Text" xml:space="preserve">
+    <value>Fullscreen</value>
+  </data>
+  <data name="lblLightboxTemplateSelect.HelpText" xml:space="preserve">
+    <value>Select the control viewer template:</value>
+  </data>
+  <data name="lblLightboxTemplateSelect.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2FilmStripSize.HelpText" xml:space="preserve">
+    <value>Set the number of thumbnails per page:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2FilmStripSize.Text" xml:space="preserve">
+    <value>Number of thumbnails:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ImageHeight.HelpText" xml:space="preserve">
+    <value>Set the height of main image panel:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ImageHeight.Text" xml:space="preserve">
+    <value>Image height:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ImageWidth.HelpText" xml:space="preserve">
+    <value>Set the width of main image panel:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ImageWidth.Text" xml:space="preserve">
+    <value>Image width:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ProportionalImages.HelpText" xml:space="preserve">
+    <value>Proportionally resize images:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ProportionalImages.Text" xml:space="preserve">
+    <value>Proportionally resize images:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowMediaDescription.Text" xml:space="preserve">
+    <value>Show media description:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowMediaTitle.Text" xml:space="preserve">
+    <value>Show media title:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ThumbHeight.HelpText" xml:space="preserve">
+    <value>Thumbnail height:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ThumbHeight.Text" xml:space="preserve">
+    <value>Thumbnail height:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ThumbPosition.HelpText" xml:space="preserve">
+    <value>Thumbnail paging position:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ThumbPosition.Text" xml:space="preserve">
+    <value>Thumbnail paging position:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ThumbWidth.HelpText" xml:space="preserve">
+    <value>Set the width of thumbnail image:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2ThumbWidth.Text" xml:space="preserve">
+    <value>Thumbnail width:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2TransitionSpeed.HelpText" xml:space="preserve">
+    <value>Set the transition time in miliseconds:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2TransitionSpeed.Text" xml:space="preserve">
+    <value>Transition speed (ms):</value>
+  </data>
+  <data name="lblSlideShowThumbnails2TransitionTime.HelpText" xml:space="preserve">
+    <value>Set the pause time between image transition in miliseconds:</value>
+  </data>
+  <data name="lblSlideShowThumbnails2TransitionTime.Text" xml:space="preserve">
+    <value>Transition interval (ms):</value>
+  </data>
+  <data name="lblSSthumbnails2TemplateSelect.HelpText" xml:space="preserve">
+    <value>Select the control viewer template:</value>
+  </data>
+  <data name="lblSSthumbnails2TemplateSelect.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="lblSSthumbnails2ThemeSelect.HelpText" xml:space="preserve">
+    <value>Select theme:</value>
+  </data>
+  <data name="lblSSthumbnails2ThemeSelect.Text" xml:space="preserve">
+    <value>Select theme:</value>
+  </data>
+  <data name="ListItemResourceSS2.Text" xml:space="preserve">
+    <value>Slideshow with thumbnails 2 (Images)</value>
+  </data>
+  <data name="ListItemResourceTaB.Text" xml:space="preserve">
+    <value>Top and bottom</value>
+  </data>
+  <data name="btnVerticalCaouselSaveClose.Text" xml:space="preserve">
+    <value>Save &amp; Close</value>
+  </data>
+  <data name="btnVerticalCarouselSaveSettings.Text" xml:space="preserve">
+    <value>Save settings</value>
+  </data>
+  <data name="cvVerticalCarouselAutoSlidePause.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVerticalCarouselImageHeight.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVerticalCarouselImageWidth.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVerticalCarouselNumberOfImages.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvVerticalCarouselNumberOfImagesToSlide.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="lblVerticalCarouselAutoSlidePause.HelpText" xml:space="preserve">
+    <value>Set the pause between images when in auto slide mode:</value>
+  </data>
+  <data name="lblVerticalCarouselAutoSlidePause.Text" xml:space="preserve">
+    <value>Auto slide pause between imags (ms):</value>
+  </data>
+  <data name="lblVerticalCarouselMaxImageHeight.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblVerticalCarouselMaxImageHeight.Text" xml:space="preserve">
+    <value>Maximum image height:</value>
+  </data>
+  <data name="lblVerticalCarouselMaxImageWidth.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblVerticalCarouselMaxImageWidth.Text" xml:space="preserve">
+    <value>Maximum image width:</value>
+  </data>
+  <data name="lblVerticalCarouselNumberOfImages.HelpText" xml:space="preserve">
+    <value>Number of images to show:</value>
+  </data>
+  <data name="lblVerticalCarouselNumberOfImages.Text" xml:space="preserve">
+    <value>Number of images to show:</value>
+  </data>
+  <data name="lblVerticalCarouselNumberOfImagesToSlide.HelpText" xml:space="preserve">
+    <value>Number of images to slide:</value>
+  </data>
+  <data name="lblVerticalCarouselNumberOfImagesToSlide.Text" xml:space="preserve">
+    <value>Number of images to slide:</value>
+  </data>
+  <data name="lblVerticalCarouselOpenMediaUrl.HelpText" xml:space="preserve">
+    <value>On image click dont open image in lightbox, but open Media Url link.</value>
+  </data>
+  <data name="lblVerticalCarouselOpenMediaUrl.Text" xml:space="preserve">
+    <value>On click go to Media Url:</value>
+  </data>
+  <data name="lblVerticalCarouselOpenMediaUrlNewWindow.HelpText" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblVerticalCarouselOpenMediaUrlNewWindow.Text" xml:space="preserve">
+    <value>Open link in new window:</value>
+  </data>
+  <data name="lblVerticalCarouselShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblVerticalCarouselShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblVerticalCarouselShowLightBoxDescription.HelpText" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblVerticalCarouselShowLightBoxDescription.Text" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblVerticalCarouselShowLightboxTitle.HelpText" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblVerticalCarouselShowLightboxTitle.Text" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblVerticalCarouselShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblVerticalCarouselShowMediaDescription.Text" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblVerticalCarouselShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblVerticalCarouselShowMediaTitle.Text" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblVerticalCarouselShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblVerticalCarouselShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblVerticalCarouselTemplateSelect.HelpText" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="lblVerticalCarouselTemplateSelect.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="rfvVerticalCarouselAutoSlidePause.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVerticalCarouselImageHeight.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVerticalCarouselImageWidth.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVerticalCarouselNumberOfImages.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="rfvVerticalCarouselNumberOfImagesToSlide.ErrorMessage" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3.Text" xml:space="preserve">
+    <value>Slideshow With Thumbnails 3 display settings</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3AutoSlideDelay.HelpText" xml:space="preserve">
+    <value>Delay between transitions in miliseconds:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3AutoSlideDelay.Text" xml:space="preserve">
+    <value>Delay between transitions (ms):</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3AutoSlidePause.HelpText" xml:space="preserve">
+    <value>Transition duration in miliseconds:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3AutoSlidePause.Text" xml:space="preserve">
+    <value>Transition duration (ms):</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3BackgroundColor.HelpText" xml:space="preserve">
+    <value>Background color:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3BackgroundColor.Text" xml:space="preserve">
+    <value>Background color:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3MaxImageHeight.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3MaxImageHeight.Text" xml:space="preserve">
+    <value>Maximum image height:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3MaxImageWidth.HelpText" xml:space="preserve">
+    <value>Maximum  image width for proportional resizing:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3MaxImageWidth.Text" xml:space="preserve">
+    <value>Maximum image width:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3MediaTitle.HelpText" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3MediaTitle.Text" xml:space="preserve">
+    <value>Show image title:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowFullscreen.HelpText" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowFullscreen.Text" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowLightboxDescription.HelpText" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowLightboxDescription.Text" xml:space="preserve">
+    <value>Show image description in lightbox:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowLightboxTitle.HelpText" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowLightboxTitle.Text" xml:space="preserve">
+    <value>Show image title in lightbox:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ShowMediaDescription.Text" xml:space="preserve">
+    <value>Show image description:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3SmartCrop.HelpText" xml:space="preserve">
+    <value>Use this if you want all images to have same width and height. Otherwise images will be resized proportionaly.</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3SmartCrop.Text" xml:space="preserve">
+    <value>Smart resize and crop images:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3TemplateSelect.HelpText" xml:space="preserve">
+    <value>Select the control viewer template:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3TemplateSelect.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ThemeSelect.HelpText" xml:space="preserve">
+    <value>Select theme:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3ThemeSelect.Text" xml:space="preserve">
+    <value>Select theme:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3TransitionEffect.HelpText" xml:space="preserve">
+    <value>Transition effect:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails3TransitionEffect.Text" xml:space="preserve">
+    <value>Transition effect:</value>
+  </data>
+  <data name="lblSSlideshowWithThumbnails3AutoSlide.HelpText" xml:space="preserve">
+    <value>Enable auto slide of images.</value>
+  </data>
+  <data name="lblSSlideshowWithThumbnails3AutoSlide.Text" xml:space="preserve">
+    <value>Enable auto slide:</value>
+  </data>
+  <data name="SST3Fade.Text" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="SST3FadeSlide.Text" xml:space="preserve">
+    <value>Fade and slide</value>
+  </data>
+  <data name="SST3Flash.Text" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="SST3Pulse.Text" xml:space="preserve">
+    <value>Pulse</value>
+  </data>
+  <data name="SST3Slide.Text" xml:space="preserve">
+    <value>Slide</value>
+  </data>
+  <data name="lblVideoGallery2AllowFullscreen.HelpText" xml:space="preserve">
+    <value>Allow video to be played fullscreen:</value>
+  </data>
+  <data name="lblVideoGallery2AllowFullscreen.Text" xml:space="preserve">
+    <value>Allow fullscreen:</value>
+  </data>
+  <data name="lblVideoGallery2ColomunPerPage.HelpText" xml:space="preserve">
+    <value>Set the number of columns:</value>
+  </data>
+  <data name="lblVideoGallery2ColomunPerPage.Text" xml:space="preserve">
+    <value>Number of columns:</value>
+  </data>
+  <data name="lblVideoGallery2Height.HelpText" xml:space="preserve">
+    <value>Thumbnail height:</value>
+  </data>
+  <data name="lblVideoGallery2Height.Text" xml:space="preserve">
+    <value>Thumbnail height:</value>
+  </data>
+  <data name="lblVideoGallery2InitialVolume.HelpText" xml:space="preserve">
+    <value>Initial video volume:</value>
+  </data>
+  <data name="lblVideoGallery2InitialVolume.Text" xml:space="preserve">
+    <value>Initial video volume:</value>
+  </data>
+  <data name="lblVideoGallery2ItemsPerPage.HelpText" xml:space="preserve">
+    <value>Set the number if items on one page:</value>
+  </data>
+  <data name="lblVideoGallery2ItemsPerPage.Text" xml:space="preserve">
+    <value>Items per page:</value>
+  </data>
+  <data name="lblVideoGallery2PlayOnLoad.HelpText" xml:space="preserve">
+    <value>Start to play video on page load:</value>
+  </data>
+  <data name="lblVideoGallery2PlayOnLoad.Text" xml:space="preserve">
+    <value>Play on load:</value>
+  </data>
+  <data name="lblVideoGallery2SelectCSS.HelpText" xml:space="preserve">
+    <value>Select the CSS theme file:</value>
+  </data>
+  <data name="lblVideoGallery2SelectCSS.Text" xml:space="preserve">
+    <value>Select CSS:</value>
+  </data>
+  <data name="lblVideoGallery2SelectSkin.HelpText" xml:space="preserve">
+    <value>Select video player skin:</value>
+  </data>
+  <data name="lblVideoGallery2SelectSkin.Text" xml:space="preserve">
+    <value>Select video player skin:</value>
+  </data>
+  <data name="lblVideoGallery2ShowDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblVideoGallery2ShowDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaDescription.HelpText" xml:space="preserve">
+    <value>Show video description:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaDescription.Text" xml:space="preserve">
+    <value>Show video description:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaDescriptionInVideo.HelpText" xml:space="preserve">
+    <value>Show description inside video:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaDescriptionInVideo.Text" xml:space="preserve">
+    <value>Show description inside video:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaDescriptionThumbnail.HelpText" xml:space="preserve">
+    <value>Show video description in thumbnail:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaDescriptionThumbnail.Text" xml:space="preserve">
+    <value>Show video description in thumbnail:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaTitle.HelpText" xml:space="preserve">
+    <value>Show video title:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaTitle.Text" xml:space="preserve">
+    <value>Show video title:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaTitleThumbnail.HelpText" xml:space="preserve">
+    <value>Show video title in thumbnail:</value>
+  </data>
+  <data name="lblVideoGallery2ShowMediaTitleThumbnail.Text" xml:space="preserve">
+    <value>Show video title in thumbnail:</value>
+  </data>
+  <data name="lblVideoGallery2ShowTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblVideoGallery2ShowTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblVideoGallery2TemplateSelect.HelpText" xml:space="preserve">
+    <value>Select the control viewer template:</value>
+  </data>
+  <data name="lblVideoGallery2TemplateSelect.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="lblVideoGallery2UseThumbnailAsStartPhoto.HelpText" xml:space="preserve">
+    <value>Use thumbnail as start image:</value>
+  </data>
+  <data name="lblVideoGallery2UseThumbnailAsStartPhoto.Text" xml:space="preserve">
+    <value>Use thumbnail as start image:</value>
+  </data>
+  <data name="lblVideoGallery2Width.HelpText" xml:space="preserve">
+    <value>Thumbnail width:</value>
+  </data>
+  <data name="lblVideoGallery2Width.Text" xml:space="preserve">
+    <value>Thumbnail width:</value>
+  </data>
+  <data name="lblVideoGalleryDisplay2Settings.Text" xml:space="preserve">
+    <value>Video gallery 2 display settings</value>
+  </data>
+  <data name="lblImageSliderRandomizeMedia.HelpText" xml:space="preserve">
+    <value>Randomize media positions at every page load:</value>
+  </data>
+  <data name="lblImageSliderRandomizeMedia.Text" xml:space="preserve">
+    <value>Randomize media positions:</value>
+  </data>
+  <data name="lblLightBoxRandomizeMedia.HelpText" xml:space="preserve">
+    <value>Randomize media positions on every page load:</value>
+  </data>
+  <data name="lblLightBoxRandomizeMedia.Text" xml:space="preserve">
+    <value>Randomize media positions:</value>
+  </data>
+  <data name="lblLightboxCaptionSlider.Text" xml:space="preserve">
+    <value>Lightbox caption slider display settings</value>
+  </data>
+  <data name="lightbox2Resource.Text" xml:space="preserve">
+    <value>LightBox Caption Slider (Images, Video, Audio)</value>
+  </data>
+  <data name="lblImageCarouselRandomizeMedia.Text" xml:space="preserve">
+    <value>Randomize media positions:</value>
+  </data>
+  <data name="lblImageCarouselRandomizeMedia.HelpText" xml:space="preserve">
+    <value>Randomize media positions at every page load:</value>
+  </data>
+  <data name="audiogallery2.Text" xml:space="preserve">
+    <value>Audio Gallery 2 with thumbnails (Audio)</value>
+  </data>
+  <data name="lblAudioGallery2DisplaySettins.Text" xml:space="preserve">
+    <value>Audio gallery 2 display settings</value>
+  </data>
+  <data name="lblAudioGallery2ShowMediaDescriptionThumbnail.HelpText" xml:space="preserve">
+    <value>Show media description in thumbnail:</value>
+  </data>
+  <data name="lblAudioGallery2ShowMediaDescriptionThumbnail.Text" xml:space="preserve">
+    <value>Show media description in thumbnail:</value>
+  </data>
+  <data name="lblAudioGallery2ShowMediaTitleThumnbail.HelpText" xml:space="preserve">
+    <value>Show media title in thumbnail:</value>
+  </data>
+  <data name="lblAudioGallery2ShowMediaTitleThumnbail.Text" xml:space="preserve">
+    <value>Show media title in thumbnail:</value>
+  </data>
+  <data name="lblAudioGallery2ThumbHeight.HelpText" xml:space="preserve">
+    <value>Thumb height:</value>
+  </data>
+  <data name="lblAudioGallery2ThumbHeight.Text" xml:space="preserve">
+    <value>Thumb height:</value>
+  </data>
+  <data name="lblAudioGallery2ThumbWidth.HelpText" xml:space="preserve">
+    <value>Thumb width:</value>
+  </data>
+  <data name="lblAudioGallery2ThumbWidth.Text" xml:space="preserve">
+    <value>Thumb width:</value>
+  </data>
+  <data name="lblVideoGallery3AutoSlide.HelpText" xml:space="preserve">
+    <value>Auto slide:</value>
+  </data>
+  <data name="lblVideoGallery3AutoSlide.Text" xml:space="preserve">
+    <value>Auto slide:</value>
+  </data>
+  <data name="lblVideoGallery3AutoSlidePause.HelpText" xml:space="preserve">
+    <value>Auto slide items pause (miliseconds):</value>
+  </data>
+  <data name="lblVideoGallery3AutoSlidePause.Text" xml:space="preserve">
+    <value>Auto slide items pause (ms):</value>
+  </data>
+  <data name="lblVideoGallery3ItemsToScroll.HelpText" xml:space="preserve">
+    <value>Items to scroll:</value>
+  </data>
+  <data name="lblVideoGallery3ItemsToScroll.Text" xml:space="preserve">
+    <value>Items to scroll:</value>
+  </data>
+  <data name="lblVideoGallery3ItemstoShow.HelpText" xml:space="preserve">
+    <value>Items to show:</value>
+  </data>
+  <data name="lblVideoGallery3ItemstoShow.Text" xml:space="preserve">
+    <value>Items to show:</value>
+  </data>
+  <data name="lblVideoGallery3PaggingVisible.HelpText" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblVideoGallery3PaggingVisible.Text" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblVideoGalleryDisplay3Settings.Text" xml:space="preserve">
+    <value>Video gallery 3 display settings</value>
+  </data>
+  <data name="VideoGallery2.Text" xml:space="preserve">
+    <value>Video gallery 2 with images and thumbnails (Video, Images)</value>
+  </data>
+  <data name="VideoGallery3.Text" xml:space="preserve">
+    <value>Video gallery 3 with carousel and images (Video, Images)</value>
+  </data>
+  <data name="Approve.HeaderText" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Audio.HeaderText" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="cvImagerResizeHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="cvImagerResizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Please enter number only.</value>
+  </data>
+  <data name="Images.HeaderText" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="lblEnableApproval.HelpText" xml:space="preserve">
+    <value>Uploaded media needs approval.</value>
+  </data>
+  <data name="lblEnableApproval.Text" xml:space="preserve">
+    <value>Approve media:</value>
+  </data>
+  <data name="lblEnableUserUpload.Text" xml:space="preserve">
+    <value>Enable user upload into this gallery</value>
+  </data>
+  <data name="lblEnterUrl.HelpText" xml:space="preserve">
+    <value>Show field for image link on upload form.</value>
+  </data>
+  <data name="lblEnterUrl.Text" xml:space="preserve">
+    <value>Show enter url:</value>
+  </data>
+  <data name="lblImageUploadResizeHeightResource1.Text" xml:space="preserve">
+    <value>Max height:</value>
+  </data>
+  <data name="lblImageUploadResizeWidthResource1.Text" xml:space="preserve">
+    <value>Max width:</value>
+  </data>
+  <data name="lblResizeImages.HelpText" xml:space="preserve">
+    <value>Resize uploaded images:</value>
+  </data>
+  <data name="lblResizeImages.Text" xml:space="preserve">
+    <value>Resize images:</value>
+  </data>
+  <data name="lblUserUploadRoles.HelpText" xml:space="preserve">
+    <value>Select security roles that can upload or approve media.</value>
+  </data>
+  <data name="lblUserUploadRoles.Text" xml:space="preserve">
+    <value>Select roles:</value>
+  </data>
+  <data name="lblUUserUpload.Text" xml:space="preserve">
+    <value>User upload</value>
+  </data>
+  <data name="rfvImageUploadHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="rfvImageUploadResource1.ErrorMessage" xml:space="preserve">
+    <value>This filed is required.</value>
+  </data>
+  <data name="Role.HeaderText" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Video.HeaderText" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="lblShowOnlyUpload.HelpText" xml:space="preserve">
+    <value>Show only user upload control on the page:</value>
+  </data>
+  <data name="lblShowOnlyUpload.Text" xml:space="preserve">
+    <value>Show only upload control:</value>
+  </data>
+  <data name="lblLightboxGalleryNestedNumberOfItems.Text" xml:space="preserve">
+    <value>Number of items per page</value>
+  </data>
+  <data name="lblPortfolioGalleryDisplaySettings.Text" xml:space="preserve">
+    <value>Lightbox portfolio gallery display settings</value>
+  </data>
+  <data name="lblPortfolioGalleryImageHeight.HelpText" xml:space="preserve">
+    <value>Set the maximum gallery height:</value>
+  </data>
+  <data name="lblPortfolioGalleryImageHeight.Text" xml:space="preserve">
+    <value>Maximum gallery height:</value>
+  </data>
+  <data name="lblPortfolioGalleryWidth.HelpText" xml:space="preserve">
+    <value>Set the maximum gallery width:</value>
+  </data>
+  <data name="lblPortfolioGalleryWidth.Text" xml:space="preserve">
+    <value>Maximum gallery width:</value>
+  </data>
+  <data name="lblPortfolioSlideAnimationDuration.HelpText" xml:space="preserve">
+    <value>Slide animation duration in miliseconds:</value>
+  </data>
+  <data name="lblPortfolioSlideAnimationDuration.Text" xml:space="preserve">
+    <value>Slide animation effect (ms):</value>
+  </data>
+  <data name="lblPortfolioSlideEasing.HelpText" xml:space="preserve">
+    <value>Slide animation effect:</value>
+  </data>
+  <data name="lblPortfolioSlideEasing.Text" xml:space="preserve">
+    <value>Slide animation effect:</value>
+  </data>
+  <data name="bottomLeft.Text" xml:space="preserve">
+    <value>Bottom left</value>
+  </data>
+  <data name="bottomMiddle.Text" xml:space="preserve">
+    <value>Bottom middle</value>
+  </data>
+  <data name="bottomRight.Text" xml:space="preserve">
+    <value>Bottom right</value>
+  </data>
+  <data name="center.Text" xml:space="preserve">
+    <value>Ceneter</value>
+  </data>
+  <data name="fade.Text" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="grow.Text" xml:space="preserve">
+    <value>Grow</value>
+  </data>
+  <data name="lblLightboxHideEffectDuration.Text" xml:space="preserve">
+    <value>Hide effect duration (ms):</value>
+  </data>
+  <data name="lblLightboxShowEffect.Text" xml:space="preserve">
+    <value>Show effect:</value>
+  </data>
+  <data name="lblLightboxShowEffectDuration.Text" xml:space="preserve">
+    <value>Show effect duration (ms):</value>
+  </data>
+  <data name="lblLightboxShowHideEffect.Text" xml:space="preserve">
+    <value>Hide effect:</value>
+  </data>
+  <data name="lblLightboxTargetPosition.Text" xml:space="preserve">
+    <value>Target position:</value>
+  </data>
+  <data name="lblLightboxTooltipBorder.Text" xml:space="preserve">
+    <value>Border:</value>
+  </data>
+  <data name="lblLightboxTooltipCornerRadius.Text" xml:space="preserve">
+    <value>Corner radius:</value>
+  </data>
+  <data name="lblLightBoxToolTipOptions.Text" xml:space="preserve">
+    <value>Tooltip options</value>
+  </data>
+  <data name="lblLightboxTooltipPosition.Text" xml:space="preserve">
+    <value>Tooltip position:</value>
+  </data>
+  <data name="leftBottom.Text" xml:space="preserve">
+    <value>Left bottom</value>
+  </data>
+  <data name="leftMiddle.Text" xml:space="preserve">
+    <value>Left middle</value>
+  </data>
+  <data name="leftTop.Text" xml:space="preserve">
+    <value>Left top</value>
+  </data>
+  <data name="rightBottom.Text" xml:space="preserve">
+    <value>Right bottom</value>
+  </data>
+  <data name="rightMiddle.Text" xml:space="preserve">
+    <value>Right middle</value>
+  </data>
+  <data name="rightTop.Text" xml:space="preserve">
+    <value>Right top</value>
+  </data>
+  <data name="slide.Text" xml:space="preserve">
+    <value>Slide</value>
+  </data>
+  <data name="topLeft.Text" xml:space="preserve">
+    <value>Top left</value>
+  </data>
+  <data name="topMiddle.Text" xml:space="preserve">
+    <value>Top middle</value>
+  </data>
+  <data name="topRight.Text" xml:space="preserve">
+    <value>Top right</value>
+  </data>
+  <data name="blue.Text" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="cream.Text" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="dark.Text" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="green.Text" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="light.Text" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="red.Text" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="lblLightboxTooltipTheme.Text" xml:space="preserve">
+    <value>Select theme:</value>
+  </data>
+  <data name="SelectVideoPlayer.HelpText" xml:space="preserve">
+    <value>Select video player:</value>
+  </data>
+  <data name="SelectVideoPlayer.Text" xml:space="preserve">
+    <value>Select video player:</value>
+  </data>
+  <data name="lblLightboxShowToolTips.Text" xml:space="preserve">
+    <value>Show Tooltips:</value>
+  </data>
+  <data name="ASSListItem.Text" xml:space="preserve">
+    <value>Advanced Slide Show (Images)</value>
+  </data>
+  <data name="lblASSDisplayDownloadButton.HelpKey" xml:space="preserve">
+    <value>Display download button:</value>
+  </data>
+  <data name="lblASSDisplayDownloadButton.Text" xml:space="preserve">
+    <value>Display download button:</value>
+  </data>
+  <data name="lblASSDisplayInfoButton.HelpKey" xml:space="preserve">
+    <value>Display info button:</value>
+  </data>
+  <data name="lblASSDisplayInfoButton.Text" xml:space="preserve">
+    <value>Display info button:</value>
+  </data>
+  <data name="lblASSDisplayNumber.HelpKey" xml:space="preserve">
+    <value>Display image number:</value>
+  </data>
+  <data name="lblASSDisplayNumber.Text" xml:space="preserve">
+    <value>Display image number:</value>
+  </data>
+  <data name="lblASSDisplayPlayButton.HelpKey" xml:space="preserve">
+    <value>Display play button:</value>
+  </data>
+  <data name="lblASSDisplayPlayButton.Text" xml:space="preserve">
+    <value>Display play button:</value>
+  </data>
+  <data name="lblASSDisplayTimer.HelpKey" xml:space="preserve">
+    <value>Display timer:</value>
+  </data>
+  <data name="lblASSDisplayTimer.Text" xml:space="preserve">
+    <value>Display timer:</value>
+  </data>
+  <data name="lblASSFLoatingCpanel.HelpKey" xml:space="preserve">
+    <value>Floating navigation bar:</value>
+  </data>
+  <data name="lblASSFLoatingCpanel.Text" xml:space="preserve">
+    <value>Floating navigation bar:</value>
+  </data>
+  <data name="lblASSNumberOfColumns.HelpKey" xml:space="preserve">
+    <value>Set the number of thumbnail columns:</value>
+  </data>
+  <data name="lblASSNumberOfColumns.Text" xml:space="preserve">
+    <value>Number of thumbnail columns:</value>
+  </data>
+  <data name="lblASSPAuse.HelpKey" xml:space="preserve">
+    <value>Pause between transitions in miliseconds:</value>
+  </data>
+  <data name="lblASSPAuse.Text" xml:space="preserve">
+    <value>Pause between transitions (ms):</value>
+  </data>
+  <data name="lblASSShowOnMouseOver.HelpKey" xml:space="preserve">
+    <value>Show navigation bar on mouse over:</value>
+  </data>
+  <data name="lblASSShowOnMouseOver.Text" xml:space="preserve">
+    <value>Show navigation bar on mouse over:</value>
+  </data>
+  <data name="lblASSSlideEffect.HelpKey" xml:space="preserve">
+    <value>Image transition effect:</value>
+  </data>
+  <data name="lblASSSlideEffect.Text" xml:space="preserve">
+    <value>Image transition effect:</value>
+  </data>
+  <data name="lblASSSyncEffect.HelpKey" xml:space="preserve">
+    <value>Sync image and text transition effect:</value>
+  </data>
+  <data name="lblASSSyncEffect.Text" xml:space="preserve">
+    <value>Sync effects:</value>
+  </data>
+  <data name="lblASSTextSlideEffect.HelpKey" xml:space="preserve">
+    <value>Text transition effect:</value>
+  </data>
+  <data name="lblASSTextSlideEffect.Text" xml:space="preserve">
+    <value>Text transition effect:</value>
+  </data>
+  <data name="lblASSThumbHeight.HelpKey" xml:space="preserve">
+    <value>Thumb height:</value>
+  </data>
+  <data name="lblASSThumbHeight.Text" xml:space="preserve">
+    <value>Thumb height:</value>
+  </data>
+  <data name="lblASSThumbnailRows.HelpKey" xml:space="preserve">
+    <value>Set the number of thumbnail rows:</value>
+  </data>
+  <data name="lblASSThumbnailRows.Text" xml:space="preserve">
+    <value>Number of thumbnail rows:</value>
+  </data>
+  <data name="lblASSThumbWidth.HelpKey" xml:space="preserve">
+    <value>Thumb width:</value>
+  </data>
+  <data name="lblASSThumbWidth.Text" xml:space="preserve">
+    <value>Thumb width:</value>
+  </data>
+  <data name="lblASSTolltipPosition.HelpKey" xml:space="preserve">
+    <value>Enter toltip position corditanes::</value>
+  </data>
+  <data name="lblASSTolltipPosition.Text" xml:space="preserve">
+    <value>Tolltip position:</value>
+  </data>
+  <data name="lblASStransitionSpeed.HelpKey" xml:space="preserve">
+    <value>Transition speed:</value>
+  </data>
+  <data name="lblASStransitionSpeed.Text" xml:space="preserve">
+    <value>Transition speed:</value>
+  </data>
+  <data name="lblASSTTHeight.Text" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="lblASSTTLeft.Text" xml:space="preserve">
+    <value>Left:</value>
+  </data>
+  <data name="lblASSTTTop.Text" xml:space="preserve">
+    <value>Top:</value>
+  </data>
+  <data name="lblASSTTWidth.Text" xml:space="preserve">
+    <value>Width:</value>
+  </data>
+  <data name="lblASSInitialOpen.HelpText" xml:space="preserve">
+    <value>Show image selection on open:</value>
+  </data>
+  <data name="lblASSInitialOpen.Text" xml:space="preserve">
+    <value>Show image selection on open:</value>
+  </data>
+  <data name="lblLightBoxMediaSorting.HelpText" xml:space="preserve">
+    <value>Select media sorting options:</value>
+  </data>
+  <data name="lblLightBoxMediaSorting.Text" xml:space="preserve">
+    <value>Media sorting:</value>
+  </data>
+  <data name="liAscending.Text" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="liDateUploaded.Text" xml:space="preserve">
+    <value>Date uploaded</value>
+  </data>
+  <data name="liDescending.Text" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="liFileName.Text" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="liPosition.Text" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="liTitle.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="cbLightboxGalleryNestedRegeterateThumbnails.Text" xml:space="preserve">
+    <value>Regenerate thumbnails</value>
+  </data>
+  <data name="lblLighboxSelectDownloadRoles.Text" xml:space="preserve">
+    <value>Select download roles:</value>
+  </data>
+  <data name="lblLightBoxShowDownload.HelpText" xml:space="preserve">
+    <value>Show image download link:</value>
+  </data>
+  <data name="lblLightBoxShowDownload.Text" xml:space="preserve">
+    <value>Show image download link:</value>
+  </data>
+  <data name="lblUseViewVersionAsDownload.Text" xml:space="preserve">
+    <value>Use view version as download version if there is no download verison:</value>
+  </data>
+  <data name="lblLightboxPortfolioArrows.HelpText" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblLightboxPortfolioArrows.Text" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblLightboxPortfolioAutoHideNavigationArrows.HelpText" xml:space="preserve">
+    <value>Auto hide navigation arrows on mouse out:</value>
+  </data>
+  <data name="lblLightboxPortfolioAutoHideNavigationArrows.Text" xml:space="preserve">
+    <value>Auto hide navigation arrows:</value>
+  </data>
+  <data name="lblLightboxPortfolioDropDownImages.HelpText" xml:space="preserve">
+    <value>Dropdown menu style:</value>
+  </data>
+  <data name="lblLightboxPortfolioDropDownImages.Text" xml:space="preserve">
+    <value>Dropdown menu style:</value>
+  </data>
+  <data name="lblLightboxPortfolioGalleryTitle.HelpText" xml:space="preserve">
+    <value>Please enter title to display:</value>
+  </data>
+  <data name="lblLightboxPortfolioGalleryTitle.Text" xml:space="preserve">
+    <value>Title to display:</value>
+  </data>
+  <data name="lblLightboxPortfolioMenuType.HelpText" xml:space="preserve">
+    <value>Select navigation menu type:</value>
+  </data>
+  <data name="lblLightboxPortfolioMenuType.Text" xml:space="preserve">
+    <value>Navigation menu type:</value>
+  </data>
+  <data name="lblLightboxShowNavigationArrows.HelpText" xml:space="preserve">
+    <value>Show navigation arrows:</value>
+  </data>
+  <data name="lblLightboxShowNavigationArrows.Text" xml:space="preserve">
+    <value>Show navigation arrows:</value>
+  </data>
+  <data name="lblImageCarouselArrowTypes.HelpText" xml:space="preserve">
+    <value>Select navigation arrow style:</value>
+  </data>
+  <data name="lblImageCarouselArrowTypes.Text" xml:space="preserve">
+    <value>Select navigation arrow style:</value>
+  </data>
+  <data name="lblLightBoxEnableFullscreen.HelpText" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblLightBoxEnableFullscreen.Text" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblLightboxFullscreenArrows.HelpText" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblLightboxFullscreenArrows.Text" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblLightboxFullscreenAutoHideNavigationArrows.HelpText" xml:space="preserve">
+    <value>Auto hide navigation arrows on mouse out:</value>
+  </data>
+  <data name="lblLightboxFullscreenAutoHideNavigationArrows.Text" xml:space="preserve">
+    <value>Auto hide navigation arrows:</value>
+  </data>
+  <data name="lblLightboxFullscreenDropDownImages.HelpText" xml:space="preserve">
+    <value>Dropdown menu style:</value>
+  </data>
+  <data name="lblLightboxFullscreenDropDownImages.Text" xml:space="preserve">
+    <value>Dropdown menu style:</value>
+  </data>
+  <data name="lblLightboxFullscreenGalleryTitle.HelpText" xml:space="preserve">
+    <value>Please enter title to display:</value>
+  </data>
+  <data name="lblLightboxFullscreenGalleryTitle.Text" xml:space="preserve">
+    <value>Title to display:</value>
+  </data>
+  <data name="lblLightboxFullscreenMenuType.HelpText" xml:space="preserve">
+    <value>Select navigation menu type:</value>
+  </data>
+  <data name="lblLightboxFullscreenMenuType.Text" xml:space="preserve">
+    <value>Navigation menu type:</value>
+  </data>
+  <data name="lblLightboxFullscreenNavbar.HelpText" xml:space="preserve">
+    <value>Show navigation:</value>
+  </data>
+  <data name="lblLightboxFullscreenNavbar.Text" xml:space="preserve">
+    <value>Show navigation:</value>
+  </data>
+  <data name="lblLightboxFullscreenShowArrows.HelpText" xml:space="preserve">
+    <value>Show navigation arrows:</value>
+  </data>
+  <data name="lblLightboxFullscreenShowArrows.Text" xml:space="preserve">
+    <value>Show navigation arrows:</value>
+  </data>
+  <data name="lblLightboxFullscreenThemeSelect.HelpText" xml:space="preserve">
+    <value>Select fullscreen theme:</value>
+  </data>
+  <data name="lblLightboxFullscreenThemeSelect.Text" xml:space="preserve">
+    <value>Select fullscreen theme:</value>
+  </data>
+  <data name="lblLightboxPortfolioEnableFullscreen.HelpText" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblLightboxPortfolioEnableFullscreen.Text" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblLightboxPortfolioFullscreenTheme.HelpText" xml:space="preserve">
+    <value>Select fullscreen theme:</value>
+  </data>
+  <data name="lblLightboxPortfolioFullscreenTheme.Text" xml:space="preserve">
+    <value>Select fullscreen theme:</value>
+  </data>
+  <data name="lblPortfolioNavigationSettings.Text" xml:space="preserve">
+    <value>Navigation settings</value>
+  </data>
+  <data name="lblVideoGallery2ImageHeight.HelpText" xml:space="preserve">
+    <value>Image height:</value>
+  </data>
+  <data name="lblVideoGallery2ImageHeight.Text" xml:space="preserve">
+    <value>Image height:</value>
+  </data>
+  <data name="lblVideoGallery2ImageWidth.HelpText" xml:space="preserve">
+    <value>Image width:</value>
+  </data>
+  <data name="lblVideoGallery2ImageWidth.Text" xml:space="preserve">
+    <value>Image width:</value>
+  </data>
+  <data name="lblVideoGallery2ShowImages.HelpText" xml:space="preserve">
+    <value>Show also images from this gallery:</value>
+  </data>
+  <data name="lblVideoGallery2ShowImages.Text" xml:space="preserve">
+    <value>Show images:</value>
+  </data>
+  <data name="cbEnableSocialSharing.Text" xml:space="preserve">
+    <value>Enable social sharing</value>
+  </data>
+  <data name="cbShowEmailButton.Text" xml:space="preserve">
+    <value>Show email button</value>
+  </data>
+  <data name="cbShowPrintButton.Text" xml:space="preserve">
+    <value>Show print button</value>
+  </data>
+  <data name="lblLightBoxImageOptions.HelpText" xml:space="preserve">
+    <value>Lightbox image options:</value>
+  </data>
+  <data name="lblLightBoxImageOptions.Text" xml:space="preserve">
+    <value>Lightbox image options:</value>
+  </data>
+  <data name="lblVideoGalleryShowPaging.HelpText" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblVideoGalleryShowPaging.Text" xml:space="preserve">
+    <value>Show paging:</value>
+  </data>
+  <data name="lblLightBoxJquerySelect.HelpText" xml:space="preserve">
+    <value>Include jQuery:</value>
+  </data>
+  <data name="lblLightBoxJquerySelect.Text" xml:space="preserve">
+    <value>Include jQuery:</value>
+  </data>
+  <data name="lblPotfolioGalleryNumberOfItems.HelpText" xml:space="preserve">
+    <value>Set the maximum number of items on one page ( 0 - autoset):</value>
+  </data>
+  <data name="lblVideoGalleryShowBackLink.HelpText" xml:space="preserve">
+    <value>Show textbox that contains media link:</value>
+  </data>
+  <data name="lblVideoGalleryShowBackLink.Text" xml:space="preserve">
+    <value>Show media link:</value>
+  </data>
+  <data name="lblVideoGalleryShowSocialSharing.HelpText" xml:space="preserve">
+    <value>Show social sharing:</value>
+  </data>
+  <data name="lblVideoGalleryShowSocialSharing.Text" xml:space="preserve">
+    <value>Show social sharing:</value>
+  </data>
+  <data name="lblVideoGallerySSOptions.Text" xml:space="preserve">
+    <value>Open on button click:</value>
+  </data>
+  <data name="lblVideoGallerySSOptions.HelpText" xml:space="preserve">
+    <value>Open/Close sharing on button click:</value>
+  </data>
+  <data name="lblChameleonGalleryButtons.HelpText" xml:space="preserve">
+    <value>Buttons</value>
+  </data>
+  <data name="lblChameleonGalleryButtons.Text" xml:space="preserve">
+    <value>Buttons</value>
+  </data>
+  <data name="lblChameleonGalleryCaptionHeight.HelpText" xml:space="preserve">
+    <value>Title and description height:</value>
+  </data>
+  <data name="lblChameleonGalleryCaptionHeight.Text" xml:space="preserve">
+    <value>Title and description height:</value>
+  </data>
+  <data name="lblChameleonGalleryCaptionPositionInOut.HelpText" xml:space="preserve">
+    <value>Title and description position:</value>
+  </data>
+  <data name="lblChameleonGalleryCaptionPositionInOut.Text" xml:space="preserve">
+    <value>Title and description position:</value>
+  </data>
+  <data name="lblChameleonGalleryCaptionPositionTBLR.HelpText" xml:space="preserve">
+    <value>Title and description position:</value>
+  </data>
+  <data name="lblChameleonGalleryCaptionPositionTBLR.Text" xml:space="preserve">
+    <value>Title and description position:</value>
+  </data>
+  <data name="lblChameleonGalleryGaleryTitle.Text" xml:space="preserve">
+    <value>Gallery title and description</value>
+  </data>
+  <data name="lblChameleonGalleryGaleryTitleDescription.Text" xml:space="preserve">
+    <value>Title and description</value>
+  </data>
+  <data name="lblChameleonGalleryGalleryCaptionHeight.HelpText" xml:space="preserve">
+    <value>Gallery title and description height:</value>
+  </data>
+  <data name="lblChameleonGalleryGalleryCaptionHeight.Text" xml:space="preserve">
+    <value>Gallery title and description height:</value>
+  </data>
+  <data name="lblChameleonGalleryGalleryCaptionPositionInOut.HelpText" xml:space="preserve">
+    <value>Gallery title and description position:</value>
+  </data>
+  <data name="lblChameleonGalleryGalleryCaptionPositionInOut.Text" xml:space="preserve">
+    <value>Gallery title and description position:</value>
+  </data>
+  <data name="lblChameleonGalleryMainPanel.Text" xml:space="preserve">
+    <value>Main panel</value>
+  </data>
+  <data name="lblChameleonGalleryMainPanelHeight.HelpText" xml:space="preserve">
+    <value>Set the maximum image height for resizing:</value>
+  </data>
+  <data name="lblChameleonGalleryMainPanelHeight.Text" xml:space="preserve">
+    <value>Maximum panel height:</value>
+  </data>
+  <data name="lblChameleonGalleryMainPanelWidth.HelpText" xml:space="preserve">
+    <value>Set the maximum image width for resizing:</value>
+  </data>
+  <data name="lblChameleonGalleryMainPanelWidth.Text" xml:space="preserve">
+    <value>Maximum panel width:</value>
+  </data>
+  <data name="lblChameleonGalleryNavigation.Text" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="lblChameleonGalleryShowGalleryDescription.HelpText" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblChameleonGalleryShowGalleryDescription.Text" xml:space="preserve">
+    <value>Show gallery description:</value>
+  </data>
+  <data name="lblChameleonGalleryShowGalleryTitle.HelpText" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblChameleonGalleryShowGalleryTitle.Text" xml:space="preserve">
+    <value>Show gallery title:</value>
+  </data>
+  <data name="lblChameleonGalleryShowNavigation.HelpText" xml:space="preserve">
+    <value>Show navigation arrows:</value>
+  </data>
+  <data name="lblChameleonGalleryShowNavigation.Text" xml:space="preserve">
+    <value>Show navigation arrows:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbnailPosition.Text" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbnailsExpand.HelpText" xml:space="preserve">
+    <value>Expand to 100% width:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbnailsExpand.Text" xml:space="preserve">
+    <value>Expand to 100% width:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbnailsPanel.Text" xml:space="preserve">
+    <value>Thumbnails</value>
+  </data>
+  <data name="lblChameleonGalleryThumbPosition.HelpText" xml:space="preserve">
+    <value>Thumbnails position:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbPosition.Text" xml:space="preserve">
+    <value>Thumbnails position:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbShowTitle.HelpText" xml:space="preserve">
+    <value>Show title in thumbnail:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbShowTitle.Text" xml:space="preserve">
+    <value>Show title in thumbnail:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbStripHeight.HelpText" xml:space="preserve">
+    <value>Thumbnail strip height:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbStripHeight.Text" xml:space="preserve">
+    <value>Thumbnail strip height:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbStripSize.HelpText" xml:space="preserve">
+    <value>Thumbnail strip width:</value>
+  </data>
+  <data name="lblChameleonGalleryThumbStripSize.Text" xml:space="preserve">
+    <value>Thumbnail strip width:</value>
+  </data>
+  <data name="lblChameleonGalleryTitleDescriptionExpand.HelpText" xml:space="preserve">
+    <value>Expand to 100% width:</value>
+  </data>
+  <data name="lblChameleonGalleryTitleDescriptionExpand.Text" xml:space="preserve">
+    <value>Expand to 100% width:</value>
+  </data>
+  <data name="lblChameleonGalleryTitleDescriptionPosition.HelpText" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblChameleonGalleryTitleDescriptionPosition.Text" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblChameleonGalleryTitleDescriptionPositionTBLR.HelpText" xml:space="preserve">
+    <value>Gallery title and description position:</value>
+  </data>
+  <data name="lblChameleonGalleryTitleDescriptionPositionTBLR.Text" xml:space="preserve">
+    <value>Gallery title and description position:</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionInOutIN.Text" xml:space="preserve">
+    <value>Inside image panel</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionInOutOUT.Text" xml:space="preserve">
+    <value>Outside image panel</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionLRTBBottom.Text" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionLRTBTop.Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionLRTBTop.Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionLRTBTop.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="ddlChameleonGalleryTransitionEffectFade.Text" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="ddlChameleonGalleryTransitionEffectShow.Text" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="ddlChameleonGalleryTransitionEffectSlide.Text" xml:space="preserve">
+    <value>Slide</value>
+  </data>
+  <data name="lblChameleonGalleryAudioDisplay.HelpText" xml:space="preserve">
+    <value>Play audio embedded in page or play audio in lightbox:</value>
+  </data>
+  <data name="lblChameleonGalleryAudioDisplay.Text" xml:space="preserve">
+    <value>Audio play place:</value>
+  </data>
+  <data name="lblChameleonGalleryAudioOptions.Text" xml:space="preserve">
+    <value>Audio options</value>
+  </data>
+  <data name="lblChameleonGalleryAutoPLAy.Text" xml:space="preserve">
+    <value>Autoplay</value>
+  </data>
+  <data name="lblChameleonGalleryAutoPlayInterval.HelpText" xml:space="preserve">
+    <value>Autoplay interval:</value>
+  </data>
+  <data name="lblChameleonGalleryAutoPlayInterval.Text" xml:space="preserve">
+    <value>Autoplay interval:</value>
+  </data>
+  <data name="lblChameleonGalleryCategory.Text" xml:space="preserve">
+    <value>Category options</value>
+  </data>
+  <data name="lblChameleonGalleryDisplayEmailButton.HelpText" xml:space="preserve">
+    <value>Display email button:</value>
+  </data>
+  <data name="lblChameleonGalleryDisplayEmailButton.Text" xml:space="preserve">
+    <value>Display email button:</value>
+  </data>
+  <data name="lblChameleonGalleryDisplayPlayButton.HelpText" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblChameleonGalleryDisplayPlayButton.Text" xml:space="preserve">
+    <value>Autoplay:</value>
+  </data>
+  <data name="lblChameleonGalleryEffects.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainer.HelpText" xml:space="preserve">
+    <value>Category containter width:</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainer.Text" xml:space="preserve">
+    <value>Category containter width:</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainerExpand.HelpText" xml:space="preserve">
+    <value>Expand to 100% width:</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainerExpand.Text" xml:space="preserve">
+    <value>Expand to 100% width:</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainerHeight.HelpText" xml:space="preserve">
+    <value>Category containter height:</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainerHeight.Text" xml:space="preserve">
+    <value>Category containter height:</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainerPosition.HelpText" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblChameleonGalleryNGContainerPosition.Text" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblChameleonGalleryNGSorting.HelpText" xml:space="preserve">
+    <value>Nested category sorting:</value>
+  </data>
+  <data name="lblChameleonGalleryNGSorting.Text" xml:space="preserve">
+    <value>Nested category sorting:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbHeight.HelpText" xml:space="preserve">
+    <value>Category item height:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbHeight.Text" xml:space="preserve">
+    <value>Category item height:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbPosition.HelpText" xml:space="preserve">
+    <value>Category items position:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbPosition.Text" xml:space="preserve">
+    <value>Category items position:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbPosition1.HelpText" xml:space="preserve">
+    <value>Category items position:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbPosition1.Text" xml:space="preserve">
+    <value>Category items position:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbWidth.HelpText" xml:space="preserve">
+    <value>Category item width:</value>
+  </data>
+  <data name="lblChameleonGalleryNGThumbWidth.Text" xml:space="preserve">
+    <value>Category item width:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtons.HelpText" xml:space="preserve">
+    <value>Show social sharing buttons inside Image:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtons.Text" xml:space="preserve">
+    <value>Show sharing buttons:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtonsFacebook.HelpText" xml:space="preserve">
+    <value>Show Facebook button:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtonsFacebook.Text" xml:space="preserve">
+    <value>Show Facebook button:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtonsGoogle.HelpText" xml:space="preserve">
+    <value>Show Google Plus button:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtonsGoogle.Text" xml:space="preserve">
+    <value>Show Google Plus button:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtonsTwitter.HelpText" xml:space="preserve">
+    <value>Show Twitter button:</value>
+  </data>
+  <data name="lblChameleonGalleryShowSharingButtonsTwitter.Text" xml:space="preserve">
+    <value>Show Twitter button:</value>
+  </data>
+  <data name="lblChameleonGalleryVideoOptions.Text" xml:space="preserve">
+    <value>Video options</value>
+  </data>
+  <data name="lblChameleonGalleryVideoPlayPlace.HelpText" xml:space="preserve">
+    <value>Play video embedded in page or play video in lightbox:</value>
+  </data>
+  <data name="lblChameleonGalleryVideoPlayPlace.Text" xml:space="preserve">
+    <value>Video play place:</value>
+  </data>
+  <data name="rblChameleonGalleryAudioPlayPlaceEM.Text" xml:space="preserve">
+    <value>Play audio emedded in page</value>
+  </data>
+  <data name="rblChameleonGalleryAudioPlayPlaceLB.Text" xml:space="preserve">
+    <value>Play audio in lightbox</value>
+  </data>
+  <data name="rblChameleonGalleryVideoPlayPlaceEM.Text" xml:space="preserve">
+    <value>Play video embedded in page</value>
+  </data>
+  <data name="rblChameleonGalleryVideoPlayPlaceLB.Text" xml:space="preserve">
+    <value>Play video in lightbox</value>
+  </data>
+  <data name="liCustomizeForThisModuleSettings.Text" xml:space="preserve">
+    <value>Customize for this module</value>
+  </data>
+  <data name="liUseDafultSettings.Text" xml:space="preserve">
+    <value>Use default settings</value>
+  </data>
+  <data name="cbChameleonGalleryShowTooltipDescription.HelpText" xml:space="preserve">
+    <value>Show description in tooltips:</value>
+  </data>
+  <data name="cbChameleonGalleryShowTooltipDescription.Text" xml:space="preserve">
+    <value>Show description in tooltips:</value>
+  </data>
+  <data name="lblChameleonGalleryEnableDragging.HelpText" xml:space="preserve">
+    <value>Enable item dragging:</value>
+  </data>
+  <data name="lblChameleonGalleryEnableDragging.Text" xml:space="preserve">
+    <value>Touch &amp;amp; swipe:</value>
+  </data>
+  <data name="lblChameleonGalleryEnableFullscreen.HelpText" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblChameleonGalleryEnableFullscreen.Text" xml:space="preserve">
+    <value>Enable fullscreen:</value>
+  </data>
+  <data name="lblChameleonGalleryGrayscaleThumbnails.HelpText" xml:space="preserve">
+    <value>Thumbnails will be desaturated.</value>
+  </data>
+  <data name="lblChameleonGalleryGrayscaleThumbnails.Text" xml:space="preserve">
+    <value>Create grayscale thumbnails:</value>
+  </data>
+  <data name="lblChameleonGalleryShowTooltipsPosition.HelpText" xml:space="preserve">
+    <value>Tooltips position:</value>
+  </data>
+  <data name="lblChameleonGalleryShowTooltipsPosition.Text" xml:space="preserve">
+    <value>Tooltips position:</value>
+  </data>
+  <data name="lblChameleonGalleryShowTooltipsStyle.HelpText" xml:space="preserve">
+    <value>Tooltips style:</value>
+  </data>
+  <data name="lblChameleonGalleryShowTooltipsStyle.Text" xml:space="preserve">
+    <value>Tooltips style:</value>
+  </data>
+  <data name="lblChameleonGalleryShowTooltipsTitle.HelpText" xml:space="preserve">
+    <value>Show title in tooltips:</value>
+  </data>
+  <data name="lblChameleonGalleryShowTooltipsTitle.Text" xml:space="preserve">
+    <value>Show title in tooltips:</value>
+  </data>
+  <data name="lblChameleonGalleryToolTips.HelpText" xml:space="preserve">
+    <value>Show tooltips on thumbnail mouse over:</value>
+  </data>
+  <data name="lblChameleonGalleryToolTips.Text" xml:space="preserve">
+    <value>Show tooltips:</value>
+  </data>
+  <data name="lblLightboxSharingButtonFacebook.HelpText" xml:space="preserve">
+    <value>Show Facebook button:</value>
+  </data>
+  <data name="lblLightboxSharingButtonFacebook.Text" xml:space="preserve">
+    <value>Show Facebook button:</value>
+  </data>
+  <data name="lblLightboxSharingButtonGooglePlus.HelpText" xml:space="preserve">
+    <value>Show Googple Plus button:</value>
+  </data>
+  <data name="lblLightboxSharingButtonGooglePlus.Text" xml:space="preserve">
+    <value>Show Googple Plus button:</value>
+  </data>
+  <data name="lblLightboxSharingButtonTwitter.HelpText" xml:space="preserve">
+    <value>Show Twitter button:</value>
+  </data>
+  <data name="lblLightboxSharingButtonTwitter.Text" xml:space="preserve">
+    <value>Show Twitter button:</value>
+  </data>
+  <data name="lblLightBoxShowSocialSharingButtons.HelpText" xml:space="preserve">
+    <value>Show social sharing buttons inside thumbnail:</value>
+  </data>
+  <data name="lblLightBoxShowSocialSharingButtons.Text" xml:space="preserve">
+    <value>Show sharing buttons:</value>
+  </data>
+  <data name="lblMainImageResize.HelpText" xml:space="preserve">
+    <value>Main image resize:</value>
+  </data>
+  <data name="lblMainImageResize.Text" xml:space="preserve">
+    <value>Main image resize:</value>
+  </data>
+  <data name="liResCrop.Text" xml:space="preserve">
+    <value>Resize and crop</value>
+  </data>
+  <data name="liResProp.Text" xml:space="preserve">
+    <value>Proportionally resize</value>
+  </data>
+  <data name="liResPropVertical.Text" xml:space="preserve">
+    <value>Proportionally resize vertical images</value>
+  </data>
+  <data name="ListItemPortfolio.Text" xml:space="preserve">
+    <value>Lightbox portfolio gallery (Images, Video, Audio)</value>
+  </data>
+  <data name="ListItemResourceBlackAndWhite.Text" xml:space="preserve">
+    <value>Black and white rounded</value>
+  </data>
+  <data name="ListItemResourceChameleon.Text" xml:space="preserve">
+    <value>Chameleon gallery (Images, Video, Audio)  &lt;span style="font-weight: bold; font-size: 10px; color: #ff0000;"&gt;responsive&lt;/span&gt;</value>
+  </data>
+  <data name="ListItemResourceSS3.Text" xml:space="preserve">
+    <value>Slideshow with thumbnails 3 (Images)</value>
+  </data>
+  <data name="ListItemResourceStreaming.Text" xml:space="preserve">
+    <value>Streaming Video</value>
+  </data>
+  <data name="ListItemResourceVC.Text" xml:space="preserve">
+    <value>Vertical Carousel (Images, Video, Audio)</value>
+  </data>
+  <data name="lblAudio2ShowDownloadLink.HelpText" xml:space="preserve">
+    <value>Show download link:</value>
+  </data>
+  <data name="lblAudio2ShowDownloadLink.Text" xml:space="preserve">
+    <value>Show download link:</value>
+  </data>
+  <data name="lblAudioGallery2TemplateSelect.HelpText" xml:space="preserve">
+    <value>Select control template:</value>
+  </data>
+  <data name="lblAudioGallery2TemplateSelect.Text" xml:space="preserve">
+    <value>Select control template:</value>
+  </data>
+  <data name="lblAudioShowDownloadLink.HelpText" xml:space="preserve">
+    <value>Show download link:</value>
+  </data>
+  <data name="lblAudioShowDownloadLink.Text" xml:space="preserve">
+    <value>Show download link:</value>
+  </data>
+  <data name="lblLightboxNestGalleryButtonPos" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLightboxNestGalleryButtonPos.HelpText" xml:space="preserve">
+    <value>Back button position:</value>
+  </data>
+  <data name="lblLightboxNestGalleryButtonPos.Text" xml:space="preserve">
+    <value>Back button position:</value>
+  </data>
+  <data name="lblStreamigVideoWidth.HelpText" xml:space="preserve">
+    <value>Streaming video width:</value>
+  </data>
+  <data name="lblStreamigVideoWidth.Text" xml:space="preserve">
+    <value>Streaming video width:</value>
+  </data>
+  <data name="lblStreamingEnterDescription.HelpText" xml:space="preserve">
+    <value>Enter description:</value>
+  </data>
+  <data name="lblStreamingEnterDescription.Text" xml:space="preserve">
+    <value>Enter description:</value>
+  </data>
+  <data name="lblStreamingHeight.HelpText" xml:space="preserve">
+    <value>Streaming video height:</value>
+  </data>
+  <data name="lblStreamingHeight.Text" xml:space="preserve">
+    <value>Streaming video height:</value>
+  </data>
+  <data name="lblStreamingServerURL.HelpText" xml:space="preserve">
+    <value>Streaming RTMP server url:</value>
+  </data>
+  <data name="lblStreamingServerURL.Text" xml:space="preserve">
+    <value>Streaming RTMP server url:</value>
+  </data>
+  <data name="lblStreamingServerVideo.HelpText" xml:space="preserve">
+    <value>Streaming video:</value>
+  </data>
+  <data name="lblStreamingServerVideo.Text" xml:space="preserve">
+    <value>Streaming video:</value>
+  </data>
+  <data name="lblStremingGalleryDisplaySettins.Text" xml:space="preserve">
+    <value>Streaming gallery display settings</value>
+  </data>
+  <data name="lblVideoStreamingEnterTitle.HelpText" xml:space="preserve">
+    <value>Enter title:</value>
+  </data>
+  <data name="lblVideoStreamingEnterTitle.Text" xml:space="preserve">
+    <value>Enter title:</value>
+  </data>
+  <data name="liBottom.Text" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="liTop.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="liTopBottom.Text" xml:space="preserve">
+    <value>Top and bottom</value>
+  </data>
+  <data name="liDateCreated.Text" xml:space="preserve">
+    <value>Date created</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="liLAstModified.Text" xml:space="preserve">
+    <value>Last modified</value>
+  </data>
+  <data name="liDropDownList.Text" xml:space="preserve">
+    <value>Dropdown list</value>
+  </data>
+  <data name="liNavBar.Text" xml:space="preserve">
+    <value>Navigation bar</value>
+  </data>
+  <data name="lblChameleonGalleryFullscreen.Text" xml:space="preserve">
+    <value>Fullscreen</value>
+  </data>
+  <data name="lblChameleonGalleryOnClickNothing.HelpText" xml:space="preserve">
+    <value>No action on mouse click no main image panel:</value>
+  </data>
+  <data name="lblChameleonGalleryOnClickNothing.Text" xml:space="preserve">
+    <value>Open media in lightbox:</value>
+  </data>
+  <data name="lblChameleonGalleryToolTipsTitle.Text" xml:space="preserve">
+    <value>Tooltips</value>
+  </data>
+  <data name="lblLightboxPortfolioMenuSlidableNames.HelpText" xml:space="preserve">
+    <value>Slidable titles:</value>
+  </data>
+  <data name="lblLightboxPortfolioMenuSlidableNames.Text" xml:space="preserve">
+    <value>Slidable titles:</value>
+  </data>
+  <data name="lblLightboxPortfolioMenuWidth.HelpText" xml:space="preserve">
+    <value>Menu width:</value>
+  </data>
+  <data name="lblLightboxPortfolioMenuWidth.Text" xml:space="preserve">
+    <value>Menu width:</value>
+  </data>
+  <data name="lblSlideShowMainPAnelBackColor.HelpText" xml:space="preserve">
+    <value>Set the main panel background color in rgb format with hex values:</value>
+  </data>
+  <data name="lblSlideShowMainPAnelBackColor.Text" xml:space="preserve">
+    <value>Main panel background color (hex value RRGGBB):</value>
+  </data>
+  <data name="lblSlideShowThumbnailsFilmstripColor.HelpText" xml:space="preserve">
+    <value>Set the filmstrip background color in rgb format with hex values:</value>
+  </data>
+  <data name="lblSlideShowThumbnailsFilmstripColor.Text" xml:space="preserve">
+    <value>Filmstrip background color (hex value RRGGBB):</value>
+  </data>
+  <data name="lblVideoGallery2Arrows.HelpText" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="lblVideoGallery2Arrows.Text" xml:space="preserve">
+    <value>Navigation arrows:</value>
+  </data>
+  <data name="liDefault.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="lifade.Text" xml:space="preserve">
+    <value>Fade</value>
+  </data>
+  <data name="lihorizontal.Text" xml:space="preserve">
+    <value>Horizontal slide</value>
+  </data>
+  <data name="lihwipe.Text" xml:space="preserve">
+    <value>Horizontal wipe</value>
+  </data>
+  <data name="liLeftMenu.Text" xml:space="preserve">
+    <value>Left menu</value>
+  </data>
+  <data name="liProportionally.Text" xml:space="preserve">
+    <value>Proportionally resize</value>
+  </data>
+  <data name="liProportionallyVertical.Text" xml:space="preserve">
+    <value>Proportionally resize vertical images</value>
+  </data>
+  <data name="liRightMenu.Text" xml:space="preserve">
+    <value>Right menu</value>
+  </data>
+  <data name="livertical.Text" xml:space="preserve">
+    <value>Vertical slide</value>
+  </data>
+  <data name="livwipe.Text" xml:space="preserve">
+    <value>Vertical wipe</value>
+  </data>
+  <data name="liDown.Text" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="liLeft.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="LiRight.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="liUp.Text" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="AudioGalleryTitle.Text" xml:space="preserve">
+    <value>Audio gallery display settings</value>
+  </data>
+  <data name="boxRain.Text" xml:space="preserve">
+    <value>Rain box</value>
+  </data>
+  <data name="boxRainGrow.Text" xml:space="preserve">
+    <value>Rain box grow</value>
+  </data>
+  <data name="boxRainGrowReverse.Text" xml:space="preserve">
+    <value>Rain box grow reverse</value>
+  </data>
+  <data name="boxRainReverse.Text" xml:space="preserve">
+    <value>Rain box reverse</value>
+  </data>
+  <data name="boxRandom.Text" xml:space="preserve">
+    <value>Random box</value>
+  </data>
+  <data name="lblNavbarOptions.HelpText" xml:space="preserve">
+    <value>Show navigation:</value>
+  </data>
+  <data name="lblNavbarOptions.Text" xml:space="preserve">
+    <value>Show navigation:</value>
+  </data>
+  <data name="lblSlideshowWithThumbnails2.Text" xml:space="preserve">
+    <value>Slideshow with thumbnails 2</value>
+  </data>
+  <data name="lblVerticalCarousel.Text" xml:space="preserve">
+    <value>Vertical carousel display settings</value>
+  </data>
+  <data name="lblVerticalCarouselScrollingDirection.HelpText" xml:space="preserve">
+    <value>Scrolling direction:</value>
+  </data>
+  <data name="lblVerticalCarouselScrollingDirection.Text" xml:space="preserve">
+    <value>Scrolling direction:</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionLRTBLeft.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="rblChameleonGalleryThumbnailPositionLRTBRight.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="sliceDownRight.Text" xml:space="preserve">
+    <value>Slice down right</value>
+  </data>
+  <data name="sliceUpRight.Text" xml:space="preserve">
+    <value>Slice up right</value>
+  </data>
+  <data name="lblChameleonGalleryThemeDisplayStyle.HelpText" xml:space="preserve">
+    <value>Select the CSS theme styling:</value>
+  </data>
+  <data name="lblChameleonGalleryThemeDisplayStyle.Text" xml:space="preserve">
+    <value>Select the CSS theme styling:</value>
+  </data>
+  <data name="lblAdvancedSlideShow.Text" xml:space="preserve">
+    <value>Advanced Slide Show</value>
+  </data>
+  <data name="lblChameleonGallery.Text" xml:space="preserve">
+    <value>Chameleon Gallery</value>
+  </data>
+  <data name="lblFlowVideoScaling.Text" xml:space="preserve">
+    <value>Video scaling:</value>
+  </data>
+  <data name="lifit.Text" xml:space="preserve">
+    <value>Fit to window</value>
+  </data>
+  <data name="lihalf.Text" xml:space="preserve">
+    <value>Half</value>
+  </data>
+  <data name="liorig.Text" xml:space="preserve">
+    <value>Original</value>
+  </data>
+  <data name="liScale.Text" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="lblFlowVideoLoop.Text" xml:space="preserve">
+    <value>Video loop:</value>
+  </data>
+  <data name="lblPortalSharing.Text" xml:space="preserve">
+    <value>Select portal:</value>
+  </data>
+  <data name="liCurrentPortal.Text" xml:space="preserve">
+    <value>Current portal</value>
+  </data>
+  <data name="lblUserGalleriesShowAll.Text" xml:space="preserve">
+    <value>Select galleries to show images from:</value>
+  </data>
+  <data name="lblUserGalleriesDisplayType.Text" xml:space="preserve">
+    <value>Select meida display mode:</value>
+  </data>
+  <data name="liShowAll.Text" xml:space="preserve">
+    <value>Show all</value>
+  </data>
+  <data name="liShowCategories.Text" xml:space="preserve">
+    <value>Select categories to show galleries from:</value>
+  </data>
+  <data name="liDisplayAllInOne.Text" xml:space="preserve">
+    <value>Display all user images in one gallery</value>
+  </data>
+  <data name="liDisplayAsNested.Text" xml:space="preserve">
+    <value>Display as nested galleries</value>
+  </data>
+  <data name="lblChameleonSelectLayoutType.HelpText" xml:space="preserve">
+    <value>Select the layout type:</value>
+  </data>
+  <data name="lblChameleonSelectLayoutType.Text" xml:space="preserve">
+    <value>Select the layout type:</value>
+  </data>
+  <data name="liFixed.Text" xml:space="preserve">
+    <value>Fixed layout</value>
+  </data>
+  <data name="liResponsive.Text" xml:space="preserve">
+    <value>Responsive layout</value>
+  </data>
+  <data name="lblVideoGallery2ThumbnailRepeat.HelpText" xml:space="preserve">
+    <value>Thumbnail repeat direction:</value>
+  </data>
+  <data name="lblVideoGallery2ThumbnailRepeat.Text" xml:space="preserve">
+    <value>Thumbnail repeat direction:</value>
+  </data>
+  <data name="liHorizontalDir.Text" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="liVerticalDir.Text" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="lblChamaleonAlignTopLeft.HelpText" xml:space="preserve">
+    <value>Align image in main panel:</value>
+  </data>
+  <data name="lblChamaleonAlignTopLeft.Text" xml:space="preserve">
+    <value>Align image in main panel:</value>
+  </data>
+  <data name="liCenterCenter.Text" xml:space="preserve">
+    <value>Center-center</value>
+  </data>
+  <data name="liTopLeft.Text" xml:space="preserve">
+    <value>Top-left</value>
+  </data>
+</root>

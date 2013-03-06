@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title></title>
+
+    <script type="text/javascript" src="js/swfobject.js"></script>
+
+    <script type="text/javascript">
+
+
+//        function querySt(ji) {
+//            hu = window.location.search.substring(1);
+//            gy = hu.split("&");
+//            for (i = 0; i < gy.length; i++) {
+//                ft = gy[i].split("=");
+//                if (ft[0] == ji) {
+//                    return ft[1];
+//                }
+//            }
+//        }
+
+//        var koko = querySt("song");
+
+//        document.write(koko);
+//        document.write("<br>");
+//        document.write(hu);
+
+
+        //<![CDATA[
+
+        var flashvars = {};
+        var params = {};
+        var attributes = {};
+
+        // SETUP
+        flashvars.autoLoad = "true";
+        flashvars.autoPlay = "true";
+        flashvars.repeat = "true";
+        flashvars.volume = "1";
+        flashvars.width = "600";
+        
+        // SONGS
+        // song 1
+       // flashvars.song1url = "songs/01-trancefobia.mp3";
+       // flashvars.song1artist = "hh";
+        //flashvars.song1songname = "ame and it will slide if it can't fit";
+        // add other songs...
+        // END SETUP
+
+        params.play = "true";
+        params.scale = "noscale";
+        params.salign = "tl";
+        params.swliveconnect = "true";
+        params.allowscriptaccess = "always";
+
+        attributes.id = "mp3player";
+
+        swfobject.embedSWF("mp3player.swf", "mp3player-altcontent", flashvars.width, "33", "9.0.0", "js/expressInstall.swf", flashvars, params, attributes);
+
+        //]]>
+    </script>
+
+</head>
+<body bgcolor="#000">
+    <div id="mp3player-altcontent">
+        You need to upgrade your flash player</div>
+</body>
+</html>

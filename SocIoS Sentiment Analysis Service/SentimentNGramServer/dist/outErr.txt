@@ -1,0 +1,10 @@
+Oct 17, 2012 3:24:17 PM com.sun.xml.internal.ws.model.RuntimeModeler getRequestWrapperClass
+INFO: Dynamically creating request wrapper Class gr.ntua.sentimentanalysis.jaxws.Init
+Oct 17, 2012 3:24:17 PM com.sun.xml.internal.ws.model.RuntimeModeler getResponseWrapperClass
+INFO: Dynamically creating response wrapper bean Class gr.ntua.sentimentanalysis.jaxws.InitResponse
+Oct 17, 2012 3:24:17 PM com.sun.xml.internal.ws.model.RuntimeModeler getExceptionBeanClass
+INFO: Dynamically creating exception bean Class gr.ntua.sentimentanalysis.jaxws.ExceptionBean
+Oct 17, 2012 3:24:17 PM com.sun.xml.internal.ws.model.RuntimeModeler getRequestWrapperClass
+INFO: Dynamically creating request wrapper Class gr.ntua.sentimentanalysis.jaxws.GetTextSentiment
+Oct 17, 2012 3:24:17 PM com.sun.xml.internal.ws.model.RuntimeModeler getResponseWrapperClass
+INFO: Dynamically creating response wrapper bean Class gr.ntua.sentimentanalysis.jaxws.GetTextSentimentResponse

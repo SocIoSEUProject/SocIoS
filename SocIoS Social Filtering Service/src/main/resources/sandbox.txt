@@ -1,0 +1,185 @@
+<xsd:import namespace="http://socialfiltering.sociosproject.eu/" schemaLocation="./IGroupService.xsd"/>
+
+
+<xs:element name="createGroup" type="tns:createGroup"/>
+<xs:element name="deleteGroup" type="tns:deleteGroup"/>
+<xs:element name="getGroups" type="tns:getGroups"/>
+<xs:element name="removeMembers" type="tns:removeMembers"/>
+<xs:element name="getGroupMembers" type="tns:getGroupMembers"/>
+<xs:element name="addMembers" type="tns:addMembers"/>
+<xs:element name="createGroupResponse" type="tns:createGroupResponse"/>
+<xs:element name="deleteGroupResponse" type="tns:deleteGroupResponse"/>
+<xs:element name="getGroupsResponse" type="tns:getGroupsResponse"/>
+<xs:element name="removeMembersResponse" type="tns:removeMembersResponse"/>
+<xs:element name="getGroupMembersResponse" type="tns:getGroupMembersResponse"/>
+<xs:element name="addMembersResponse" type="tns:addMembersResponse"/>
+
+
+
+    <wsdl:operation name="createGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createGroup">
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+      <wsdl:output name="createGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    
+    <wsdl:operation name="deleteGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteGroup">
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+      <wsdl:output name="deleteGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroups">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getGroups">
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+      <wsdl:output name="getGroupsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeMembers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="removeMembers">
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+      <wsdl:output name="removeMembersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupMembers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getGroupMembers">
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+      <wsdl:output name="getGroupMembersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addMembers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addMembers">
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+      <wsdl:output name="addMembersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>    
+    
+    
+    
+    
+    
+    
+    =========================
+    
+    
+    
+  <wsdl:message name="addMembers">
+    <wsdl:part element="ns1:addMembers" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeMembersResponse">
+    <wsdl:part element="ns1:removeMembersResponse" name="parameters">
+
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createGroupResponse">
+    <wsdl:part element="ns1:createGroupResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupMembersResponse">
+    <wsdl:part element="ns1:getGroupMembersResponse" name="parameters">
+    </wsdl:part>
+
+  </wsdl:message>
+  <wsdl:message name="removeMembers">
+    <wsdl:part element="ns1:removeMembers" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createGroup">
+    <wsdl:part element="ns1:createGroup" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+
+  <wsdl:message name="getGroups">
+    <wsdl:part element="ns1:getGroups" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupResponse">
+    <wsdl:part element="ns1:deleteGroupResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupMembers">
+
+    <wsdl:part element="ns1:getGroupMembers" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addMembersResponse">
+    <wsdl:part element="ns1:addMembersResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroup">
+    <wsdl:part element="ns1:deleteGroup" name="parameters">
+
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupsResponse">
+    <wsdl:part element="ns1:getGroupsResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="IGroupService">
+    <wsdl:operation name="createGroup">
+      <wsdl:input message="ns1:createGroup" name="createGroup">
+
+    </wsdl:input>
+      <wsdl:output message="ns1:createGroupResponse" name="createGroupResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <wsdl:input message="ns1:deleteGroup" name="deleteGroup">
+    </wsdl:input>
+      <wsdl:output message="ns1:deleteGroupResponse" name="deleteGroupResponse">
+    </wsdl:output>
+
+    </wsdl:operation>
+    <wsdl:operation name="getGroups">
+      <wsdl:input message="ns1:getGroups" name="getGroups">
+    </wsdl:input>
+      <wsdl:output message="ns1:getGroupsResponse" name="getGroupsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeMembers">
+      <wsdl:input message="ns1:removeMembers" name="removeMembers">
+
+    </wsdl:input>
+      <wsdl:output message="ns1:removeMembersResponse" name="removeMembersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupMembers">
+      <wsdl:input message="ns1:getGroupMembers" name="getGroupMembers">
+    </wsdl:input>
+      <wsdl:output message="ns1:getGroupMembersResponse" name="getGroupMembersResponse">
+    </wsdl:output>
+
+    </wsdl:operation>
+    <wsdl:operation name="addMembers">
+      <wsdl:input message="ns1:addMembers" name="addMembers">
+    </wsdl:input>
+      <wsdl:output message="ns1:addMembersResponse" name="addMembersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+    

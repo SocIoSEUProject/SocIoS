@@ -1,0 +1,4 @@
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNThumbs' and column_name = 'GrayScale')
+BEGIN
+	ALTER TABLE EasyDNNThumbs ADD GrayScale bit NULL
+END

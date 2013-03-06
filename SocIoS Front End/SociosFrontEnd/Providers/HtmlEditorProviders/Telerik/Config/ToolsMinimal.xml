@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<classes>
+		<class name="Head" value=".Head" />
+		<class name="SubHead" value=".SubHead" />
+		<class name="SubSubHead" value=".SubSubHead" />
+		<class name="Normal" value=".Normal" />
+		<class name="NormalBold" value=".NormalBold" />
+		<class name="NormalRed" value=".NormalRed" />
+	</classes>
+
+	<tools name="FormatToolbar">
+		<tool name="FontName" shortcut="CTRL+SHIFT+F"/>
+		<tool name="RealFontSize" shortcut="CTRL+SHIFT+P"/>
+		<tool name="Bold" shortcut="CTRL+B"/>
+		<tool name="Italic" shortcut="CTRL+I"/>
+		<tool name="Underline" shortcut="CTRL+U"/>
+		<tool separator="true"/>
+		<tool name="ForeColor"/>
+		<tool name="BackColor"/>
+		<tool separator="true"/>
+		<tool name="JustifyLeft" />
+		<tool name="JustifyCenter" />
+		<tool name="JustifyRight" />
+		<tool name="JustifyNone" />
+		<tool separator="true"/>
+		<tool name="InsertOrderedList" />
+		<tool name="InsertUnorderedList" />
+	</tools>
+	
+	<tools name="InsertToolbar" >
+		<tool name="ImageManager" shortcut="CTRL+G"/>
+		<tool name="DocumentManager" />
+		<tool separator="true"/>
+		<tool name="LinkManager" shortcut="CTRL+K"/>
+		<tool name="Unlink" shortcut="CTRL+SHIFT+K"/>
+	</tools>
+	
+	<tools name="DropdownToolbar">
+		<tool name="ToggleScreenMode" shortcut="F11"/>
+		<tool name="AjaxSpellCheck"/>
+		<tool name="AboutDialog" />
+	</tools>
+</root>

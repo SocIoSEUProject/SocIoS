@@ -1,0 +1,24 @@
+<div class="Normal">
+  The DNN Minimal Extropy Skin is the default skin for DotNetNuke and has been designed to<br>
+  show some of the capabilities available in DotNetNuke.<br>
+  <p>
+	Minimal Extropy v01.00.05 includes a left menu skin and solves some issues found in previous versions of the skin.
+	Minimal Extropy v01.00.06 adds the tags skin object to the index skin.
+  </p>
+  <p>
+	Important Issues solved:
+  </p>
+  <ul>
+	<li>SKN-10178 	Page with partial edit permissions needs CSS hover adjustment 
+	</li>
+	<li>SKN-10894 	Text align issue in container 
+	</li>
+	<li>SKN-9190 Change Container title icon - text align 
+	</li>
+	<li>SKN-10902 	H1-H6 changed layout 
+	</li>
+  </ul>
+  <p>
+	Please check <a href="http://support.dotnetnuke.com/project/Project.aspx?PROJID=43" target="_blank">http://support.dotnetnuke.com/project/Project.aspx?PROJID=43</a> for more information / other solved issues
+  </p>
+</div>

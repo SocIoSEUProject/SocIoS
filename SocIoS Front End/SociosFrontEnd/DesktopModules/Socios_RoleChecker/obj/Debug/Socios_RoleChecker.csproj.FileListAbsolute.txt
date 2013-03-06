@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_RoleChecker.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_RoleChecker.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_RoleChecker.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_RoleChecker\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_RoleChecker\obj\Debug\Socios_RoleChecker.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_RoleChecker\obj\Debug\Socios_RoleChecker.pdb

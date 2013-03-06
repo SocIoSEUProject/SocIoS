@@ -1,0 +1,9 @@
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNRotatorGalleryBridge]') AND type in (N'U'))
+BEGIN
+	IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNRotatorGallerySettings_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNRotatorGalleryBridge]'))
+	BEGIN
+		ALTER TABLE [dbo].[EasyDNNRotatorGalleryBridge]  WITH CHECK ADD CONSTRAINT [FK_EasyDNNRotatorGallerySettings_EasyGallery] FOREIGN KEY([GalleryID])
+		REFERENCES [dbo].[EasyGallery] ([GalleryID]) ON DELETE CASCADE
+		ALTER TABLE [dbo].[EasyDNNRotatorGalleryBridge] CHECK CONSTRAINT [FK_EasyDNNRotatorGallerySettings_EasyGallery]
+	END
+END

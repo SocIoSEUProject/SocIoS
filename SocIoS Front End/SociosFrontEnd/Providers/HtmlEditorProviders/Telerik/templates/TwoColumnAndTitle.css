@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document with styles necessary for default HtmlEditor HTML "snippet" templates */
+
+/* Styles for ALL Default Templates */
+div.template
+{
+	text-align: left;
+	width: 100%;
+	overflow: auto;
+}
+
+div.template div.container
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	position: relative;
+}
+
+div.template div.region
+{
+	padding: 5px;
+	margin: 0;
+}
+
+/* Styles for "Two Column And Title" template */
+div.template.twocolumnandtitle div.region
+{
+	padding: 2%;
+}
+
+div.template.twocolumnandtitle div.column
+{
+	width: 46%;
+}
+
+div.template.twocolumnandtitle div.column.left
+{
+	float: left;
+}
+
+div.template.twocolumnandtitle div.column.right
+{
+	float: right;
+}
+
+

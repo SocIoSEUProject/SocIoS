@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GallerySettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GalleryID>1</GalleryID>
+  <DisplayType>ssthumbs</DisplayType>
+  <LightboxType>light_rounded</LightboxType>
+  <LightboxTitle>False</LightboxTitle>
+  <LightboxOpacity>80</LightboxOpacity>
+  <LightboxPadding>80</LightboxPadding>
+  <IntegrateBlog>NE</IntegrateBlog>
+  <QueryString />
+  <ShowTitle>True</ShowTitle>
+  <ShowDescription>True</ShowDescription>
+  <ShowMediaTitle>True</ShowMediaTitle>
+  <ShowMediaDescription>True</ShowMediaDescription>
+  <SmartCrop>True</SmartCrop>
+  <ShowPanel>False</ShowPanel>
+  <FilmStrip>True</FilmStrip>
+  <FilmStripSize>1</FilmStripSize>
+  <SSImageWidth>670</SSImageWidth>
+  <SSImageHeight>400</SSImageHeight>
+  <SSThumbImageWidth>600</SSThumbImageWidth>
+  <SSThumbImageHeight>400</SSThumbImageHeight>
+  <SSAutoSlide>NE</SSAutoSlide>
+  <SSAutoSlidePause>5000</SSAutoSlidePause>
+  <SSAutoSlideRandom>NE</SSAutoSlideRandom>
+  <SSAutoStartRandom>NE</SSAutoStartRandom>
+  <SSCSSFile>EDGMain.css</SSCSSFile>
+  <OverlayPosition>top</OverlayPosition>
+  <OverlaySize>50</OverlaySize>
+  <OverlayOpacity>0.5</OverlayOpacity>
+  <OverlayTextColor>111111</OverlayTextColor>
+  <OverlayColor>eeeeee</OverlayColor>
+  <ThumbnailPosition>top</ThumbnailPosition>
+  <TransitionInterval>5000</TransitionInterval>
+  <TransitionSpeed>800</TransitionSpeed>
+  <BorderSize>False</BorderSize>
+  <BorderColor>222222</BorderColor>
+  <PagingVisible>True</PagingVisible>
+  <TGColumns>4</TGColumns>
+  <TGImageWidth>150</TGImageWidth>
+  <TGImageHeight>150</TGImageHeight>
+  <TGItemsPerPage>4</TGItemsPerPage>
+  <TGCSSFile>EDGMain.css</TGCSSFile>
+  <TGSmartResize>True</TGSmartResize>
+  <LightboxDescription>True</LightboxDescription>
+  <VGColumns>10</VGColumns>
+  <VGCSSFile>EDGMain.css</VGCSSFile>
+  <VGSkin>black</VGSkin>
+  <InfoButton>False</InfoButton>
+  <PlayOnLoad>False</PlayOnLoad>
+  <AllowFullscren>True</AllowFullscren>
+  <AudioPlayOnLoad>False</AudioPlayOnLoad>
+</GallerySettings>

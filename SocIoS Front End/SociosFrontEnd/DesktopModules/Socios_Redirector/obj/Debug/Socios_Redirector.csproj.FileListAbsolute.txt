@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Redirector.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Redirector.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Redirector.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Redirector\obj\Debug\Socios_Redirector.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Redirector\obj\Debug\Socios_Redirector.pdb
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Redirector\obj\Debug\Socios_Redirector.csprojResolveAssemblyReference.cache

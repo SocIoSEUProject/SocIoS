@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://socios/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="TranslateService" targetNamespace="http://socios/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://epart.atc.gr:8080/SociosTranslateObject/TranslateService?xsd=1" namespace="http://www.sociosproject.eu/sociosVoc/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://epart.atc.gr:8080/SociosTranslateObject/TranslateService?xsd=2" namespace="http://socios/" />
+    </xsd:schema>
+  </types>
+  <message name="translate">
+    <part name="parameters" element="tns:translate" />
+  </message>
+  <message name="translateResponse">
+    <part name="parameters" element="tns:translateResponse" />
+  </message>
+  <message name="getLanguagesForTranslate">
+    <part name="parameters" element="tns:getLanguagesForTranslate" />
+  </message>
+  <message name="getLanguagesForTranslateResponse">
+    <part name="parameters" element="tns:getLanguagesForTranslateResponse" />
+  </message>
+  <message name="detect">
+    <part name="parameters" element="tns:detect" />
+  </message>
+  <message name="detectResponse">
+    <part name="parameters" element="tns:detectResponse" />
+  </message>
+  <message name="translateMediaItem">
+    <part name="parameters" element="tns:translateMediaItem" />
+  </message>
+  <message name="translateMediaItemResponse">
+    <part name="parameters" element="tns:translateMediaItemResponse" />
+  </message>
+  <portType name="TranslateService">
+    <operation name="translate">
+      <input wsam:Action="http://socios/TranslateService/translateRequest" message="tns:translate" />
+      <output wsam:Action="http://socios/TranslateService/translateResponse" message="tns:translateResponse" />
+    </operation>
+    <operation name="getLanguagesForTranslate">
+      <input wsam:Action="http://socios/TranslateService/getLanguagesForTranslateRequest" message="tns:getLanguagesForTranslate" />
+      <output wsam:Action="http://socios/TranslateService/getLanguagesForTranslateResponse" message="tns:getLanguagesForTranslateResponse" />
+    </operation>
+    <operation name="detect">
+      <input wsam:Action="http://socios/TranslateService/detectRequest" message="tns:detect" />
+      <output wsam:Action="http://socios/TranslateService/detectResponse" message="tns:detectResponse" />
+    </operation>
+    <operation name="translateMediaItem">
+      <input wsam:Action="http://socios/TranslateService/translateMediaItemRequest" message="tns:translateMediaItem" />
+      <output wsam:Action="http://socios/TranslateService/translateMediaItemResponse" message="tns:translateMediaItemResponse" />
+    </operation>
+  </portType>
+  <binding name="TranslateServicePortBinding" type="tns:TranslateService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="translate">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLanguagesForTranslate">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="detect">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="translateMediaItem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TranslateService">
+    <port name="TranslateServicePort" binding="tns:TranslateServicePortBinding">
+      <soap:address location="http://epart.atc.gr:8080/SociosTranslateObject/TranslateService" />
+    </port>
+  </service>
+</definitions>

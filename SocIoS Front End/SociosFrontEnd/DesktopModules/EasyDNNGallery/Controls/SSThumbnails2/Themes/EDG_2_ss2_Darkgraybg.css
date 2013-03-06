@@ -1,0 +1,1170 @@
+﻿/*
+EasyDNNGallery CSS file
+
+Instructions: To properly create theme the first ID selector (# EDG_2_ss2_Darkgraybg) must equal the name of the css file
+(example: this file is called EDG_2_ss2_Darkgraybg.css and the first ID selector must called EDG_2_ss2_Darkgraybg).
+ Names may be in its sole discretion,
+ only important thing is  that the first ID selector is the same as css filename so the theme is correct.
+ To quickly change the name of the first ID selector use the find / replace function in your editor.
+*/
+
+
+/* Lightbox Gallery */
+#EDG_2_ss2_Darkgraybg .EDGmain {
+		margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	float: left;
+	position: relative;
+	
+}
+
+/*Lighbox gallery - Image*/
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a {
+	text-decoration: none;
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a:hover {
+	cursor: pointer;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a img {
+	
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a:hover img {
+	
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a input {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a:hover input {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a .flag 
+{
+	
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a:hover .flag {
+	
+	/*
+	position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_image.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+	line-height:normal;
+}
+
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage a:hover .title 
+{
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGimage .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+/*Lighbox gallery - Video*/
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a {
+	text-decoration: none;
+	float: left;
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a:hover {
+	cursor: pointer;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a .flag {
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a:hover .flag {
+	/*position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_video.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+	line-height:normal;
+}
+
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo a:hover .title 
+{
+		border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGvideo .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+/*Lighbox gallery - Audio*/
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio {
+	text-decoration: none;
+	float: left;
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a:hover {
+	cursor: pointer;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a .flag 
+{
+	
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a:hover .flag
+{
+	/*position: absolute;
+	bottom: 25px;
+	float: left;
+	background-image: url(images/open_2.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 50px;
+	width: 100%;
+	left: 0px;*/
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a .flagObject {
+	/*position: absolute;
+	float: right;
+	background-image: url(images/flag_audio.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 53px;
+	width: 42px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;*/
+}
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+	line-height:normal;
+}
+
+
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio a:hover .title 
+{
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_2_ss2_Darkgraybg .EDGmain .EDGaudio .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+/*END Lighbox gallery */
+
+
+
+/*Gallery background  - if you want gallery without a background delete the settings, but leave empty class */
+#EDG_2_ss2_Darkgraybg .EDGbackground
+{
+	
+	margin-right: auto;
+	margin-left: auto;
+	float:left;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGbackground .EDGcontent {
+	padding-top: 10px;
+	padding-right: 6px;
+	padding-bottom: 35px;
+	padding-left: 6px;
+	float:left;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGbackground .EDGcontentbgrd
+{
+	background-image: url(images/corner1_background.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color: #5d5e5d;
+	float:left;
+}
+#EDG_2_ss2_Darkgraybg .EDGbackground .EDGcornerbotleft {
+	background-image: url(images/corner1_left_bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	float:left;
+} 
+#EDG_2_ss2_Darkgraybg .EDGbackground .EDGcornerbotright {
+	background-image: url(images/corner1_right_bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	float:left;
+} 
+#EDG_2_ss2_Darkgraybg .EDGbackground .EDGcornertopleft {
+	background-image: url(images/corner1_left_top.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	float:left;
+} 
+#EDG_2_ss2_Darkgraybg .EDGbackground .EDGcornertopright {
+	padding:10px;
+	background-image: url(images/corner1_right_top.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	float:left;
+} 
+#EDG_2_ss2_Darkgraybg .EDGbackground .EDGclear {font-size: 1px; height: 1px}
+
+
+/*paging*/
+#EDG_2_ss2_Darkgraybg .buttonPrev
+{
+	border-style: hidden;
+	border-width: 0px;
+	/*background-image: url(images/btn1_left.jpg);*/
+	background: transparent url(images/btn1_left.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+}
+
+#EDG_2_ss2_Darkgraybg .buttonPrev:hover
+{
+	border-style: hidden;
+	border-width: 0px;
+	/*background-image: url(images/btn1_left_hover.jpg);*/
+	background: transparent url(images/btn1_left_hover.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+}
+
+
+#EDG_2_ss2_Darkgraybg .buttonNext
+{
+	border-style: hidden;
+	border-width: 0px;
+	/*background-image: url(images/btn1_right.jpg);*/
+	background: transparent url(images/btn1_right.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+	}
+	
+#EDG_2_ss2_Darkgraybg .buttonNext:hover
+{
+	border-style: hidden;
+	border-width: 0px;
+	/*background-image: url(images/btn1_right_hover.jpg);*/
+	background: transparent url(images/btn1_right_hover.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 45px;
+	}
+
+
+#EDG_2_ss2_Darkgraybg .EDGpager span
+{
+	/*padding: 2px 8px 8px 6px;
+	border-style: hidden;
+	border-width: 0px;
+	background-image: url(images/paging_off.png);
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 19px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: underline;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGpager a
+{
+	/*width: 19px;
+	height: 19px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGpager a:hover
+{
+	/*width: 19px;
+	height: 19px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: underline;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+
+
+/*Video gallery*/
+
+#EDG_2_ss2_Darkgraybg .VideoBodyEmbed
+{
+	/*border: 1px solid #FFFFFF;*/
+} 
+
+
+#EDG_2_ss2_Darkgraybg .VideoTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_2_ss2_Darkgraybg .VideoDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+#EDG_2_ss2_Darkgraybg .VideoDescription a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:underline;
+} 
+
+#EDG_2_ss2_Darkgraybg .VideoDescription a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:none;
+} 
+
+
+
+/*Audio gallery*/
+
+#EDG_2_ss2_Darkgraybg .AudioTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_2_ss2_Darkgraybg .AudioDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 15px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+#EDG_2_ss2_Darkgraybg .AudioDescription a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:underline;
+} 
+
+#EDG_2_ss2_Darkgraybg .AudioDescription a:hover
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration:none;
+} 
+
+
+
+
+
+/*MAIN Gallery Title*/
+
+#EDG_2_ss2_Darkgraybg .GalleryDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+} 
+
+
+#EDG_2_ss2_Darkgraybg .EDGTitle
+{
+margin-top:10px;
+margin-bottom:15px;
+text-align:center;
+
+}
+
+#EDG_2_ss2_Darkgraybg .EDGTitle .EDGTitleText
+{
+	font-family: Times new roman, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	letter-spacing: 1.1em;
+	line-height:normal;
+}
+
+
+/*SlideShow*/
+
+#EDG_2_ss2_Darkgraybg .SlideshowDescription
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	text-align: center;
+	margin-top: 5px;
+	color: #FFFFFF;
+	display:block;
+	line-height:normal;
+
+
+} 
+
+#EDG_2_ss2_Darkgraybg .SlideshowTitle
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+} 
+
+#EDG_2_ss2_Darkgraybg .slideshowtitledescbox
+{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+
+#EDG_2_ss2_Darkgraybg .slideshow {
+text-align: center;	
+}
+#EDG_2_ss2_Darkgraybg .slideshowimg {
+border: 2px solid #FFFFFF;	
+}
+
+
+
+#EDG_2_ss2_Darkgraybg .EDGSlide {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	float: left;
+	position: relative;
+	text-align:center;
+	
+}
+
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage a {
+	text-decoration: none;
+	float: left;
+}
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage a:hover {
+	cursor: pointer;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage a img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #fff !important;
+}
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage a:hover img {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000 !important;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage .imgborder {
+	float: left;
+	margin: 0;
+	border: none;
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage .title
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	text-align: center;
+	left: 0px;
+	right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	white-space: normal;
+	line-height:normal;
+}
+
+
+
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage a .title {
+
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #fff;
+	background: #000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+
+	
+}
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage a:hover .title 
+{
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #FF0000;
+	border-bottom-color: #FF0000;
+	border-left-color: #FF0000;
+	color: #fff;
+	background-color: #FF0000;
+	filter:alpha(opacity=65);
+	opacity:.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)"; /*--IE 8 Transparency--*/
+}
+
+#EDG_2_ss2_Darkgraybg .EDGSlide .EDGimage .Description
+{
+	font-size: 9px;
+	font-style: italic;
+}
+
+
+#EDG_2_ss2_Darkgraybg .btnGalleryBack
+{
+	border-style: hidden;
+	border-width: 0px;
+	background: transparent url(images/backblack.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+	display:block;	
+	margin-left:50px;	
+}
+
+#EDG_2_ss2_Darkgraybg .nestedBreadCrumb
+{
+	margin-left:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+
+	}
+	
+	#EDG_2_ss2_Darkgraybg .nestedBreadCrumb a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+	#EDG_2_ss2_Darkgraybg .nestedBreadCrumb a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}	
+
+
+/***Version 2.2.*****************/
+
+
+#EDG_2_ss2_Darkgraybg .TitleCarousel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+	clear: both;
+	float:left;
+	font-weight: bold;
+	text-align: left;
+	padding-left:10px;
+}
+
+#EDG_2_ss2_Darkgraybg .DescriptionCarousel{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	clear: both;
+	float:left;
+	white-space:normal;
+	bottom:0px;
+	text-align: left;
+	font-weight:normal;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+
+#EDG_2_ss2_Darkgraybg .DescriptionCarousel a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration:underline;
+	
+	}
+	
+#EDG_2_ss2_Darkgraybg .DescriptionCarousel a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration:none;
+	
+	}
+	
+
+/***Version 2.3.*****************/
+/*** Lightbox1.ascx **/	
+
+#EDG_2_ss2_Darkgraybg a:link
+{
+	text-decoration:none!important;
+	color:#fff;
+	
+	}
+
+
+#EDG_2_ss2_Darkgraybg .titleimage .title
+{
+	clear: both;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+	visibility: visible;
+	line-height: normal;
+	white-space: normal;
+	display: block;
+	color: #F0F0F0;
+	text-decoration: none;
+}
+
+#EDG_2_ss2_Darkgraybg .titleimage .title a
+{
+	clear: both;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+	visibility: visible;
+	line-height: normal;
+	white-space: normal;
+	display: block;
+	color: #F0F0F0;
+	text-decoration:none!important;
+}
+
+
+
+#EDG_2_ss2_Darkgraybg .DescriptionImage
+{
+	font-size: 11px;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height:normal;
+	
+
+}
+
+#EDG_2_ss2_Darkgraybg .DescriptionImage a
+{
+	font-size: 11px;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height:normal;
+
+}
+
+#EDG_2_ss2_Darkgraybg .NestedInfo
+{
+	font-size: 10px;
+	font-style: normal;
+	white-space: normal;
+	margin-bottom:10px;
+	display:block;
+	color: #CCCCCC;
+	text-decoration:none!important;
+	text-align: left;
+	line-height:normal;
+	
+
+}
+
+#EDG_2_ss2_Darkgraybg .ViewDetailsLink
+{
+	clear:both;
+	display:block;
+	text-align:left;
+	padding-top:5px;
+	
+	}
+	
+
+#EDG_2_ss2_Darkgraybg .ViewDetailsLink a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	border: 1px solid #C0C0C0;
+	background-color: #ACACAC;
+	
+
+}
+
+#EDG_2_ss2_Darkgraybg .ViewDetailsLink a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	padding: 3px 8px 3px 8px;
+	border: 1px solid #C0C0C0;
+	background-color: #D2D2D2;
+}
+
+
+/*****************Version 2.4**************/
+
+#EDG_2_ss2_Darkgraybg .Slideshow2Description
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	margin-top: 5px;
+	color: #FFFFFF;
+	display:block;
+	line-height:normal;
+
+
+} 
+
+#EDG_2_ss2_Darkgraybg .Slideshow2Title
+{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	line-height:normal;
+
+
+}
+
+#EDG_2_ss2_Darkgraybg div.controls a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+}
+	
+#EDG_2_ss2_Darkgraybg div.controls a:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+} 
+
+#EDG_2_ss2_Darkgraybg #thumbs
+{
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+} 			 		
+
+#EDG_2_ss2_Darkgraybg .EDGTitleText
+{
+	font-family: Times new roman, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	line-height:normal;
+	display:block;
+}

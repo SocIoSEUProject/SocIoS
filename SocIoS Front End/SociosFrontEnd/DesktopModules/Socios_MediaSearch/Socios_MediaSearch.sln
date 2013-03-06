@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_MediaSearch", "Socios_MediaSearch.csproj", "{9BF490B8-A578-4D4C-828E-23572D5C2393}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_oAuth", "..\Socios_oAuth\Socios_oAuth.csproj", "{31DEE67B-765A-4F81-9433-56E4AFD74A43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_OAuthTokenManager", "..\Socios_OAuthTokenManager\Socios_OAuthTokenManager.csproj", "{0F20F702-5733-429A-8415-AA79C009550E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_Integration", "..\Socios_Integration\Socios_Integration.csproj", "{66806ED9-A057-425B-BAB2-8A3397AE982F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_Scenario1", "..\Socios_Scenario1\Socios_Scenario1.csproj", "{2A22FE34-CCBE-422F-BB11-7529C594C1D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_ConsentForm", "..\Socios_ConsentForm\Socios_ConsentForm.csproj", "{D2190944-A7C7-4846-AC11-05788BBFDB33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_TranslationWidget", "..\Socios_TranslationWidget\Socios_TranslationWidget.csproj", "{881AA85E-773D-4BC1-A8A8-8CAF4E7076BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SociosServices", "..\..\..\..\..\Users\pbrigden\Documents\Visual Studio 2010\Projects\SociosServices\SociosServices.csproj", "{B17FBCDE-C7AB-4596-B7BC-062BFF73DA52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socios_Redirector", "..\Socios_Redirector\Socios_Redirector.csproj", "{AD43E34B-5FBC-458A-896D-7D1BCA9CD4D2}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "Socios_RoleChecker", "..\Socios_RoleChecker\Socios_RoleChecker.csproj", "{B6C888A1-7C23-4929-B11B-8C320D4E89CE}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BF490B8-A578-4D4C-828E-23572D5C2393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF490B8-A578-4D4C-828E-23572D5C2393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF490B8-A578-4D4C-828E-23572D5C2393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF490B8-A578-4D4C-828E-23572D5C2393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31DEE67B-765A-4F81-9433-56E4AFD74A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31DEE67B-765A-4F81-9433-56E4AFD74A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31DEE67B-765A-4F81-9433-56E4AFD74A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31DEE67B-765A-4F81-9433-56E4AFD74A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F20F702-5733-429A-8415-AA79C009550E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F20F702-5733-429A-8415-AA79C009550E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F20F702-5733-429A-8415-AA79C009550E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F20F702-5733-429A-8415-AA79C009550E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66806ED9-A057-425B-BAB2-8A3397AE982F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66806ED9-A057-425B-BAB2-8A3397AE982F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66806ED9-A057-425B-BAB2-8A3397AE982F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66806ED9-A057-425B-BAB2-8A3397AE982F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A22FE34-CCBE-422F-BB11-7529C594C1D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A22FE34-CCBE-422F-BB11-7529C594C1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A22FE34-CCBE-422F-BB11-7529C594C1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A22FE34-CCBE-422F-BB11-7529C594C1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2190944-A7C7-4846-AC11-05788BBFDB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2190944-A7C7-4846-AC11-05788BBFDB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2190944-A7C7-4846-AC11-05788BBFDB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2190944-A7C7-4846-AC11-05788BBFDB33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881AA85E-773D-4BC1-A8A8-8CAF4E7076BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881AA85E-773D-4BC1-A8A8-8CAF4E7076BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881AA85E-773D-4BC1-A8A8-8CAF4E7076BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881AA85E-773D-4BC1-A8A8-8CAF4E7076BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17FBCDE-C7AB-4596-B7BC-062BFF73DA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17FBCDE-C7AB-4596-B7BC-062BFF73DA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17FBCDE-C7AB-4596-B7BC-062BFF73DA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17FBCDE-C7AB-4596-B7BC-062BFF73DA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD43E34B-5FBC-458A-896D-7D1BCA9CD4D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD43E34B-5FBC-458A-896D-7D1BCA9CD4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD43E34B-5FBC-458A-896D-7D1BCA9CD4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD43E34B-5FBC-458A-896D-7D1BCA9CD4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C888A1-7C23-4929-B11B-8C320D4E89CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C888A1-7C23-4929-B11B-8C320D4E89CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C888A1-7C23-4929-B11B-8C320D4E89CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C888A1-7C23-4929-B11B-8C320D4E89CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

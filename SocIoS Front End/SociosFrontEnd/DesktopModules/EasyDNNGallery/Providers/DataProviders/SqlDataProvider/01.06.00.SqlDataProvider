@@ -1,0 +1,10 @@
+﻿IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallerySettings]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyGallerySettings](
+		[ModuleId] [int] NOT NULL,
+		[ViewerControl] [varchar](500) NULL,
+		CONSTRAINT [PK_EasyGallerySettings] PRIMARY KEY CLUSTERED ([ModuleId] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END

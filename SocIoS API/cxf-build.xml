@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<project name="cxf wsdltojava" basedir=".">
+
+    <property environment="env"/>
+    <property name="home.dir" location="${basedir}"/>
+    <property name="build.gen-src.dir" location ="${basedir}/gen-src"/>
+    <property name="cxf.home" location="${basedir}/cxf"/>
+    <property name="cxf.etc.dir" location="${cxf.home}/etc"/>
+	<property name="cxf.serialize.binding" location="${basedir}/binding.xml"/>
+
+    <!-- find the tools jar -->
+    <available property="tools.jar" value="$${env.JAVA_HOME}/lib/tools.jar"
+               file="${env.JAVA_HOME}/lib/tools.jar"/>
+    <path id="jdk.tools.classpath">
+        <pathelement location="${tools.jar}"/>
+    </path>
+
+    <condition property="is.java.version.15">
+        <or>
+          <equals arg1="${ant.java.version}" arg2="1.5"/>
+          <equals arg1="${ant.java.version}" arg2="1.6"/>
+        </or>
+    </condition>	
+
+    <fail message="cxf requires Java version 1.5 or higher. You are currently using Java version ${ant.java.version}."
+          unless="is.java.version.15"/>
+ 
+    <condition property="cxf-manifest.jar.file" value="${cxf.home}/build/lib/cxf-manifest.jar">
+        <available file="cxf-manifest.jar" type="file" filepath="${cxf.home}/build/lib"/>
+    </condition>
+    <property name="cxf-manifest.jar.file" value="${cxf.home}/lib/cxf-manifest.jar"/>
+    <property name="cxf-lib" value="${cxf.home}/lib"/>
+
+    <fail message="The location ${cxf.home} does not seem to contain a cxf installation; if you are importing this common build file from a location other than the cxf samples directory then you need to set the cxf_HOME environment variable.">
+        <condition>
+            <not>
+                <isset property="cxf-manifest.jar.file" />
+            </not>
+        </condition>
+    </fail>
+
+    <condition property="cxf.endorsed.dir" value="${cxf.home}/lib/endorsed">
+        <available file="${cxf.home}/lib/endorsed" type="dir" property=""/>
+    </condition>
+    <condition property="cxf.endorsed.flag" value="-Djava.endorsed.dirs=${cxf.endorsed.dir}">
+        <available file="${cxf.home}/lib/endorsed" type="dir" property=""/>
+    </condition>
+    <property name="cxf.endorsed.dir" location="${cxf.home}/endorsed"/>
+    
+  <macrodef name="wsdl2java">  	
+  	<attribute name="wsdl" default=""/>
+  	<attribute name="wsdl-loc" default=""/>
+  	<attribute name="dir" default=""/>
+  	<sequential>
+  	 	 <mkdir dir="@{dir}"/>  		
+       <java classname="org.apache.cxf.tools.wsdlto.WSDLToJava" fork="true">
+          <jvmarg value="${cxf.endorsed.flag}"/>
+          <arg value="-validate"/>
+          <arg value="-frontend"/>
+  	 	    <arg value="jaxws21"/>
+          <arg value="-wsdlLocation"/>
+          <arg value="@{wsdl-loc}"/>
+       	  <arg value="-b"/>
+       	  <arg value="binding.xml"/>
+          <arg value="-d"/>
+          <arg value="@{dir}"/>
+          <arg value="@{wsdl}"/>
+          <classpath>
+             <path refid="cxf.classpath"/>
+          </classpath>
+       </java>
+  	 </sequential>
+  </macrodef>
+</project>

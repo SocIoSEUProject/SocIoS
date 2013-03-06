@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:socios="http://www.sociosproject.eu/"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+">
+
+    <!-- Define a cxf endpoint based on client stub generated from a wsdl. 
+        It is important to provide serviceName and endpointName so the wsdl is not 
+        needed at runtime. As far as I know the serviceName and endpointName do not 
+        have to have a special convention but it is good practice to use the service 
+        namespace and Service Interface name in the names -->
+<!-- http://localhost:8087/socialfilteringservice-1.13/services/GroupServicePort -->    
+<!-- http://epart.atc.gr:8080/socialfilteringservice/services/GroupServicePort -->
+<!--  http://localhost:8087/socialfilteringservice-1.26/services/GroupServicePort -->
+
+    <jaxws:client id="groupService" serviceName="socios:GroupService"
+        endpointName="socios:GroupServiceEndpoint" address="http://localhost:8080/socialfilteringservice-1.28/services/GroupServicePort"
+        serviceClass="eu.sociosproject.IGroupService">
+    </jaxws:client>
+
+    <jaxws:client id="filteringService" serviceName="socios:SocialFilteringService"
+        endpointName="socios:SocialFilteringServiceEndpoint" address="http://localhost:8080/socialfilteringservice-1.28/services/SocialFilteringServicePort"
+        serviceClass="eu.sociosproject.ISocialFilteringService">
+    </jaxws:client>
+
+    <jaxws:client id="coreService" serviceName="socios:SociosApiImpl"
+        endpointName="socios:SocialApiImplEndPoint" address="http://epart.atc.gr:8080/sociosApi/SociosApiImpl"
+        serviceClass="eu.sociosproject.sociosapi.SociosApi">
+    </jaxws:client>
+
+    <bean id="cli"
+        class="eu.sociosproject.socialfiltering.client.SfsCli">
+        <property name="groupService" ref="groupService"></property>
+        <property name="filteringService" ref="filteringService"></property>
+        <property name="coreService" ref="coreService"></property>
+    </bean>
+</beans>

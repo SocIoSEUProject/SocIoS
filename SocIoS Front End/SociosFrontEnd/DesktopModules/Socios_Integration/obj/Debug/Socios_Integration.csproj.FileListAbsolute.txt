@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Integration.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Integration.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_Integration.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Integration\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Integration\obj\Debug\Socios_Integration.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_Integration\obj\Debug\Socios_Integration.pdb

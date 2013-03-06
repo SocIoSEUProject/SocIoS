@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.sociosproject.eu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="SocialFilteringService" targetNamespace="http://www.sociosproject.eu/">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:voc="http://www.sociosproject.eu/sociosVoc/" xmlns:tns="http://www.sociosproject.eu/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.sociosproject.eu/">
+
+            <xsd:import namespace="http://www.sociosproject.eu/sociosVoc/" schemaLocation="http://epart.atc.gr:8080/SocialFilteringService/SocialFilteringService?xsd=1" />
+
+            <xs:element name="getRecentActivities" type="tns:getRecentActivities" />
+            <xs:element name="getRecentActivitiesResponse" type="tns:getRecentActivitiesResponse" />
+
+            <xs:complexType name="getRecentActivities">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="clientId" type="voc:ObjectId" />
+                    <xs:element minOccurs="0" name="groupId" type="voc:ObjectId" />
+                   <!--  <xs:element minOccurs="0" name="arg2"
+                        type="xs:dateTime" />
+ -->
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getRecentActivitiesResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="voc:ActivityReturnObject" />
+                </xs:sequence>
+            </xs:complexType>
+
+
+        </xs:schema>
+    </wsdl:types>
+
+
+    <wsdl:message name="getRecentActivities">
+
+        <wsdl:part element="tns:getRecentActivities" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getRecentActivitiesResponse">
+        <wsdl:part element="tns:getRecentActivitiesResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+
+    <wsdl:portType name="ISocialFilteringService">
+        <wsdl:operation name="getRecentActivities">
+            <wsdl:input name="getRecentActivities" message="tns:getRecentActivities">
+            </wsdl:input>
+            <wsdl:output name="getRecentActivitiesResponse" message="tns:getRecentActivitiesResponse">
+            </wsdl:output>
+        </wsdl:operation>
+
+    </wsdl:portType>
+    <wsdl:binding name="SocialFilteringServiceSoapBinding" type="tns:ISocialFilteringService">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+
+        <wsdl:operation name="getRecentActivities">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input name="getRecentActivities">
+                <soap:body use="literal" />
+
+            </wsdl:input>
+            <wsdl:output name="getRecentActivitiesResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+
+    </wsdl:binding>
+    <wsdl:service name="SocialFilteringService">
+        <wsdl:port name="SocialFilteringServicePort" binding="tns:SocialFilteringServiceSoapBinding">
+            <soap:address location="http://epart.atc.gr:8080/SocialFilteringService/SocialFilteringService" />
+				<!-- thanos change location="http://localhost:9090/SocialFilteringServicePort" -->
+            <!--soap:address location="http://localhost:8080/wsdl_first-{CXFVersion}/services/GroupServicePort?wsdl"/ -->
+            <!-- http://localhost:8087/socialfilteringservice-1.0/services/GroupServicePort?wsdl 
+                http://localhost:8087/socialfilteringservice-1.0/services/GroupServicePort -->
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

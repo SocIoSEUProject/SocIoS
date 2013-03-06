@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+  <Node Text="Personal Folders"  ImageUrl="~/Images/youtube.png" />
+  <Node Text="FlickR"  ImageUrl="~/Images/flickR.png" />
+
+</Tree>

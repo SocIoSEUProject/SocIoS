@@ -1,0 +1,65 @@
+﻿/* Add EasyDNNMediaLocalization Table if news module does not exist*/
+/*******************************************************************/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNews]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNMediaLocalization](
+		[PictureID] [int] NOT NULL,
+		[LocaleCode] [nvarchar](20) NOT NULL,
+		[LocaleString] [nvarchar](150) NULL,
+		[Title] [nvarchar](150) NULL,
+		[Description] [nvarchar](1500) NULL,
+		[MediaUrl] [nvarchar](1500) NULL,
+		[PortalID] [int] NULL,
+		CONSTRAINT [PK_EasyDNNMediaLocalization] PRIMARY KEY CLUSTERED ([PictureID] ASC,[LocaleCode] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	ALTER TABLE [dbo].[EasyDNNMediaLocalization]  WITH CHECK ADD CONSTRAINT [FK_EasyDNNMediaLocalization_EasyGalleryPictures] FOREIGN KEY([PictureID])
+	REFERENCES [dbo].[EasyGalleryPictures] ([PictureID]) ON DELETE CASCADE
+	ALTER TABLE [dbo].[EasyDNNMediaLocalization] CHECK CONSTRAINT [FK_EasyDNNMediaLocalization_EasyGalleryPictures]
+END
+GO
+
+/* Add EasyDNNGalleryLocalization Table */
+/****************************************/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[EasyDNNGalleryLocalization](
+	[GalleryID] [int] NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[LocaleCode] [nvarchar](20) NOT NULL,
+	[LocaleString] [nvarchar](150) NULL,
+	[Title] [nvarchar](50) NULL,
+	[Description] [nvarchar](500) NULL,
+	CONSTRAINT [PK_EasyDNNGalleryLocalization] PRIMARY KEY CLUSTERED ([GalleryID] ASC,[LocaleCode] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+GO
+
+ALTER TABLE [dbo].[EasyDNNGalleryLocalization]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNGalleryLocalization_EasyGallery] FOREIGN KEY([GalleryID])
+REFERENCES [dbo].[EasyGallery] ([GalleryID]) ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[EasyDNNGalleryLocalization] CHECK CONSTRAINT [FK_EasyDNNGalleryLocalization_EasyGallery]
+GO
+
+/* Add EasyDNNCategoryLocalization Table */
+/*****************************************/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[EasyDNNCategoryLocalization](
+	[CategoryID] [int] NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[LocaleCode] [nvarchar](20) NOT NULL,
+	[LocaleString] [nvarchar](150) NULL,
+	[Title] [nvarchar](50) NULL,
+	[Description] [nvarchar](500) NULL,
+	CONSTRAINT [PK_EasyDNNCategoryLocalization] PRIMARY KEY CLUSTERED ([CategoryID] ASC,[LocaleCode] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+GO
+ALTER TABLE [dbo].[EasyDNNCategoryLocalization]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNCategoryLocalization_EasyGalleryCategory] FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[EasyGalleryCategory] ([CategoryID]) ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[EasyDNNCategoryLocalization] CHECK CONSTRAINT [FK_EasyDNNCategoryLocalization_EasyGalleryCategory]

@@ -1,0 +1,256 @@
+/****** Tables ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyGallerySocialGroups](
+	[GalleryID] [int] NOT NULL,
+	[RoleID] [int] NOT NULL,
+ CONSTRAINT [PK_EasyGallerySocialGroups] PRIMARY KEY CLUSTERED 
+(
+	[GalleryID] ASC,
+	[RoleID] ASC
+)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+/****** Object:  ForeignKey [FK_EasyGallerySocialGroups_EasyGallery]    Script Date: 09/25/2012 16:48:38 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups]  WITH CHECK ADD  CONSTRAINT [FK_EasyGallerySocialGroups_EasyGallery] FOREIGN KEY([GalleryID])
+REFERENCES [dbo].[EasyGallery] ([GalleryID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups] CHECK CONSTRAINT [FK_EasyGallerySocialGroups_EasyGallery]
+GO
+/****** Object:  ForeignKey [FK_EasyGallerySocialGroups_Roles]    Script Date: 09/25/2012 16:48:38 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups]  WITH CHECK ADD  CONSTRAINT [FK_EasyGallerySocialGroups_Roles] FOREIGN KEY([RoleID])
+REFERENCES {databaseOwner}{objectQualifier}Roles ([RoleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups] CHECK CONSTRAINT [FK_EasyGallerySocialGroups_Roles]
+GO
+
+ALTER TABLE EasyGallery ALTER Column GalleryName nvarchar(500)
+ALTER TABLE EasyGallery ALTER Column GalleryDescription nvarchar(2000)
+ALTER TABLE EasyGalleryIntegration ALTER Column GalleryName nvarchar(500)
+
+/**** Update tables ****/
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyGalleryModuleSettings' and column_name = 'ModuleToOpenGroupDetails')
+BEGIN
+ALTER TABLE [dbo].[EasyGalleryModuleSettings] ADD ModuleToOpenGroupDetails int NOT NULL DEFAULT(0)
+END
+
+/**  Stored Procs  **/
+/****** Object:  StoredProcedure [dbo].[EasyDNNGalleryListByGroupID]    Script Date: 09/27/2012 08:58:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryListByGroupID]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNGalleryListByGroupID]
+END
+EXEC dbo.sp_executesql @statement = N'
+CREATE PROCEDURE [dbo].[EasyDNNGalleryListByGroupID]
+	@PortalID int,
+	@ModuleID int,
+	@GalleryID int,
+	@RoleID int,
+	@CurrentUserID int,
+	@GroupId int = 1,
+	@ItemsFrom int = 1,
+	@ItemsTo int = 500,
+	@OrderBy nvarchar(20) = ''Position ASC''
+AS
+SET NOCOUNT ON;
+WITH tempEGP AS (
+	SELECT Distinct egp.[PictureID],egp.[PortalID],egp.[UserID],egp.[GalleryID],egp.[Title],egp.[Description],egp.[FileName],egp.[ThumbUrl],egp.[Position],egp.[MediaType],egp.[ShortEmbedUrl]
+	  ,egp.[ViewerThumb],egp.[Info],egp.[FileExtension],egp.[ImageUrl],egp.[DateUploaded],egp.[StartupImage],egp.[HiResVersion],egp.[JournalId]
+	FROM EasyGalleryPictures AS egp INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID 
+	INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+	INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+	LEFT OUTER JOIN EasyGallerySecurity AS egs on egs.GalleryID = eg.GalleryID
+	INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = egs.SecurityKey OR egs.SecurityKey IS NULL 
+	INNER JOIN EasyGallerySocialGroups ON eg.GalleryID = EasyGallerySocialGroups.GalleryID INNER JOIN {databaseOwner}{objectQualifier}Roles AS r ON EasyGallerySocialGroups.RoleID = r.RoleID
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND r.RoleID=@RoleID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+	UNION ALL
+	SELECT Distinct egp.[PictureID],egp.[PortalID],egp.[UserID],egp.[GalleryID],egp.[Title],egp.[Description],egp.[FileName],egp.[ThumbUrl],egp.[Position],egp.[MediaType],egp.[ShortEmbedUrl]
+	  ,egp.[ViewerThumb],egp.[Info],egp.[FileExtension],egp.[ImageUrl],egp.[DateUploaded],egp.[StartupImage],egp.[HiResVersion],egp.[JournalId]
+	FROM EasyGalleryPictures AS egp INNER JOIN dbo.Journal_Security as js ON js.JournalId = egp.JournalId
+	INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID 
+	INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+	INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+	INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = js.SecurityKey
+	INNER JOIN EasyGallerySocialGroups ON eg.GalleryID = EasyGallerySocialGroups.GalleryID INNER JOIN {databaseOwner}{objectQualifier}Roles AS r ON EasyGallerySocialGroups.RoleID = r.RoleID
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NOT NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND  r.RoleID=@RoleID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+),
+tempct AS (SELECT gct.PictureID, gct.ThumbCreated From EasyGalleryCreatedThumbs gct Where gct.ModuleID = @ModuleID)
+SELECT * FROM (SELECT Distinct tempEGP.*,tempct.ThumbCreated, ROW_NUMBER() OVER (ORDER BY 
+	 CASE WHEN @OrderBy =''Position ASC'' THEN Position END,
+	 CASE WHEN @OrderBy =''Position DESC'' THEN Position END DESC,
+	 CASE WHEN @OrderBy =''DateUploaded ASC'' THEN DateUploaded END,
+	 CASE WHEN @OrderBy =''DateUploaded DESC'' THEN DateUploaded END DESC,
+	 CASE WHEN @OrderBy =''FileName ASC'' THEN FileName END,
+	 CASE WHEN @OrderBy =''FileName DESC'' THEN FileName END DESC,
+	 CASE WHEN @OrderBy =''Title ASC'' THEN Title END,
+	 CASE WHEN @OrderBy =''Title DESC'' THEN Title END DESC) as Kulike
+ FROM tempEGP left join tempct on tempEGP.PictureID = tempct.PictureID) AS Result
+ WHERE Kulike BETWEEN @ItemsFrom AND @ItemsTo ORDER BY 
+	 CASE WHEN @OrderBy =''Position ASC'' THEN Position END,
+	 CASE WHEN @OrderBy =''Position DESC'' THEN Position END DESC,
+	 CASE WHEN @OrderBy =''DateUploaded ASC'' THEN DateUploaded END,
+	 CASE WHEN @OrderBy =''DateUploaded DESC'' THEN DateUploaded END DESC,
+	 CASE WHEN @OrderBy =''FileName ASC'' THEN FileName END,
+	 CASE WHEN @OrderBy =''FileName DESC'' THEN FileName END DESC,
+	 CASE WHEN @OrderBy =''Title ASC'' THEN Title END,
+	 CASE WHEN @OrderBy =''Title DESC'' THEN Title END DESC
+
+'
+GO
+/****** Object:  StoredProcedure [dbo].[EasyDNNGalleryListByCurrentUser]    Script Date: 09/27/2012 08:58:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryListByCurrentUser]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNGalleryListByCurrentUser]
+END
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNGalleryListByCurrentUser]
+	@PortalID int,
+	@ModuleID int,
+	@GalleryID int,
+	@UserID int,
+	@CurrentUserID int,
+	@GroupId int = 1,
+	@ItemsFrom int = 1,
+	@ItemsTo int = 500,
+	@OrderBy nvarchar(20) = ''Position ASC''
+AS
+SET NOCOUNT ON;
+WITH tempEGP AS (
+	SELECT Distinct egp.[PictureID],egp.[PortalID],egp.[UserID],egp.[GalleryID],egp.[Title],egp.[Description],egp.[FileName],egp.[ThumbUrl],egp.[Position],egp.[MediaType],egp.[ShortEmbedUrl]
+	  ,egp.[ViewerThumb],egp.[Info],egp.[FileExtension],egp.[ImageUrl],egp.[DateUploaded],egp.[StartupImage],egp.[HiResVersion],egp.[JournalId]
+	FROM EasyGalleryPictures AS egp INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID 
+	INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+	INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+	LEFT OUTER JOIN EasyGallerySecurity AS egs on egs.GalleryID = eg.GalleryID
+	INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = egs.SecurityKey OR egs.SecurityKey IS NULL 
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+	UNION ALL
+	SELECT Distinct egp.[PictureID],egp.[PortalID],egp.[UserID],egp.[GalleryID],egp.[Title],egp.[Description],egp.[FileName],egp.[ThumbUrl],egp.[Position],egp.[MediaType],egp.[ShortEmbedUrl]
+	  ,egp.[ViewerThumb],egp.[Info],egp.[FileExtension],egp.[ImageUrl],egp.[DateUploaded],egp.[StartupImage],egp.[HiResVersion],egp.[JournalId]
+	FROM EasyGalleryPictures AS egp INNER JOIN dbo.Journal_Security as js ON js.JournalId = egp.JournalId
+	INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID 
+	INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+	INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+	INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = js.SecurityKey
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NOT NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+),
+tempct AS (SELECT gct.PictureID, gct.ThumbCreated From EasyGalleryCreatedThumbs gct Where gct.ModuleID = @ModuleID)
+SELECT * FROM (SELECT Distinct tempEGP.*,tempct.ThumbCreated, ROW_NUMBER() OVER (ORDER BY 
+	 CASE WHEN @OrderBy =''Position ASC'' THEN Position END,
+	 CASE WHEN @OrderBy =''Position DESC'' THEN Position END DESC,
+	 CASE WHEN @OrderBy =''DateUploaded ASC'' THEN DateUploaded END,
+	 CASE WHEN @OrderBy =''DateUploaded DESC'' THEN DateUploaded END DESC,
+	 CASE WHEN @OrderBy =''FileName ASC'' THEN FileName END,
+	 CASE WHEN @OrderBy =''FileName DESC'' THEN FileName END DESC,
+	 CASE WHEN @OrderBy =''Title ASC'' THEN Title END,
+	 CASE WHEN @OrderBy =''Title DESC'' THEN Title END DESC) as Kulike
+ FROM tempEGP left join tempct on tempEGP.PictureID = tempct.PictureID) AS Result
+ WHERE Kulike BETWEEN @ItemsFrom AND @ItemsTo ORDER BY 
+	 CASE WHEN @OrderBy =''Position ASC'' THEN Position END,
+	 CASE WHEN @OrderBy =''Position DESC'' THEN Position END DESC,
+	 CASE WHEN @OrderBy =''DateUploaded ASC'' THEN DateUploaded END,
+	 CASE WHEN @OrderBy =''DateUploaded DESC'' THEN DateUploaded END DESC,
+	 CASE WHEN @OrderBy =''FileName ASC'' THEN FileName END,
+	 CASE WHEN @OrderBy =''FileName DESC'' THEN FileName END DESC,
+	 CASE WHEN @OrderBy =''Title ASC'' THEN Title END,
+	 CASE WHEN @OrderBy =''Title DESC'' THEN Title END DESC
+'
+GO
+/****** Object:  StoredProcedure [dbo].[EasyDNNGalleryCountListByGroupID]    Script Date: 09/27/2012 08:58:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryCountListByGroupID]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNGalleryCountListByGroupID]
+END
+EXEC dbo.sp_executesql @statement = N'
+CREATE PROCEDURE [dbo].[EasyDNNGalleryCountListByGroupID]
+	@PortalID int,
+	@ModuleID int,
+	@GalleryID int,
+	@RoleID int,
+	@CurrentUserID int,
+	@GroupId int = 1
+AS
+SET NOCOUNT ON;
+WITH tempEGP AS (
+	SELECT Distinct egp.[PictureID] FROM EasyGalleryPictures AS egp
+		INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID
+		INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+		INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+		LEFT OUTER JOIN EasyGallerySecurity AS egs on egs.GalleryID = eg.GalleryID
+		INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = egs.SecurityKey OR egs.SecurityKey IS NULL
+		INNER JOIN EasyGallerySocialGroups ON eg.GalleryID = EasyGallerySocialGroups.GalleryID INNER JOIN {databaseOwner}{objectQualifier}Roles AS r ON EasyGallerySocialGroups.RoleID = r.RoleID 
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND r.RoleID=@RoleID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+	UNION ALL
+	SELECT Distinct egp.[PictureID] FROM EasyGalleryPictures AS egp
+		INNER JOIN dbo.Journal_Security as js ON js.JournalId = egp.JournalId
+		INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID
+		INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = js.SecurityKey
+		INNER JOIN EasyGallerySocialGroups ON eg.GalleryID = EasyGallerySocialGroups.GalleryID INNER JOIN {databaseOwner}{objectQualifier}Roles AS r ON EasyGallerySocialGroups.RoleID = r.RoleID
+	WHERE egp.JournalID IS NOT NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND r.RoleID=@RoleID  AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+)
+SELECT COUNT([PictureID]) FROM tempEGP' 
+GO
+/****** Object:  StoredProcedure [dbo].[EasyDNNGalleryCountListByCurrentUser]    Script Date: 09/27/2012 08:58:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryCountListByCurrentUser]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNGalleryCountListByCurrentUser]
+END
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNGalleryCountListByCurrentUser]
+	@PortalID int,
+	@ModuleID int,
+	@GalleryID int,
+	@UserID int,
+	@CurrentUserID int,
+	@GroupId int = 1
+AS
+SET NOCOUNT ON;
+WITH tempEGP AS (
+	SELECT Distinct egp.[PictureID] FROM EasyGalleryPictures AS egp
+		INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID
+		INNER JOIN EasyGalleryCategory AS egc ON eg.CategoryID = egc.CategoryID
+		INNER JOIN EasyGalleryModuleCategory AS egmc ON  egc.CategoryID = egmc.CategoryID
+		LEFT OUTER JOIN EasyGallerySecurity AS egs on egs.GalleryID = eg.GalleryID
+		INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = egs.SecurityKey OR egs.SecurityKey IS NULL 
+	WHERE egmc.ModuleID= @ModuleID AND egp.JournalID IS NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+	UNION ALL
+	SELECT Distinct egp.[PictureID] FROM EasyGalleryPictures AS egp
+		INNER JOIN dbo.Journal_Security as js ON js.JournalId = egp.JournalId
+		INNER JOIN dbo.EasyGallery as eg ON eg.GalleryID= egp.GalleryID
+		INNER JOIN {databaseOwner}{objectQualifier}Journal_User_Permissions(@PortalId,@CurrentUserId, @GroupId) as t ON t.seckey = js.SecurityKey
+	WHERE egp.JournalID IS NOT NULL AND ((@GalleryID <> 0 AND (egp.GalleryID=@GalleryID)) OR (@GalleryID = 0)) AND eg.UserID=@UserID AND (egp.MediaApproved = ''True'' OR egp.MediaApproved IS NULL)
+)
+SELECT COUNT([PictureID]) FROM tempEGP'
+
+/*** Set columns****/
+ BEGIN TRY
+ INSERT INTO EasyGallerySecurity SELECT EasyGallery .GalleryID, 'E' FROM EasyGallery LEFT OUTER JOIN EasyGallerySecurity ON EasyGallery.GalleryID = EasyGallerySecurity.GalleryID
+WHERE (EasyGallerySecurity.SecurityKey IS NULL)
+END TRY 
+BEGIN CATCH 
+END CATCH

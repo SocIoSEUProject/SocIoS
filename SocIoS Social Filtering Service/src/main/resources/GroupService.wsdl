@@ -1,0 +1,322 @@
+
+<wsdl:definitions name="GroupService"
+    targetNamespace="http://www.sociosproject.eu/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:tns="http://www.sociosproject.eu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:voc="http://www.sociosproject.eu/sociosVoc/"
+            xmlns:tns="http://www.sociosproject.eu/"
+            attributeFormDefault="unqualified" elementFormDefault="unqualified"
+            targetNamespace="http://www.sociosproject.eu/">
+
+            <xsd:import namespace="http://www.sociosproject.eu/sociosVoc/"
+                schemaLocation="./socios-vocabulary.xsd" />
+
+
+
+            <xs:element name="getGroups" type="tns:getGroups" />
+            <xs:element name="getGroupsResponse" type="tns:getGroupsResponse" />
+            <xs:element name="createGroup" type="tns:createGroup" />
+            <xs:element name="createGroupResponse" type="tns:createGroupResponse" />
+            <xs:element name="deleteGroup" type="tns:deleteGroup" />
+            <xs:element name="deleteGroupResponse" type="tns:deleteGroupResponse" />
+            <xs:element name="removeMembers" type="tns:removeMembers" />
+            <xs:element name="removeMembersResponse" type="tns:removeMembersResponse" />
+            <xs:element name="getGroupMembers" type="tns:getGroupMembers" />
+            <xs:element name="getGroupMembersResponse" type="tns:getGroupMembersResponse" />
+            <xs:element name="addMembers" type="tns:addMembers" />
+            <xs:element name="addMembersResponse" type="tns:addMembersResponse" />
+
+
+            <xs:complexType name="getGroups">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="name"
+                        type="voc:ObjectId" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getGroupsResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return"
+                        type="voc:GroupList" />
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="createGroup">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0"
+                        type="voc:ObjectId" />
+                    <xs:element minOccurs="0" name="arg1"
+                        type="voc:PersonList" />
+                    <xs:element minOccurs="0" name="arg2"
+                        type="voc:Group" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="createGroupResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return"
+                        type="voc:Group" />
+                </xs:sequence>
+            </xs:complexType>
+
+
+
+            <xs:complexType name="deleteGroup">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0"
+                        type="voc:ObjectId" />
+                    <xs:element minOccurs="0" name="arg1"
+                        type="voc:ObjectId" />
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="deleteGroupResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:boolean" />
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="removeMembers">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0"
+                        type="voc:ObjectId" />
+                    <xs:element minOccurs="0" name="arg1"
+                        type="voc:ObjectId" />
+                    <xs:element minOccurs="0" name="arg2"
+                        type="voc:PersonList" />
+
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="removeMembersResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return"
+                        type="voc:Group" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getGroupMembers">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0"
+                        type="voc:ObjectId" />
+
+                    <xs:element minOccurs="0" name="arg1"
+                        type="voc:ObjectId" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getGroupMembersResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return"
+                        type="voc:PersonList" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addMembers">
+                <xs:sequence>
+
+                    <xs:element minOccurs="0" name="arg0"
+                        type="voc:ObjectId" />
+                    <xs:element minOccurs="0" name="arg1"
+                        type="voc:PersonList" />
+                    <xs:element minOccurs="0" name="arg2"
+                        type="voc:ObjectId" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addMembersResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return"
+                        type="voc:Group" />
+                </xs:sequence>
+
+            </xs:complexType>
+
+
+        </xs:schema>
+    </wsdl:types>
+
+    <wsdl:message name="addMembers">
+        <wsdl:part element="tns:addMembers" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="addMembersResponse">
+        <wsdl:part element="tns:addMembersResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="createGroup">
+        <wsdl:part name="parameters" element="tns:createGroup">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="createGroupResponse">
+        <wsdl:part name="parameters" element="tns:createGroupResponse">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="deleteGroup">
+        <wsdl:part element="tns:deleteGroup" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="deleteGroupResponse">
+        <wsdl:part element="tns:deleteGroupResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="getGroupMembers">
+        <wsdl:part element="tns:getGroupMembers" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="getGroupMembersResponse">
+        <wsdl:part element="tns:getGroupMembersResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="getGroups">
+        <wsdl:part name="parameters" element="tns:getGroups">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getGroupsResponse">
+        <wsdl:part name="parameters" element="tns:getGroupsResponse">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="removeMembersResponse">
+        <wsdl:part element="tns:removeMembersResponse" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="removeMembers">
+        <wsdl:part element="tns:removeMembers" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+
+    <wsdl:portType name="IGroupService">
+        <wsdl:operation name="addMembers">
+            <wsdl:input message="tns:addMembers" name="addMembers">
+            </wsdl:input>
+            <wsdl:output message="tns:addMembersResponse"
+                name="addMembersResponse">
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="createGroup">
+            <wsdl:input name="createGroup" message="tns:createGroup">
+            </wsdl:input>
+            <wsdl:output name="createGroupResponse" message="tns:createGroupResponse">
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="deleteGroup">
+            <wsdl:input message="tns:deleteGroup" name="deleteGroup">
+            </wsdl:input>
+            <wsdl:output message="tns:deleteGroupResponse"
+                name="deleteGroupResponse">
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getGroupMembers">
+            <wsdl:input message="tns:getGroupMembers" name="getGroupMembers">
+            </wsdl:input>
+            <wsdl:output message="tns:getGroupMembersResponse"
+                name="getGroupMembersResponse">
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getGroups">
+            <wsdl:input name="getGroups" message="tns:getGroups">
+            </wsdl:input>
+            <wsdl:output name="getGroupsResponse" message="tns:getGroupsResponse">
+            </wsdl:output>
+        </wsdl:operation>
+
+
+        <wsdl:operation name="removeMembers">
+            <wsdl:input message="tns:removeMembers" name="removeMembers">
+            </wsdl:input>
+            <wsdl:output message="tns:removeMembersResponse"
+                name="removeMembersResponse">
+            </wsdl:output>
+        </wsdl:operation>
+
+
+    </wsdl:portType>
+    <wsdl:binding name="GroupServiceSoapBinding"
+        type="tns:IGroupService">
+        <soap:binding style="document"
+            transport="http://schemas.xmlsoap.org/soap/http" />
+
+        <wsdl:operation name="addMembers">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input name="addMembers">
+                <soap:body use="literal" />
+
+            </wsdl:input>
+            <wsdl:output name="addMembersResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="createGroup">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input name="createGroup">
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="createGroupResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="deleteGroup">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input name="deleteGroup">
+                <soap:body use="literal" />
+
+            </wsdl:input>
+            <wsdl:output name="deleteGroupResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getGroupMembers">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input name="getGroupMembers">
+                <soap:body use="literal" />
+
+            </wsdl:input>
+            <wsdl:output name="getGroupMembersResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getGroups">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input name="getGroups">
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="getGroupsResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="removeMembers">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input name="removeMembers">
+                <soap:body use="literal" />
+
+            </wsdl:input>
+            <wsdl:output name="removeMembersResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+
+
+    </wsdl:binding>
+    <wsdl:service name="GroupService">
+        <wsdl:port name="GroupServicePort" binding="tns:GroupServiceSoapBinding">
+            <soap:address location="http://localhost:9090/GroupServicePort" />
+            <!--soap:address location="http://localhost:8080/wsdl_first-{CXFVersion}/services/GroupServicePort?wsdl"/ -->
+            <!--  http://localhost:8087/socialfilteringservice-1.0/services/GroupServicePort?wsdl
+            http://localhost:8087/socialfilteringservice-1.0/services/GroupServicePort
+             -->
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

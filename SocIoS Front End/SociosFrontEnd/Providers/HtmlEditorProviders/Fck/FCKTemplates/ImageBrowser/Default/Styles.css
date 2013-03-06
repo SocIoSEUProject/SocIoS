@@ -1,0 +1,79 @@
+.FCKImageGalleryContainer
+{
+	width:100%;
+}
+
+.FCKImageGalleryHeaderContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryPathContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryDetailsContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryItemContainer
+{
+	vertical-align:top;
+}
+
+.FCKImageGalleryErrorContainer
+{
+	width:100%;
+	padding-left:10;
+}
+
+.FCKImageGalleryErrorLabel
+{
+	color: red;
+}
+
+.FCKImageGalleryListStyle
+{
+	
+}
+
+.FCKImageGalleryStyle
+{
+	border:none;
+	
+}
+
+.FCKImageGalleryImageDetailsTable
+{
+	border:none;
+}
+
+.FCKImageGalleryImageNameTD
+{
+	text-align:center;
+	font-size: 8pt;
+}
+
+.FCKImageGalleryImageName
+{
+}
+
+.FCKImageGalleryImageSizeTD
+{
+	font-size: 8pt;
+	text-align:center;
+}
+
+.ImageListContainer{
+	border: #000000 1px solid;
+	padding: 5px;
+	overflow: auto;
+	width: 100%;
+	height: 480;
+	background-color: #ffffff;
+}

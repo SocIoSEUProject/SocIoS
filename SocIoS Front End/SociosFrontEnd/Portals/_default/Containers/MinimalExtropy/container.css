@@ -1,0 +1,39 @@
+.c_container{padding-bottom:15px;}
+/*---------- To align the Actions, Icon and Title ---------*/
+.c_icon, .c_actions, h2.c_title{float:left;}
+.c_icon img {float:left; padding-right:4px;}
+h2.c_title{margin:0; padding:0;}
+.icn img{margin-right:5px;}
+
+.title_vis{float:right;}
+
+.c_content{clear:both;}
+.c_contentpane{padding:8px 0 0 0;}
+.c_footer {clear:both;margin-bottom:20px;padding:0; text-align:right;}
+
+/*---------- default style for head & normal -----------*/
+.Normal p{margin-top:0px;}
+
+/*---------- For the inline edit icons -----------*/
+.eipbackimg {background-color:#DAE7F2;border:solid 1px #4F839F;}
+.c_content .eipbackimg {margin-top:0;margin-left:-20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

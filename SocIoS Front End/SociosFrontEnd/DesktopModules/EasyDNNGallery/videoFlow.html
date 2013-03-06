@@ -1,0 +1,109 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'   'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>    
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta http-equiv='Content-Style-Type' content='text/css' />
+    <meta http-equiv='Content-Script-Type' content='text/javascript' />
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            height: 100%;
+            width: 100%;
+        }
+        #flash
+        {
+            display: block;
+        }
+        html
+        {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <script type='text/javascript' src='js/jquery-1.6.1.min.js'></script>
+
+    <script type='text/javascript' src='js/swfobject.js'></script>
+
+    <script type='text/javascript' src='js/flowplayer.min.js'></script>
+
+    <script type='text/javascript'>
+    function getQuerystring(key, default_) {
+        if (default_ == null) default_ = "";
+        key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+        var qs = regex.exec(window.location.href);
+        if (qs == null)
+            return default_;
+        else
+            return qs[1];
+    }
+    
+  function infob(fullscr2)
+  {
+    if (fullscr2=="on")
+    {
+    return true;
+    }
+    if (fullscr2=="off")
+    {
+    return false;
+    }
+  }
+
+
+var vw = getQuerystring('videowidth')+"px";
+var vh = getQuerystring('videoheight')+"px";
+var pskin = getQuerystring('playerskin');
+var play = infob(getQuerystring('playonload'));
+var info = getQuerystring('info');
+var desc = getQuerystring('description');
+var fullscr = getQuerystring('allowfullscreen');
+//var fullScreen= infob(fullscr);
+var vp = getQuerystring('videourl');
+    </script>
+
+</head>
+<body>
+    <!--<div id='video player-altcontent'>You need to upgrade your flash player</div>-->
+    <a href="" style="display: block; width: 20px; height: 30px" id="player"></a>
+    <!-- this will install flowplayer inside previous A- tag. -->
+
+    <script type="text/javascript">
+		    $('#player').css("width",vw);
+		    $('#player').css("height",vh);
+		    $("a#player").attr("href", vp)
+            
+            if(fullscr=="on")
+            {
+            flowplayer("player", "flowplayer.swf",
+            {
+               clip: {
+                autoPlay: play,
+                autoBuffering: true
+                     }
+            });
+            }
+            else
+            {
+            	flowplayer("player", { allowfullscreen: fullscr, src: "flowplayer.swf" }, {
+			clip:
+			{
+			allowfullscreen: fullscr,
+			autoPlay: play,
+			autoBuffering: true 
+			}
+			
+			});
+			}
+		</script>
+
+</body>
+</html>

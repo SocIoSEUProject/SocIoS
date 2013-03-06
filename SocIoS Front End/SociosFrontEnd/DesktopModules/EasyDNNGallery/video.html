@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?><!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'   'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+<meta http-equiv='X-UA-Compatible' content='IE=EmulateIE7' />
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<meta http-equiv='Content-Script-Type' content='text/javascript' />
+<title></title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	height:100%;
+	width: 100%;
+}
+#flash{
+display: block;
+}
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+	width: 100%;
+}
+</style>
+<script type='text/javascript' src='js/swfobject.js'></script>
+
+<script type='text/javascript'>
+    function getQuerystring(key, default_) {
+        if (default_ == null) default_ = "";
+        key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+        var qs = regex.exec(window.location.href);
+        if (qs == null)
+            return default_;
+        else
+            return qs[1];
+    }
+    
+  function infob(fullscr2)
+  {
+    if (fullscr2=="on")
+    {
+    return "true";
+    }
+    else
+    {
+    return "false";
+    }
+  }
+
+var flashvars = {};
+var params = {};
+var attributes = {};
+var vw = parseInt(getQuerystring('videowidth'));
+var vh = parseInt(getQuerystring('videoheight'));
+var pskin = getQuerystring('playerskin');
+var play = getQuerystring('playonload');
+var info = getQuerystring('info');
+var desc = getQuerystring('description');
+var fullscr = getQuerystring('fullscreen');
+vh = vh +25;
+params.codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0';
+//params.width='100%';
+//params.height='95%';
+params.quality='high';
+params.align='middle';
+params.play='true';
+params.loop='true';
+params.scale='showall';
+//params.wmode='window';
+params.devicefont='false';
+params.bgcolor='#2e2e2e',
+params.allowFullScreen=infob(fullscr);
+params.allowScriptAccess='sameDomain';
+params.salign = 'middle';
+params.wmode='transparent';
+
+// SETUP
+/* <![CDATA[ */
+flashvars.forcewidth=getQuerystring('videowidth');
+flashvars.forceheight=getQuerystring('videoheight');
+flashvars.skin= pskin;
+flashvars.fullscreenbutton=fullscr;
+flashvars.infobutton=info;
+flashvars.startphoto='';
+flashvars.videopath= getQuerystring('videourl');
+flashvars.playonload=play;
+flashvars.initialvolume='150';
+flashvars.startbufferonload='on';
+// stretch type, choose between 'original size', 'zoom to fit', 'stretch to fit'
+flashvars.defaultstretch = 'zoom to fit';
+flashvars.buffersize='2';
+flashvars.infotext=desc;
+attributes.id = 'video player';
+/* ]]> */
+
+swfobject.embedSWF('preview.swf', 'video player-altcontent', vw, vh, '9.0.0', 'js/expressInstall.swf', flashvars, params, attributes);
+</script>
+
+</head>
+<body>
+<div id='video player-altcontent'>You need to upgrade your flash player</div>
+</body>
+</html>
+
+

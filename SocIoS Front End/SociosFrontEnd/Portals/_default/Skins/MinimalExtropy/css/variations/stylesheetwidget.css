@@ -1,0 +1,19 @@
+/* Widget style -------*/
+.Widgets{float:right;padding:7px 25px 0 0}
+.Widgets input{border:none;}
+#SizeWidget, #TextSizeWidget{float:right;margin-right:10px;}
+#TextSizeWidget_smalltext, #TextSizeWidget_mediumtext, #TextSizeWidget_largetext, #SizeWidget_width1024, #SizeWidget_width1280, #SizeWidget_widthfull
+{float:left;height:20px;width:20px;margin-right:3px;cursor:pointer;background:transparent none no-repeat;}
+#TextSizeWidget_smalltext{background-image:url(img/textsmall.png);}
+#TextSizeWidget_smalltext:hover, #TextSizeWidget_smalltext.SelectedWidget {background-image:url(img/textsmallhover.png);}
+#TextSizeWidget_mediumtext{background-image:url(img/textmedium.png);}
+#TextSizeWidget_mediumtext:hover, #TextSizeWidget_mediumtext.SelectedWidget {background-image:url(img/textmediumhover.png);}
+#TextSizeWidget_largetext{background-image:url(img/textlarge.png);}
+#TextSizeWidget_largetext:hover, #TextSizeWidget_largetext.SelectedWidget {background-image:url(img/textlargehover.png);}
+#SizeWidget_width1024 {background-image:url(img/width1024.png);}
+#SizeWidget_width1024:hover, #SizeWidget_width1024.SelectedWidget {background-image:url(img/width1024hover.png);}
+#SizeWidget_width1280 {background-image:url(img/width1280.png);}
+#SizeWidget_width1280:hover, #SizeWidget_width1280.SelectedWidget {background-image:url(img/width1280hover.png);}
+#SizeWidget_widthfull {background-image:url(img/widthfull.png);}
+#SizeWidget_widthfull:hover , #SizeWidget_widthfull.SelectedWidget {background-image:url(img/widthfullhover.png);}
+

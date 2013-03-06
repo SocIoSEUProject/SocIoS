@@ -1,0 +1,139 @@
+﻿/* This is Rotator constraint */
+/******************************/
+IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNRotatorGallerySettings_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNRotatorGalleryBridge]'))
+ALTER TABLE [dbo].[EasyDNNRotatorGalleryBridge] DROP CONSTRAINT [FK_EasyDNNRotatorGallerySettings_EasyGallery]
+GO
+/* Naknadno dodani constrainti i veze */
+/**************************************/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNGalleryJournalBridge_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]'))
+ALTER TABLE [dbo].[EasyDNNGalleryJournalBridge] DROP CONSTRAINT [FK_EasyDNNGalleryJournalBridge_EasyGalleryCategory]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNGalleryJournalBridge_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]'))
+ALTER TABLE [dbo].[EasyDNNGalleryJournalBridge] DROP CONSTRAINT [FK_EasyDNNGalleryJournalBridge_Portals]
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryCreatedThumbs_EasyGalleryPictures]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]'))
+ALTER TABLE [dbo].[EasyGalleryCreatedThumbs] DROP CONSTRAINT [FK_EasyGalleryCreatedThumbs_EasyGalleryPictures]
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryCreatedThumbs_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]'))
+ALTER TABLE [dbo].[EasyGalleryCreatedThumbs] DROP CONSTRAINT [FK_EasyGalleryCreatedThumbs_Modules]
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleCategory_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]'))
+ALTER TABLE [dbo].[EasyGalleryModuleCategory] DROP CONSTRAINT [FK_EasyGalleryModuleCategory_EasyGalleryCategory]
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleCategory_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]'))
+ALTER TABLE [dbo].[EasyGalleryModuleCategory] DROP CONSTRAINT [FK_EasyGalleryModuleCategory_Modules]
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryModuleSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleSettings]'))
+ALTER TABLE [dbo].[EasyGalleryModuleSettings] DROP CONSTRAINT [FK_EasyGalleryModuleSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyGallerySecurity_SecurityKey]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyGallerySecurity] DROP CONSTRAINT [DF_EasyGallerySecurity_SecurityKey]
+END
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySecurity_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySecurity]'))
+ALTER TABLE [dbo].[EasyGallerySecurity] DROP CONSTRAINT [FK_EasyGallerySecurity_EasyGallery]
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNCategoryLocalization_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNCategoryLocalization]'))
+ALTER TABLE [dbo].[EasyDNNCategoryLocalization] DROP CONSTRAINT [FK_EasyDNNCategoryLocalization_EasyGalleryCategory]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNGalleryLocalization_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryLocalization]'))
+ALTER TABLE [dbo].[EasyDNNGalleryLocalization] DROP CONSTRAINT [FK_EasyDNNGalleryLocalization_EasyGallery]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNMediaLocalization_EasyGalleryPictures]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNMediaLocalization]'))
+ALTER TABLE [dbo].[EasyDNNMediaLocalization] DROP CONSTRAINT [FK_EasyDNNMediaLocalization_EasyGalleryPictures]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryIntegration_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryIntegration]'))
+ALTER TABLE [dbo].[EasyGalleryIntegration] DROP CONSTRAINT [FK_EasyGalleryIntegration_EasyGallery]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryPortalSharing_Portals1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryPortalSharing]'))
+ALTER TABLE [dbo].[EasyGalleryPortalSharing] DROP CONSTRAINT [FK_EasyGalleryPortalSharing_Portals1]
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups] DROP CONSTRAINT [FK_EasyGallerySocialGroups_EasyGallery]
+GO
+/****** Object:  ForeignKey [FK_EasyGallerySocialGroups_Roles]    Script Date: 10/03/2012 13:22:51 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups] DROP CONSTRAINT [FK_EasyGallerySocialGroups_Roles]
+GO
+/****** Object:  Table [dbo].[EasyGallerySocialGroups]    Script Date: 10/03/2012 13:22:51 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups] DROP CONSTRAINT [FK_EasyGallerySocialGroups_EasyGallery]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallerySocialGroups_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]'))
+ALTER TABLE [dbo].[EasyGallerySocialGroups] DROP CONSTRAINT [FK_EasyGallerySocialGroups_Roles]
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNews]') AND type in (N'U'))
+BEGIN
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallery_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallery]'))
+	ALTER TABLE [dbo].[EasyGallery] DROP CONSTRAINT [FK_EasyGallery_EasyGalleryCategory]
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNThumbs_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNThumbs]'))
+	ALTER TABLE [dbo].[EasyDNNThumbs] DROP CONSTRAINT [FK_EasyDNNThumbs_EasyGallery]
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNThumbs_{objectQualifier}Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNThumbs]'))
+	ALTER TABLE [dbo].[EasyDNNThumbs] DROP CONSTRAINT [FK_EasyDNNThumbs_{objectQualifier}Modules]
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryPictures_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryPictures]'))
+	ALTER TABLE [dbo].[EasyGalleryPictures] DROP CONSTRAINT [FK_EasyGalleryPictures_EasyGallery]
+
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryPictures]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyGalleryPictures]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNMediaLocalization]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyDNNMediaLocalization]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryCategory]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyGalleryCategory]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallery]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyGallery]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNThumbs]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyDNNThumbs]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryIntegration]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGalleryIntegration]
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallerySettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGallerySettings]
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryLocalization]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNGalleryLocalization]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNCategoryLocalization]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNCategoryLocalization]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryUpload]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGalleryUpload]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryInfo]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGalleryInfo]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryPortalSharing]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGalleryPortalSharing]
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryCreatedThumbs]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGalleryCreatedThumbs]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleCategory]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGalleryModuleCategory]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryModuleSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGalleryModuleSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNGalleryJournalBridge]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNGalleryJournalBridge]
+GO
+
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallerySecurity]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGallerySecurity]
+
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallerySocialGroups]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyGallerySocialGroups]

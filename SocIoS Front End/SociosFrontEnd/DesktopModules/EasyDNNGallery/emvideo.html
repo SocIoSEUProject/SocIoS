@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'   'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=EmulateIE7' />
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<meta http-equiv='Content-Style-Type' content='text/css' />
+	<meta http-equiv='Content-Script-Type' content='text/javascript' />
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			background-color: #000000;
+			height: 100%;
+			width: 100%;
+		}
+		html
+		{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		function getQuerystring(key, default_) {
+			if (default_ == null) default_ = "";
+			key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+			var qs = regex.exec(window.location.href);
+			if (qs == null)
+				return default_;
+			else
+				return qs[1];
+		}
+
+		function getQuerystringValue(key, strQuery, default_) {
+			if (default_ == null) default_ = "";
+			key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+			var qs = regex.exec(strQuery);
+			if (qs == null)
+				return default_;
+			else
+				return qs[1];
+		}
+
+		var emcode = getQuerystring('videourl');
+		
+		if (emcode.indexOf("telvue.com") === -1) {
+			document.write("<script type=\"text/javascript\" src=\"" + emcode + "\"><\/script>");
+		}
+		else {
+			emcode = decodeURIComponent(emcode);
+			var wdth = parseInt(getQuerystringValue('width', emcode))-4;
+			var hght = parseInt(getQuerystringValue('height', emcode))-9;
+			document.write("<iframe width=\"" + wdth.toString() + "\" height=\"" + hght.toString() + "\" src=\"" + emcode + "mini=true" + "\"><\/iframe>");
+		}
+	</script>
+
+</head>
+<body>
+</body>
+</html>

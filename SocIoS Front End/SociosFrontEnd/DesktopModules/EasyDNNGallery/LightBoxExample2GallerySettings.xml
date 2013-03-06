@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GallerySettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GalleryID>1</GalleryID>
+  <DisplayType>tablegallery</DisplayType>
+  <LightboxType>dark_rounded</LightboxType>
+  <LightboxTitle>False</LightboxTitle>
+  <LightboxOpacity>80</LightboxOpacity>
+  <LightboxPadding>80</LightboxPadding>
+  <IntegrateBlog>NE</IntegrateBlog>
+  <QueryString />
+  <ShowTitle>False</ShowTitle>
+  <ShowDescription>False</ShowDescription>
+  <ShowMediaTitle>False</ShowMediaTitle>
+  <ShowMediaDescription>False</ShowMediaDescription>
+  <SmartCrop>False</SmartCrop>
+  <ShowPanel>True</ShowPanel>
+  <FilmStrip>True</FilmStrip>
+  <FilmStripSize>5</FilmStripSize>
+  <SSImageWidth>600</SSImageWidth>
+  <SSImageHeight>300</SSImageHeight>
+  <SSThumbImageWidth>80</SSThumbImageWidth>
+  <SSThumbImageHeight>80</SSThumbImageHeight>
+  <SSAutoSlide>NE</SSAutoSlide>
+  <SSAutoSlidePause>5000</SSAutoSlidePause>
+  <SSAutoSlideRandom>NE</SSAutoSlideRandom>
+  <SSAutoStartRandom>NE</SSAutoStartRandom>
+  <SSCSSFile>EDGMain.css</SSCSSFile>
+  <OverlaySize>50</OverlaySize>
+  <OverlayOpacity>50</OverlayOpacity>
+  <OverlayTextColor>111111</OverlayTextColor>
+  <TransitionInterval>5000</TransitionInterval>
+  <TGColumns>3</TGColumns>
+  <TGImageWidth>175</TGImageWidth>
+  <TGImageHeight>150</TGImageHeight>
+  <TGItemsPerPage>9</TGItemsPerPage>
+  <TGCSSFile>EDG_2_nobg.css</TGCSSFile>
+  <TGSmartResize>True</TGSmartResize>
+  <LightboxDescription>False</LightboxDescription>
+  <VGColumns>10</VGColumns>
+  <VGCSSFile>EDGMain.css</VGCSSFile>
+  <VGSkin>black</VGSkin>
+  <InfoButton>False</InfoButton>
+  <PlayOnLoad>False</PlayOnLoad>
+  <AllowFullscren>False</AllowFullscren>
+  <AudioPlayOnLoad>False</AudioPlayOnLoad>
+</GallerySettings>

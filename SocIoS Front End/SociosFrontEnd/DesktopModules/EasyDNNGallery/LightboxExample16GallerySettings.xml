@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GallerySettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GalleryID>8</GalleryID>
+  <DisplayType>tablegallery</DisplayType>
+  <LightboxType>dark_rounded</LightboxType>
+  <LightboxTitle>True</LightboxTitle>
+  <LightboxOpacity>80</LightboxOpacity>
+  <LightboxPadding>80</LightboxPadding>
+  <IntegrateBlog>NE</IntegrateBlog>
+  <QueryString />
+  <ShowTitle>True</ShowTitle>
+  <ShowDescription>True</ShowDescription>
+  <ShowMediaTitle>True</ShowMediaTitle>
+  <ShowMediaDescription>False</ShowMediaDescription>
+  <OpenMediaUrl>False</OpenMediaUrl>
+  <NewWindow>False</NewWindow>
+  <SmartCrop>False</SmartCrop>
+  <ShowPanel>True</ShowPanel>
+  <FilmStrip>True</FilmStrip>
+  <FilmStripSize>5</FilmStripSize>
+  <SSImageWidth>600</SSImageWidth>
+  <SSImageHeight>300</SSImageHeight>
+  <SSThumbImageWidth>80</SSThumbImageWidth>
+  <SSThumbImageHeight>80</SSThumbImageHeight>
+  <SSAutoSlide>NE</SSAutoSlide>
+  <SliderTransition>500</SliderTransition>
+  <SliderEffect>sliceUpLeft</SliderEffect>
+  <SSAutoSlidePause>5000</SSAutoSlidePause>
+  <SSAutoSlideRandom>NE</SSAutoSlideRandom>
+  <SSAutoStartRandom>NE</SSAutoStartRandom>
+  <SSCSSFile>EDGMain.css</SSCSSFile>
+  <OverlaySize>50</OverlaySize>
+  <OverlayOpacity>50</OverlayOpacity>
+  <OverlayTextColor>111111</OverlayTextColor>
+  <TransitionInterval>5000</TransitionInterval>
+  <PagingVisible>False</PagingVisible>
+  <TGColumns>3</TGColumns>
+  <TGImageWidth>185</TGImageWidth>
+  <TGImageHeight>140</TGImageHeight>
+  <TGItemsPerPage>12</TGItemsPerPage>
+  <TGCSSFile>EDG_6_black_bg.css</TGCSSFile>
+  <TGSmartResize>True</TGSmartResize>
+  <LightboxDescription>True</LightboxDescription>
+  <VGColumns>10</VGColumns>
+  <VGCSSFile>EDGMain.css</VGCSSFile>
+  <VGSkin>black</VGSkin>
+  <InfoButton>False</InfoButton>
+  <PlayOnLoad>False</PlayOnLoad>
+  <AllowFullscren>False</AllowFullscren>
+  <AudioPlayOnLoad>False</AudioPlayOnLoad>
+</GallerySettings>

@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document with styles necessary for default HtmlEditor HTML "snippet" templates */
+
+/* Styles for ALL Default Templates */
+div.template
+{
+	text-align: left;
+	width: 100%;
+	overflow: auto;
+}
+
+div.template div.container
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	position: relative;
+}
+
+div.template div.region
+{
+	padding: 5px;
+	margin: 0;
+}
+
+/* Styles for "Simple Table And Header" template */
+div.template.simpletableandheader table
+{
+	float: right;
+	width: 150px;
+	border: 1px solid #000;
+	padding: 0;
+	margin: 5px;
+}
+
+div.template.simpletableandheader table caption
+{
+	 text-align: center;
+	 font-weight: bold;
+	 font-size: 1.2em;
+}
+
+div.template.simpletableandheader table tbody th,
+div.template.simpletableandheader table tbody td,
+div.template.simpletableandheader table thead th,
+div.template.simpletableandheader table thead td
+{
+	border: 1px solid #000;
+	padding: 2px;
+	margin: 0;
+}
+
+

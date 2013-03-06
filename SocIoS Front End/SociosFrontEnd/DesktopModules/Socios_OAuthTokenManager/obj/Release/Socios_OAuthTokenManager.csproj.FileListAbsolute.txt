@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_OAuthTokenManager.dll
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_OAuthTokenManager.pdb
+C:\inetpub\wwwroot\Socios_Frontend\bin\Socios_OAuthTokenManager.xml
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_OAuthTokenManager\obj\Release\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_OAuthTokenManager\obj\Release\Socios_OAuthTokenManager.dll
+C:\inetpub\wwwroot\Socios_Frontend\DesktopModules\Socios_OAuthTokenManager\obj\Release\Socios_OAuthTokenManager.pdb

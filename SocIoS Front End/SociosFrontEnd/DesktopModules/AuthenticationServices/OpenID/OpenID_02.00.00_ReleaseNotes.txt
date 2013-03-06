@@ -1,0 +1,11 @@
+This release upgrades the Open ID provider to use the latest DotNetOpenId library.  
+<br/><br/>
+This library allows the provider to work in a Medium Trust environment.
+<br/><br/>
+Bugs Fixed<br/>
+==========
+<br/><br/>
+ACD-7318 OpenID Provider does not support the Login Module on other page<br/>
+ACD-7254 Config class is broken by change in core "Portal Settings" <br/>
+ACD-6520 There was no link-click command for the link so re-direct to myopenid.org would not work. <br/>
+ACD-8431 Update OpenID to full OpenID 2.0 specification. <br/>

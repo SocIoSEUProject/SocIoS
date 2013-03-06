@@ -1,0 +1,30 @@
+Initializing service...
+Documents	:	800000
+Documents	:	1500000
+Documents	:	800000
+Preparing instances...
+
+
+No of classes	:	3
+No of instances	:	3100000
+Class distribution
+------------------------------------
+Class 1	:	800000 (25.81%)
+Class 2	:	1500000 (48.39%)
+Class 3	:	800000 (25.81%)
+
+
+Building models...
+
+
+Building features...
+Maximum frequency	:	1550000
+Minimum frequency	:	310
+Total instances	:	3100000
+Distinct features	:	7282
+
+
+Building instances...
+Training classifier...
+Classifier was trained!
+Server ready...

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ShowEditorOptions.Text" xml:space="preserve">
+    <value>Show custom editor options</value>
+  </data>
+  <data name="plToolbarSet.Text" xml:space="preserve">
+    <value>Toolbars</value>
+  </data>
+  <data name="plToolbarSet.Help" xml:space="preserve">
+    <value>Set the toolbar order preference. The role will be verified against this order from top to bottom. If none toolbar matches current user roles, the last toolbar will be used (Bottom one)</value>
+  </data>
+  <data name="plToolbarSkin.Text" xml:space="preserve">
+    <value>Toolbar Skin</value>
+  </data>
+  <data name="plToolbarSkin.Help" xml:space="preserve">
+    <value>Custom toolbar skin for this instance</value>
+  </data>
+  <data name="plImageBrowserTheme.Text" xml:space="preserve">
+    <value>Image Browser Skin</value>
+  </data>
+  <data name="plImageBrowserTheme.Help" xml:space="preserve">
+    <value>Theme used by file browser</value>
+  </data>
+  <data name="plFlashBrowserTheme.Text" xml:space="preserve">
+    <value>Flash Browser Skin</value>
+  </data>
+  <data name="plFlashBrowserTheme.Help" xml:space="preserve">
+    <value>Theme used by flash browser</value>
+  </data>
+  <data name="plToolbarRoles.Text" xml:space="preserve">
+    <value>View roles for the selected toolbar</value>
+  </data>
+  <data name="plToolbarRoles.Help" xml:space="preserve">
+    <value>Select all roles with view access to this toolbar</value>
+  </data>
+  <data name="plToolbarDisabled.Text" xml:space="preserve">
+    <value>Disable selected toolbar</value>
+  </data>
+  <data name="plToolbarDisabled.Help" xml:space="preserve">
+    <value>Select to disable selected toolbar. (If all toolbars are disabled, then last one will be used</value>
+  </data>
+  <data name="imgToolbarUp.Text" xml:space="preserve">
+    <value>Move toolbar up</value>
+  </data>
+  <data name="imgToolbarDn.Text" xml:space="preserve">
+    <value>Move toolbar down</value>
+  </data>
+  <data name="imgUpdateRoles.Text" xml:space="preserve">
+    <value>Update selected toolbar (Modify options below first)</value>
+  </data>
+  <data name="typeInstance.Text" xml:space="preserve">
+    <value>Instance</value>
+  </data>
+  <data name="typeModule.Text" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="typePortal.Text" xml:space="preserve">
+    <value>Portal</value>
+  </data>
+  <data name="plSettingsType.Text" xml:space="preserve">
+    <value>Settings Type</value>
+  </data>
+  <data name="plSettingsType.Help" xml:space="preserve">
+    <value>Select the type of setting to modify</value>
+  </data>
+  <data name="plToolbarNotExpanded.Text" xml:space="preserve">
+    <value>Toolbar not expanded</value>
+  </data>
+  <data name="plToolbarNotExpanded.Help" xml:space="preserve">
+    <value>Select to make your toolbar not expanded when entering editor</value>
+  </data>
+  <data name="dshToolbarRoles.Text" xml:space="preserve">
+    <value>Editor toolbar view options</value>
+  </data>
+  <data name="plApplyTo.Text" xml:space="preserve">
+    <value>Apply custom settings to</value>
+  </data>
+  <data name="plApplyTo.Help" xml:space="preserve">
+    <value>Select where to apply custom settings</value>
+  </data>
+  <data name="cmdUpdate.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="cmdClear.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="plLinkBrowserTheme.Text" xml:space="preserve">
+    <value>Link Browser Skin</value>
+  </data>
+  <data name="plLinkBrowserTheme.Help" xml:space="preserve">
+    <value>Theme used bu the link browser window</value>
+  </data>
+  <data name="plEnhancedSecurity.Text" xml:space="preserve">
+    <value>Enhanced Security</value>
+  </data>
+  <data name="plEnhancedSecurity.Help" xml:space="preserve">
+    <value>Will try to use added basic rules for anti-spam (can prevent including some content type)</value>
+  </data>
+  <data name="confirmUpdate.Text" xml:space="preserve">
+    <value>Apply custom values?</value>
+  </data>
+  <data name="confirmClear.Text" xml:space="preserve">
+    <value>Clear custom values?</value>
+  </data>
+  <data name="dshThemes.Text" xml:space="preserve">
+    <value>Editor Skins</value>
+  </data>
+  <data name="dshAvailableStyles.Text" xml:space="preserve">
+    <value>List of available styles for the editor</value>
+  </data>
+  <data name="dshOther.Text" xml:space="preserve">
+    <value>Other editor options</value>
+  </data>
+  <data name="plStyleMode.Text" xml:space="preserve">
+    <value>Style list generation mode</value>
+  </data>
+  <data name="plStyleMode.Help" xml:space="preserve">
+    <value>Determines how the style list will be generated</value>
+  </data>
+  <data name="plStyleFilter.Text" xml:space="preserve">
+    <value>Dynamic styles filter</value>
+  </data>
+  <data name="plStyleFilter.Help" xml:space="preserve">
+    <value>When in dynamic mode, you can filter your styles</value>
+  </data>
+  <data name="plPortalStyle.Text" xml:space="preserve">
+    <value>Custom XML file</value>
+  </data>
+  <data name="plPortalStyle.Help" xml:space="preserve">
+    <value>Specifies a custom file to be used for you styles list</value>
+  </data>
+  <data name="plCssMode.Text" xml:space="preserve">
+    <value>CSS Generator mode</value>
+  </data>
+  <data name="plCssMode.Help" xml:space="preserve">
+    <value>Determines how the css file will be generated</value>
+  </data>
+  <data name="dshEditorAreaCss.Text" xml:space="preserve">
+    <value>Editor area CSS</value>
+  </data>
+  <data name="plPortalCss.Text" xml:space="preserve">
+    <value>Custom CSS file</value>
+  </data>
+  <data name="plPortalCss.Help" xml:space="preserve">
+    <value>Specifies a custom css file to be used for your editor area</value>
+  </data>
+  <data name="plFullImagePath.Text" xml:space="preserve">
+    <value>Full image path</value>
+  </data>
+  <data name="plFullImagePath.Help" xml:space="preserve">
+    <value>Replaces image path with a complete path including the server</value>
+  </data>
+  <data name="toolbarTip.Text" xml:space="preserve">
+    <value>Tip: Put most complex toolbar firs and then go down with others</value>
+  </data>
+  <data name="plForceWidth.Text" xml:space="preserve">
+    <value>Force Width (Optional)</value>
+  </data>
+  <data name="plForceWidth.Help" xml:space="preserve">
+    <value>Forces editor width to a specific size</value>
+  </data>
+  <data name="plForceHeight.Text" xml:space="preserve">
+    <value>Force Height (Optional)</value>
+  </data>
+  <data name="plForceHeight.Help" xml:space="preserve">
+    <value>Forces editor height to a specific size</value>
+  </data>
+  <data name="Toolbar.Header" xml:space="preserve">
+    <value>Toolbar</value>
+  </data>
+  <data name="Disabled.Header" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="ViewRoles.Header" xml:space="preserve">
+    <value>View Roles</value>
+  </data>
+  <data name="EditToolbar.Text" xml:space="preserve">
+    <value>Edit current toolbar permissions</value>
+  </data>
+  <data name="UpdateToolbar.Text" xml:space="preserve">
+    <value>Update Toolbar</value>
+  </data>
+  <data name="CancelToolbar.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="plImageFolder.Text" xml:space="preserve">
+    <value>Image folder (Optional)</value>
+  </data>
+  <data name="plImageFolder.Help" xml:space="preserve">
+    <value>Custom image folder to be used as the root folder for image and flash galleries. Editors must have  READ access to this folder</value>
+  </data>
+  <data name="RootFolder.Text" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="UseDefault.Text" xml:space="preserve">
+    <value>&lt;Use Default&gt;</value>
+  </data>
+  <data name="NoneRoles.Text" xml:space="preserve">
+    <value>None (Must define roles)</value>
+  </data>
+  <data name="cmdMakeAllUsers.Text" xml:space="preserve">
+    <value>Make all toolbars available for all users (Needed if you don't want to modify roles)</value>
+  </data>
+  <data name="plFontColors.Text" xml:space="preserve">
+    <value>Font Colors</value>
+  </data>
+  <data name="plFontColors.Help" xml:space="preserve">
+    <value>Comma separated list of hexadecimal values for colors. Leave it blank for default list</value>
+  </data>
+  <data name="plFontNames.Text" xml:space="preserve">
+    <value>Font Names</value>
+  </data>
+  <data name="plFontNames.Help" xml:space="preserve">
+    <value>You can include your own list of font names separated by a semicolon. remember that fonts must reside on the client computer. Leave it blank if you want to use the default list</value>
+  </data>
+  <data name="plFontFormats.Text" xml:space="preserve">
+    <value>Font Formats</value>
+  </data>
+  <data name="plFontFormats.Help" xml:space="preserve">
+    <value>A semicolon separated list of values. Each value must contain the format tag. For example: p;div;pre;address;</value>
+  </data>
+  <data name="plFontSizes.Text" xml:space="preserve">
+    <value>Font Sizes</value>
+  </data>
+  <data name="plFontSizes.Help" xml:space="preserve">
+    <value>A semicolon separated list of values. Each value must contain two parts separated by a slash. For example: 1/xx-small;2/x-small;3/small. Leave it blank if you want to use the default list</value>
+  </data>
+  <data name="RefreshEditor.Text" xml:space="preserve">
+    <value>Refresh Editor</value>
+  </data>
+  <data name="lblModuleType.Text" xml:space="preserve">
+    <value>Module type:</value>
+  </data>
+  <data name="lblModuleName.Text" xml:space="preserve">
+    <value>Module name:</value>
+  </data>
+  <data name="lblModuleInstance.Text" xml:space="preserve">
+    <value>Editor instance:</value>
+  </data>
+  <data name="NoModuleDefinition.Text" xml:space="preserve">
+    <value>No module definition</value>
+  </data>
+  <data name="NoUser.Text" xml:space="preserve">
+    <value>[NO USER]</value>
+  </data>
+  <data name="NoInstance.Text" xml:space="preserve">
+    <value>No instance found</value>
+  </data>
+  <data name="UpdateSuccess.Text" xml:space="preserve">
+    <value>Settings applied succesfully to {0}</value>
+  </data>
+  <data name="CleanSuccess.Text" xml:space="preserve">
+    <value>Settings removed succesfully from {0}</value>
+  </data>
+  <data name="UpdateError.Text" xml:space="preserve">
+    <value>Error applying custom editor settings for {0}</value>
+  </data>
+  <data name="CleanError.Text" xml:space="preserve">
+    <value>Error removing custom editor settings for {0}</value>
+  </data>
+  <data name="CSSGenDynamic.Text" xml:space="preserve">
+    <value>Dynamic</value>
+  </data>
+  <data name="CSSGenStatic.Text" xml:space="preserve">
+    <value>Static</value>
+  </data>
+  <data name="CSSGenURL.Text" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="HEODefault.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="HEOFalse.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="HEOTrue.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="plHtmlEncodeOutput.Help" xml:space="preserve">
+    <value>Encodes the &lt;, &gt; and &amp; chars</value>
+  </data>
+  <data name="plHtmlEncodeOutput.Text" xml:space="preserve">
+    <value>HTMLEncode Output</value>
+  </data>
+  <data name="plRevertsHtmlEncodeOutput.Help" xml:space="preserve">
+    <value>Reverses the encoding of &lt;, &gt; and &amp;</value>
+  </data>
+  <data name="plRevertsHtmlEncodeOutput.Text" xml:space="preserve">
+    <value>Reverse HTML encode output</value>
+  </data>
+  <data name="RHEDefault.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="RHEFalse.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="RHETrue.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="XMLGenDynamic.Text" xml:space="preserve">
+    <value>Dynamic</value>
+  </data>
+  <data name="XMLGenStatic.Text" xml:space="preserve">
+    <value>Static</value>
+  </data>
+  <data name="XMLGenURL.Text" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="lblProviderVersion.Text" xml:space="preserve">
+    <value>Provider version:</value>
+  </data>
+</root>

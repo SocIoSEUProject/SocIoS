@@ -1,0 +1,41 @@
+{
+ "kind": "plus#person",
+ "etag": "\"sgfy9Z_A_omRqujLZvEqjcEP59E/mhrhMD8wY-Q0Ryctn5EorrxPsOg\"",
+ "id": "107762823296681792004",
+ "displayName": "Socios SociosT",
+ "name": {
+  "familyName": "SociosT",
+  "givenName": "Socios"
+ },
+ "gender": "male",
+ "aboutMe": "Hello Everybody! Socios Project!",
+ "url": "https://plus.google.com/107762823296681792004",
+ "image": {
+  "url": "https://lh4.googleusercontent.com/-MzqKOr70Mos/AAAAAAAAAAI/AAAAAAAAAAA/3R2-BTIhn4w/photo.jpg?sz=50"
+ },
+ "urls": [
+  {
+   "value": "http://www.sociosproject.eu/"
+  },
+  {
+   "value": "https://plus.google.com/107762823296681792004",
+   "type": "profile"
+  },
+  {
+   "value": "https://www.googleapis.com/plus/v1/people/107762823296681792004",
+   "type": "json"
+  }
+ ],
+ "placesLived": [
+  {
+   "value": "Saloniki"
+  },
+  {
+   "value": "Berlin"
+  },
+  {
+   "value": "Athens",
+   "primary": true
+  }
+ ]
+}
