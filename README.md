@@ -17,3 +17,7 @@ filtering activities, the GroupService and the FilteringService respectively. Th
 with the GroupService for retrieving all activities associated with a given group of persons.
 
 The SocIoS Front-End provides a user interface for interacting with the components as well as an authentication mechanism.
+
+Within the framework of the SocIoS project, in addition to the SocIoS API, we have also  developed an alternative approach that is compliant with the OpenSocial specification.The OpenSocial wrappers component provides a framework for extending OpenSocial API access to third-party Social Networks. It is an open source project and can be donwloaded from the following link:
+
+https://github.com/cogniumsystems/org.jokerd
