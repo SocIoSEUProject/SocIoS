@@ -51,6 +51,5 @@
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.6.jar"/>
 	<classpathentry kind="lib" path="lib/ant-tasks.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.11-SNAPSHOT-20120416-1530.jar"/>
-	<classpathentry kind="lib" path="lib/facebook-twitter-adapters.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
