@@ -25,9 +25,6 @@ import java.util.List;
 import java.util.Set;
 
 import com.google.common.collect.Lists;
-//import com.sun.corba.se.spi.servicecontext.UEInfoServiceContext;
-
-//import eu.sociosproject.sociosapi.coreutilities.exceptions.SociosException;
 import eu.sociosproject.sociosapi.SociosException;
 import eu.sociosproject.sociosapi.coreutilities.exceptions.InvalidInputException;
 import eu.sociosproject.sociosapi.coreutilities.networkutilities.HttpRequests;
@@ -52,13 +49,11 @@ import eu.sociosproject.sociosvoc.SociosError;
 import eu.sociosproject.sociosvoc.SociosException.Detail;
 import eu.sociosproject.sociosvoc.Source;
 import eu.sociosproject.sociosvoc.TopicsInSN;
-//import eu.sociosproject.sociosvoc.Message;
 import eu.sociosproject.sociosvoc.ObjectId;
 import eu.sociosproject.sociosvoc.Person;
 import eu.sociosproject.sociosvoc.PersonFilter;
 import eu.sociosproject.sociosvoc.PersonIdList;
 import eu.sociosproject.sociosvoc.SociosEventListener;
-import eu.sociosproject.sociosapi.server.adaptors.facebook.*;
 import eu.sociosproject.sociosapi.server.local.CompositeLocal;
 
 import java.util.concurrent.Callable;
@@ -984,10 +979,11 @@ public class CompositeAdaptor implements /* SnsAdaptor */CompositeLocal {
 			return KnownSns.FLICKR;
 		else if (snsAdaptor instanceof DailymotionAdaptor)
 			return KnownSns.DAILYMOTION;
-		else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.facebook.FacebookAdapter)
+		/*else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.facebook.FacebookAdapter)
 			return KnownSns.FACEBOOK;
 		else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.twitter.TwitterAdapter)
 			return KnownSns.TWITTER;
+			*/
 		else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.myspace.MySpaceAdaptor)
 			return KnownSns.MYSPACE;
 		else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.youtube.YoutubeAdaptor)
