@@ -30,14 +30,10 @@ import socios.jpa.services.TokenServiceService;
 import com.google.common.collect.Lists;
 
 import eu.sociosproject.sociosapi.server.adaptors.dailymotion.DailymotionAcessTokens;
-import eu.sociosproject.sociosapi.server.adaptors.facebook.FacebookAcessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.flickr.FlickrAcessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.googlep.GooglepAccessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.instagram.InstagramAccessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.myspace.MySpaceAccessTokens;
-//import eu.sociosproject.sociosapi.server.adaptors.facebook.FacebookAcessTokens;
-//import eu.sociosproject.sociosapi.server.adaptors.twitter.TwitterAcessTokens;
-import eu.sociosproject.sociosapi.server.adaptors.twitter.TwitterAcessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.youtube.YoutubeAcessTokens;
 import eu.sociosproject.sociosapi.server.local.DbManagerLocal;
 import eu.sociosproject.sociosapi.server.local.SnsAccessTokensRetrieverLocal;
@@ -84,20 +80,6 @@ public class SnsAccessTokensRetriever implements SnsAccessTokensRetrieverLocal{
 				System.out.println("Adding flickr token : " + t.getAccessToken());
 				tokens.add(flickRtoken);
 			
-			} else if(t.getAccessInfoPK().getSnsId() == 3) {
-				
-				String[] splits = t.getAccessToken().split("@");
-				String consumerKey = splits[0];
-				String consumerSecret = splits[1];
-				String token = splits[2];
-				String tokenSecret = splits[3];
-				TwitterAcessTokens twitterToken = new TwitterAcessTokens(consumerKey, consumerSecret, token, tokenSecret);
-				System.out.println("Adding twitter token");
-				tokens.add(twitterToken);
-			}else if(t.getAccessInfoPK().getSnsId() == 2){
-				FacebookAcessTokens facebookToken = new FacebookAcessTokens(t.getAccessToken());
-				System.out.println("Adding facebook token");
-				tokens.add(facebookToken);
 			}else if(t.getAccessInfoPK().getSnsId() == 4){
 				YoutubeAcessTokens youtubeToken = new YoutubeAcessTokens(t.getAccessToken());
 				System.out.println("Adding Youtube token");
