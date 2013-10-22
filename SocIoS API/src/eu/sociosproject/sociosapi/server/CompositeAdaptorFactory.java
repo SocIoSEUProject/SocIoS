@@ -29,12 +29,10 @@ import eu.sociosproject.sociosapi.server.adaptors.CompositeAdaptor;
 import eu.sociosproject.sociosapi.server.adaptors.SnsAccessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.SnsAdaptor;
 import eu.sociosproject.sociosapi.server.adaptors.dailymotion.DailymotionAcessTokens;
-import eu.sociosproject.sociosapi.server.adaptors.facebook.FacebookAcessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.flickr.FlickrAcessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.googlep.GooglepAccessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.instagram.InstagramAccessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.myspace.MySpaceAccessTokens;
-import eu.sociosproject.sociosapi.server.adaptors.twitter.TwitterAcessTokens;
 import eu.sociosproject.sociosapi.server.adaptors.youtube.YoutubeAcessTokens;
 import eu.sociosproject.sociosapi.server.local.CompositeAdaptorFactoryLocal;
 import eu.sociosproject.sociosapi.server.local.CompositeLocal;
@@ -100,10 +98,6 @@ public class CompositeAdaptorFactory implements CompositeAdaptorFactoryLocal {
 			return new DailymotionAcessTokens("random");
 		}else if(sn.equals(KnownSns.MYSPACE)) {
 			return new MySpaceAccessTokens("random", "random");
-		}else if(sn.equals(KnownSns.FACEBOOK)) {
-			return new FacebookAcessTokens("random");
-		}else if(sn.equals(KnownSns.TWITTER)) {
-			return new TwitterAcessTokens("random", "random", "random" , "random");
 		}else if(sn.equals(KnownSns.YOUTUBE)) {
 			return new YoutubeAcessTokens("random");
 		}else if(sn.equals(KnownSns.GOOGLEP)) {
