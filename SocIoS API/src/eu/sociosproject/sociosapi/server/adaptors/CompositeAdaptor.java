@@ -979,11 +979,6 @@ public class CompositeAdaptor implements /* SnsAdaptor */CompositeLocal {
 			return KnownSns.FLICKR;
 		else if (snsAdaptor instanceof DailymotionAdaptor)
 			return KnownSns.DAILYMOTION;
-		/*else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.facebook.FacebookAdapter)
-			return KnownSns.FACEBOOK;
-		else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.twitter.TwitterAdapter)
-			return KnownSns.TWITTER;
-			*/
 		else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.myspace.MySpaceAdaptor)
 			return KnownSns.MYSPACE;
 		else if (snsAdaptor instanceof eu.sociosproject.sociosapi.server.adaptors.youtube.YoutubeAdaptor)
