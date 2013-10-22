@@ -39,7 +39,7 @@
 			<src path="${gen.src}/" />
 			<src path="${basedir}/src" />
 			<src path="${basedir}/test-src" />
-			<compilerarg line="-J${cxf.endorsed.flag}" />
+			<!--<compilerarg line="-J${cxf.endorsed.flag}" />-->
 			<classpath refid="cxf.classpath" />
 			<classpath refid="lib.classpath" />
 		</javac>
